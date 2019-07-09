@@ -1,0 +1,71 @@
+{
+	"parent" : "hats:glasses/root",
+	"display" : {
+		"icon": {
+			"item": "minecraft:stick",
+			"nbt": "{CustomModelData:3145}"
+		  },
+		"title" : {
+			"translate": "advancements.hats.glasses.collect_all_glasses.title"
+		},
+		"description" : {
+			"translate": "advancements.hats.glasses.collect_all_glasses.description"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria" : {
+		"sunglasses" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3140}" }
+				]
+			}
+		},
+		"harry_potter" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3141}" }
+				]
+			}
+		},
+		"half_rim" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3142}" }
+				]
+			}
+		},
+		"rainbow" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3143}" }
+				]
+			}
+		},
+		"librarian" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3144}" }
+				]
+			}
+		}
+	},
+	"requirements" : [
+		["sunglasses"], 
+		["harry_potter"], 
+		["half_rim"], 
+		["rainbow"], 
+		["librarian"]
+	],
+	"rewards": {
+		"function": "hats:give/glasses/3d"
+	}
+}
