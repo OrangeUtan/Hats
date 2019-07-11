@@ -66,6 +66,6 @@
 		["librarian"]
 	],
 	"rewards": {
-		"function": "hats:give/glasses/3d"
+		"function": "hats:give/glasses/three_d"
 	}
 }

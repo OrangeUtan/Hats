@@ -52,7 +52,7 @@ execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3141}}]}] run func
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3142}}]}] run function hats:equip/glasses/half_rim
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3143}}]}] run function hats:equip/glasses/rainbow
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3144}}]}] run function hats:equip/glasses/librarian
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3145}}]}] run function hats:equip/glasses/3d
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3145}}]}] run function hats:equip/glasses/three_d
 
 # Accessories
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3150}}]}] run function hats:equip/accessories/ninja_headband

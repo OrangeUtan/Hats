@@ -48,7 +48,7 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstan
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3142}}]}] run function hats:fix_hat/glasses/half_rim
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3143}}]}] run function hats:fix_hat/glasses/rainbow
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3144}}]}] run function hats:fix_hat/glasses/librarian
-execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3145}}]}] run function hats:fix_hat/glasses/3d
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3145}}]}] run function hats:fix_hat/glasses/three_d
 
 
 # Accessories
