@@ -66,3 +66,4 @@ execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3155}}]}] run func
 # Villager Profession Hats
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3160}}]}] run function hats:equip/villager/armorer
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3161}}]}] run function hats:equip/villager/farmer
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3162}}]}] run function hats:equip/villager/nose

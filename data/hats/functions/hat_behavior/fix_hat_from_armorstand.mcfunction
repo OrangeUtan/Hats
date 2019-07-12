@@ -63,3 +63,4 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstan
 # Villager Profession Hats
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3160}}]}] run function hats:fix_hat/villager/armorer
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3161}}]}] run function hats:fix_hat/villager/farmer
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3162}}]}] run function hats:fix_hat/villager/nose
