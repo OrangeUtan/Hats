@@ -8,6 +8,7 @@
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3000}}]}] run function hats:fix_hat/fez
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3001}}]}] run function hats:fix_hat/squid
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3002}}]}] run function hats:fix_hat/arrow
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3003}}]}] run function hats:fix_hat/frying_pan
 
 # Tophats
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3100}}]}] run function hats:fix_hat/tophats/white

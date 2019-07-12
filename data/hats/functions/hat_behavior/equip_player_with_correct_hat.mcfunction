@@ -12,6 +12,7 @@
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3000}}]}] run function hats:equip/fez
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3001}}]}] run function hats:equip/squid
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3002}}]}] run function hats:equip/arrow
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3003}}]}] run function hats:equip/frying_pan
 
 # Tophats
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3100}}]}] run function hats:equip/tophats/white
