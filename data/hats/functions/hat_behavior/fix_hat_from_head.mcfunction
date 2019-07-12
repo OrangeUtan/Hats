@@ -56,3 +56,7 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomM
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3152}}]}] run function hats:fix_hat/accessories/alex_mask
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3153}}]}] run function hats:fix_hat/accessories/snorkel_mask_blue
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3155}}]}] run function hats:fix_hat/accessories/googly_eyes
+
+# Villager Profession Hats
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3160}}]}] run function hats:fix_hat/villager/armorer
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3161}}]}] run function hats:fix_hat/villager/farmer
