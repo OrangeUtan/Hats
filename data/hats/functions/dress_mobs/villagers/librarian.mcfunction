@@ -9,7 +9,7 @@ data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:emerald", 
 
 # Set random sell item
 scoreboard players set @s hats_range_up 3
-function hats:dress_mobs/calc_rand_num
+function hats:calc_rand_num
 
 execute as @s[scores={hats_rand_num=0}] run data modify entity @s Offers.Recipes[-1].sell.tag merge value {CustomModelData:3142, display:{Name:'{"translate": "item.hats.glasses.half_rim.name"}'}}
 execute as @s[scores={hats_rand_num=1}] run data modify entity @s Offers.Recipes[-1].sell.tag merge value {CustomModelData:3143, display:{Name:'{"translate": "item.hats.glasses.rainbow.name"}'}}
@@ -17,7 +17,7 @@ execute as @s[scores={hats_rand_num=2}] run data modify entity @s Offers.Recipes
 
 # Set random price
 scoreboard players set @s hats_range_up 4
-function hats:dress_mobs/calc_rand_num
+function hats:calc_rand_num
 
 execute as @s[scores={hats_rand_num=0}] run data modify entity @s Offers.Recipes[-1].buy.Count set value 4
 execute as @s[scores={hats_rand_num=1}] run data modify entity @s Offers.Recipes[-1].buy.Count set value 5

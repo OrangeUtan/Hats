@@ -1,7 +1,7 @@
 # Created by Oran9eUtan
 
 scoreboard players set @s hats_range_up 19
-function hats:dress_mobs/calc_rand_num
+function hats:calc_rand_num
 
 # Tophats
 execute as @s[scores={hats_rand_num=1}] run function hats:equip/tophats/white

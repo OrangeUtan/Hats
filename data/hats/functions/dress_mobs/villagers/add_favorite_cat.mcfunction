@@ -6,7 +6,7 @@
 #------------------------------------------------------#
 
 scoreboard players set @s hats_range_up 37
-function hats:dress_mobs/calc_rand_num
+function hats:calc_rand_num
 
 execute as @s[scores={hats_rand_num=1}] run function hats:equip/cats/tabby
 execute as @s[scores={hats_rand_num=2}] run function hats:equip/cats/tuxedo
