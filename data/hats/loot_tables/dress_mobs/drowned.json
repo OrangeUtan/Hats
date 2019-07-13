@@ -1,0 +1,62 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 40
+                },
+                {
+                    "type": "group",
+                    "name": "misc",
+                    "children": [
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3001}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.squid.name" } }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "group",
+                    "name": "accessories",
+                    "children": [
+                        {
+                            "weight": 4,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3153}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.accessories.snorkel_mask_blue.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 4,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3154}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.accessories.snorkel_mask_red.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 4,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3155}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.accessories.googly_eyes.name" } }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

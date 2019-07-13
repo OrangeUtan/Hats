@@ -1,12 +1,18 @@
-# Created by Oran9eUtan
+#################################
+# Initialises the Hats datapack #
+#################################
 
-# Upper Range of random number
-scoreboard objectives add hats_range_up dummy
+#-----------------#
+# Add Scoreboards #
+#-----------------#
 
-# Random Number
-scoreboard objectives add hats_rand_num dummy
+# Used for random price
+scoreboard objectives add hats_min_price dummy
+scoreboard objectives add hats_max_price dummy
 
-# Register to store various results for mathematic operations
-scoreboard objectives add hats_register dummy
+#-------------------------------------#
+# Start repeating dress_mobs function #
+#-------------------------------------#
 
+# Dresses new mobs with hats every x seconds 
 function hats:dress_mobs/dress_mobs_with_hats

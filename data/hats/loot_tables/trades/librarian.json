@@ -1,0 +1,43 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "group",
+                    "name": "glasses",
+                    "children": [
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3142}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.glasses.half_rim.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3143}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.glasses.rainbow.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3144}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.glasses.librarian.name" } }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

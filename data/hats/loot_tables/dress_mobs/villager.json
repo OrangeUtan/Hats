@@ -1,0 +1,119 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 20
+                },
+                {
+                    "type": "group",
+                    "name": "cats",
+                    "children": [
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3121}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.cats.tabby.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3122}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.cats.tuxedo.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3123}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.cats.red.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3124}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.cats.siamese.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3125}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.cats.british_shorthair.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3126}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.cats.calico.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3127}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.cats.persian.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3128}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.cats.ragdoll.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3129}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.cats.white.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3130}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.cats.jellie.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3131}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.cats.black.name" } }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

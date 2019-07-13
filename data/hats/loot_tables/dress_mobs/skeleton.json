@@ -1,0 +1,104 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 60
+                },
+                {
+                    "type": "group",
+                    "name": "tophats",
+                    "children": [
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3108}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.tophats.light_gray.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3109}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.tophats.cyan.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3110}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.tophats.purple.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 1,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3111}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.tophats.blue.name" } }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "group",
+                    "name": "glasses",
+                    "children": [
+                        {
+                            "weight": 4,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3141}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.glasses.harry_potter.name" } }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "group",
+                    "name": "accessories",
+                    "children": [
+                        {
+                            "weight": 4,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3151}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.accessories.steve_mask.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 4,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3152}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.accessories.alex_mask.name" } }
+                            ]
+                        },
+                        {
+                            "weight": 4,
+                            "type": "item",
+                            "name": "minecraft:stick",
+                            "functions": [
+                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3155}" },
+                                { "function": "set_name", "name": { "translate": "item.hats.accessories.googly_eyes.name" } }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
