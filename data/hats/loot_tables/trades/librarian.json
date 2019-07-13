@@ -5,6 +5,10 @@
             "rolls": 1,
             "entries": [
                 {
+                    "weight": 3,
+                    "type": "empty"
+                },
+                {
                     "type": "group",
                     "name": "glasses",
                     "children": [

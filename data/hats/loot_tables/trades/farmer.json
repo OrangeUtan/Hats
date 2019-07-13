@@ -1,0 +1,23 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "type": "empty"
+                },
+                {
+                    "weight": 1,
+                    "type": "item",
+                    "name": "minecraft:stick",
+                    "functions": [
+                        { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3161}" },
+                        { "function": "set_name", "name": { "translate": "item.hats.villager.farmer.name" } }
+                    ]
+                }
+            ]
+        }
+    ]
+}

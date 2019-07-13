@@ -1,8 +1,10 @@
-# Created by OrangeUtan
+#################################
+# Remove all Hats related stuff #
+#################################
 
-scoreboard objectives remove hats_range_up
-scoreboard objectives remove hats_rand_num
-scoreboard objectives remove hats_register
+#--------------------#
+# Remove Scoreboards #
+#--------------------#
 
 scoreboard objectives remove hats_min_price
 scoreboard objectives remove hats_max_price
