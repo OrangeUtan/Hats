@@ -27,6 +27,7 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomM
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3114}}]}] run function hats:fix_hat/tophats/red
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3115}}]}] run function hats:fix_hat/tophats/black
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3116}}]}] run function hats:fix_hat/tophats/rainbow
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3117}}]}] run function hats:fix_hat/tophats/black_monocle
 
 # Cats
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3120}}]}] run function hats:fix_hat/cats/ocelot
@@ -57,7 +58,7 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomM
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3153}}]}] run function hats:fix_hat/accessories/snorkel_mask_blue
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3155}}]}] run function hats:fix_hat/accessories/googly_eyes
 
-# Villager Profession Hats
+# Villager related
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3160}}]}] run function hats:fix_hat/villager/armorer
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3161}}]}] run function hats:fix_hat/villager/farmer
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3162}}]}] run function hats:fix_hat/villager/nose

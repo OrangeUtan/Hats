@@ -32,6 +32,7 @@ execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3113}}]}] run func
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3114}}]}] run function hats:equip/tophats/red
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3115}}]}] run function hats:equip/tophats/black
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3116}}]}] run function hats:equip/tophats/rainbow
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3117}}]}] run function hats:equip/tophats/black_monocle
 
 # Cats
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3120}}]}] run function hats:equip/cats/ocelot
@@ -63,7 +64,7 @@ execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3153}}]}] run func
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3154}}]}] run function hats:equip/accessories/snorkel_mask_red
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3155}}]}] run function hats:equip/accessories/googly_eyes
 
-# Villager Profession Hats
+# Villager related
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3160}}]}] run function hats:equip/villager/armorer
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3161}}]}] run function hats:equip/villager/farmer
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3162}}]}] run function hats:equip/villager/nose
