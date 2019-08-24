@@ -62,3 +62,8 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomM
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3160}}]}] run function hats:fix_hat/villager/armorer
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3161}}]}] run function hats:fix_hat/villager/farmer
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3162}}]}] run function hats:fix_hat/villager/nose
+
+# Cosplay
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3170}}]}] run function hats:fix_hat/cosplay/mario_cap
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3171}}]}] run function hats:fix_hat/cosplay/luigi_cap
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3172}}]}] run function hats:fix_hat/cosplay/cappy

@@ -68,3 +68,8 @@ execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3155}}]}] run func
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3160}}]}] run function hats:equip/villager/armorer
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3161}}]}] run function hats:equip/villager/farmer
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3162}}]}] run function hats:equip/villager/nose
+
+# Cosplay
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3170}}]}] run function hats:equip/cosplay/mario_cap
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3171}}]}] run function hats:equip/cosplay/luigi_cap
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3172}}]}] run function hats:equip/cosplay/cappy
