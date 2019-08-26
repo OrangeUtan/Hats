@@ -67,3 +67,7 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomM
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3170}}]}] run function hats:fix_hat/cosplay/mario_cap
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3171}}]}] run function hats:fix_hat/cosplay/luigi_cap
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3172}}]}] run function hats:fix_hat/cosplay/cappy
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3173}}]}] run function hats:fix_hat/cosplay/toad_red
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3174}}]}] run function hats:fix_hat/cosplay/toad_blue
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3175}}]}] run function hats:fix_hat/cosplay/toad_yellow
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3176}}]}] run function hats:fix_hat/cosplay/toad_green

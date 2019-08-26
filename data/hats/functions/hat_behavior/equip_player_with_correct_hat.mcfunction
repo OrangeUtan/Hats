@@ -73,3 +73,7 @@ execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3162}}]}] run func
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3170}}]}] run function hats:equip/cosplay/mario_cap
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3171}}]}] run function hats:equip/cosplay/luigi_cap
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3172}}]}] run function hats:equip/cosplay/cappy
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3173}}]}] run function hats:equip/cosplay/toad_red
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3174}}]}] run function hats:equip/cosplay/toad_blue
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3175}}]}] run function hats:equip/cosplay/toad_yellow
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3176}}]}] run function hats:equip/cosplay/toad_green
