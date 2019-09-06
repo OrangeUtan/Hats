@@ -63,13 +63,13 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomM
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3161}}]}] run function hats:fix_hat/villager/farmer
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3162}}]}] run function hats:fix_hat/villager/nose
 
-# Cosplay
-execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3170}}]}] run function hats:fix_hat/cosplay/mario_cap
-execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3171}}]}] run function hats:fix_hat/cosplay/luigi_cap
-execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3172}}]}] run function hats:fix_hat/cosplay/cappy
-execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3173}}]}] run function hats:fix_hat/cosplay/toad_red
-execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3174}}]}] run function hats:fix_hat/cosplay/toad_blue
-execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3175}}]}] run function hats:fix_hat/cosplay/toad_yellow
-execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3176}}]}] run function hats:fix_hat/cosplay/toad_green
-execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3177}}]}] run function hats:fix_hat/cosplay/mario
-execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3178}}]}] run function hats:fix_hat/cosplay/luigi
+# Mario
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3170}}]}] run function hats:fix_hat/mario/mario_cap
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3171}}]}] run function hats:fix_hat/mario/luigi_cap
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3172}}]}] run function hats:fix_hat/mario/cappy
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3173}}]}] run function hats:fix_hat/mario/toad_red
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3174}}]}] run function hats:fix_hat/mario/toad_blue
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3175}}]}] run function hats:fix_hat/mario/toad_yellow
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3176}}]}] run function hats:fix_hat/mario/toad_green
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3177}}]}] run function hats:fix_hat/mario/mario
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3178}}]}] run function hats:fix_hat/mario/luigi

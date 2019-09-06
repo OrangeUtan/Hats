@@ -69,13 +69,13 @@ execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3160}}]}] run func
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3161}}]}] run function hats:equip/villager/farmer
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3162}}]}] run function hats:equip/villager/nose
 
-# Cosplay
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3170}}]}] run function hats:equip/cosplay/mario_cap
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3171}}]}] run function hats:equip/cosplay/luigi_cap
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3172}}]}] run function hats:equip/cosplay/cappy
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3173}}]}] run function hats:equip/cosplay/toad_red
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3174}}]}] run function hats:equip/cosplay/toad_blue
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3175}}]}] run function hats:equip/cosplay/toad_yellow
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3176}}]}] run function hats:equip/cosplay/toad_green
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3177}}]}] run function hats:equip/cosplay/mario
-execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3178}}]}] run function hats:equip/cosplay/luigi
+# Mario
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3170}}]}] run function hats:equip/mario/mario_cap
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3171}}]}] run function hats:equip/mario/luigi_cap
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3172}}]}] run function hats:equip/mario/cappy
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3173}}]}] run function hats:equip/mario/toad_red
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3174}}]}] run function hats:equip/mario/toad_blue
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3175}}]}] run function hats:equip/mario/toad_yellow
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3176}}]}] run function hats:equip/mario/toad_green
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3177}}]}] run function hats:equip/mario/mario
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3178}}]}] run function hats:equip/mario/luigi
