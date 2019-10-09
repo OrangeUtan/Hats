@@ -1,0 +1,104 @@
+{
+	"parent" : "hats:mario/root",
+	"display" : {
+		"icon": {
+			"item": "minecraft:stick",
+			"nbt": "{CustomModelData:3177}"
+		  },
+		"title" : {
+			"translate": "advancements.hats.mario.collect_all.title"
+		},
+		"description" : {
+			"translate": "advancements.hats.mario.collect_all.description"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria" : {
+		"mario_cap" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3170}" }
+				]
+			}
+		},
+		"luigi_cap" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3171}" }
+				]
+			}
+		},
+		"cappy" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3172}" }
+				]
+			}
+		},
+		"red_toad" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3173}" }
+				]
+			}
+		},
+		"blue_toad" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3174}" }
+				]
+			}
+		},
+		"yellow_toad" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3175}" }
+				]
+			}
+		},
+		"green_toad" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3176}" }
+				]
+			}
+		},
+		"mario" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3177}" }
+				]
+			}
+		},
+		"luigi" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3178}" }
+				]
+			}
+		}
+	},
+	"requirements" : [
+		["mario_cap"], 
+		["luigi_cap"], 
+		["cappy"], 
+		["red_toad"], 
+		["blue_toad"],
+		["yellow_toad"],
+		["green_toad"],
+		["mario"],
+		["luigi"]
+	]
+}
