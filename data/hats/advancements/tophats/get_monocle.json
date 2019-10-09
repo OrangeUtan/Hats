@@ -1,0 +1,30 @@
+{
+	"parent" : "hats:tophats/root",
+	"display" : {
+		"icon": {
+			"item": "minecraft:stick",
+			"nbt": "{CustomModelData:3117}"
+		  },
+		"title" : {
+			"translate": "advancements.hats.tophats.get_monocle.title"
+		},
+		"description" : {
+			"translate": "advancements.hats.tophats.get_monocle.description"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria" : {
+		"hat_tophat_black_monocle" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3117}" }
+				]
+			}
+		}
+	},
+	"requirements" : [["hat_tophat_black_monocle"]]
+}

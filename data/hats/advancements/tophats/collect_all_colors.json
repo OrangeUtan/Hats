@@ -6,10 +6,10 @@
 			"nbt": "{CustomModelData:3116}"
 		  },
 		"title" : {
-			"translate": "advancements.hats.tophats.collect_them_all.title"
+			"translate": "advancements.hats.tophats.collect_all_colors.title"
 		},
 		"description" : {
-			"translate": "advancements.hats.tophats.collect_them_all.description"
+			"translate": "advancements.hats.tophats.collect_all_colors.description"
 		},
 		"frame": "challenge",
 		"show_toast": true,
