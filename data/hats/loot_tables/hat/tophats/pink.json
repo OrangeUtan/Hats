@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name": {"translate": "item.hats.tophats.pink.name"}
+                },
+                {
+                    "function": "set_nbt",
+                    "tag": "{CustomModelData:3106}"
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/_hat_base"
+                }
+            ]
+        }
+    ]
+}
