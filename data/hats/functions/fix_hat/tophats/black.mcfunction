@@ -1,4 +1,4 @@
 # Created by Oran9eUtan
 
 clear @s minecraft:stick{Tags:["is_hat"],CustomModelData:3115} 1
-execute as @s run function hats:give/tophats/black
+execute as @s run loot give @s loot hats:hat/tophats/black
