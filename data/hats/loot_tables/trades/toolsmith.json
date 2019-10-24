@@ -10,12 +10,8 @@
                 },
                 {
                     "weight": 1,
-                    "type": "item",
-                    "name": "minecraft:stick",
-                    "functions": [
-                        { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3003}" },
-                        { "function": "set_name", "name": { "translate": "item.hats.frying_pan.name" } }
-                    ]
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/frying_pan"
                 }
             ]
         }

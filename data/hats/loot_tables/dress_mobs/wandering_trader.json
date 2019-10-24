@@ -14,12 +14,8 @@
                     "children": [
                         {
                             "weight": 1,
-                            "type": "item",
-                            "name": "minecraft:stick",
-                            "functions": [
-                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3130}" },
-                                { "function": "set_name", "name": { "translate": "item.hats.cats.jellie.name" } }
-                            ]
+                            "type": "minecraft:loot_table",
+                            "name": "hats:hat/cats/jellie"
                         }
                     ]
                 }

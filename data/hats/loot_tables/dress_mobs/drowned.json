@@ -14,12 +14,8 @@
                     "children": [
                         {
                             "weight": 1,
-                            "type": "item",
-                            "name": "minecraft:stick",
-                            "functions": [
-                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3001}" },
-                                { "function": "set_name", "name": { "translate": "item.hats.squid.name" } }
-                            ]
+                            "type": "minecraft:loot_table",
+                            "name": "hats:hat/squid"
                         }
                     ]
                 },
@@ -29,30 +25,18 @@
                     "children": [
                         {
                             "weight": 4,
-                            "type": "item",
-                            "name": "minecraft:stick",
-                            "functions": [
-                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3153}" },
-                                { "function": "set_name", "name": { "translate": "item.hats.accessories.snorkel_mask_blue.name" } }
-                            ]
+                            "type": "minecraft:loot_table",
+                            "name": "hats:hat/accessories/snorkel_mask_blue"
                         },
                         {
                             "weight": 4,
-                            "type": "item",
-                            "name": "minecraft:stick",
-                            "functions": [
-                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3154}" },
-                                { "function": "set_name", "name": { "translate": "item.hats.accessories.snorkel_mask_red.name" } }
-                            ]
+                            "type": "minecraft:loot_table",
+                            "name": "hats:hat/accessories/snorkel_mask_red"
                         },
                         {
                             "weight": 4,
-                            "type": "item",
-                            "name": "minecraft:stick",
-                            "functions": [
-                                { "function": "minecraft:set_nbt", "tag": "{Tags:[\"is_hat\"],CustomModelData:3155}" },
-                                { "function": "set_name", "name": { "translate": "item.hats.accessories.googly_eyes.name" } }
-                            ]
+                            "type": "minecraft:loot_table",
+                            "name": "hats:hat/accessories/googly_eyes"
                         }
                     ]
                 }
