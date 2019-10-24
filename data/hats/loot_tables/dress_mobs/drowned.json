@@ -15,7 +15,7 @@
                         {
                             "weight": 1,
                             "type": "minecraft:loot_table",
-                            "name": "hats:hat/squid"
+                            "name": "hats:hat_on_head/squid"
                         }
                     ]
                 },
@@ -26,17 +26,17 @@
                         {
                             "weight": 4,
                             "type": "minecraft:loot_table",
-                            "name": "hats:hat/accessories/snorkel_mask_blue"
+                            "name": "hats:hat_on_head/accessories/snorkel_mask_blue"
                         },
                         {
                             "weight": 4,
                             "type": "minecraft:loot_table",
-                            "name": "hats:hat/accessories/snorkel_mask_red"
+                            "name": "hats:hat_on_head/accessories/snorkel_mask_red"
                         },
                         {
                             "weight": 4,
                             "type": "minecraft:loot_table",
-                            "name": "hats:hat/accessories/googly_eyes"
+                            "name": "hats:hat_on_head/accessories/googly_eyes"
                         }
                     ]
                 }
