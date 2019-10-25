@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/glasses/half_rim"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/glasses/harry_potter"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/glasses/librarian"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/glasses/rainbow"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/glasses/sunglasses"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/glasses/three_d"
+                }
+            ]
+        }
+    ]
+}

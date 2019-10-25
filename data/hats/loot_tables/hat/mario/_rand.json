@@ -1,0 +1,46 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/mario/cappy"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/mario/luigi"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/mario/luigi_cap"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/mario/mario"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/mario/mario_cap"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/mario/toad_blue"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/mario/toad_green"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/mario/toad_red"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/mario/toad_yellow"
+                }
+            ]
+        }
+    ]
+}
