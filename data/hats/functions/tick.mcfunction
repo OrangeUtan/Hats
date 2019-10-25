@@ -22,7 +22,5 @@ execute as @e[type=minecraft:armor_stand,nbt={ArmorItems:[{},{},{},{id:"minecraf
 # To fix this, replace the item-hat with a helmet-hat                              #
 #----------------------------------------------------------------------------------#
 
-# Fix hat that a player had on his head.
+# Replace worn hats (#hat_on_head) with equivalent #hat item
 execute as @a[nbt=!{Inventory:[{Slot:103b,id:"minecraft:stick",tag:{Tags:["is_hat"]}}]}, nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"]}}]}] run function hats:hat_behavior/fix_hat_from_head
-# Fix hat that was on an armorstand
-execute as @a[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"]}}]}] run function hats:hat_behavior/fix_hat_from_armorstand

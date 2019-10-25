@@ -4,4 +4,4 @@
 ########################################################################
 
 # Since #hat and #hat_on_head items have the same nbt, only change the item id
-data modify entity @s ArmorItems[3] merge value {id:"minecraft:stick",tag:{Tags:["hat_on_armorstand","is_hat"]}}
+data modify entity @s ArmorItems[3] merge value {id:"minecraft:stick"}
