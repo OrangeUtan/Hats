@@ -1,6 +1,7 @@
-#########################################################
-# Adds profession dependent special offer to a Villager #
-#########################################################
+###################################################################################
+# as: Villager/Wandering Trader                                                   #
+# Descr: Adds profession dependent special offer to the Villager/Wandering Trader #
+###################################################################################
 
 # Add special offer
 data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:emerald", Count:1b}, sell:{id:"minecraft:leather_helmet",Count:1b,tag:{Tags:["is_hat"]}}}

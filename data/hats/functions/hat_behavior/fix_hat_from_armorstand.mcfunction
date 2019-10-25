@@ -1,8 +1,8 @@
-# Created by Oran9eUtan
-
-#-----------------------------------------#
-# Fix hat that was on an armorstands head #
-#-----------------------------------------#
+####################################################################################
+# as: Player                                                                       #  
+# Descr: Replace #hat_on_head item, that the Player took from an ArmorStands head, #
+#        with a #hat item                                                          #
+####################################################################################
 
 # Miscellaneous
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["hat_on_armorstand"],CustomModelData:3000}}]}] run function hats:fix_hat/fez

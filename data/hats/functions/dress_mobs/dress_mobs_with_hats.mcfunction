@@ -1,7 +1,9 @@
-#####################################################
-# Checks every x seconds if there are any new mobs. #
-# If so, randomly dresses them with a hat (or none). #
-######################################################
+#############################################################
+# as: World                                                 #
+# from: hats:load                                           #
+# Descr: Checks every x seconds if there are any new mobs.  #
+#        If so, randomly dresses them with a hat (or none). #
+#############################################################
 
 execute as @e[type=zombie,tag=!hats_is_dressed,nbt=!{ArmorItems:[{},{},{},{Count:1b}]}] at @s run function hats:dress_mobs/zombie
 execute as @e[type=husk,tag=!hats_is_dressed,nbt=!{ArmorItems:[{},{},{},{Count:1b}]}] at @s run function hats:dress_mobs/husk

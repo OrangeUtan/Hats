@@ -1,12 +1,7 @@
-# Created by Oran9eUtan
-
-#----------------------------------------------------#
-# Replace helmet-hat on player with item-hat:        #
-# The nbt data of players cannot be changed.         #
-# There has to be a special case for every hat :c    #
-#----------------------------------------------------#
-
-# ---  ---
+####################################################################
+# as: Player                                                       #
+# Descr: Replace the #hat on the Players head with an #hat_on_head #
+####################################################################
 
 # Miscellaneous
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3000}}]}] run loot replace entity @s armor.head loot hats:hat_on_head/fez

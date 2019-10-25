@@ -1,6 +1,8 @@
-###########################################################
-# Dresses Wandering Trader with a hat and adds hat trades #
-###########################################################
+##############################################################################
+# as: Wandering Trader                                                       #
+# from: hats:dress_mobs_with_hats                                            #
+# Descr: Dress the Wandering Trader with a random hat and give it hat trades #
+##############################################################################
 
 #----------------------#
 # Add optional cat hat #

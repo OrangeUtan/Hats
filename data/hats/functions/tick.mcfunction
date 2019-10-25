@@ -1,3 +1,7 @@
+#############
+# as: World #
+#############
+
 #----------------------------------------------------------------------#
 # Replace helmet-hats with item-hats:                                  #          
 # Hats are custom helmet models, which allows them to be used as such. #

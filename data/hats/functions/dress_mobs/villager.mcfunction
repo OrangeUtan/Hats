@@ -1,6 +1,8 @@
-###################################################
-# Dresses Villager with a hat and adds hat trades #
-###################################################
+######################################################################
+# as: Villager                                                       #
+# from: hats:dress_mobs_with_hats                                    #
+# Descr: Dress the Villager with a random hat and give it hat trades #
+######################################################################
 
 #----------------------#
 # Add optional cat hat #

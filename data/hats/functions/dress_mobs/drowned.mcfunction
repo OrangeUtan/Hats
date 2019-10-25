@@ -1,3 +1,9 @@
+##############################################
+# as: Drowned                                #
+# from: hats:dress_mobs_with_hats            #
+# Descr: Dress the Drowned with a random hat #
+##############################################
+
 loot replace entity @s armor.head loot hats:dress_mobs/drowned
 
 execute as @s[nbt={ArmorItems:[{},{},{},{Count:1b}]}] run data modify entity @s ArmorDropChances[3] set value 1.0f
