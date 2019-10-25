@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.villager.nose.name"}
+                    "name": {
+                        "translate": "item.hats.villager.nose.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3162}"
+                    "tag": "{CustomModelData:3162, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.villager_nose\"]}"
                 }
             ],
             "rolls": 1,

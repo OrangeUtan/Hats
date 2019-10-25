@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.mario.mario.name"}
+                    "name": {
+                        "translate": "item.hats.mario.mario.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3177}"
+                    "tag": "{CustomModelData:3177, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.mario\"]}"
                 }
             ],
             "rolls": 1,

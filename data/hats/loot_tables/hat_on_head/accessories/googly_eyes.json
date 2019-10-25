@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.accessories.googly_eyes.name"}
+                    "name": {
+                        "translate": "item.hats.accessories.googly_eyes.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3155}"
+                    "tag": "{CustomModelData:3155, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.googly_eyes\"]}"
                 }
             ],
             "rolls": 1,

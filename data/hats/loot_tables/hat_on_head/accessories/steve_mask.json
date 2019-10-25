@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.accessories.steve_mask.name"}
+                    "name": {
+                        "translate": "item.hats.accessories.steve_mask.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3151}"
+                    "tag": "{CustomModelData:3151, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.steve_mask\"]}"
                 }
             ],
             "rolls": 1,

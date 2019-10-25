@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.cats.tuxedo.name"}
+                    "name": {
+                        "translate": "item.hats.cats.tuxedo.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3122}"
+                    "tag": "{CustomModelData:3122, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.cat_tuxedo\"]}"
                 }
             ],
             "rolls": 1,

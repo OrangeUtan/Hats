@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.cats.jellie.name"}
+                    "name": {
+                        "translate": "item.hats.cats.jellie.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3130}"
+                    "tag": "{CustomModelData:3130, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.cat_jellie\"]}"
                 }
             ],
             "rolls": 1,

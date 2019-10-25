@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.mario.luigi.name"}
+                    "name": {
+                        "translate": "item.hats.mario.luigi.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3178}"
+                    "tag": "{CustomModelData:3178, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.luigi\"]}"
                 }
             ],
             "rolls": 1,

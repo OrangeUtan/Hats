@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.glasses.librarian.name"}
+                    "name": {
+                        "translate": "item.hats.glasses.librarian.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3144}"
+                    "tag": "{CustomModelData:3144, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.librarian_glasses\"]}"
                 }
             ],
             "rolls": 1,

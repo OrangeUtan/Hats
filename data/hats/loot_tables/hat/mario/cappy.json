@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.mario.cappy.name"}
+                    "name": {
+                        "translate": "item.hats.mario.cappy.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3172}"
+                    "tag": "{CustomModelData:3172, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.cappy\"]}"
                 }
             ],
             "rolls": 1,

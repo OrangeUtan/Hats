@@ -5,7 +5,7 @@
             "functions": [
                 {
                     "function": "set_nbt",
-                    "tag": "{Tags:[\"is_hat\"]}"
+                    "tag": "{Tags:[\"is_hat\", \"hats.hat\"]}"
                 }
             ],
             "rolls": 1,

@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.glasses.half_rim.name"}
+                    "name": {
+                        "translate": "item.hats.glasses.half_rim.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3142}"
+                    "tag": "{CustomModelData:3142, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.half_rim_glasses\"]}"
                 }
             ],
             "rolls": 1,

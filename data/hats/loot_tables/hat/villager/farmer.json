@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.villager.farmer.name"}
+                    "name": {
+                        "translate": "item.hats.villager.farmer.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3161}"
+                    "tag": "{CustomModelData:3161, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.farmer_strawhat\"]}"
                 }
             ],
             "rolls": 1,

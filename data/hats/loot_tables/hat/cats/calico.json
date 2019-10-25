@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.cats.calico.name"}
+                    "name": {
+                        "translate": "item.hats.cats.calico.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3126}"
+                    "tag": "{CustomModelData:3126, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.cat_calico\"]}"
                 }
             ],
             "rolls": 1,

@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.mario.toad_green.name"}
+                    "name": {
+                        "translate": "item.hats.mario.toad_green.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3176}"
+                    "tag": "{CustomModelData:3176, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.toad_green\"]}"
                 }
             ],
             "rolls": 1,

@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.tophats.brown.name"}
+                    "name": {
+                        "translate": "item.hats.tophats.brown.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3112}"
+                    "tag": "{CustomModelData:3112, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.tophat_brown\"]}"
                 }
             ],
             "rolls": 1,

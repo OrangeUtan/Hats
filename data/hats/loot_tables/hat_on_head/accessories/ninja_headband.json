@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.accessories.ninja_headband.name"}
+                    "name": {
+                        "translate": "item.hats.accessories.ninja_headband.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3150}"
+                    "tag": "{CustomModelData:3150, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.ninja_headband\"]}"
                 }
             ],
             "rolls": 1,

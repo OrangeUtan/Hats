@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.villager.armorer.name"}
+                    "name": {
+                        "translate": "item.hats.villager.armorer.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3160}"
+                    "tag": "{CustomModelData:3160, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.armorer_mask\"]}"
                 }
             ],
             "rolls": 1,

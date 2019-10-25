@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.cats.british_shorthair.name"}
+                    "name": {
+                        "translate": "item.hats.cats.british_shorthair.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3125}"
+                    "tag": "{CustomModelData:3125, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.cat_british_shorthair\"]}"
                 }
             ],
             "rolls": 1,

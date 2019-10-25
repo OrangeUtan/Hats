@@ -5,11 +5,13 @@
             "functions": [
                 {
                     "function": "minecraft:set_name",
-                    "name": {"translate": "item.hats.accessories.snorkel_mask_red.name"}
+                    "name": {
+                        "translate": "item.hats.accessories.snorkel_mask_red.name"
+                    }
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3154}"
+                    "tag": "{CustomModelData:3154, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.snorkel_mask_red\"]}"
                 }
             ],
             "rolls": 1,

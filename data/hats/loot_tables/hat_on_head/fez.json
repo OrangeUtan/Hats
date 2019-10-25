@@ -9,7 +9,7 @@
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3000}"
+                    "tag": "{CustomModelData:3000, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.fez\"]}"
                 }
             ],
             "rolls": 1,

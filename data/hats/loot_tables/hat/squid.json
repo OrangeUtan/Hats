@@ -9,7 +9,7 @@
                 },
                 {
                     "function": "set_nbt",
-                    "tag": "{CustomModelData:3001}"
+                    "tag": "{CustomModelData:3001, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.squid\"]}"
                 }
             ],
             "rolls": 1,
