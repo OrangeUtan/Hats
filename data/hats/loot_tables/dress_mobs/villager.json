@@ -9,65 +9,9 @@
                     "weight": 20
                 },
                 {
-                    "type": "group",
-                    "name": "cats",
-                    "children": [
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/cats/tabby"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/cats/tuxedo"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/cats/red"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/cats/siamese"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/cats/british_shorthair"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/cats/calico"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/cats/persian"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/cats/ragdoll"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/cats/white"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/cats/jellie"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/cats/black"
-                        }
-                    ]
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat/cats/_rand",
+                    "weight": 11
                 }
             ]
         }
