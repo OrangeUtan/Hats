@@ -1,0 +1,19 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/halloween/wiggly_ghast",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}
