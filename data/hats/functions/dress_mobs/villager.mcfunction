@@ -33,5 +33,4 @@ execute as @s[nbt={HandItems:[{},{tag:{Tags:["is_hat"]}}]}] run function hats:ad
 #--------------------------#
 # Mark Villager as dressed #
 #--------------------------#
-
-tag @s add hats_is_dressed
+tag @s add hats.mob.dont_dress
