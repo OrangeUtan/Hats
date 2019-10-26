@@ -74,3 +74,6 @@ execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3175}}]}] run loot
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3176}}]}] run loot replace entity @s armor.head loot hats:hat_on_head/mario/toad_green
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3177}}]}] run loot replace entity @s armor.head loot hats:hat_on_head/mario/mario
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3178}}]}] run loot replace entity @s armor.head loot hats:hat_on_head/mario/luigi
+
+# Halloween
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:7773180}}]}] run loot replace entity @s armor.head loot hats:hat_on_head/halloween/wiggly_ghast

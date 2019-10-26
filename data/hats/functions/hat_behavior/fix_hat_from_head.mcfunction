@@ -75,3 +75,6 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomM
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3176}}]}] run function hats:fix_hat/mario/toad_green
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3177}}]}] run function hats:fix_hat/mario/mario
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3178}}]}] run function hats:fix_hat/mario/luigi
+
+# Halloween
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:7773180}}]}] run function hats:fix_hat/halloween/wiggly_ghast
