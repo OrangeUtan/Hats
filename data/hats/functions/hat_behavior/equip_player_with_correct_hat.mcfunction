@@ -77,3 +77,4 @@ execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:3178}}]}] run loot
 
 # Halloween
 execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:7773180}}]}] run loot replace entity @s armor.head loot hats:hat_on_head/halloween/wiggly_ghast
+execute as @s[nbt={Inventory:[{Slot:103b,tag:{CustomModelData:7773181}}]}] run loot replace entity @s armor.head loot hats:hat_on_head/halloween/native_american_headband
