@@ -79,3 +79,4 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomM
 # Halloween
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:7773180}}]}] run function hats:fix_hat/halloween/wiggly_ghast
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:7773181}}]}] run function hats:fix_hat/halloween/native_american_headband
+execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:7773182}}]}] run function hats:fix_hat/halloween/jason_mask
