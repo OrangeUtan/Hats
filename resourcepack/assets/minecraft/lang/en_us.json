@@ -1,0 +1,103 @@
+{
+	"advancements.hats.root.title": "Hats",
+	"advancements.hats.root.description": "Gotta find them all!",
+
+	"advancements.hats.fez.title": "Fez",
+	"advancements.hats.fez.description": "",
+
+	"advancements.hats.cats.root.title": "Feline Friends",
+	"advancements.hats.cats.root.description": "Find yourself a furry friend",
+	"advancements.hats.cats.collect_all.title": "Cat crazy",
+	"advancements.hats.cats.collect_all.description": "Collect all cats",
+
+	"advancements.hats.tophats.root.title": "High society",
+	"advancements.hats.tophats.root.description": "Start your career with a Tophat",
+	"advancements.hats.tophats.collect_all_colors.title": "The Elite",
+	"advancements.hats.tophats.collect_all_colors.description": "Collect all tophat colors",
+	"advancements.hats.tophats.get_monocle.title": "Extra fancy",
+	"advancements.hats.tophats.get_monocle.description": "Obtain the monocle Tophat",
+
+	"advancements.hats.glasses.root.title": "Blindness cured",
+	"advancements.hats.glasses.root.description": "Help yourself to some glasses",
+	"advancements.hats.glasses.collect_all.title": "5D vision",
+	"advancements.hats.glasses.collect_all.description": "Collect all glasses",
+
+	"advancements.hats.player_masks.title": "Not suspicious",
+	"advancements.hats.player_masks.description": "Wear a disguise",
+
+	"advancements.hats.mario.root.title": "Wahooo!",
+	"advancements.hats.mario.root.description": "Get a Mario Hat",
+	"advancements.hats.mario.collect_all.title": "1UP!",
+	"advancements.hats.mario.collect_all.description": "Collect all Mario Hats",
+
+
+
+	"item.hats.fez.name": "Fez",
+	"item.hats.squid.name": "Squid",
+	"item.hats.arrow.name": "Arrow Prop",
+	"item.hats.frying_pan.name": "Frying Pan",
+
+	"item.hats.cats.ocelot.name": "Ocelot",
+	"item.hats.cats.tabby.name": "Tabby Cat",
+	"item.hats.cats.tuxedo.name": "Tuxedo Cat",
+	"item.hats.cats.red.name": "Red Cat",
+	"item.hats.cats.siamese.name": "Siamese Cat",
+	"item.hats.cats.british_shorthair.name": "British Shorthair",
+	"item.hats.cats.calico.name": "Calico Cat",
+	"item.hats.cats.persian.name": "Persian Cat",
+	"item.hats.cats.ragdoll.name": "Ragdoll",
+	"item.hats.cats.white.name": "White Cat",
+	"item.hats.cats.jellie.name": "Jellie",
+	"item.hats.cats.black.name": "Black Cat",
+
+	"item.hats.tophats.white.name": "White Tophat",
+	"item.hats.tophats.orange.name": "Orange Tophat",
+	"item.hats.tophats.magenta.name": "Magenta Tophat",
+	"item.hats.tophats.light_blue.name": "Light Blue Tophat",
+	"item.hats.tophats.yellow.name": "Yellow Tophat",
+	"item.hats.tophats.lime.name": "Lime Tophat",
+	"item.hats.tophats.pink.name": "Pink Tophat",
+	"item.hats.tophats.gray.name": "Gray Tophat",
+	"item.hats.tophats.light_gray.name": "Light Gray Tophat",
+	"item.hats.tophats.cyan.name": "Cyan Tophat",
+	"item.hats.tophats.purple.name": "Purple Tophat",
+	"item.hats.tophats.blue.name": "Blue Tophat",
+	"item.hats.tophats.brown.name": "Brown Tophat",
+	"item.hats.tophats.green.name": "Green Tophat",
+	"item.hats.tophats.red.name": "Red Tophat",
+	"item.hats.tophats.black.name": "Black Tophat",
+	"item.hats.tophats.rainbow.name": "Rainbow Tophat",
+	"item.hats.tophats.black_monocle.name": "Tophat with Monocle",
+
+	"item.hats.glasses.sunglasses.name": "Sunglasses",
+	"item.hats.glasses.harry_potter.name": "Harry Potter glasses",
+	"item.hats.glasses.half_rim.name": "Half-rim glasses",
+	"item.hats.glasses.rainbow.name": "Rainbow glasses",
+	"item.hats.glasses.librarian.name": "Librarian glasses",
+	"item.hats.glasses.three_d.name": "3D glasses",
+
+	"item.hats.accessories.ninja_headband.name": "Ninja Headband",
+	"item.hats.accessories.steve_mask.name": "Steve Mask",
+	"item.hats.accessories.alex_mask.name": "Alex Mask",
+	"item.hats.accessories.snorkel_mask_blue.name": "Blue Snorkel Mask",
+	"item.hats.accessories.snorkel_mask_red.name": "Red Snorkel Mask",
+	"item.hats.accessories.googly_eyes.name": "Googly Eyes",
+
+	"item.hats.villager.armorer.name": "Armorer Mask",
+	"item.hats.villager.farmer.name": "Farmers Strawhat",
+	"item.hats.villager.nose.name": "Villager Nose",
+
+	"item.hats.mario.mario_cap.name": "Mario Cap",
+	"item.hats.mario.luigi_cap.name": "Luigi Cap",
+	"item.hats.mario.cappy.name": "Cappy",
+	"item.hats.mario.toad_red.name": "Red Toad",
+	"item.hats.mario.toad_blue.name": "Blue Toad",
+	"item.hats.mario.toad_yellow.name": "Yellow Toad",
+	"item.hats.mario.toad_green.name": "Green Toad",
+	"item.hats.mario.mario.name": "Mario Cosplay",
+	"item.hats.mario.luigi.name": "Luigi Cosplay",
+
+	"item.hats.halloween.wiggly_ghast.name": "Wiggly Ghast",
+	"item.hats.halloween.native_american_headband.name": "Native American Headband",
+	"item.hats.halloween.jason_mask.name": "Jason Mask"
+}

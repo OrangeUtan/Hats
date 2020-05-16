@@ -1,0 +1,7 @@
+{
+	"credit": "Created by Oran9eUtan https://www.youtube.com/channel/UCb6GapmiHbzqJszTxGWpgzA",
+	"parent": "item/hats/_mask",
+	"textures": {
+		"mask": "item/hats/accessories/alex_mask"
+	}
+}
