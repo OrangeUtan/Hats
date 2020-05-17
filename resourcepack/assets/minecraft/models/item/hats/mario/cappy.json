@@ -1,0 +1,96 @@
+{
+	"__comment": "Created by Oran9eUtan https://www.youtube.com/channel/UCb6GapmiHbzqJszTxGWpgzA",
+	"textures": {
+		"cap": "item/hats/mario/mario_cap",
+		"eyes": "item/hats/mario/cappy_eyes"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "hat_base",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 4, 16 ],
+			"faces": {
+				"down": { "uv": [ 4.01, 7.01, 7.99, 10.99 ], "texture": "#cap", "rotation": 180 },
+				"up": { "uv": [ 4.01, 0.01000023, 7.99, 3.49 ], "texture": "#cap", "rotation": 180 },
+				"north": { "uv": [ 4.01, 5.01, 7.99, 5.99 ], "texture": "#cap" },
+				"south": { "uv": [ 12.01, 5.01, 15.99, 5.99 ], "texture": "#cap" },
+				"west": { "uv": [ 8.01, 5.01, 11.99, 5.99 ], "texture": "#cap" },
+				"east": { "uv": [ 0.01, 5.01, 3.99, 5.99 ], "texture": "#cap" }
+			}
+		},
+		{
+			"__comment": "hat_top",
+			"from": [ -0.0008, 4.0001, 0.0001 ],
+			"to": [ 15.9992, 6.0001, 8.0001 ],
+			"faces": {
+				"up": { "uv": [ 4.01, 2.51, 7.99, 4.49 ], "texture": "#cap", "rotation": 180 },
+				"north": { "uv": [ 4.01, 4.51, 7.99, 4.99 ], "texture": "#cap" },
+				"south": { "uv": [ 4.01, 2.01, 7.99, 2.49 ], "texture": "#cap", "rotation": 180 },
+				"west": { "uv": [ 8.01, 4.51, 9.99, 4.99 ], "texture": "#cap" },
+				"east": { "uv": [ 2.01, 4.51, 3.99, 4.99 ], "texture": "#cap" }
+			}
+		},
+		{
+			"__comment": "brim",
+			"from": [ 0.0001, -0.0008, -2.0005 ],
+			"to": [ 16.0001, 1.9992, -0.000500441 ],
+			"faces": {
+				"down": { "uv": [ 7.99, 6.51, 4.01, 6.99 ], "texture": "#cap" },
+				"up": { "uv": [ 4.01, 5.51, 7.99, 5.99 ], "texture": "#cap", "rotation": 180 },
+				"north": { "uv": [ 4.01, 6.01, 7.99, 6.49 ], "texture": "#cap" },
+				"south": { "uv": [ 0.01, 14.01, 15.99, 15.99 ], "texture": "#cap" },
+				"west": { "uv": [ 8.01, 6.01, 8.49, 6.49 ], "texture": "#cap" },
+				"east": { "uv": [ 3.51, 6.01, 3.99, 6.49 ], "texture": "#cap" }
+			}
+		},
+		{
+			"__comment": "eyes",
+			"from": [ 1.4998, 1.9994, -0.5008 ],
+			"to": [ 14.4998, 7.4994, -0.4508 ],
+			"faces": {
+				"north": { "uv": [ 3.01, 12.01, 12.99, 15.99 ], "texture": "#eyes" },
+				"south": { "uv": [ 12.99, 8.01, 3.01, 11.99 ], "texture": "#eyes" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ -50, 180, 30 ],
+			"translation":  [ 2, 1, -1 ],
+			"scale":  [ 0.3, 0.3, 0.3 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ -50, 180, 30 ],
+			"translation":  [ 2, 1, -1 ],
+			"scale":  [ 0.3, 0.3, 0.3 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ 15, 20, 0 ],
+			"translation":  [ 6, 2, 1 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ 15, 20, 0 ],
+			"translation":  [ 6, 2, 1 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"gui": {
+			"rotation":  [ 45, 135, 0 ],
+			"translation":  [ 0.5, 3, 0 ],
+			"scale":  [ 0.5, 0.6, 0.5001 ]
+		},
+		"head": {
+			"translation":  [ 0, 11.8, 0 ],
+			"scale":  [ 0.95, 1.1, 0.95 ]
+		},
+		"ground": {
+			"translation":  [ 0, 5, 0 ],
+			"scale":  [ 0.4, 0.4, 0.4 ]
+		},
+		"fixed": {
+			"rotation":  [ -90, -45, 0 ],
+			"translation":  [ 0, 0, -4 ],
+			"scale":  [ 0.6, 0.6, 0.6 ]
+		}
+	}
+}

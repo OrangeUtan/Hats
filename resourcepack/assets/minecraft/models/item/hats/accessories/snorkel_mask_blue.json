@@ -1,0 +1,28 @@
+{
+	"__comment": "Created by Oran9eUtan https://www.youtube.com/channel/UCb6GapmiHbzqJszTxGWpgzA",
+	"parent": "item/hats/accessories/_accessory_on_hat",
+	"textures": {
+		"particle": "item/hats/accessories/snorkel_mask_blue",
+		"accessory": "item/hats/accessories/snorkel_mask_blue"
+	},
+	"display": {
+		"firstperson_righthand": {
+			"rotation":  [ 15, 0, -83 ],
+			"translation":  [ 1, 0, 3 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ 15, 0, -83 ],
+			"translation":  [ 1, 0, 3 ]
+		},
+		"thirdperson_righthand": {
+			"rotation":  [ 58, 0, -85 ],
+			"translation":  [ 0, -1.39, 2.6091 ],
+			"scale":  [ 0.8, 0.8, 0.8 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ 58, 0, -85 ],
+			"translation":  [ 0, -1.39, 2.6091 ],
+			"scale":  [ 0.8, 0.8, 0.8 ]
+		}
+	}
+}
