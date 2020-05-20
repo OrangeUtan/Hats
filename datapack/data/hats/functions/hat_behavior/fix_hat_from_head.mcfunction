@@ -1,16 +1,11 @@
-###############################################################################
-# as: Player                                                                  #  
-# Descr: Replace #hat_on_head item, that the Player took from their own head, #
-#        with a #hat item                                                     #
-###############################################################################
+# as: Player
+# descr: When a Player takes of their hat, they have #hat_on_head item in their inventory.
+#        Replace that item with an equivalent #hat item
 
-# Miscellaneous
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3000}}]}] run function hats:fix_hat/fez
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3001}}]}] run function hats:fix_hat/squid
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3002}}]}] run function hats:fix_hat/arrow
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3003}}]}] run function hats:fix_hat/frying_pan
-
-# Tophats
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3100}}]}] run function hats:fix_hat/tophats/white
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3101}}]}] run function hats:fix_hat/tophats/orange
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3102}}]}] run function hats:fix_hat/tophats/magenta
@@ -29,8 +24,6 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomM
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3115}}]}] run function hats:fix_hat/tophats/black
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3116}}]}] run function hats:fix_hat/tophats/rainbow
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3117}}]}] run function hats:fix_hat/tophats/black_monocle
-
-# Cats
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3120}}]}] run function hats:fix_hat/cats/ocelot
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3121}}]}] run function hats:fix_hat/cats/tabby
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3122}}]}] run function hats:fix_hat/cats/tuxedo
@@ -43,29 +36,21 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomM
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3129}}]}] run function hats:fix_hat/cats/white
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3130}}]}] run function hats:fix_hat/cats/jellie
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3131}}]}] run function hats:fix_hat/cats/black
-
-# Glasses
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3140}}]}] run function hats:fix_hat/glasses/sunglasses
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3141}}]}] run function hats:fix_hat/glasses/harry_potter
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3142}}]}] run function hats:fix_hat/glasses/half_rim
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3143}}]}] run function hats:fix_hat/glasses/rainbow
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3144}}]}] run function hats:fix_hat/glasses/librarian
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3145}}]}] run function hats:fix_hat/glasses/three_d
-
-# Accessories
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3150}}]}] run function hats:fix_hat/accessories/ninja_headband
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3151}}]}] run function hats:fix_hat/accessories/steve_mask
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3152}}]}] run function hats:fix_hat/accessories/alex_mask
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3153}}]}] run function hats:fix_hat/accessories/snorkel_mask_blue
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3154}}]}] run function hats:fix_hat/accessories/snorkel_mask_red
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3155}}]}] run function hats:fix_hat/accessories/googly_eyes
-
-# Villager related
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3160}}]}] run function hats:fix_hat/villager/armorer
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3161}}]}] run function hats:fix_hat/villager/farmer
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3162}}]}] run function hats:fix_hat/villager/nose
-
-# Mario
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3170}}]}] run function hats:fix_hat/mario/mario_cap
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3171}}]}] run function hats:fix_hat/mario/luigi_cap
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3172}}]}] run function hats:fix_hat/mario/cappy
@@ -75,8 +60,6 @@ execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomM
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3176}}]}] run function hats:fix_hat/mario/toad_green
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3177}}]}] run function hats:fix_hat/mario/mario
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:3178}}]}] run function hats:fix_hat/mario/luigi
-
-# Halloween
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:7773180}}]}] run function hats:fix_hat/halloween/wiggly_ghast
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:7773181}}]}] run function hats:fix_hat/halloween/native_american_headband
 execute as @s[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"],CustomModelData:7773182}}]}] run function hats:fix_hat/halloween/jason_mask
