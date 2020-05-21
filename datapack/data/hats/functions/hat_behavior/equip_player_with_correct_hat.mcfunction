@@ -13,10 +13,10 @@ data modify storage minecraft:hats buffer.armor[0].id set value "minecraft:stick
 data modify storage minecraft:hats buffer.armor[0].Slot set value 0b
 
 # Replace Player helmet with modified hat
-setblock ~ 255 ~20 minecraft:yellow_shulker_box
-data modify block ~ 255 ~20 Items set from storage minecraft:hats buffer.armor
-loot replace entity @s armor.head 1 mine ~ 255 ~20 minecraft:diamond_pickaxe{drop_contents:1b}
+setblock ~ 0 ~ minecraft:yellow_shulker_box
+data modify block ~ 0 ~ Items set from storage minecraft:hats buffer.armor
+loot replace entity @s armor.head 1 mine ~ 0 ~ minecraft:diamond_pickaxe{drop_contents:1b}
 
 # Clean up
-setblock ~ 255 ~20 minecraft:air
+setblock ~ 0 ~ minecraft:air
 data remove storage minecraft:hats buffer
