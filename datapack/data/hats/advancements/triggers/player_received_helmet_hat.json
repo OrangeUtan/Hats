@@ -15,7 +15,7 @@
 		"hidden": true
 	},
 	"criteria" : {
-		"received_normal_hat" : {
+		"player_received_helmet_hat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
@@ -27,8 +27,8 @@
 			}
 		}
 	},
-	"requirements" : [["received_normal_hat"]],
+	"requirements" : [["player_received_helmet_hat"]],
 	"rewards": {
-		"function": "hats:triggers/received_normal_hat"
+		"function": "hats:triggers/player_received_helmet_hat"
 	}
 }

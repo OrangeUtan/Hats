@@ -9,4 +9,4 @@
 execute if entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:leather_helmet",tag:{Tags:["is_hat"]}}]}] run schedule function hats:triggers/scheduled_equip_player_with_correct_hat 1t
 
 # Reset trigger
-advancement revoke @s only hats:triggers/received_normal_hat
+advancement revoke @s only hats:triggers/player_received_helmet_hat
