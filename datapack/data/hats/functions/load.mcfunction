@@ -22,4 +22,5 @@ function hats:dress_mobs/dress_mobs_with_hats
 # Start tick functions #
 #----------------------#
 function hats:every_3t
+function hats:every_5s
 function hats:every_60s
