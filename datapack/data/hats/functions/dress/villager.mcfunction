@@ -1,15 +1,12 @@
-######################################################################
-# as: Villager                                                       #
-# from: hats:dress_mobs_with_hats                                    #
-# Descr: Dress the Villager with a random hat and give it hat trades #
-######################################################################
+# as: The Villager beeing dressed
+# descr: Dress the Villager with a random hat and give it hat trades
 
 #----------------------#
 # Add optional cat hat #
 #----------------------#
 
 # Equip Villager with random cat (or none)
-loot replace entity @s armor.head loot hats:dress_mobs/villager
+loot replace entity @s armor.head loot hats:dress/villager
 
 # If Villagers has a cat hat, modify helmet drop chances
 execute if data entity @s ArmorItems[3].id run data modify entity @s ArmorDropChances[3] set value 0.0f
