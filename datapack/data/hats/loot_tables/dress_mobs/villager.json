@@ -10,7 +10,7 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat/cats/_rand",
+                    "name": "hats:hat_on_head/cats/_rand",
                     "weight": 11
                 }
             ]
