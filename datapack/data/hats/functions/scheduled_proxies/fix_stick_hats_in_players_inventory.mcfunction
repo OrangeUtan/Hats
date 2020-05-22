@@ -1,1 +1,0 @@
-execute as @a[nbt={Inventory:[{id:"minecraft:stick",tag:{Tags:["is_hat"]}}]}] run function hats:hat_behavior/fix_stick_hats_in_players_inventory
