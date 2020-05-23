@@ -9,5 +9,5 @@ loot replace entity @s weapon.offhand loot hats:trades/villager/profession
 data modify entity @s Offers.Recipes[-1].sell.tag set from entity @s HandItems[1].tag
 
 # Set offer price
-loot replace entity @s weapon.offhand loot hats:trades/villager/special_price
+loot replace entity @s weapon.offhand loot hats:trades/villager/profession_price
 data modify entity @s Offers.Recipes[-1].buy set from entity @s HandItems[1]
