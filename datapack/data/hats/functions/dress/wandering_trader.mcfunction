@@ -1,18 +1,8 @@
 # as: The Wandering Trader beeing dressed
 # Descr: Dress the Wandering Trader with a random hat and give it hat trades
 
-#----------------------#
-# Add optional cat hat #
-#----------------------#
-
-# Equip Wandering Trader with random cat (or none)
-loot replace entity @s armor.head loot hats:dress/wandering_trader
-
-# If Wandering Trader has a cat hat, modify helmet drop chances
-execute if data entity @s ArmorItems[3].id run data modify entity @s ArmorDropChances[3] set value 0.0f
-
-# If Wandering Trader has a cat hat, add that cat as a trade
-execute if data entity @s ArmorItems[3].id run function hats:dress/villager/add_fav_cat_trade
+# Add optional favorite cat hat
+execute if predicate hats:wandering_trader/chance_has_fav_cat run function hats:dress/wandering_trader/add_fav_cat
 
 #----------------------------------------------#
 # Give Wandering Trader optional special trade #

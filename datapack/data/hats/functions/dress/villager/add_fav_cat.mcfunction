@@ -1,5 +1,5 @@
 # Add tag to indicate that the villager has a favorite cat
-tag @s add hats.villager.has_fav_cat
+tag @s add hats.mob.has_fav_cat
 
 # Equip a favorite cat, depending on the biome
 loot replace entity @s armor.head loot hats:dress/villager_favorite_cat
