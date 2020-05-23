@@ -1,0 +1,235 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "hats:villager/is_type_desert"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 12
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/black"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/persian"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/red"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "hats:villager/is_type_jungle"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 12
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/calico"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/ocelot"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/red"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "hats:villager/is_type_plains"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 16
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/british_shorthair"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/calico"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/red"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/tuxedo"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "hats:villager/is_type_savanna"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 16
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/calico"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/ocelot"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/persian"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/red"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "hats:villager/is_type_snow"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 16
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/jellie"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/ragdoll"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/tabby"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/white"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "hats:villager/is_type_swamp"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 12
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/black"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/jellie"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/tabby"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "hats:villager/is_type_taiga"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 16
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/british_shorthair"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/jellie"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/siamese"
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/cats/tabby"
+                }
+            ]
+        }
+    ]
+}
