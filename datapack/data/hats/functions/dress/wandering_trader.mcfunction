@@ -1,15 +1,12 @@
-##############################################################################
-# as: Wandering Trader                                                       #
-# from: hats:dress_mobs_with_hats                                            #
-# Descr: Dress the Wandering Trader with a random hat and give it hat trades #
-##############################################################################
+# as: The Wandering Trader beeing dressed
+# Descr: Dress the Wandering Trader with a random hat and give it hat trades
 
 #----------------------#
 # Add optional cat hat #
 #----------------------#
 
 # Equip Wandering Trader with random cat (or none)
-loot replace entity @s armor.head loot hats:dress_mobs/wandering_trader
+loot replace entity @s armor.head loot hats:dress/wandering_trader
 
 # If Wandering Trader has a cat hat, modify helmet drop chances
 execute if data entity @s ArmorItems[3].id run data modify entity @s ArmorDropChances[3] set value 0.0f
