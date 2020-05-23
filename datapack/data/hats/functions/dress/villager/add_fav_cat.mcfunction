@@ -1,5 +1,5 @@
 # Add tag to indicate that the villager has a favorite cat
-tag @s add hats.villager.has_fav_cat
+tag @s add hats.mob.has_fav_cat
 
 # Equip a favorite cat, depending on the biome
 loot replace entity @s armor.head loot hats:dress/villager_favorite_cat
@@ -8,4 +8,4 @@ loot replace entity @s armor.head loot hats:dress/villager_favorite_cat
 data modify entity @s ArmorDropChances[3] set value 0.0f
 
 # Add trade for favorite cat
-function hats:add_trades/favorite_cat
+function hats:dress/villager/add_fav_cat_trade
