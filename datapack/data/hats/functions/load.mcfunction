@@ -7,9 +7,12 @@
 # Add Scoreboards #
 #-----------------#
 
-# Used for random price
 scoreboard objectives add hats_min_price dummy
 scoreboard objectives add hats_max_price dummy
+scoreboard objectives add hats_math dummy
+
+# Initialise random number generator
+function hats:math/lcg_init
 
 #---------------------------------------#
 # Start repeating 'dress_mobs' function #
