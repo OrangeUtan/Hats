@@ -6,7 +6,7 @@ data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:emerald", 
 data modify entity @s Offers.Recipes[-1].sell.tag merge from entity @s HandItems[1].tag
 
 # Set offer price
-loot replace entity @s weapon.offhand loot hats:trades/prices/villager_special
+loot replace entity @s weapon.offhand loot hats:trades/villager/special_price
 data modify entity @s Offers.Recipes[-1].buy set from entity @s HandItems[1]
 
 # Clean up

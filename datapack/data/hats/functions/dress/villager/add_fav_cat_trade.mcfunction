@@ -8,5 +8,5 @@ data modify entity @s Offers.Recipes append value {sell:{id:"minecraft:leather_h
 data modify entity @s Offers.Recipes[-1].sell.tag set from entity @s ArmorItems[3].tag
 
 # Set offer price
-loot replace entity @s weapon.offhand loot hats:trades/prices/villager_fav_cat
+loot replace entity @s weapon.offhand loot hats:trades/villager/fav_cat_price
 data modify entity @s Offers.Recipes[-1].buy set from entity @s HandItems[1]
