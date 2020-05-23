@@ -8,4 +8,4 @@ loot replace entity @s armor.head loot hats:dress/villager_favorite_cat
 data modify entity @s ArmorDropChances[3] set value 0.0f
 
 # Add trade for favorite cat
-function hats:add_trades/favorite_cat
+function hats:dress/villager/add_fav_cat_trade
