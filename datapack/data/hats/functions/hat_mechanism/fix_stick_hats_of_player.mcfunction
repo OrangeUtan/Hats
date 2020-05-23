@@ -15,7 +15,7 @@ data modify storage minecraft:hats buffer.hotbar append from storage minecraft:h
 data modify storage minecraft:hats buffer.hotbar append from storage minecraft:hats buffer.all[{Slot:7b}]
 data modify storage minecraft:hats buffer.hotbar append from storage minecraft:hats buffer.all[{Slot:8b}]
 
-execute if data storage minecraft:hats buffer.hotbar[{id:"minecraft:stick", tag:{Tags:["is_hat"]}}] run function hats:hat_behavior/fix_stick_hats_in_players_hotbar
+execute if data storage minecraft:hats buffer.hotbar[{id:"minecraft:stick", tag:{Tags:["is_hat"]}}] run function hats:hat_mechanism/fix_stick_hats_in_players_hotbar
 
 # Extract items in inventory from buffer.all
 data modify storage minecraft:hats buffer.inventory append from storage minecraft:hats buffer.all[{Slot:9b}]
@@ -46,7 +46,7 @@ data modify storage minecraft:hats buffer.inventory append from storage minecraf
 data modify storage minecraft:hats buffer.inventory append from storage minecraft:hats buffer.all[{Slot:34b}]
 data modify storage minecraft:hats buffer.inventory append from storage minecraft:hats buffer.all[{Slot:35b}]
 
-execute if data storage minecraft:hats buffer.inventory[{id:"minecraft:stick", tag:{Tags:["is_hat"]}}] run function hats:hat_behavior/fix_stick_hats_in_players_inventory
+execute if data storage minecraft:hats buffer.inventory[{id:"minecraft:stick", tag:{Tags:["is_hat"]}}] run function hats:hat_mechanism/fix_stick_hats_in_players_inventory
 
 # Clean up
 setblock ~ 0 ~ minecraft:air
