@@ -1,0 +1,87 @@
+{
+	"type": "minecraft:generic",
+	"pools": [
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"nbt": "{VillagerData:{profession:\"minecraft:armorer\"}}"
+					}
+				}
+			],
+			"rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/villager/armorer"
+                }
+            ]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"nbt": "{VillagerData:{profession:\"minecraft:farmer\"}}"
+					}
+				}
+			],
+			"rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/villager/farmer"
+                }
+            ]
+			
+		},
+		{
+			"conditions": [
+				
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"nbt": "{VillagerData:{profession:\"minecraft:librarian\"}}"
+					}
+				}
+			],
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "hats:hat_on_head/glasses/half_rim"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "hats:hat_on_head/glasses/rainbow"
+				},
+				{
+					"type": "minecraft:loot_table",
+					"name": "hats:hat_on_head/glasses/librarian"
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"nbt": "{VillagerData:{profession:\"minecraft:toolsmith\"}}"
+					}
+				}
+			],
+			"rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/frying_pan"
+                }
+            ]
+		}
+	]
+}
