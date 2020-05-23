@@ -1,18 +1,8 @@
 # as: The Villager beeing dressed
 # descr: Dress the Villager with a random hat and give it hat trades
 
-#----------------------#
-# Add optional cat hat #
-#----------------------#
-
-# Equip Villager with random cat (or none)
-loot replace entity @s armor.head loot hats:dress/villager_favorite_cat
-
-# If Villagers has a cat hat, modify helmet drop chances
-execute if data entity @s ArmorItems[3].id run data modify entity @s ArmorDropChances[3] set value 0.0f
-
-# If Villager has a cat hat, add that cat as a trade
-execute if data entity @s ArmorItems[3].id run function hats:add_trades/favorite_cat
+# Add optional favorite cat hat
+execute if predicate hats:villager/chance_has_fav_cat run function hats:dress/villager_fav_cat
 
 #-------------------------------------------------------------#
 # Give Villager optinal special trade depending on profession #
