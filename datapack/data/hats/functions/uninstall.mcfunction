@@ -1,8 +1,5 @@
 # descr: Remove all Hats related from the world
 
-# Remove Scoreboards
-# scoreboard objectives remove hats_math
-
 # Remove storage
 data remove storage minecraft:hats buffer
 
