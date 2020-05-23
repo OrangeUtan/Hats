@@ -7,12 +7,6 @@ data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:emerald", 
 # Set the sell item of the template offer to the cat hat on the Wandering Traders head
 data modify entity @s Offers.Recipes[-1].sell.tag set from entity @s ArmorItems[3].tag
 
-# Set random price
-scoreboard players set @s hats_min_price 15
-scoreboard players set @s hats_max_price 30
-
-loot replace entity @s weapon.offhand loot hats:trades/rand_price
-data modify entity @s Offers.Recipes[-1].buy.Count set from entity @s HandItems[1].Count
-
-scoreboard players reset @s hats_min_price
-scoreboard players reset @s hats_max_price
+# Set offer price
+loot replace entity @s weapon.offhand loot hats:trades/wandering_trader/fav_cat_price
+data modify entity @s Offers.Recipes[-1].buy set from entity @s HandItems[1]
