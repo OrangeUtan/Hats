@@ -5,66 +5,42 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "empty",
-                    "weight": 60
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/tophats/light_gray"
                 },
                 {
-                    "type": "group",
-                    "name": "tophats",
-                    "children": [
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/tophats/light_gray"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/tophats/cyan"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/tophats/purple"
-                        },
-                        {
-                            "weight": 1,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/tophats/blue"
-                        }
-                    ]
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/tophats/cyan"
                 },
                 {
-                    "type": "group",
-                    "name": "glasses",
-                    "children": [
-                        {
-                            "weight": 4,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/glasses/harry_potter"
-                        }
-                    ]
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/tophats/purple"
                 },
                 {
-                    "type": "group",
-                    "name": "accessories",
-                    "children": [
-                        {
-                            "weight": 4,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/accessories/steve_mask"
-                        },
-                        {
-                            "weight": 4,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/accessories/alex_mask"
-                        },
-                        {
-                            "weight": 4,
-                            "type": "minecraft:loot_table",
-                            "name": "hats:hat_on_head/accessories/googly_eyes"
-                        }
-                    ]
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/tophats/blue"
+                },
+                
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/glasses/harry_potter"
+                },
+
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/accessories/steve_mask"
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/accessories/alex_mask"
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/accessories/googly_eyes"
                 }
             ]
         }
