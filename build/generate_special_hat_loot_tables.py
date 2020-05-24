@@ -73,5 +73,5 @@ for category_name, category_hats in registry.categories():
 		generate_loot_table_all_for_category(category_name, category_hats, 'hat')
 		generate_loot_table_rand_for_category(category_name, category_hats, 'hat')
 
-		if category_name == 'cats':
+		if category_name == 'cats' or category_name == 'villager':
 			generate_loot_table_rand_for_category(category_name, category_hats, 'hat_on_head')
