@@ -44,9 +44,15 @@
                 },
 
                 {
-                    "weight": 2,
+                    "weight": 4,
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/halloween/jason_mask"
+                    "name": "hats:hat_on_head/halloween/jason_mask",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:reference",
+                            "name": "hats:is_spooky_hours"
+                        }
+                    ]
                 },
 
                 {
@@ -61,7 +67,7 @@
                             }
                         }
                     ]
-                }
+                }                
             ]
         }
     ]
