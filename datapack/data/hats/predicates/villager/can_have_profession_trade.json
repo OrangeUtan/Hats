@@ -28,6 +28,13 @@
 			"predicate": {
 				"nbt": "{VillagerData:{profession:\"minecraft:toolsmith\"}}"
 			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"nbt": "{VillagerData:{profession:\"minecraft:cartographer\"}}"
+			}
 		}
 	]
 }

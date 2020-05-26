@@ -82,6 +82,24 @@
                     "name": "hats:hat_on_head/frying_pan"
                 }
             ]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"nbt": "{VillagerData:{profession:\"minecraft:cartographer\"}}"
+					}
+				}
+			],
+			"rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "hats:hat_on_head/tophats/black_monocle"
+                }
+            ]
 		}
 	]
 }
