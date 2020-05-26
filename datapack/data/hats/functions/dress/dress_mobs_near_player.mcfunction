@@ -7,7 +7,7 @@ execute as @e[type=skeleton,distance=0..64,tag=!hats.mob.dont_dress,nbt=!{ArmorI
 execute as @e[type=drowned,distance=0..64,tag=!hats.mob.dont_dress,nbt=!{ArmorItems:[{},{},{},{Count:1b}]}] at @s run function hats:dress/drowned
 execute as @e[type=stray,distance=0..64,tag=!hats.mob.dont_dress,nbt=!{ArmorItems:[{},{},{},{Count:1b}]}] at @s run function hats:dress/stray
 execute as @e[type=wandering_trader,distance=0..64,tag=!hats.mob.dont_dress] at @s run function hats:dress/wandering_trader
-execute as @e[type=zombie_pigman,distance=0..64,tag=!hats.mob.dont_dress,nbt=!{ArmorItems:[{},{},{},{Count:1b}]}] at @s run function hats:dress/zombie_pigman
+execute as @e[type=minecraft:vindicator,distance=0..64,tag=!hats.mob.dont_dress,nbt=!{ArmorItems:[{},{},{},{Count:1b}]}] at @s run function hats:dress/vindicator
 
 # Only dress Villagers with a profession
 execute as @e[type=villager,distance=0..64,tag=!hats.mob.dont_dress,nbt=!{VillagerData:{profession:"minecraft:none"}}] at @s run function hats:dress/villager
