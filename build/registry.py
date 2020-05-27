@@ -38,7 +38,12 @@ class Registry:
 			model = f"item/hats/{categorized_name.format('/')}"
 			type = f"hats.hat.type.{categorized_name.format('.')}"
 			translation = f"item.hats.{categorized_name.format('.')}"
-			yield Hat(hat_name, category_name, custom_model_data, model, type, translation)
+			
+			lore = None
+			if "num_lore_lines" in hat_data:
+				lore = [f"item.hats.{categorized_name.format('.')}.lore{i+1}" for i in range(hat_data.get("num_lore_lines", 0))]
+				
+			yield Hat(hat_name, category_name, custom_model_data, model, type, translation, lore)
 
 	@classmethod
 	def _parse_root_items(cls, registry):
@@ -64,6 +69,7 @@ class Hat:
 	model_path: str
 	type: str
 	translation: str
+	lore: list
 
 def load_yaml_file(path):
 	with open(path) as file:

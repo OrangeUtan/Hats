@@ -7,22 +7,32 @@ def hat_loot_table(hat, base_item):
 	else:
 		translation = f"{hat.category}.{hat.name}"
 
+	functions = [
+		{
+			"function": "minecraft:set_name",
+			"name": {
+				"translate": f"item.hats.{translation}.name"
+			}
+		},
+		{
+			"function": "set_nbt",
+			"tag": f'{{CustomModelData:{hat.custom_model_data}, Tags:["is_hat", "hats.hat", "{hat.type}"]}}'
+		}
+	]
+
+	# Add lore lines if any exist
+	if hat.lore:
+		lines = [{"translate": f"{line}"} for line in hat.lore]
+		functions.append({
+			"function": "minecraft:set_lore",
+			"lore": lines
+		})
+
 	return {
     	"type": "minecraft:generic",
    		"pools": [
 			{
-				"functions": [
-					{
-						"function": "minecraft:set_name",
-						"name": {
-							"translate": f"item.hats.{translation}.name"
-						}
-					},
-					{
-						"function": "set_nbt",
-						"tag": f'{{CustomModelData:{hat.custom_model_data}, Tags:["is_hat", "hats.hat", "{hat.type}"]}}'
-					}
-				],
+				"functions": functions,
 				"rolls": 1,
 				"entries": [
 					{
@@ -34,9 +44,6 @@ def hat_loot_table(hat, base_item):
 			}
 		]
 	}
-
-hats_root_model = "resourcepack/assets/minecraft/models/item/leather_helmet.json"
-hats_on_head_root_model = "resourecpack/assets/minecraft/models/item/stick.json"
 
 registry = Registry()
 hats = list(registry.all_hats())
