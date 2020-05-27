@@ -29,16 +29,15 @@ class Registry:
 	def _parse_hats(cls, category_name, json_hats):
 		for hat_name, hat_data in map(lambda category_entry: list(category_entry.items())[0], json_hats):
 			custom_model_data = hat_data['custom_model_data']
-			
+
 			if category_name == "*":
-				# Category "*" contains all uncategorized hats -> don't add a category to any paths
-				model = f"item/hats/{hat_name}"
-				type = f"hats.hat.type.{hat_name}"
-				translation = f"item.hats.{hat_name}"
+				categorized_name = f"{hat_name}"
 			else:
-				model = f"item/hats/{category_name}/{hat_name}"
-				type = f"hats.hat.type.{category_name}.{hat_name}"
-				translation = f"item.hats.{category_name}.{hat_name}"
+				categorized_name = f"{category_name}{{0}}{hat_name}"
+			
+			model = f"item/hats/{categorized_name.format('/')}"
+			type = f"hats.hat.type.{categorized_name.format('.')}"
+			translation = f"item.hats.{categorized_name.format('.')}"
 			yield Hat(hat_name, category_name, custom_model_data, model, type, translation)
 
 	@classmethod
