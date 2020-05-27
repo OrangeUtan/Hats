@@ -75,3 +75,22 @@ categories:
       - wiggly_ghast: { custom_model_data: 7773180 }
       - native_american_headband: { custom_model_data: 7773181 }
       - jason_mask: { custom_model_data: 7773182 }
+
+overwritten-item-models:
+    normal:
+        id: "minecraft:leather_helmet"
+        model: {
+            parent: "item/generated",
+            textures: {
+                layer0: "item/leather_helmet",
+                layer1: "item/leather_helmet_overlay"
+            }
+        }
+    on_head: 
+        id: "minecraft:stick"
+        model: {
+            parent: "item/handheld",
+            textures: {
+                layer0: "item/stick"
+            }
+        }
