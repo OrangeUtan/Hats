@@ -17,9 +17,9 @@
 	"advancements.hats.tophats.get_monocle.title": "Extra fancy",
 	"advancements.hats.tophats.get_monocle.description": "Obtain the monocle Tophat",
 
-	"advancements.hats.glasses.root.title": "Blindness cured",
-	"advancements.hats.glasses.root.description": "Help yourself to some glasses",
-	"advancements.hats.glasses.collect_all.title": "5D vision",
+	"advancements.hats.glasses.root.title": "+20 Vision",
+	"advancements.hats.glasses.root.description": "Expand your horizon",
+	"advancements.hats.glasses.collect_all.title": "Open your third eye",
 	"advancements.hats.glasses.collect_all.description": "Collect all glasses",
 
 	"advancements.hats.player_masks.title": "Not suspicious",
@@ -34,7 +34,8 @@
 
 	"item.hats.fez.name": "Fez",
 	"item.hats.squid.name": "Squid",
-	"item.hats.arrow.name": "Arrow Prop",
+	"item.hats.arrow.name": "Fake Arrow",
+	"item.hats.arrow.lore1": ">>-o.o->",
 	"item.hats.frying_pan.name": "Frying Pan",
 
 	"item.hats.cats.ocelot.name": "Ocelot",
@@ -78,7 +79,9 @@
 
 	"item.hats.accessories.ninja_headband.name": "Ninja Headband",
 	"item.hats.accessories.steve_mask.name": "Steve Mask",
+	"item.hats.accessories.steve_mask.lore1": "Greetings fellow Player",
 	"item.hats.accessories.alex_mask.name": "Alex Mask",
+	"item.hats.accessories.alex_mask.lore1": "Greetings fellow Player",
 	"item.hats.accessories.snorkel_mask_blue.name": "Blue Snorkel Mask",
 	"item.hats.accessories.snorkel_mask_red.name": "Red Snorkel Mask",
 	"item.hats.accessories.googly_eyes.name": "Googly Eyes",
@@ -86,6 +89,7 @@
 	"item.hats.villager.armorer.name": "Armorer Mask",
 	"item.hats.villager.farmer.name": "Farmers Strawhat",
 	"item.hats.villager.nose.name": "Villager Nose",
+	"item.hats.villager.nose.lore1": "Got your nose :P",
 
 	"item.hats.mario.mario_cap.name": "Mario Cap",
 	"item.hats.mario.luigi_cap.name": "Luigi Cap",

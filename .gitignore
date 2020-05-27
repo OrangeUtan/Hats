@@ -1,2 +1,3 @@
 .datapack
 build/__pycache__
+*.pyc

@@ -1,0 +1,96 @@
+categories:
+  - "*":
+      - fez: { custom_model_data: 3000 }
+      - squid: { custom_model_data: 3001 }
+      - arrow: { custom_model_data: 3002, num_lore_lines: 1 }
+      - frying_pan: { custom_model_data: 3003 }
+
+  - tophats:
+      - white: { custom_model_data: 3100 }
+      - orange: { custom_model_data: 3101 }
+      - magenta: { custom_model_data: 3102 }
+      - light_blue: { custom_model_data: 3103 }
+      - yellow: { custom_model_data: 3104 }
+      - lime: { custom_model_data: 3105 }
+      - pink: { custom_model_data: 3106 }
+      - gray: { custom_model_data: 3107 }
+      - light_gray: { custom_model_data: 3108 }
+      - cyan: { custom_model_data: 3109 }
+      - purple: { custom_model_data: 3110 }
+      - blue: { custom_model_data: 3111 }
+      - brown: { custom_model_data: 3112 }
+      - green: { custom_model_data: 3113 }
+      - red: { custom_model_data: 3114 }
+      - black: { custom_model_data: 3115 }
+      - rainbow: { custom_model_data: 3116 }
+      - black_monocle: { custom_model_data: 3117 }
+
+  - cats:
+      - ocelot: { custom_model_data: 3120 }
+      - tabby: { custom_model_data: 3121 }
+      - tuxedo: { custom_model_data: 3122 }
+      - red: { custom_model_data: 3123 }
+      - siamese: { custom_model_data: 3124 }
+      - british_shorthair: { custom_model_data: 3125 }
+      - calico: { custom_model_data: 3126 }
+      - persian: { custom_model_data: 3127 }
+      - ragdoll: { custom_model_data: 3128 }
+      - white: { custom_model_data: 3129 }
+      - jellie: { custom_model_data: 3130 }
+      - black: { custom_model_data: 3131 }
+
+  - glasses:
+      - sunglasses: { custom_model_data: 3140 }
+      - harry_potter: { custom_model_data: 3141 }
+      - half_rim: { custom_model_data: 3142 }
+      - rainbow: { custom_model_data: 3143 }
+      - librarian: { custom_model_data: 3144 }
+      - three_d: { custom_model_data: 3145 }
+
+  - accessories:
+      - ninja_headband: { custom_model_data: 3150 }
+      - steve_mask: { custom_model_data: 3151, num_lore_lines: 1 }
+      - alex_mask: { custom_model_data: 3152, num_lore_lines: 1 }
+      - snorkel_mask_blue: { custom_model_data: 3153 }
+      - snorkel_mask_red: { custom_model_data: 3154 }
+      - googly_eyes: { custom_model_data: 3155 }
+
+  - villager:
+      - armorer: { custom_model_data: 3160 }
+      - farmer: { custom_model_data: 3161 }
+      - nose: { custom_model_data: 3162, num_lore_lines: 1 }
+
+  - mario:
+      - mario_cap: { custom_model_data: 3170 }
+      - luigi_cap: { custom_model_data: 3171 }
+      - cappy: { custom_model_data: 3172 }
+      - toad_red: { custom_model_data: 3173 }
+      - toad_blue: { custom_model_data: 3174 }
+      - toad_yellow: { custom_model_data: 3175 }
+      - toad_green: { custom_model_data: 3176 }
+      - mario: { custom_model_data: 3177 }
+      - luigi: { custom_model_data: 3178 }
+
+  - halloween:
+      - wiggly_ghast: { custom_model_data: 7773180 }
+      - native_american_headband: { custom_model_data: 7773181 }
+      - jason_mask: { custom_model_data: 7773182 }
+
+overwritten-item-models:
+    normal:
+        id: "minecraft:leather_helmet"
+        model: {
+            parent: "item/generated",
+            textures: {
+                layer0: "item/leather_helmet",
+                layer1: "item/leather_helmet_overlay"
+            }
+        }
+    on_head: 
+        id: "minecraft:stick"
+        model: {
+            parent: "item/handheld",
+            textures: {
+                layer0: "item/stick"
+            }
+        }

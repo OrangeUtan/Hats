@@ -1,0 +1,34 @@
+{
+	"parent" : "hats:root",
+	"display" : {
+		"icon": {
+			"item": "minecraft:air"
+		},
+		"title" : {
+			"translate": ""
+		},
+		"description" : {
+			"translate": ""
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true
+	},
+	"criteria" : {
+		"player_received_helmet_hat" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ 
+						"item": "minecraft:leather_helmet",
+						"nbt": "{Tags:[\"is_hat\"]}" 
+					}
+				]
+			}
+		}
+	},
+	"requirements" : [["player_received_helmet_hat"]],
+	"rewards": {
+		"function": "hats:triggers/player_received_helmet_hat"
+	}
+}

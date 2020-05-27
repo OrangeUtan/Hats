@@ -1,10 +1,10 @@
-########################################
-# Descr: Remove all Hats related stuff #
-########################################
+# descr: Remove all Hats related from the world
 
-#--------------------#
-# Remove Scoreboards #
-#--------------------#
+# Remove storage
+data remove storage minecraft:hats buffer
 
-scoreboard objectives remove hats_min_price
-scoreboard objectives remove hats_max_price
+# Remove advancements
+advancement revoke @a from hats:root
+
+# Goodbye
+tellraw @s {"text":"Uninstalled Hats Datapack. Items have to be removed manually","color":"dark_red"}
