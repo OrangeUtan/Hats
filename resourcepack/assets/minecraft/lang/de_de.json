@@ -1,0 +1,103 @@
+{
+	"advancements.hats.root.title": "Hats",
+	"advancements.hats.root.description": "Sammel sie alle!",
+
+	"advancements.hats.fez.title": "Fez",
+	"advancements.hats.fez.description": "",
+
+	"advancements.hats.cats.root.title": "Pelzige Freunde",
+	"advancements.hats.cats.root.description": "Finde einen pelzigen Freund",
+	"advancements.hats.cats.collect_all.title": "Verrückt nach Katzen",
+	"advancements.hats.cats.collect_all.description": "Sammel alle Katzen",
+
+	"advancements.hats.tophats.root.title": "Gehobene Kreise",
+	"advancements.hats.tophats.root.description": "Karrierestart mit Zylinder",
+	"advancements.hats.tophats.collect_all_colors.title": "Hochadel",
+	"advancements.hats.tophats.collect_all_colors.description": "Sammel alle Zylinder Farben",
+	"advancements.hats.tophats.get_monocle.title": "Besonders ausgefallen",
+	"advancements.hats.tophats.get_monocle.description": "Erhalte einen Zylinder mit Monokel",
+
+	"advancements.hats.glasses.root.title": "+20 Sichtweite",
+	"advancements.hats.glasses.root.description": "Erweitere deinen Horizont",
+	"advancements.hats.glasses.collect_all.title": "Öffne dein 3. Auge",
+	"advancements.hats.glasses.collect_all.description": "Sammel alle Brillen",
+
+	"advancements.hats.player_masks.title": "Nein. Überhaupt nicht auffällig.",
+	"advancements.hats.player_masks.description": "Tarne dich",
+
+	"advancements.hats.mario.root.title": "Wahooo!",
+	"advancements.hats.mario.root.description": "Erhalte einen Mario Hut",
+	"advancements.hats.mario.collect_all.title": "1UP!",
+	"advancements.hats.mario.collect_all.description": "Sammel alle Mario Hüte",
+
+
+
+	"item.hats.fez.name": "Fez",
+	"item.hats.squid.name": "Tintenfisch",
+	"item.hats.arrow.name": "Pfeil Attrape",
+	"item.hats.frying_pan.name": "Bratpfanne",
+
+	"item.hats.cats.ocelot.name": "Ozelot",
+	"item.hats.cats.tabby.name": "Getigerte Katze",
+	"item.hats.cats.tuxedo.name": "Schwarze Katze",
+	"item.hats.cats.red.name": "Rote Katze",
+	"item.hats.cats.siamese.name": "Siam Katze",
+	"item.hats.cats.british_shorthair.name": "Britisch-Kurzhaar",
+	"item.hats.cats.calico.name": "Calico",
+	"item.hats.cats.persian.name": "Perser",
+	"item.hats.cats.ragdoll.name": "Ragdoll",
+	"item.hats.cats.white.name": "Weiße Katze",
+	"item.hats.cats.jellie.name": "Jellie",
+	"item.hats.cats.black.name": "Panther Katze",
+
+	"item.hats.tophats.white.name": "Weißer Zylinder",
+	"item.hats.tophats.orange.name": "Oranger Zylinder",
+	"item.hats.tophats.magenta.name": "Magenta Zylinder",
+	"item.hats.tophats.light_blue.name": "Hellblauer Zylinder",
+	"item.hats.tophats.yellow.name": "Gelber Zylinder",
+	"item.hats.tophats.lime.name": "Hellgrüner Zylinder",
+	"item.hats.tophats.pink.name": "Rosa Zylinder",
+	"item.hats.tophats.gray.name": "Grauer Zylinder",
+	"item.hats.tophats.light_gray.name": "Hellgrau Zylinder",
+	"item.hats.tophats.cyan.name": "Türkiser Zylinder",
+	"item.hats.tophats.purple.name": "Violetter Zylinder",
+	"item.hats.tophats.blue.name": "Blauer Zylinder",
+	"item.hats.tophats.brown.name": "Brauner Zylinder",
+	"item.hats.tophats.green.name": "Grüner Zylinder",
+	"item.hats.tophats.red.name": "Roter Zylinder",
+	"item.hats.tophats.black.name": "Schwarzer Zylinder",
+	"item.hats.tophats.rainbow.name": "Regenbogen Zylinder",
+	"item.hats.tophats.black_monocle.name": "Zylinder mit Monokel",
+
+	"item.hats.glasses.sunglasses.name": "Sonnenbrille",
+	"item.hats.glasses.harry_potter.name": "Harry Potter Brille",
+	"item.hats.glasses.half_rim.name": "Halbrandbrille",
+	"item.hats.glasses.rainbow.name": "Regenbogenbrille",
+	"item.hats.glasses.librarian.name": "Bibliothekaren Brille",
+	"item.hats.glasses.three_d.name": "3D Brille",
+
+	"item.hats.accessories.ninja_headband.name": "Ninja Stirnband",
+	"item.hats.accessories.steve_mask.name": "Steve Maske",
+	"item.hats.accessories.alex_mask.name": "Alex Maske",
+	"item.hats.accessories.snorkel_mask_blue.name": "Blaue Schnorchelmaske",
+	"item.hats.accessories.snorkel_mask_red.name": "Rote Schnorchelmaske",
+	"item.hats.accessories.googly_eyes.name": "Wackelaugen",
+
+	"item.hats.villager.armorer.name": "Rüstungsschmied Visier",
+	"item.hats.villager.farmer.name": "Bauern Strohhut",
+	"item.hats.villager.nose.name": "Dorfbewohner Nase",
+
+	"item.hats.mario.mario_cap.name": "Mario Kappe",
+	"item.hats.mario.luigi_cap.name": "Luigi Kappe",
+	"item.hats.mario.cappy.name": "Cappy",
+	"item.hats.mario.toad_red.name": "Roter Toad",
+	"item.hats.mario.toad_blue.name": "Blauer Toad",
+	"item.hats.mario.toad_yellow.name": "Gelber Toad",
+	"item.hats.mario.toad_green.name": "Grüner Toad",
+	"item.hats.mario.mario.name": "Mario Cosplay",
+	"item.hats.mario.luigi.name": "Luigi Cosplay",
+
+	"item.hats.halloween.wiggly_ghast.name": "Wackelnder Geist",
+	"item.hats.halloween.native_american_headband.name": "Indianer Kopfband",
+	"item.hats.halloween.jason_mask.name": "Jason Maske"
+}

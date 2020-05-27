@@ -17,9 +17,9 @@
 	"advancements.hats.tophats.get_monocle.title": "Extra fancy",
 	"advancements.hats.tophats.get_monocle.description": "Obtain the monocle Tophat",
 
-	"advancements.hats.glasses.root.title": "Blindness cured",
-	"advancements.hats.glasses.root.description": "Help yourself to some glasses",
-	"advancements.hats.glasses.collect_all.title": "5D vision",
+	"advancements.hats.glasses.root.title": "+20 Vision",
+	"advancements.hats.glasses.root.description": "Expand your horizon",
+	"advancements.hats.glasses.collect_all.title": "Open your third eye",
 	"advancements.hats.glasses.collect_all.description": "Collect all glasses",
 
 	"advancements.hats.player_masks.title": "Not suspicious",
@@ -34,7 +34,7 @@
 
 	"item.hats.fez.name": "Fez",
 	"item.hats.squid.name": "Squid",
-	"item.hats.arrow.name": "Arrow Prop",
+	"item.hats.arrow.name": "Fake Arrow",
 	"item.hats.frying_pan.name": "Frying Pan",
 
 	"item.hats.cats.ocelot.name": "Ocelot",
