@@ -35,6 +35,7 @@
 	"item.hats.fez.name": "Fez",
 	"item.hats.squid.name": "Squid",
 	"item.hats.arrow.name": "Fake Arrow",
+	"item.hats.arrow.lore1": ">>-o.o->",
 	"item.hats.frying_pan.name": "Frying Pan",
 
 	"item.hats.cats.ocelot.name": "Ocelot",
@@ -78,7 +79,9 @@
 
 	"item.hats.accessories.ninja_headband.name": "Ninja Headband",
 	"item.hats.accessories.steve_mask.name": "Steve Mask",
+	"item.hats.accessories.steve_mask.lore1": "Greetings fellow Player",
 	"item.hats.accessories.alex_mask.name": "Alex Mask",
+	"item.hats.accessories.alex_mask.lore1": "Greetings fellow Player",
 	"item.hats.accessories.snorkel_mask_blue.name": "Blue Snorkel Mask",
 	"item.hats.accessories.snorkel_mask_red.name": "Red Snorkel Mask",
 	"item.hats.accessories.googly_eyes.name": "Googly Eyes",
@@ -86,6 +89,7 @@
 	"item.hats.villager.armorer.name": "Armorer Mask",
 	"item.hats.villager.farmer.name": "Farmers Strawhat",
 	"item.hats.villager.nose.name": "Villager Nose",
+	"item.hats.villager.nose.lore1": "Got your nose :P",
 
 	"item.hats.mario.mario_cap.name": "Mario Cap",
 	"item.hats.mario.luigi_cap.name": "Luigi Cap",

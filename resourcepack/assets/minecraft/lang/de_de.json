@@ -35,6 +35,7 @@
 	"item.hats.fez.name": "Fez",
 	"item.hats.squid.name": "Tintenfisch",
 	"item.hats.arrow.name": "Pfeil Attrape",
+	"item.hats.arrow.lore1": ">>-o.o->",
 	"item.hats.frying_pan.name": "Bratpfanne",
 
 	"item.hats.cats.ocelot.name": "Ozelot",
@@ -78,7 +79,9 @@
 
 	"item.hats.accessories.ninja_headband.name": "Ninja Stirnband",
 	"item.hats.accessories.steve_mask.name": "Steve Maske",
+	"item.hats.accessories.steve_mask.lore1": "Tag 30: Status \"Unentdeckt\"",
 	"item.hats.accessories.alex_mask.name": "Alex Maske",
+	"item.hats.accessories.alex_mask.lore1": "Tag 30: Status \"Unentdeckt\"",
 	"item.hats.accessories.snorkel_mask_blue.name": "Blaue Schnorchelmaske",
 	"item.hats.accessories.snorkel_mask_red.name": "Rote Schnorchelmaske",
 	"item.hats.accessories.googly_eyes.name": "Wackelaugen",
@@ -86,6 +89,7 @@
 	"item.hats.villager.armorer.name": "Rüstungsschmied Visier",
 	"item.hats.villager.farmer.name": "Bauern Strohhut",
 	"item.hats.villager.nose.name": "Dorfbewohner Nase",
+	"item.hats.villager.nose.lore1": "Hab deine Nase :P",
 
 	"item.hats.mario.mario_cap.name": "Mario Kappe",
 	"item.hats.mario.luigi_cap.name": "Luigi Kappe",
