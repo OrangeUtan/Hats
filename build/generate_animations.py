@@ -52,6 +52,9 @@ def create_json_animation(animation, frames_dict, sequences_dict, interpolate=Fa
 		if type == "sequence":
 			seq_frames = sequences_dict[ref].generate_frames(duration, frames_dict)
 			for i in range(repeat):
+				if len(frames) > 0 and frames[-1]["index"] == seq_frames[0]["index"]:
+					frames[-1]["time"] += seq_frames[0]["time"]
+					del seq_frames[-1]
 				frames += seq_frames
 		elif type == "frame":
 			frame = {
@@ -59,7 +62,10 @@ def create_json_animation(animation, frames_dict, sequences_dict, interpolate=Fa
 				"time": max(1,duration)
 			}
 			for i in range(repeat):
-				frames.append(frame)
+				if len(frames) > 0 and frames[-1]["index"] == frame["index"]:
+					frames[-1]["time"] += frame["time"]
+				else:
+					frames.append(frame)
 
 	return {
 		"animation": {
