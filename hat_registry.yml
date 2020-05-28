@@ -76,6 +76,9 @@ categories:
       - native_american_headband: { custom_model_data: 7773181 }
       - jason_mask: { custom_model_data: 7773182 }
 
+  - dogs:
+      - dog: {custom_model_data: 7773190 }
+
 overwritten-item-models:
     normal:
         id: "minecraft:leather_helmet"
