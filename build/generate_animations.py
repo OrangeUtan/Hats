@@ -22,15 +22,19 @@ class Sequence:
 
 		total_weight = 0
 		for frame in json:
-			total_weight += frame["weight"]
+			total_weight += frame.get("weight", 0)
 
 		return Sequence(name, total_weight, json)
 
 	def generate_frames(self, duration, frames_dict):
 		gen_frames = []
 		used_duration = 0
-		for frame_ref, weight in map(lambda ref: (ref["frame"], ref["weight"]), self.frame_references):
-			time = max(1,int(weight*duration/self.total_weight))
+		for ref in self.frame_references:
+			frame_ref, weight, time = ref["frame"], ref.get("weight",1), ref.get("time",0)
+
+			if time == 0:
+				time = max(1,int(weight*duration/self.total_weight))
+				
 			used_duration += time
 			gen_frames.append({
 				"index": frames_dict[frame_ref].index,
