@@ -146,6 +146,8 @@ class Animation:
 	out_file: str
 	states: list
 	sequences: list
+	interpolate: bool
+	frametime: int
 
 	@classmethod
 	def from_json(cls, json):
@@ -165,13 +167,13 @@ class Animation:
 		if sequences["root"].is_weighted:
 			raise Exception("Root sequence can't be weighted")
 
-		return Animation(out_file, states, sequences)
+		return Animation(out_file, states, sequences, json.get("interpolate", False), json.get("frametime", 1))
 
 	def to_animation(self):
 		return {
 			"animation": {
-				"interpolate": False,
-				"frametime": 1,
+				"interpolate": self.interpolate,
+				"frametime": self.frametime,
 				"frames": self.sequences["root"].to_frames(self.states, self.sequences)
 			}
 		}
