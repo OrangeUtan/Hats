@@ -10,7 +10,7 @@ def minecraft_item_model_overwrite(custom_model_data, model_path):
 
 registry = Registry()
 hats = list(registry.all_hats())
-overrides = [minecraft_item_model_overwrite(hat.custom_model_data, hat.model_path) for hat in hats]
+overrides = [minecraft_item_model_overwrite(hat.custom_model_data, hat.model_path) for hat in sorted(hats, key=lambda hat: hat.custom_model_data)]
 
 for key, item_model in registry.overwritten_item_models.items():
 	item_model.model["overrides"] = overrides
