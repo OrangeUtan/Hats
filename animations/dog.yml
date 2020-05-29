@@ -1,0 +1,147 @@
+head:
+  texture: item/hats/dogs/head.png
+  states:
+    neutral:
+      index: 0
+      descr: Head in neutral position, eyes open, mouth closed
+    tilted:
+      index: 1
+      descr: Head tilted to the right, eyes open, mouth closed
+    down:
+      index: 2
+      descr: Head down, eyes open, mouth closed
+    blink:
+      index: 3
+      descr: Head down, eyes closed, mouth closed
+    mouth_open:
+      index: 4
+      descr: Head down, eyes open, mouth open
+    one_eye:
+      index: 5
+      descr: Head down, one eye open, mouth closed
+  sequences:
+    blink:
+      - { type: state, ref: blink, duration: 4 }
+    peek:
+      - { type: state, ref: one_eye, duration: 25 }
+    panting:
+        - { type: state, ref: mouth_open, weight: 1}
+        - { type: state, ref: down, duration: 5}
+    panting_n_blinking:
+        - { type: sequence, ref: panting, weight: 1, repeat: 2}
+        - { type: sequence, ref: blink }
+    
+    blinkink:
+        - { type: state, ref: down, weight: 1 }
+        - { type: sequence, ref: blink }
+    asleep:
+      - { type: state, ref: blink, weight: 1 }
+      - { type: sequence, ref: peek }
+      - { type: state, ref: blink, weight: 1 }
+
+    bored: # 840
+      - { type: sequence, ref: blinkink, duration: 120, repeat: 7 }
+    fall_asleep: # 75
+      - { type: state, ref: down, duration: 50 }
+      - { type: sequence, ref: peek }
+    sleep: # 600
+      - { type: sequence, ref: asleep, duration: 600 }
+    wake_up: # 75
+      - { type: sequence, ref: peek }
+      - { type: state, ref: down, duration: 50 }
+    happy: # 600
+      - { type: sequence, ref: panting_n_blinking, duration: 150, repeat: 4}
+    curious:
+        - { type: state, ref: neutral, weight: 1 }
+        - { type: state, ref: tilted, weight: 1 }
+        - { type: state, ref: neutral, weight: 1 }
+        - { type: state, ref: tilted, weight: 15}
+
+    root:
+      - { type: sequence, ref: bored } # 840
+      - { type: sequence, ref: fall_asleep } # 915
+      - { type: sequence, ref: sleep } # 1515
+      - { type: sequence, ref: wake_up } # 1590
+      - { type: sequence, ref: happy } # 2190
+      - { type: sequence, ref: curious, duration: 400} # 2590
+      - { type: state, ref: neutral, duration: 20 } # 2610
+
+tail_n_hindlegs:
+  texture: item/hats/dogs/tail_and_hindlegs.png
+  states:
+    tail_high:
+      index: 0
+      descr: Feet are neutral and tail is in highest position
+    tail_neutral:
+      index: 1
+      descr: Hindlegs and tail are neutral
+    tail_low:
+      index: 2
+      descr: Feet are neutral and tail is in lowest position
+    leg_left_high:
+      index: 3
+      descr: Tail is in lowest position and left leg is high
+    leg_right_high:
+      index: 4
+      descr: Tail is in lowest position and right leg is high
+
+  sequences:
+    kick_legs: # 24
+      - { type: state, ref: leg_left_high, duration: 12 }
+      - { type: state, ref: leg_right_high, duration: 12 }
+    bored: # 200
+      - { type: sequence, ref: kick_legs, repeat: 5 }
+      - { type: state, ref: tail_low, duration: 80 }
+    wag_tail:
+      - { type: state, ref: tail_neutral, weight: 1 }
+      - { type: state, ref: tail_high, weight: 1 }
+    varied_wagging: # 150
+      - { type: sequence, ref: wag_tail, duration: 10, repeat: 9 }
+      - { type: sequence, ref: wag_tail, duration: 15, repeat: 4 }
+    wagging_with_pause: # 200
+      - { type: sequence, ref: varied_wagging }
+      - { type: state, ref: tail_neutral, duration: 10 }
+      - { type: state, ref: tail_low, duration: 40 }
+
+    root:
+      - { type: sequence, ref: bored, repeat: 4 } # 800
+      - { type: state, ref: tail_low, duration: 790 } # 1590
+      - { type: sequence, ref: wagging_with_pause, repeat: 3 } # 2190
+      - { type: state, ref: tail_low, duration: 420 } # 2610
+
+dream:
+  texture: item/hats/dogs/dream.png
+  states:
+    none:
+      index: 0
+    appear1:
+      index: 1
+    appear2:
+      index: 2
+    empty_bubble:
+      index: 3
+    steak_ground:
+      index: 4
+    steak_jumping:
+      index: 5
+    pop1:
+      index: 6
+    pop2:
+      index: 7
+  sequences:
+    appear:
+      - { type: state, ref: appear1, weight: 1 }
+      - { type: state, ref: appear2, weight: 1 }
+      - { type: state, ref: empty_bubble, weight: 1 }
+    jumping_steak:
+      - { type: state, ref: steak_ground, weight: 1 }
+      - { type: state, ref: steak_jumping, weight: 1 }
+    pop:
+      - { type: state, ref: pop1, weight: 1 }
+      - { type: state, ref: pop2, weight: 1 }
+    root:
+      - { type: state, ref: none, duration: 1090 }
+      - { type: sequence, ref: appear, duration: 45 }
+      - { type: sequence, ref: jumping_steak, duration: 10, repeat: 7 }
+      - { type: sequence, ref: pop, duration: 4 } # 1209
+      - { type: state, ref: none, duration: 1401 } # 2610
