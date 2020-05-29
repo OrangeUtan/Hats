@@ -24,20 +24,14 @@ class Sequence:
 	def from_json(cls, name, json):
 		
 		# Collect some initial information about the entries
-		has_abs_time_entries = False
-		has_weighted_entries = False
+		is_weighted = False
 		total_weight = 0
 		for entry in json:
 			if "weight" in entry:
-				has_weighted_entries = True
+				is_weighted = True
 				total_weight += entry["weight"]
-			if "duration" in entry:
-				has_abs_time_entries = True
 
-			if has_abs_time_entries and has_weighted_entries:
-				raise Exception("Sequence can only contain entries of one type: weighted or absoulte duration")
-
-		return Sequence(name, json, has_weighted_entries, total_weight)
+		return Sequence(name, json, is_weighted, total_weight)
 
 	def to_frames(self, states, sequences, duration=None):
 		if self.is_weighted:
@@ -76,6 +70,9 @@ class Sequence:
 		if self.is_weighted and not duration:
 			raise Exception("Parameter 'duration' missing")
 
+		fixed_duration = self._calc_fixed_duration(sequences)
+		duration -= fixed_duration
+
 		frames = []
 		remaining_duration = duration
 		for entry in self.entries:
@@ -87,34 +84,56 @@ class Sequence:
 					raise Exception(f"State '{ref}' doesn't exist")
 				index = states[ref].index
 
-				time = self._calc_weighted_time(index, entry.get("weight", 1), duration, remaining_duration)
-				remaining_duration -= time
-
-				# Add frame
-				frames.append(self._frame(index, time*repeat))
+				if not "weight" in entry:
+					frames.append(self._frame(index, entry.get("duration", 1)*repeat))
+				else:
+					time = self._calc_weighted_time(index, entry.get("weight", 1), duration, remaining_duration)
+					remaining_duration -= time
+					frames.append(self._frame(index, time*repeat))
 
 			elif type == "sequence":
 				# Get the referenced sequence
 				if not ref in sequences:
 					raise Exception(f"Sequence '{ref}' doesn't exist")
 				referenced_sequence = sequences[ref]
-				if not referenced_sequence.is_weighted:
-					raise Exception("Weighted sequences cannot contain unweighted sequence")
 
-				# Add frames
 				for i in range(repeat):
-					seq_duration = self._calc_weighted_time(index, entry.get("weight", 1)/repeat, duration, remaining_duration)
-					remaining_duration -= seq_duration
-					frames += referenced_sequence.to_frames(states, sequences, seq_duration)
+					if not referenced_sequence.is_weighted:
+						frames += referenced_sequence.to_frames(states, sequences)
+					else:
+						seq_duration = self._calc_weighted_time(index, entry.get("weight", 1)/repeat, duration, remaining_duration)
+						remaining_duration -= seq_duration
+						frames += referenced_sequence.to_frames(states, sequences, seq_duration)
 
 		if remaining_duration < 0:
 			raise Exception("Something went wrong when calculating weighted time")
 
+		# TODO changes duration of fixed duration states
 		if remaining_duration > 0:
 			for i in range(remaining_duration):
 				frames[i]["time"] += 1
 
 		return frames
+
+	def _calc_fixed_duration(self, sequences):
+		fixed_duration = 0
+		for entry in self.entries:
+			type, ref, repeat = entry["type"], entry["ref"], max(1,entry.get("repeat", 1))
+
+			if type == "state":
+				if not "weight" in entry:
+					fixed_duration += entry.get("duration", 1)*repeat
+			elif type == "sequence":
+				if not ref in sequences:
+					raise Exception(f"Sequence '{ref}' doesn't exist")
+				referenced_sequence = sequences[ref]
+
+				if referenced_sequence.is_weighted:
+					fixed_duration += referenced_sequence.get("duration", 1)
+				else:
+					fixed_duration += referenced_sequence._calc_fixed_duration(sequences)*repeat
+
+		return fixed_duration
 
 	@classmethod
 	def _frame(cls, index, time):
