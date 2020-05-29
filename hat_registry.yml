@@ -4,6 +4,10 @@ categories:
     - squid: { custom_model_data: 3001 }
     - arrow: { custom_model_data: 3002, num_lore_lines: 1 }
     - frying_pan: { custom_model_data: 3003 }
+    - dog: { 
+        custom_model_data: 7773190,
+        model: dog
+    }
 
   - tophats:
     - white: { custom_model_data: 3100 }
@@ -75,12 +79,6 @@ categories:
     - wiggly_ghast: { custom_model_data: 7773180 }
     - native_american_headband: { custom_model_data: 7773181 }
     - jason_mask: { custom_model_data: 7773182 }
-
-  - dogs:
-    - dog: { 
-        custom_model_data: 7773190,
-        model: dog
-    }
 
 overwritten-item-models:
     normal:
