@@ -1,5 +1,5 @@
 head:
-  texture: item/hats/dogs/head.png
+  texture: item/hats/dog/head.png
   states:
     neutral:
       index: 0
@@ -67,7 +67,7 @@ head:
       - { type: state, ref: neutral, duration: 20 } # 2610
 
 tail_n_hindlegs:
-  texture: item/hats/dogs/tail_and_hindlegs.png
+  texture: item/hats/dog/tail_and_hindlegs.png
   states:
     tail_high:
       index: 0
@@ -110,7 +110,7 @@ tail_n_hindlegs:
       - { type: state, ref: tail_low, duration: 420 } # 2610
 
 dream:
-  texture: item/hats/dogs/dream.png
+  texture: item/hats/dog/dream.png
   states:
     none:
       index: 0

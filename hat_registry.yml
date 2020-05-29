@@ -77,7 +77,10 @@ categories:
     - jason_mask: { custom_model_data: 7773182 }
 
   - dogs:
-    - dog: { custom_model_data: 7773190 }
+    - dog: { 
+        custom_model_data: 7773190,
+        model: dog
+    }
 
 overwritten-item-models:
     normal:
