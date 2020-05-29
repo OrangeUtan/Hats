@@ -201,7 +201,7 @@ class ReferenceEntry:
 			return int(((self.weight/self.repeat)*total_duration)/total_weight) # Calculate duration based on weight
 	
 @dataclass
-class Animation:
+class TextureAnimation:
 	out_file: str
 	states: list
 	sequences: list
@@ -226,7 +226,7 @@ class Animation:
 		if sequences["root"].is_weighted:
 			raise Exception("Root sequence can't be weighted")
 
-		return Animation(out_file, states, sequences, json.get("interpolate", False), json.get("frametime", 1))
+		return TextureAnimation(out_file, states, sequences, json.get("interpolate", False), json.get("frametime", 1))
 
 	def to_animation(self):
 		return {
@@ -236,3 +236,15 @@ class Animation:
 				"frames": self.sequences["root"].to_frames(self.states, self.sequences)
 			}
 		}
+
+@dataclass
+class ModelAnimation:
+	textureAnimations: list
+
+	@classmethod
+	def from_json(cls, json):
+		textureAnimations = []
+		for entry in json:
+			textureAnimations.append(TextureAnimation.from_json(json[entry]))
+		
+		return ModelAnimation(textureAnimations)
