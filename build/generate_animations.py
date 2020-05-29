@@ -49,7 +49,7 @@ class Sequence:
 
 	def _convert_entries_abs_time(self, states, sequences):
 		for entry in self.entries:
-			type, ref = entry["type"], entry["ref"]
+			type, ref, repeat = entry["type"], entry["ref"], max(1,entry.get("repeat", 1))
 
 			if type == "state":
 				# Get the frame index
@@ -58,7 +58,7 @@ class Sequence:
 				index = states[ref].index
 
 				time = entry.get("duration", 1)
-				yield self._frame(index, time)
+				yield self._frame(index, time*repeat)
 			
 			elif type == "sequence":
 				if not ref in sequences:
@@ -67,8 +67,9 @@ class Sequence:
 
 				seq_duration = entry.get("duration", None)
 
-				for frame in referenced_sequence.to_frames(states, sequences, seq_duration):
-					for i in range(max(1,entry.get("repeat", 1))):
+				seq_frames = referenced_sequence.to_frames(states, sequences, seq_duration)
+				for i in range(repeat):
+					for frame in seq_frames:
 						yield frame.copy()
 
 	def _convert_entries_weighted(self, states, sequences, duration):
@@ -78,7 +79,7 @@ class Sequence:
 		frames = []
 		remaining_duration = duration
 		for entry in self.entries:
-			type, ref = entry["type"], entry["ref"]
+			type, ref, repeat = entry["type"], entry["ref"], max(1,entry.get("repeat", 1))
 
 			if type == "state":
 				# Get the frame index
@@ -90,7 +91,7 @@ class Sequence:
 				remaining_duration -= time
 
 				# Add frame
-				frames.append(self._frame(index, time))
+				frames.append(self._frame(index, time*repeat))
 
 			elif type == "sequence":
 				# Get the referenced sequence
@@ -100,13 +101,11 @@ class Sequence:
 				if not referenced_sequence.is_weighted:
 					raise Exception("Weighted sequences cannot contain unweighted sequence")
 
-				seq_duration = self._calc_weighted_time(index, entry.get("weight", 1), duration, remaining_duration)
-				remaining_duration -= seq_duration
-
 				# Add frames
-				for frame in referenced_sequence.to_frames(states, sequences, seq_duration):
-					for i in range(max(1,entry.get("repeat", 1))):
-						frames.append(frame.copy())
+				for i in range(repeat):
+					seq_duration = self._calc_weighted_time(index, entry.get("weight", 1)/repeat, duration, remaining_duration)
+					remaining_duration -= seq_duration
+					frames += referenced_sequence.to_frames(states, sequences, seq_duration)
 
 		if remaining_duration < 0:
 			raise Exception("Something went wrong when calculating weighted time")
@@ -168,34 +167,28 @@ class Animation:
 
 		return Animation(out_file, states, sequences)
 
-	def to_frames(self):
-		return self.sequences["root"].to_frames()
+	def to_animation(self):
+		return {
+			"animation": {
+				"interpolate": False,
+				"frametime": 1,
+				"frames": self.sequences["root"].to_frames(self.states, self.sequences)
+			}
+		}
 
 def generate_animation_file(path):
 	json = load_yaml_file(path)
-	anim = Animation.from_json(json)
+	animation = Animation.from_json(json)
 
-	# print(anim.states)
-	# print(anim.sequences)
-	# print(anim.sequences["root"])
-
-	# anim.to_frames()
-	frames = anim.sequences["test"].to_frames(anim.states, anim.sequences, 100)
-	print(frames)
-
-	# anim = create_json_animation(anim_file["animation"], frames_dict, sequences_dict)
-
-	# with open(out, "w+") as file:
-	# 	json.dump(anim, file, indent=4)
+	with open(animation.out_file, "w+") as file:
+		JSON.dump(animation.to_animation(), file, indent=4)
 
 def load_yaml_file(path):
 	with open(path) as file:
 		return yaml.load(file, Loader=yaml.Loader)
 
-# for root, dirs, files in os.walk("animations"):
-# 	for file in files:
-# 		if os.path.splitext(file)[1] == ".yml":
-# 			path = os.path.join(root, file)
-# 			generate_animation_file(path)
-
-generate_animation_file("animations/dog_head.yml")
+for root, dirs, files in os.walk("animations"):
+	for file in files:
+		if os.path.splitext(file)[1] == ".yml":
+			path = os.path.join(root, file)
+			generate_animation_file(path)
