@@ -95,13 +95,13 @@ class Sequence:
 				referenced_sequence = sequences[entry.ref]
 
 				for i in range(entry.repeat):
-					if not referenced_sequence.is_weighted:
-						frames += referenced_sequence.to_frames(states, sequences)
-					else:
-						seq_duration = entry.weighted_duration(total_weight, duration)
+					if referenced_sequence.is_weighted:
+						seq_duration = entry.calc_weighted_duration(self.total_weight, duration)
 						seq_duration = max(1,min(remaining_duration, seq_duration))
 						remaining_duration -= seq_duration
 						frames += referenced_sequence.to_frames(states, sequences, seq_duration)
+					else:
+						frames += referenced_sequence.to_frames(states, sequences)
 
 		if remaining_duration < 0:
 			raise Exception("Something went wrong when calculating weighted time")
@@ -187,12 +187,10 @@ class ReferenceEntry:
 			if not self.is_weighted(sequences):
 				fixed_duration = self.duration*self.repeat
 		elif self.type == ReferenceType.SEQUENCE:
-			referenced_sequence = sequences[self.ref]
+			# Don't calculate fixed duration of nested weighted sequences here, because durations would be calculated more than once
+			if not sequences[self.ref].is_weighted:
+				fixed_duration = sequences[self.ref]._calc_fixed_duration(sequences)*self.repeat
 
-			if referenced_sequence.is_weighted:
-				fixed_duration = referenced_sequence.get("duration", 1)
-			else:
-				fixed_duration = referenced_sequence._calc_fixed_duration(sequences)*self.repeat
 		return fixed_duration
 
 	def calc_weighted_duration(self, total_weight, total_duration):
