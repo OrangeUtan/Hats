@@ -15,4 +15,4 @@ overrides = [minecraft_item_model_overwrite(hat.custom_model_data, hat.model_pat
 for key, item_model in registry.overwritten_item_models.items():
 	item_model.model["overrides"] = overrides
 	with open(item_model.path, "w+") as file:
-		json.dump(item_model.model, file, separators=(',', ':'))
+		json.dump(item_model.model, file, separators=(',', ':'), indent=4)
