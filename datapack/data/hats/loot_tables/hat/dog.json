@@ -1,1 +1,27 @@
-{"type":"minecraft:generic","pools":[{"functions":[{"function":"minecraft:set_name","name":{"translate":"item.hats.dog.name"}},{"function":"set_nbt","tag":"{CustomModelData:7773190, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.dog\"]}"}],"rolls":1,"entries":[{"type":"tag","name":"hats:hat","expand":true}]}]}
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.dog.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:7773190, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.dog\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"tag",
+                    "name":"hats:hat",
+                    "expand":true
+                }
+            ]
+        }
+    ]
+}
