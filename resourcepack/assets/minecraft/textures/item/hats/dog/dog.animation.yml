@@ -22,18 +22,18 @@ head:
     blinkink:
         - { state: down, weight: 1 }
         - { sequence: blink }
-    asleep:
-      - { state: blink, weight: 1 }
-      - { sequence: peek }
-      - { state: blink, weight: 1 }
 
     bored: # 840
       - { sequence: blinkink, duration: 120, repeat: 7 }
     fall_asleep: # 75
       - { state: down, duration: 50 }
       - { sequence: peek }
-    sleep: # 600
-      - { sequence: asleep, duration: 600 }
+
+    asleep:
+      - { state: blink, weight: 1 }
+      - { sequence: peek, mark: peek_while_sleeping }
+      - { state: blink, weight: 1 }
+
     wake_up: # 75
       - { sequence: peek }
       - { state: down, duration: 50 }
@@ -48,7 +48,7 @@ head:
   animation:
       - { sequence: bored } # 840
       - { sequence: fall_asleep } # 915
-      - { sequence: sleep } # 1515
+      - { sequence: asleep, duration: 600, mark: asleep } # 1515
       - { sequence: wake_up } # 1590
       - { sequence: happy } # 2190
       - { sequence: curious, duration: 400} # 2590
@@ -82,10 +82,10 @@ tail_n_hindlegs:
       - { state: tail_low, duration: 40 }
 
   animation:
-      - { sequence: bored, repeat: 4 } # 800
-      - { state: tail_low, duration: 790 } # 1590
-      - { sequence: wagging_with_pause, repeat: 3 } # 2190
-      - { state: tail_low, duration: 420 } # 2610
+      - { sequence: bored, repeat: 4 }
+      - { state: tail_low, duration: 790 }
+      - { sequence: wagging_with_pause, repeat: 3 }
+      - { state: tail_low, end: head.animation.end }
 
 dream:
   texture: "dream.png"
@@ -111,8 +111,10 @@ dream:
       - { state: pop2, weight: 1 }
   
   animation:
-      - { state: none, duration: 1090 }
+      - { state: none, end: head.mark('asleep').start + 175 }
       - { sequence: appear, duration: 45 }
-      - { sequence: jumping_steak, duration: 10, repeat: 7 }
-      - { sequence: pop, duration: 4 } # 1209
-      - { state: none, duration: 1401 } # 2610
+      - { sequence: jumping_steak, duration: 10, repeat: 6 }
+      - { state: steak_ground, duration: 5 }
+      - { state: steak_jumping, end: head.mark('peek_while_sleeping').start }
+      - { sequence: pop, start: head.mark('peek_while_sleeping').start, duration: 4 }
+      - { state: none, end: head.animation.end }
