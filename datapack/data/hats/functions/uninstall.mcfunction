@@ -2,6 +2,7 @@
 
 # Remove scoreboards
 scoreboard objectives remove hatsMath
+scoreboard objectives remove hatsConfig
 scoreboard objectives remove hatsDrpdLthrHlmt
 scoreboard objectives remove hatsDrpdStick
 
