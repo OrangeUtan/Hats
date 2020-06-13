@@ -1,7 +1,6 @@
 # Merges the nbt of a dog with the dog_data in storage
 # executor: Dog whose nbt to modify
 
-data modify entity @s Health set from storage minecraft:hats dog_data.Health
 data modify entity @s CollarColor set from storage minecraft:hats dog_data.CollarColor
 data modify entity @s Age set from storage minecraft:hats dog_data.Age
 data modify entity @s ForcedAge set from storage minecraft:hats dog_data.ForcedAge

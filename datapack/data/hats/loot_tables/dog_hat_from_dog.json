@@ -13,17 +13,6 @@
 							"source": "this",
 							"ops": [
 								{
-									"source": "CustomName",
-									"target": "display.Name",
-									"op": "replace"
-								},
-
-								{
-									"source": "Health",
-									"target": "dog_data.Health",
-									"op": "replace"
-								},
-								{
 									"source": "CollarColor",
 									"target": "dog_data.CollarColor",
 									"op": "replace"
@@ -50,7 +39,7 @@
 								},
 								{
 									"source": "CustomName",
-									"target": "dog_data.CustomName",
+									"target": "display.Name",
 									"op": "replace"
 								},
 								{

@@ -3,6 +3,7 @@
 
 # Move the saved dogs nbt into storage
 data modify storage hats dog_data set from entity @s Item.tag.dog_data
+data modify storage hats dog_data.CustomName set from entity @s Item.tag.display.Name
 
 # Summon dog
 summon minecraft:wolf ~ ~ ~ {Tags:["hats_dog_from_hat"]}
