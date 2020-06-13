@@ -2,7 +2,7 @@
 # descr: Initialises the datapack
 
 # Scoreboards
-scoreboard objectives add hats_math dummy
+scoreboard objectives add hatsMath dummy
 
 # Start tick functions
 function hats:every_3t
