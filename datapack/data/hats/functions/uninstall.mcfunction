@@ -8,6 +8,7 @@ scoreboard objectives remove hatsDrpdStick
 
 # Remove storage
 data remove storage minecraft:hats buffer
+data remove storage minecraft:hats dog_data
 
 # Remove advancements
 advancement revoke @a from hats:root
