@@ -7,10 +7,10 @@ execute unless score #installed_version hatsConfig matches 20300 run function ha
 
 # Start tick functions
 function hats:every_3t
-function hats:every_5s
 function hats:every_60s
 
 #region: Start looping functions
 execute if score #opt_convert_dogs hatsConfig matches 1 run function hats:loops/convert_thrown_dog_hat_items
+execute if score #opt_dress_mobs hatsConfig matches 1 run function hats:loops/dress_mobs
 
 #endregion
