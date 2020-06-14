@@ -21,7 +21,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat\"], CustomModelData:7773190}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.dog\"]}" }
 				]
 			}
 		}
