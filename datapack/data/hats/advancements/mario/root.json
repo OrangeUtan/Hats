@@ -21,7 +21,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3170}" }
+					{ "nbt": "{Tags:[\"hats.hat\"], CustomModelData:3170}" }
 				]
 			}
 		},
@@ -29,7 +29,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3171}" }
+					{ "nbt": "{Tags:[\"hats.hat\"], CustomModelData:3171}" }
 				]
 			}
 		},
@@ -37,7 +37,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3172}" }
+					{ "nbt": "{Tags:[\"hats.hat\"], CustomModelData:3172}" }
 				]
 			}
 		},
@@ -45,7 +45,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3173}" }
+					{ "nbt": "{Tags:[\"hats.hat\"], CustomModelData:3173}" }
 				]
 			}
 		},
@@ -53,7 +53,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3174}" }
+					{ "nbt": "{Tags:[\"hats.hat\"], CustomModelData:3174}" }
 				]
 			}
 		},
@@ -61,7 +61,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3175}" }
+					{ "nbt": "{Tags:[\"hats.hat\"], CustomModelData:3175}" }
 				]
 			}
 		},
@@ -69,7 +69,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3176}" }
+					{ "nbt": "{Tags:[\"hats.hat\"], CustomModelData:3176}" }
 				]
 			}
 		},
@@ -77,7 +77,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3177}" }
+					{ "nbt": "{Tags:[\"hats.hat\"], CustomModelData:3177}" }
 				]
 			}
 		},
@@ -85,7 +85,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3178}" }
+					{ "nbt": "{Tags:[\"hats.hat\"], CustomModelData:3178}" }
 				]
 			}
 		}
