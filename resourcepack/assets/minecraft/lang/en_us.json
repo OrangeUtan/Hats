@@ -5,6 +5,9 @@
 	"advancements.hats.fez.title": "Fez",
 	"advancements.hats.fez.description": "",
 
+	"advancements.hats.dog.title": "Inseperable",
+	"advancements.hats.dog.description": "Go on a walk with your dog",
+
 	"advancements.hats.cats.root.title": "Feline Friends",
 	"advancements.hats.cats.root.description": "Find yourself a furry friend",
 	"advancements.hats.cats.collect_all.title": "Cat crazy",
@@ -37,6 +40,7 @@
 	"item.hats.arrow.name": "Fake Arrow",
 	"item.hats.arrow.lore1": ">>-o.o->",
 	"item.hats.frying_pan.name": "Frying Pan",
+	"item.hats.dog.name": "Dog",
 
 	"item.hats.cats.ocelot.name": "Ocelot",
 	"item.hats.cats.tabby.name": "Tabby Cat",

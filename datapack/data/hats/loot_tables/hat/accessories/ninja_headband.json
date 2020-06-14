@@ -1,1 +1,27 @@
-{"type":"minecraft:generic","pools":[{"functions":[{"function":"minecraft:set_name","name":{"translate":"item.hats.accessories.ninja_headband.name"}},{"function":"set_nbt","tag":"{CustomModelData:3150, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.accessories.ninja_headband\"]}"}],"rolls":1,"entries":[{"type":"tag","name":"hats:hat","expand":true}]}]}
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.accessories.ninja_headband.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:3150, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.accessories.ninja_headband\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"tag",
+                    "name":"hats:hat",
+                    "expand":true
+                }
+            ]
+        }
+    ]
+}

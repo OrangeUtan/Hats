@@ -1,1 +1,27 @@
-{"type":"minecraft:generic","pools":[{"functions":[{"function":"minecraft:set_name","name":{"translate":"item.hats.mario.toad_red.name"}},{"function":"set_nbt","tag":"{CustomModelData:3173, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.mario.toad_red\"]}"}],"rolls":1,"entries":[{"type":"tag","name":"hats:hat_on_head","expand":true}]}]}
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.mario.toad_red.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:3173, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.mario.toad_red\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"tag",
+                    "name":"hats:hat_on_head",
+                    "expand":true
+                }
+            ]
+        }
+    ]
+}

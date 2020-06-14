@@ -1,1 +1,27 @@
-{"type":"minecraft:generic","pools":[{"functions":[{"function":"minecraft:set_name","name":{"translate":"item.hats.halloween.native_american_headband.name"}},{"function":"set_nbt","tag":"{CustomModelData:7773181, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.halloween.native_american_headband\"]}"}],"rolls":1,"entries":[{"type":"tag","name":"hats:hat","expand":true}]}]}
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.halloween.native_american_headband.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:7773181, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.halloween.native_american_headband\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"tag",
+                    "name":"hats:hat",
+                    "expand":true
+                }
+            ]
+        }
+    ]
+}

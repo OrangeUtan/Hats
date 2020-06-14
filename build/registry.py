@@ -28,14 +28,13 @@ class Registry:
 	@classmethod
 	def _parse_hats(cls, category_name, json_hats):
 		for hat_name, hat_data in map(lambda category_entry: list(category_entry.items())[0], json_hats):
-			custom_model_data = hat_data['custom_model_data']
-
 			if category_name == "*":
 				categorized_name = f"{hat_name}"
 			else:
 				categorized_name = f"{category_name}{{0}}{hat_name}"
 			
-			model = f"item/hats/{categorized_name.format('/')}"
+			custom_model_data = hat_data['custom_model_data']
+			model = f"item/hats/{hat_data.get('model', categorized_name.format('/'))}"
 			type = f"hats.hat.type.{categorized_name.format('.')}"
 			translation = f"item.hats.{categorized_name.format('.')}"
 			

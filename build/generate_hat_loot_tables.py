@@ -56,8 +56,8 @@ for hat in hats:
 
 	hat_loot_table_path = f"datapack/data/hats/loot_tables/hat/{rel_path}.json"
 	with open(hat_loot_table_path, "w+") as file:
-		json.dump(hat_loot_table(hat, "hats:hat"), file, separators=(',', ':'))
+		json.dump(hat_loot_table(hat, "hats:hat"), file, separators=(',', ':'), indent=4)
 
 	hat_on_head_loot_table_path = f"datapack/data/hats/loot_tables/hat_on_head/{rel_path}.json"
 	with open(hat_on_head_loot_table_path, "w+") as file:
-		json.dump(hat_loot_table(hat, "hats:hat_on_head"), file, separators=(',', ':'))
+		json.dump(hat_loot_table(hat, "hats:hat_on_head"), file, separators=(',', ':'), indent=4)

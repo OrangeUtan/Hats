@@ -20,7 +20,7 @@ jobs:
       - name: Archive datapack
         run: cd datapack && zip -qq -r ../datapack.zip *
       - name: Archive resourcepack
-        run: cd resourcepack && zip -qq -r ../resourcepack.zip *
+        run: cd resourcepack && zip -qq -r ../resourcepack.zip * -x *.animation.yml
 
       # Create new release
       - id: create_release

@@ -1,1 +1,27 @@
-{"type":"minecraft:generic","pools":[{"functions":[{"function":"minecraft:set_name","name":{"translate":"item.hats.villager.armorer.name"}},{"function":"set_nbt","tag":"{CustomModelData:3160, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.villager.armorer\"]}"}],"rolls":1,"entries":[{"type":"tag","name":"hats:hat","expand":true}]}]}
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.villager.armorer.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:3160, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.villager.armorer\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"tag",
+                    "name":"hats:hat",
+                    "expand":true
+                }
+            ]
+        }
+    ]
+}
