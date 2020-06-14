@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3175, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.mario.toad_yellow\"]}"
+                    "tag":"{CustomModelData:3175, Tags:[\"hats.hat\", \"hats.hat.type.mario.toad_yellow\"]}"
                 }
             ],
             "rolls":1,

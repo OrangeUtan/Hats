@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:7773182, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.halloween.jason_mask\"]}"
+                    "tag":"{CustomModelData:7773182, Tags:[\"hats.hat\", \"hats.hat.type.halloween.jason_mask\"]}"
                 }
             ],
             "rolls":1,

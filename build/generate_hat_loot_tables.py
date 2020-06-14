@@ -16,7 +16,7 @@ def hat_loot_table(hat, base_item):
 		},
 		{
 			"function": "set_nbt",
-			"tag": f'{{CustomModelData:{hat.custom_model_data}, Tags:["is_hat", "hats.hat", "{hat.type}"]}}'
+			"tag": f'{{CustomModelData:{hat.custom_model_data}, Tags:["hats.hat", "{hat.type}"]}}'
 		}
 	]
 

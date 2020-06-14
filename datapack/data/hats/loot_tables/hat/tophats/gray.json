@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3107, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.tophats.gray\"]}"
+                    "tag":"{CustomModelData:3107, Tags:[\"hats.hat\", \"hats.hat.type.tophats.gray\"]}"
                 }
             ],
             "rolls":1,

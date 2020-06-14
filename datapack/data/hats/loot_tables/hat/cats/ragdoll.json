@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3128, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.cats.ragdoll\"]}"
+                    "tag":"{CustomModelData:3128, Tags:[\"hats.hat\", \"hats.hat.type.cats.ragdoll\"]}"
                 }
             ],
             "rolls":1,

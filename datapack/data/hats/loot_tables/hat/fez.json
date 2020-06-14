@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3000, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.fez\"]}"
+                    "tag":"{CustomModelData:3000, Tags:[\"hats.hat\", \"hats.hat.type.fez\"]}"
                 }
             ],
             "rolls":1,

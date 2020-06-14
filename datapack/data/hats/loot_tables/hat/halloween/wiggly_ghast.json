@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:7773180, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.halloween.wiggly_ghast\"]}"
+                    "tag":"{CustomModelData:7773180, Tags:[\"hats.hat\", \"hats.hat.type.halloween.wiggly_ghast\"]}"
                 }
             ],
             "rolls":1,

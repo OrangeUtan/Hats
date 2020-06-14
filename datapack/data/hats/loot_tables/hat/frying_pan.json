@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3003, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.frying_pan\"]}"
+                    "tag":"{CustomModelData:3003, Tags:[\"hats.hat\", \"hats.hat.type.frying_pan\"]}"
                 }
             ],
             "rolls":1,
