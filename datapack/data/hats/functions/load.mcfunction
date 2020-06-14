@@ -11,7 +11,6 @@ function hats:every_5s
 function hats:every_60s
 
 #region: Start looping functions
-#define score_holder #opt_convert_dogs Option if Players can convert dogs to hats and back. Enabled if 1, disabled otherwise
 execute if score #opt_convert_dogs hatsConfig matches 1 run function hats:loops/convert_thrown_dog_hat_items
 
 #endregion
