@@ -5,8 +5,8 @@
 	"advancements.hats.fez.title": "Fez",
 	"advancements.hats.fez.description": "",
 
-	"advancements.hats.dog.title": "Unzertrennlich",
-	"advancements.hats.dog.description": "Geh mit deinem Hund Gassi",
+	"advancements.hats.animals.dog.title": "Unzertrennlich",
+	"advancements.hats.animals.dog.description": "Geh mit deinem Hund Gassi",
 
 	"advancements.hats.cats.root.title": "Pelzige Freunde",
 	"advancements.hats.cats.root.description": "Finde einen pelzigen Freund",
@@ -40,7 +40,8 @@
 	"item.hats.arrow.name": "Pfeil Attrape",
 	"item.hats.arrow.lore1": ">>-o.o->",
 	"item.hats.frying_pan.name": "Bratpfanne",
-	"item.hats.dog.name": "Hund",
+	
+	"item.hats.animals.dog.name": "Hund",
 
 	"item.hats.cats.ocelot.name": "Ozelot",
 	"item.hats.cats.tabby.name": "Getigerte Katze",

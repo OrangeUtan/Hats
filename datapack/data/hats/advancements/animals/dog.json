@@ -6,10 +6,10 @@
 			"nbt": "{CustomModelData:7773190}"
 		  },
 		"title" : {
-			"translate": "advancements.hats.dog.title"
+			"translate": "advancements.hats.animals.dog.title"
 		},
 		"description" : {
-			"translate": "advancements.hats.dog.description"
+			"translate": "advancements.hats.animals.dog.description"
 		},
 		"frame": "goal",
 		"show_toast": true,
@@ -21,7 +21,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.dog\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.animals.dog\"]}" }
 				]
 			}
 		}

@@ -4,6 +4,8 @@ categories:
     - squid: { custom_model_data: 3001 }
     - arrow: { custom_model_data: 3002, num_lore_lines: 1 }
     - frying_pan: { custom_model_data: 3003 }
+
+  - animals:
     - dog: { 
         custom_model_data: 7773190,
         model: dog

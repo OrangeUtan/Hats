@@ -2,7 +2,7 @@
 # executor: Player getting advancement
 
 # Convert all nearby dog hat items into dogs
-execute if score #opt_convert_dogs hatsConfig matches 1 as @e[type=item,distance=..2,nbt={Item:{tag:{Tags:["hats.hat.type.dog"]}}}] at @s if data entity @s Item.tag.dog_data run function hats:dog_mechanism/create_dog_from_hat_item
+execute if score #opt_convert_dogs hatsConfig matches 1 as @e[type=item,distance=..2,nbt={Item:{tag:{Tags:["hats.hat.type.animals.dog"]}}}] at @s if data entity @s Item.tag.dog_data run function hats:dog_mechanism/create_dog_from_hat_item
 
 # Reset trigger
 scoreboard players set @s hatsDrpdLthrHlmt 0
