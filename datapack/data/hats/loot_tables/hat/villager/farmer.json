@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3161, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.villager.farmer\"]}"
+                    "tag":"{CustomModelData:3161, Tags:[\"hats.hat\", \"hats.hat.type.villager.farmer\"]}"
                 }
             ],
             "rolls":1,

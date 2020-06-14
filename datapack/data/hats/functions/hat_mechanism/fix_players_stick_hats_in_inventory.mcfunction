@@ -34,7 +34,7 @@ data modify storage minecraft:hats buffer.inv[{Slot:34b}].Slot set value 25b
 data modify storage minecraft:hats buffer.inv[{Slot:35b}].Slot set value 26b
 
 # Replace all stick Hats with helmet hats
-data modify storage minecraft:hats buffer.inv[{id:"minecraft:stick", tag:{Tags:["is_hat"]}}].id set value "minecraft:leather_helmet"
+data modify storage minecraft:hats buffer.inv[{id:"minecraft:stick", tag:{Tags:["hats.hat"]}}].id set value "minecraft:leather_helmet"
 
 # Replaced Players inventory with modified inventory
 setblock ~ 0 ~ minecraft:yellow_shulker_box

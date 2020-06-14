@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3155, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.accessories.googly_eyes\"]}"
+                    "tag":"{CustomModelData:3155, Tags:[\"hats.hat\", \"hats.hat.type.accessories.googly_eyes\"]}"
                 }
             ],
             "rolls":1,

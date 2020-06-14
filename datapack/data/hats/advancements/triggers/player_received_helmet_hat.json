@@ -7,7 +7,7 @@
 				"items": [
 					{ 
 						"item": "minecraft:leather_helmet",
-						"nbt": "{Tags:[\"is_hat\"]}" 
+						"nbt": "{Tags:[\"hats.hat\"]}" 
 					}
 				]
 			}

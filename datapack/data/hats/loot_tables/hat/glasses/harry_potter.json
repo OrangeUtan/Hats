@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3141, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.glasses.harry_potter\"]}"
+                    "tag":"{CustomModelData:3141, Tags:[\"hats.hat\", \"hats.hat.type.glasses.harry_potter\"]}"
                 }
             ],
             "rolls":1,

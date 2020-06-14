@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3178, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.mario.luigi\"]}"
+                    "tag":"{CustomModelData:3178, Tags:[\"hats.hat\", \"hats.hat.type.mario.luigi\"]}"
                 }
             ],
             "rolls":1,
