@@ -2,3 +2,5 @@
 
 scoreboard players set #opt_convert_dogs hatsConfig 0
 schedule clear hats:loops/convert_thrown_dog_hat_items
+
+tellraw @s [{"text":"Disabled","color":"red"},{"text":" option \"Convert dogs\"","color":"gold"}]
