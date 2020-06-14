@@ -5,7 +5,7 @@
 #   - at least one stick hat has to exist in buffer.hotbar
 
 # Replace all stick hats with helmet hats
-data modify storage minecraft:hats buffer.hotbar[{id:"minecraft:stick", tag:{Tags:["is_hat"]}}].id set value "minecraft:leather_helmet"
+data modify storage minecraft:hats buffer.hotbar[{id:"minecraft:stick", tag:{Tags:["hats.hat"]}}].id set value "minecraft:leather_helmet"
 
 # Replaced Players hotbar with modified hotbar
 setblock ~ 0 ~ minecraft:yellow_shulker_box

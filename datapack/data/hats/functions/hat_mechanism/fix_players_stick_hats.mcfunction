@@ -12,7 +12,7 @@ data modify storage minecraft:hats buffer.hotbar append from storage minecraft:h
 data modify storage minecraft:hats buffer.hotbar append from storage minecraft:hats buffer.inv[{Slot:7b}]
 data modify storage minecraft:hats buffer.hotbar append from storage minecraft:hats buffer.inv[{Slot:8b}]
 
-execute if data storage minecraft:hats buffer.hotbar[{id:"minecraft:stick", tag:{Tags:["is_hat"]}}] run function hats:hat_mechanism/fix_players_stick_hats_in_hotbar
+execute if data storage minecraft:hats buffer.hotbar[{id:"minecraft:stick", tag:{Tags:["hats.hat"]}}] run function hats:hat_mechanism/fix_players_stick_hats_in_hotbar
 
 # Remove item in offhand from buffer.inv
 data remove storage minecraft:hats buffer.inv[{Slot:-106b}]
@@ -34,4 +34,4 @@ data remove storage minecraft:hats buffer.inv[{Slot:1b}]
 data remove storage minecraft:hats buffer.inv[{Slot:0b}]
 
 # Now only items in the Players inventory should be left in buffer.inv
-execute if data storage minecraft:hats buffer.inv[{id:"minecraft:stick", tag:{Tags:["is_hat"]}}] run function hats:hat_mechanism/fix_players_stick_hats_in_inventory
+execute if data storage minecraft:hats buffer.inv[{id:"minecraft:stick", tag:{Tags:["hats.hat"]}}] run function hats:hat_mechanism/fix_players_stick_hats_in_inventory
