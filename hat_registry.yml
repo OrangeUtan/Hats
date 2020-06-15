@@ -60,6 +60,7 @@ categories:
     - snorkel_mask_blue: { custom_model_data: 3153 }
     - snorkel_mask_red: { custom_model_data: 3154 }
     - googly_eyes: { custom_model_data: 3155 }
+    - earth: { custom_model_data: 7773191 }
 
   - villager:
     - armorer: { custom_model_data: 3160 }
