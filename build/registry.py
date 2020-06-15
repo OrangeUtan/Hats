@@ -6,16 +6,16 @@ class Registry:
 		self.registry = load_yaml_file("hat_registry.yml")
 		self.overwritten_item_models = Registry._parse_root_items(self.registry)
 		self.categories = Registry._parse_categories(self.registry)
-
+		
 	def all_hats(self):
 		for category_name, category_hats in self.categories.items():
 			for hat in category_hats:
 				yield hat
 
-	def categories(self):
-		for category_name, category_hats in map(lambda category: list(category.items())[0], self.registry['categories']):
-			hats = list(self._parse_hats(category_name, category_hats))
-			yield (category_name, hats)
+	# def categories(self):
+	# 	for category_name, category_hats in map(lambda category: list(category.items())[0], self.registry['categories']):
+	# 		hats = list(self._parse_hats(category_name, category_hats))
+	# 		yield (category_name, hats)
 
 	@classmethod
 	def _parse_categories(cls, registry):

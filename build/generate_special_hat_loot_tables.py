@@ -68,7 +68,7 @@ def generate_loot_table_rand_for_category(category_name, category_hats, subfolde
 
 registry = Registry()
 
-for category_name, category_hats in registry.categories():
+for category_name, category_hats in registry.categories.items():
 	if category_name != "*":
 		generate_loot_table_all_for_category(category_name, category_hats, 'hat')
 		generate_loot_table_rand_for_category(category_name, category_hats, 'hat')
