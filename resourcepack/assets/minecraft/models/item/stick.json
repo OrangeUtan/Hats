@@ -375,6 +375,12 @@
                 "custom_model_data":7773190
             },
             "model":"item/hats/dog"
+        },
+        {
+            "predicate":{
+                "custom_model_data":7773191
+            },
+            "model":"item/hats/accessories/earth"
         }
     ]
 }
