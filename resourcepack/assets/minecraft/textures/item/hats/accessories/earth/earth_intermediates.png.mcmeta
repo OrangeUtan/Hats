@@ -4,6 +4,10 @@
         "frametime": 1,
         "frames": [
             {
+                "index": 16,
+                "time": 1
+            },
+            {
                 "index": 0,
                 "time": 1
             },
@@ -125,10 +129,6 @@
             },
             {
                 "index": 15,
-                "time": 1
-            },
-            {
-                "index": 16,
                 "time": 1
             }
         ]
