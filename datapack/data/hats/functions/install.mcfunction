@@ -17,7 +17,7 @@ execute unless score #opt_dress_mobs hatsConfig matches -2147483648.. run scoreb
 
 # Flag datapack as installed
 #define score_holder #installed_version Indicating which version is installed
-scoreboard players set #installed_version hatsConfig 20300
+scoreboard players set #installed_version hatsConfig 20301
 
 # Install message
 tellraw @a ["",{"text":"Installed ","color":"gold"},{"text":"Hats","color":"red"},{"text":" datapack version ","color":"gold"},{"score":{"name":"#installed_version","objective":"hatsConfig"},"color":"red"}]
