@@ -1,0 +1,27 @@
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.animals.dog.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:7773190, Tags:[\"hats.hat\", \"hats.hat.type.animals.dog\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"tag",
+                    "name":"hats:hat",
+                    "expand":true
+                }
+            ]
+        }
+    ]
+}

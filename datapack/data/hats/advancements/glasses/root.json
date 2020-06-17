@@ -21,7 +21,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3140}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.glasses.sunglasses\"]}" }
 				]
 			}
 		},
@@ -29,7 +29,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3141}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.glasses.harry_potter\"]}" }
 				]
 			}
 		},
@@ -37,7 +37,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3142}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.glasses.half_rim\"]}" }
 				]
 			}
 		},
@@ -45,7 +45,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3143}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.glasses.rainbow\"]}" }
 				]
 			}
 		},
@@ -53,7 +53,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3144}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.glasses.librarian\"]}" }
 				]
 			}
 		}

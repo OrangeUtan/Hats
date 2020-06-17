@@ -1,1 +1,35 @@
-{"type":"minecraft:generic","pools":[{"functions":[{"function":"minecraft:set_name","name":{"translate":"item.hats.villager.nose.name"}},{"function":"set_nbt","tag":"{CustomModelData:3162, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.villager.nose\"]}"},{"function":"minecraft:set_lore","lore":[{"translate":"item.hats.villager.nose.lore1"}]}],"rolls":1,"entries":[{"type":"tag","name":"hats:hat_on_head","expand":true}]}]}
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.villager.nose.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:3162, Tags:[\"hats.hat\", \"hats.hat.type.villager.nose\"]}"
+                },
+                {
+                    "function":"minecraft:set_lore",
+                    "lore":[
+                        {
+                            "translate":"item.hats.villager.nose.lore1"
+                        }
+                    ]
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"tag",
+                    "name":"hats:hat_on_head",
+                    "expand":true
+                }
+            ]
+        }
+    ]
+}

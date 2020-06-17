@@ -1,1 +1,27 @@
-{"type":"minecraft:generic","pools":[{"functions":[{"function":"minecraft:set_name","name":{"translate":"item.hats.cats.persian.name"}},{"function":"set_nbt","tag":"{CustomModelData:3127, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.cats.persian\"]}"}],"rolls":1,"entries":[{"type":"tag","name":"hats:hat_on_head","expand":true}]}]}
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.cats.persian.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:3127, Tags:[\"hats.hat\", \"hats.hat.type.cats.persian\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"tag",
+                    "name":"hats:hat_on_head",
+                    "expand":true
+                }
+            ]
+        }
+    ]
+}

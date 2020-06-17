@@ -21,7 +21,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"is_hat\"], CustomModelData:3000}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.fez\"]}" }
 				]
 			}
 		}

@@ -2,7 +2,7 @@
 # Descr: Adds offer of the favorite cat the Wandering Trader is wearing
 
 # Add template offer
-data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:emerald", Count:1b}, sell:{id:"minecraft:leather_helmet",Count:1b,tag:{CustomModelData:0,Tags:["is_hat"]}}}
+data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:emerald", Count:1b}, sell:{id:"minecraft:leather_helmet",Count:1b}}
 
 # Set the sell item of the template offer to the cat hat on the Wandering Traders head
 data modify entity @s Offers.Recipes[-1].sell.tag set from entity @s ArmorItems[3].tag

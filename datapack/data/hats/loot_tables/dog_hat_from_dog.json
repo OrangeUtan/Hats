@@ -1,0 +1,67 @@
+{
+	"type": "minecraft:generic",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "hats:hat/animals/dog",
+					"functions": [
+						{
+							"function": "minecraft:copy_nbt",
+							"source": "this",
+							"ops": [
+								{
+									"source": "CollarColor",
+									"target": "dog_data.CollarColor",
+									"op": "replace"
+								},
+								{
+									"source": "Age",
+									"target": "dog_data.Age",
+									"op": "replace"
+								},
+								{
+									"source": "ForcedAge",
+									"target": "dog_data.ForcedAge",
+									"op": "replace"
+								},
+								{
+									"source": "Attributes",
+									"target": "dog_data.Attributes",
+									"op": "replace"
+								},
+								{
+									"source": "Invulnerable",
+									"target": "dog_data.Invulnerable",
+									"op": "replace"
+								},
+								{
+									"source": "CustomName",
+									"target": "display.Name",
+									"op": "replace"
+								},
+								{
+									"source": "CustomNameVisible",
+									"target": "dog_data.CustomNameVisible",
+									"op": "replace"
+								},
+								{
+									"source": "Tags",
+									"target": "dog_data.Tags",
+									"op": "replace"
+								},
+								{
+									"source": "Owner",
+									"target": "dog_data.Owner",
+									"op": "replace"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,1 +1,27 @@
-{"type":"minecraft:generic","pools":[{"functions":[{"function":"minecraft:set_name","name":{"translate":"item.hats.squid.name"}},{"function":"set_nbt","tag":"{CustomModelData:3001, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.squid\"]}"}],"rolls":1,"entries":[{"type":"tag","name":"hats:hat_on_head","expand":true}]}]}
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.squid.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:3001, Tags:[\"hats.hat\", \"hats.hat.type.squid\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"tag",
+                    "name":"hats:hat_on_head",
+                    "expand":true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+planet:
+  texture: "earth.png"
+  states: [ N, NW1, NW2, NW3, W, SW1, SW2, SW3, S, SE1, SE2, SE3, E, NE1, NE2, NE3, None ]
+  sequences:
+    orbit:
+      - { state: N, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NW1, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NW2, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NW3, weight: 1}
+      - { state: None, weight: 1}
+      - { state: W, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SW1, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SW2, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SW3, weight: 1}
+      - { state: None, weight: 1}
+      - { state: S, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SE1, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SE2, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SE3, weight: 1}
+      - { state: None, weight: 1}
+      - { state: E, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NE1, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NE2, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NE3, weight: 1}
+      - { state: None, weight: 1}
+  animation:
+    - { sequence: orbit, duration: 32 }
+
+planet_intermediates:
+  texture: "earth_intermediates.png"
+  states: [ N, NW1, NW2, NW3, W, SW1, SW2, SW3, S, SE1, SE2, SE3, E, NE1, NE2, NE3, None ]
+  sequences:
+    orbit:
+      - { state: None, weight: 1}
+      - { state: N, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NW1, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NW2, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NW3, weight: 1}
+      - { state: None, weight: 1}
+      - { state: W, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SW1, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SW2, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SW3, weight: 1}
+      - { state: None, weight: 1}
+      - { state: S, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SE1, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SE2, weight: 1}
+      - { state: None, weight: 1}
+      - { state: SE3, weight: 1}
+      - { state: None, weight: 1}
+      - { state: E, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NE1, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NE2, weight: 1}
+      - { state: None, weight: 1}
+      - { state: NE3, weight: 1}
+  animation:
+    - { sequence: orbit, duration: 32 }

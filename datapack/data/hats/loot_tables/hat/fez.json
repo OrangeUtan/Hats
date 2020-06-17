@@ -1,1 +1,27 @@
-{"type":"minecraft:generic","pools":[{"functions":[{"function":"minecraft:set_name","name":{"translate":"item.hats.fez.name"}},{"function":"set_nbt","tag":"{CustomModelData:3000, Tags:[\"is_hat\", \"hats.hat\", \"hats.hat.type.fez\"]}"}],"rolls":1,"entries":[{"type":"tag","name":"hats:hat","expand":true}]}]}
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.fez.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:3000, Tags:[\"hats.hat\", \"hats.hat.type.fez\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"tag",
+                    "name":"hats:hat",
+                    "expand":true
+                }
+            ]
+        }
+    ]
+}

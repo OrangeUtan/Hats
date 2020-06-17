@@ -5,6 +5,9 @@
 	"advancements.hats.fez.title": "Fez",
 	"advancements.hats.fez.description": "",
 
+	"advancements.hats.animals.dog.title": "Unzertrennlich",
+	"advancements.hats.animals.dog.description": "Geh mit deinem Hund Gassi",
+
 	"advancements.hats.cats.root.title": "Pelzige Freunde",
 	"advancements.hats.cats.root.description": "Finde einen pelzigen Freund",
 	"advancements.hats.cats.collect_all.title": "Verrückt nach Katzen",
@@ -37,6 +40,8 @@
 	"item.hats.arrow.name": "Pfeil Attrape",
 	"item.hats.arrow.lore1": ">>-o.o->",
 	"item.hats.frying_pan.name": "Bratpfanne",
+	
+	"item.hats.animals.dog.name": "Hund",
 
 	"item.hats.cats.ocelot.name": "Ozelot",
 	"item.hats.cats.tabby.name": "Getigerte Katze",
@@ -85,6 +90,7 @@
 	"item.hats.accessories.snorkel_mask_blue.name": "Blaue Schnorchelmaske",
 	"item.hats.accessories.snorkel_mask_red.name": "Rote Schnorchelmaske",
 	"item.hats.accessories.googly_eyes.name": "Wackelaugen",
+	"item.hats.accessories.earth.name": "Erde in der Umlaufbahn",
 
 	"item.hats.villager.armorer.name": "Rüstungsschmied Visier",
 	"item.hats.villager.farmer.name": "Bauern Strohhut",
