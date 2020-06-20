@@ -35,7 +35,7 @@ class Registry:
 			
 			custom_model_data = hat_data['custom_model_data']
 			model = f"item/hats/{hat_data.get('model', categorized_name.format('/'))}"
-			type = f"hats.hat.type.{categorized_name.format('.')}"
+			type = f"hats.hat.type.{hat_data.get('type', categorized_name.format('.'))}"
 			translation = f"item.hats.{categorized_name.format('.')}"
 			
 			lore = None
