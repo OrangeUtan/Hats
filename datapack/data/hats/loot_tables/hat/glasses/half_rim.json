@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3142, Tags:[\"hats.hat\", \"hats.hat.type.glasses.half_rim\"]}"
+                    "tag":"{CustomModelData:3142, Tags:[\"hats.hat\", \"hats.hat.type.half_rim_glasses\"]}"
                 }
             ],
             "rolls":1,

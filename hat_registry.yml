@@ -6,10 +6,9 @@ categories:
     - frying_pan: { custom_model_data: 3003 }
 
   - animals:
-    - dog: { 
-        custom_model_data: 7773190,
+    - dog:
+        custom_model_data: 7773190
         model: dog
-    }
 
   - tophats:
     - white: { custom_model_data: 3100 }
@@ -46,12 +45,24 @@ categories:
     - black: { custom_model_data: 3131 }
 
   - glasses:
-    - sunglasses: { custom_model_data: 3140 }
-    - harry_potter: { custom_model_data: 3141 }
-    - half_rim: { custom_model_data: 3142 }
-    - rainbow: { custom_model_data: 3143 }
-    - librarian: { custom_model_data: 3144 }
-    - three_d: { custom_model_data: 3145 }
+    - sunglasses: 
+        custom_model_data: 3140
+        type: sunglasses
+    - harry_potter:
+        custom_model_data: 3141
+        type: harry_potter_glasses
+    - half_rim: 
+        custom_model_data: 3142
+        type: half_rim_glasses
+    - rainbow: 
+        custom_model_data: 3143
+        type: rainbow_glasses
+    - librarian: 
+        custom_model_data: 3144
+        type: librarian_glasses
+    - three_d: 
+        custom_model_data: 3145
+        type: 3D_glasses
 
   - accessories:
     - ninja_headband: { custom_model_data: 3150 }
