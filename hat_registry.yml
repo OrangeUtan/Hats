@@ -74,9 +74,16 @@ categories:
     - earth: { custom_model_data: 7773191 }
 
   - villager:
-    - armorer: { custom_model_data: 3160 }
-    - farmer: { custom_model_data: 3161 }
-    - nose: { custom_model_data: 3162, num_lore_lines: 1 }
+    - armorer:
+        custom_model_data: 3160
+        type: armorer_mask
+    - farmer:
+        custom_model_data: 3161
+        type: farmer_strawhat
+    - nose:
+        custom_model_data: 3162
+        num_lore_lines: 1
+        type: villager_nose
 
   - mario:
     - mario_cap: { custom_model_data: 3170 }

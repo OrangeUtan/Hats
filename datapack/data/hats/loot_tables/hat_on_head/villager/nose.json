@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3162, Tags:[\"hats.hat\", \"hats.hat.type.villager.nose\"]}"
+                    "tag":"{CustomModelData:3162, Tags:[\"hats.hat\", \"hats.hat.type.villager_nose\"]}"
                 },
                 {
                     "function":"minecraft:set_lore",

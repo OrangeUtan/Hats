@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3160, Tags:[\"hats.hat\", \"hats.hat.type.villager.armorer\"]}"
+                    "tag":"{CustomModelData:3160, Tags:[\"hats.hat\", \"hats.hat.type.armorer_mask\"]}"
                 }
             ],
             "rolls":1,
