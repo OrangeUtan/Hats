@@ -65,13 +65,29 @@ categories:
         type: 3D_glasses
 
   - accessories:
-    - ninja_headband: { custom_model_data: 3150 }
-    - steve_mask: { custom_model_data: 3151, num_lore_lines: 1 }
-    - alex_mask: { custom_model_data: 3152, num_lore_lines: 1 }
-    - snorkel_mask_blue: { custom_model_data: 3153 }
-    - snorkel_mask_red: { custom_model_data: 3154 }
-    - googly_eyes: { custom_model_data: 3155 }
-    - earth: { custom_model_data: 7773191 }
+    - ninja_headband:
+        custom_model_data: 3150
+        type: ninja_headband
+    - steve_mask:
+        custom_model_data: 3151
+        num_lore_lines: 1
+        type: steve_mask
+    - alex_mask:
+        custom_model_data: 3152
+        num_lore_lines: 1
+        type: alex_mask
+    - snorkel_mask_blue:
+        custom_model_data: 3153
+        type: snorkel_mask_blue
+    - snorkel_mask_red:
+        custom_model_data: 3154
+        type: snorkel_mask_red
+    - googly_eyes:
+        custom_model_data: 3155
+        type: googly_eyes
+    - earth:
+        custom_model_data: 7773191
+        type: earth_in_orbit
 
   - villager:
     - armorer:

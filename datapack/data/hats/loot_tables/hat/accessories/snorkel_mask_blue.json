@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3153, Tags:[\"hats.hat\", \"hats.hat.type.accessories.snorkel_mask_blue\"]}"
+                    "tag":"{CustomModelData:3153, Tags:[\"hats.hat\", \"hats.hat.type.snorkel_mask_blue\"]}"
                 }
             ],
             "rolls":1,

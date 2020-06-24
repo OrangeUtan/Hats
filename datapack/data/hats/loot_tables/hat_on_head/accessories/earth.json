@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:7773191, Tags:[\"hats.hat\", \"hats.hat.type.accessories.earth\"]}"
+                    "tag":"{CustomModelData:7773191, Tags:[\"hats.hat\", \"hats.hat.type.earth_in_orbit\"]}"
                 }
             ],
             "rolls":1,
