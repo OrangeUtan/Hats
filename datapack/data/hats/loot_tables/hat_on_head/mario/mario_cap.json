@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3170, Tags:[\"hats.hat\", \"hats.hat.type.mario.mario_cap\"]}"
+                    "tag":"{CustomModelData:3170, Tags:[\"hats.hat\", \"hats.hat.type.mario_cap\"]}"
                 }
             ],
             "rolls":1,

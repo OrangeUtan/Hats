@@ -2,8 +2,8 @@
 	"parent" : "hats:mario/root",
 	"display" : {
 		"icon": {
-			"item": "minecraft:stick",
-			"nbt": "{CustomModelData:3177}"
+			"item": "minecraft:red_mushroom",
+			"nbt": "{Enchantments:[{}]}"
 		  },
 		"title" : {
 			"translate": "advancements.hats.mario.collect_all.title"
@@ -21,7 +21,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.mario.mario_cap\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.mario_cap\"]}" }
 				]
 			}
 		},
@@ -29,7 +29,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.mario.luigi_cap\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.luigi_cap\"]}" }
 				]
 			}
 		},
@@ -37,7 +37,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.mario.cappy\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.cappy\"]}" }
 				]
 			}
 		},
@@ -45,7 +45,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.mario.toad_red\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.toad_red\"]}" }
 				]
 			}
 		},
@@ -53,7 +53,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.mario.toad_blue\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.toad_blue\"]}" }
 				]
 			}
 		},
@@ -61,7 +61,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.mario.toad_yellow\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.toad_yellow\"]}" }
 				]
 			}
 		},
@@ -69,23 +69,23 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.mario.toad_green\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.toad_green\"]}" }
 				]
 			}
 		},
-		"mario" : {
+		"mario_mask" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.mario.mario\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.mario_mask\"]}" }
 				]
 			}
 		},
-		"luigi" : {
+		"luigi_mask" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.mario.luigi\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.luigi_mask\"]}" }
 				]
 			}
 		}
@@ -98,7 +98,7 @@
 		["blue_toad"],
 		["yellow_toad"],
 		["green_toad"],
-		["mario"],
-		["luigi"]
+		["mario_mask"],
+		["luigi_mask"]
 	]
 }

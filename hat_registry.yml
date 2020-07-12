@@ -102,15 +102,33 @@ categories:
         type: villager_nose
 
   - mario:
-    - mario_cap: { custom_model_data: 3170 }
-    - luigi_cap: { custom_model_data: 3171 }
-    - cappy: { custom_model_data: 3172 }
-    - toad_red: { custom_model_data: 3173 }
-    - toad_blue: { custom_model_data: 3174 }
-    - toad_yellow: { custom_model_data: 3175 }
-    - toad_green: { custom_model_data: 3176 }
-    - mario: { custom_model_data: 3177 }
-    - luigi: { custom_model_data: 3178 }
+    - mario_cap:
+        custom_model_data: 3170
+        type: mario_cap
+    - luigi_cap:
+        custom_model_data: 3171
+        type: luigi_cap
+    - cappy:
+        custom_model_data: 3172
+        type: cappy
+    - toad_red:
+        custom_model_data: 3173
+        type: toad_red
+    - toad_blue:
+        custom_model_data: 3174
+        type: toad_blue
+    - toad_yellow:
+        custom_model_data: 3175
+        type: toad_yellow
+    - toad_green:
+        custom_model_data: 3176
+        type: toad_green
+    - mario:
+        custom_model_data: 3177
+        type: mario_mask
+    - luigi:
+        custom_model_data: 3178
+        type: luigi_mask
 
   - halloween:
     - wiggly_ghast: { custom_model_data: 7773180 }
