@@ -17,14 +17,13 @@
 		"hidden": false
 	},
 	"criteria" : {
-		"hat_dog" : {
+		"tamed_wolf" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.animals.dog\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.dog\"]}" }
 				]
 			}
 		}
-	},
-	"requirements" : [["hat_dog"]]
+	}
 }
