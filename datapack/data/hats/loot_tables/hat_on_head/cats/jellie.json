@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3130, Tags:[\"hats.hat\", \"hats.hat.type.cats.jellie\"]}"
+                    "tag":"{CustomModelData:3130, Tags:[\"hats.hat\", \"hats.hat.type.jellie\"]}"
                 }
             ],
             "rolls":1,

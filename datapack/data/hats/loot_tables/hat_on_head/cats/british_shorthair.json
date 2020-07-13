@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3125, Tags:[\"hats.hat\", \"hats.hat.type.cats.british_shorthair\"]}"
+                    "tag":"{CustomModelData:3125, Tags:[\"hats.hat\", \"hats.hat.type.british_shorthair\"]}"
                 }
             ],
             "rolls":1,

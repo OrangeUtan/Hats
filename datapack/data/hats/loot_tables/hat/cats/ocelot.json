@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3120, Tags:[\"hats.hat\", \"hats.hat.type.cats.ocelot\"]}"
+                    "tag":"{CustomModelData:3120, Tags:[\"hats.hat\", \"hats.hat.type.ocelot\"]}"
                 }
             ],
             "rolls":1,
