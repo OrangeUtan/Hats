@@ -147,6 +147,8 @@
 		}
 	},
 	"rewards": {
-		"function": "hats:give/tophats/rainbow"
+		"loot": [
+			"hats:hat/tophats/rainbow"
+		]
 	}
 }
