@@ -21,7 +21,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.accessories.steve_mask\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.steve_mask\"]}" }
 				]
 			}
 		},
@@ -29,7 +29,7 @@
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.accessories.alex_mask\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.alex_mask\"]}" }
 				]
 			}
 		}

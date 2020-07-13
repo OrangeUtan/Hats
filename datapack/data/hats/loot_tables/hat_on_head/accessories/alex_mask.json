@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3152, Tags:[\"hats.hat\", \"hats.hat.type.accessories.alex_mask\"]}"
+                    "tag":"{CustomModelData:3152, Tags:[\"hats.hat\", \"hats.hat.type.alex_mask\"]}"
                 },
                 {
                     "function":"minecraft:set_lore",

@@ -17,154 +17,138 @@
 		"hidden": false
 	},
 	"criteria" : {
-		"hat_tophat_white" : {
+		"white_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.white\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.white_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_orange" : {
+		"orange_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.orange\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.orange_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_magenta" : {
+		"magenta_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.magenta\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.magenta_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_light_blue" : {
+		"light_blue_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.light_blue\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.light_blue_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_yellow" : {
+		"yellow_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.yellow\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.yellow_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_lime" : {
+		"lime_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.lime\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.lime_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_pink" : {
+		"pink_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.pink\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.pink_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_gray" : {
+		"gray_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.gray\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.gray_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_light_gray" : {
+		"light_gray_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.light_gray\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.light_gray_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_cyan" : {
+		"cyan_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.cyan\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.cyan_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_purple" : {
+		"purple_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.purple\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.purple_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_blue" : {
+		"blue_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.blue\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.blue_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_brown" : {
+		"brown_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.brown\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.brown_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_green" : {
+		"green_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.green\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.green_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_red" : {
+		"red_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.red\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.red_tophat\"]}" }
 				]
 			}
 		},
-		"hat_tophat_black" : {
+		"black_tophat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.black\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.black_tophat\"]}" }
 				]
 			}
 		}
 	},
-	"requirements" : [
-		["hat_tophat_white"], 
-		["hat_tophat_orange"],
-		["hat_tophat_magenta"],
-		["hat_tophat_light_blue"],
-		["hat_tophat_yellow"],
-		["hat_tophat_lime"],
-		["hat_tophat_pink"],
-		["hat_tophat_gray"],
-		["hat_tophat_light_gray"],
-		["hat_tophat_cyan"],
-		["hat_tophat_purple"],
-		["hat_tophat_blue"],
-		["hat_tophat_brown"],
-		["hat_tophat_green"],
-		["hat_tophat_red"],
-		["hat_tophat_black"]
-	],
 	"rewards": {
-		"function": "hats:give/tophats/rainbow"
+		"loot": [
+			"hats:hat/tophats/rainbow"
+		]
 	}
 }
