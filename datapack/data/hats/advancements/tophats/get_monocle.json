@@ -17,14 +17,14 @@
 		"hidden": false
 	},
 	"criteria" : {
-		"hat_tophat_black_monocle" : {
+		"tophat_with_monocle" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophats.black_monocle\"]}" }
+					{ "nbt": "{Tags:[\"hats.hat.type.tophat_with_monocle\"]}" }
 				]
 			}
 		}
 	},
-	"requirements" : [["hat_tophat_black_monocle"]]
+	"requirements" : [["tophat_with_monocle"]]
 }

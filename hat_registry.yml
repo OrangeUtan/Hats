@@ -11,24 +11,60 @@ categories:
         model: dog
 
   - tophats:
-    - white: { custom_model_data: 3100 }
-    - orange: { custom_model_data: 3101 }
-    - magenta: { custom_model_data: 3102 }
-    - light_blue: { custom_model_data: 3103 }
-    - yellow: { custom_model_data: 3104 }
-    - lime: { custom_model_data: 3105 }
-    - pink: { custom_model_data: 3106 }
-    - gray: { custom_model_data: 3107 }
-    - light_gray: { custom_model_data: 3108 }
-    - cyan: { custom_model_data: 3109 }
-    - purple: { custom_model_data: 3110 }
-    - blue: { custom_model_data: 3111 }
-    - brown: { custom_model_data: 3112 }
-    - green: { custom_model_data: 3113 }
-    - red: { custom_model_data: 3114 }
-    - black: { custom_model_data: 3115 }
-    - rainbow: { custom_model_data: 3116 }
-    - black_monocle: { custom_model_data: 3117 }
+    - white: 
+        custom_model_data: 3100
+        type: white_tophat
+    - orange: 
+        custom_model_data: 3101
+        type: orange_tophat
+    - magenta: 
+        custom_model_data: 3102
+        type: magenta_tophat
+    - light_blue: 
+        custom_model_data: 3103
+        type: light_blue_tophat
+    - yellow: 
+        custom_model_data: 3104
+        type: yellow_tophat
+    - lime: 
+        custom_model_data: 3105
+        type: lime_tophat
+    - pink: 
+        custom_model_data: 3106
+        type: pink_tophat
+    - gray: 
+        custom_model_data: 3107
+        type: gray_tophat
+    - light_gray: 
+        custom_model_data: 3108
+        type: light_gray_tophat
+    - cyan: 
+        custom_model_data: 3109
+        type: cyan_tophat
+    - purple: 
+        custom_model_data: 3110
+        type: purple_tophat
+    - blue: 
+        custom_model_data: 3111
+        type: blue_tophat
+    - brown: 
+        custom_model_data: 3112
+        type: brown_tophat
+    - green: 
+        custom_model_data: 3113
+        type: green_tophat
+    - red: 
+        custom_model_data: 3114
+        type: red_tophat
+    - black: 
+        custom_model_data: 3115
+        type: black_tophat
+    - rainbow: 
+        custom_model_data: 3116
+        type: rainbow_tophat
+    - black_monocle: 
+        custom_model_data: 3117
+        type: tophat_with_monocle
 
   - cats:
     - ocelot:
