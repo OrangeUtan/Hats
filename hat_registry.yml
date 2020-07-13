@@ -191,9 +191,15 @@ categories:
         type: luigi_mask
 
   - halloween:
-    - wiggly_ghast: { custom_model_data: 7773180 }
-    - native_american_headband: { custom_model_data: 7773181 }
-    - jason_mask: { custom_model_data: 7773182 }
+    - wiggly_ghast: 
+        custom_model_data: 7773180
+        type: wiggly_ghast
+    - native_american_headband: 
+        custom_model_data: 7773181
+        type: native_american_headband
+    - jason_mask: 
+        custom_model_data: 7773182
+        type: jason_mask
 
 overwritten-item-models:
     normal:
