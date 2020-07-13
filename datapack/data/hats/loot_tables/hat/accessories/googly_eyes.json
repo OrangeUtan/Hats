@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.accessories.googly_eyes.name"
+                        "translate":"item.hats.hat.googly_eyes.name"
                     }
                 },
                 {

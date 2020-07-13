@@ -6,19 +6,27 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.tophats.black_monocle.name"
+                        "translate":"item.hats.hat.arrow_prop.name"
                     }
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3117, Tags:[\"hats.hat\", \"hats.hat.type.tophat_with_monocle\"]}"
+                    "tag":"{CustomModelData:3002, Tags:[\"hats.hat\", \"hats.hat.type.arrow_prop\"]}"
+                },
+                {
+                    "function":"minecraft:set_lore",
+                    "lore":[
+                        {
+                            "translate":"item.hats.hat.arrow_prop.lore1"
+                        }
+                    ]
                 }
             ],
             "rolls":1,
             "entries":[
                 {
                     "type":"tag",
-                    "name":"hats:hat",
+                    "name":"hats:hat_on_head",
                     "expand":true
                 }
             ]

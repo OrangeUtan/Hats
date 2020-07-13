@@ -6,12 +6,12 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.mario.mario.name"
+                        "translate":"item.hats.hat.luigi_mask.name"
                     }
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3177, Tags:[\"hats.hat\", \"hats.hat.type.mario_mask\"]}"
+                    "tag":"{CustomModelData:3178, Tags:[\"hats.hat\", \"hats.hat.type.luigi_mask\"]}"
                 }
             ],
             "rolls":1,

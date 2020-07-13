@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.halloween.wiggly_ghast.name"
+                        "translate":"item.hats.hat.wiggly_ghast.name"
                     }
                 },
                 {

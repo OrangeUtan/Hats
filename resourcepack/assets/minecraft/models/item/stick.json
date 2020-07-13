@@ -8,25 +8,25 @@
             "predicate":{
                 "custom_model_data":3000
             },
-            "model":"item/hats/fez"
+            "model":"item/hats/misc/fez"
         },
         {
             "predicate":{
                 "custom_model_data":3001
             },
-            "model":"item/hats/squid"
+            "model":"item/hats/misc/squid"
         },
         {
             "predicate":{
                 "custom_model_data":3002
             },
-            "model":"item/hats/arrow"
+            "model":"item/hats/misc/arrow"
         },
         {
             "predicate":{
                 "custom_model_data":3003
             },
-            "model":"item/hats/frying_pan"
+            "model":"item/hats/misc/frying_pan"
         },
         {
             "predicate":{

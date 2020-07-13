@@ -6,12 +6,20 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.accessories.earth.name"
+                        "translate":"item.hats.hat.arrow_prop.name"
                     }
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:7773191, Tags:[\"hats.hat\", \"hats.hat.type.earth_in_orbit\"]}"
+                    "tag":"{CustomModelData:3002, Tags:[\"hats.hat\", \"hats.hat.type.arrow_prop\"]}"
+                },
+                {
+                    "function":"minecraft:set_lore",
+                    "lore":[
+                        {
+                            "translate":"item.hats.hat.arrow_prop.lore1"
+                        }
+                    ]
                 }
             ],
             "rolls":1,

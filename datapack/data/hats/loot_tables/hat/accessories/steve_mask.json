@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.accessories.steve_mask.name"
+                        "translate":"item.hats.hat.steve_mask.name"
                     }
                 },
                 {
@@ -17,7 +17,7 @@
                     "function":"minecraft:set_lore",
                     "lore":[
                         {
-                            "translate":"item.hats.accessories.steve_mask.lore1"
+                            "translate":"item.hats.hat.steve_mask.lore1"
                         }
                     ]
                 }

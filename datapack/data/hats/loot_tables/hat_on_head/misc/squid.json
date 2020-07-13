@@ -6,27 +6,19 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.arrow.name"
+                        "translate":"item.hats.hat.squid.name"
                     }
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3002, Tags:[\"hats.hat\", \"hats.hat.type.arrow_prop\"]}"
-                },
-                {
-                    "function":"minecraft:set_lore",
-                    "lore":[
-                        {
-                            "translate":"item.hats.arrow.lore1"
-                        }
-                    ]
+                    "tag":"{CustomModelData:3001, Tags:[\"hats.hat\", \"hats.hat.type.squid\"]}"
                 }
             ],
             "rolls":1,
             "entries":[
                 {
                     "type":"tag",
-                    "name":"hats:hat",
+                    "name":"hats:hat_on_head",
                     "expand":true
                 }
             ]

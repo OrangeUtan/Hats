@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.halloween.native_american_headband.name"
+                        "translate":"item.hats.hat.native_american_headband.name"
                     }
                 },
                 {

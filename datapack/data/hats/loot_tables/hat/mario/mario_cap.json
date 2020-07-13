@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.mario.mario_cap.name"
+                        "translate":"item.hats.hat.mario_cap.name"
                     }
                 },
                 {

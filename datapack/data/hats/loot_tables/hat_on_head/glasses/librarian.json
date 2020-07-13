@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.glasses.librarian.name"
+                        "translate":"item.hats.hat.librarian_glasses.name"
                     }
                 },
                 {

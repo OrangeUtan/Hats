@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.tophats.pink.name"
+                        "translate":"item.hats.hat.pink_tophat.name"
                     }
                 },
                 {

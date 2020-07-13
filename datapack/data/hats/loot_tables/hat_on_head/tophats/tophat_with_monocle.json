@@ -6,19 +6,19 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.frying_pan.name"
+                        "translate":"item.hats.hat.tophat_with_monocle.name"
                     }
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3003, Tags:[\"hats.hat\", \"hats.hat.type.frying_pan\"]}"
+                    "tag":"{CustomModelData:3117, Tags:[\"hats.hat\", \"hats.hat.type.tophat_with_monocle\"]}"
                 }
             ],
             "rolls":1,
             "entries":[
                 {
                     "type":"tag",
-                    "name":"hats:hat",
+                    "name":"hats:hat_on_head",
                     "expand":true
                 }
             ]

@@ -6,19 +6,19 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.squid.name"
+                        "translate":"item.hats.hat.mario_mask.name"
                     }
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3001, Tags:[\"hats.hat\", \"hats.hat.type.squid\"]}"
+                    "tag":"{CustomModelData:3177, Tags:[\"hats.hat\", \"hats.hat.type.mario_mask\"]}"
                 }
             ],
             "rolls":1,
             "entries":[
                 {
                     "type":"tag",
-                    "name":"hats:hat_on_head",
+                    "name":"hats:hat",
                     "expand":true
                 }
             ]

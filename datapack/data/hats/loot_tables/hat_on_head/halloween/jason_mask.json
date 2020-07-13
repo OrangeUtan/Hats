@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.halloween.jason_mask.name"
+                        "translate":"item.hats.hat.jason_mask.name"
                     }
                 },
                 {

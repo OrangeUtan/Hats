@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.accessories.ninja_headband.name"
+                        "translate":"item.hats.hat.ninja_headband.name"
                     }
                 },
                 {

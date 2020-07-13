@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.accessories.snorkel_mask_blue.name"
+                        "translate":"item.hats.hat.snorkel_mask_blue.name"
                     }
                 },
                 {

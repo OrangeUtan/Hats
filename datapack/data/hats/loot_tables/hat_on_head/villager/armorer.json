@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.villager.armorer.name"
+                        "translate":"item.hats.hat.armorer_mask.name"
                     }
                 },
                 {

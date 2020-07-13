@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.villager.farmer.name"
+                        "translate":"item.hats.hat.farmer_strawhat.name"
                     }
                 },
                 {

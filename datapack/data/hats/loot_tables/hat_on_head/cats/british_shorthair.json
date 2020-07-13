@@ -6,7 +6,7 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.cats.british_shorthair.name"
+                        "translate":"item.hats.hat.british_shorthair.name"
                     }
                 },
                 {

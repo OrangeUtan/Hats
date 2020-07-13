@@ -6,12 +6,12 @@
                 {
                     "function":"minecraft:set_name",
                     "name":{
-                        "translate":"item.hats.fez.name"
+                        "translate":"item.hats.hat.frying_pan.name"
                     }
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3000, Tags:[\"hats.hat\", \"hats.hat.type.fez\"]}"
+                    "tag":"{CustomModelData:3003, Tags:[\"hats.hat\", \"hats.hat.type.frying_pan\"]}"
                 }
             ],
             "rolls":1,

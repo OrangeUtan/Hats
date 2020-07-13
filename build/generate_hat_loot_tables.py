@@ -1,17 +1,13 @@
 import json, os
 from registry import Registry, Hat
+import shutil
 
 def hat_loot_table(hat, base_item):
-	if hat.category == "*":
-		translation = f"{hat.name}"
-	else:
-		translation = f"{hat.category}.{hat.name}"
-
 	functions = [
 		{
 			"function": "minecraft:set_name",
 			"name": {
-				"translate": f"item.hats.{translation}.name"
+				"translate": hat.translation
 			}
 		},
 		{
@@ -45,8 +41,18 @@ def hat_loot_table(hat, base_item):
 		]
 	}
 
+def delete_folder(path: str):
+	for root, dirs, files in os.walk('/path/to/folder'):
+		for f in files:
+			os.unlink(os.path.join(root, f))
+		for d in dirs:
+			shutil.rmtree(os.path.join(root, d))
+
 registry = Registry()
 hats = list(registry.all_hats())
+
+delete_folder("datapack/data/hats/loot_tables/hat")
+delete_folder("datapack/data/hats/loot_tables/hat_on_head")
 
 for hat in hats:
 	if hat.category == "*":
@@ -54,7 +60,12 @@ for hat in hats:
 	else:
 		rel_path = f"{hat.category}/{hat.name}"
 
+	hat_loot_table_dir = f"datapack/data/hats/loot_tables/hat/{hat.category}"
+	if not os.path.exists(hat_loot_table_dir):
+		os.makedirs(hat_loot_table_dir)
+
 	hat_loot_table_path = f"datapack/data/hats/loot_tables/hat/{rel_path}.json"
+	
 	with open(hat_loot_table_path, "w+") as file:
 		json.dump(hat_loot_table(hat, "hats:hat"), file, separators=(',', ':'), indent=4)
 

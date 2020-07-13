@@ -1,217 +1,217 @@
-categories:
-  - "*":
-    - fez: 
-        custom_model_data: 3000
-        type: fez
-    - squid:
-        custom_model_data: 3001
-        type: squid
-    - arrow:
-        custom_model_data: 3002
-        num_lore_lines: 1
-        type: arrow_prop
-    - frying_pan: 
-        custom_model_data: 3003
-        type: frying_pan
+hats:
+    misc:
+        fez: 
+            cmd: 3000
+            type: fez
+        squid:
+            cmd: 3001
+            type: squid
+        arrow_prop:
+            cmd: 3002
+            num_lore_lines: 1
+            type: arrow_prop
+        frying_pan: 
+            cmd: 3003
+            type: frying_pan
 
-  - animals:
-    - dog:
-        custom_model_data: 7773190
-        model: dog
-        type: dog
+    animals:
+        dog:
+            cmd: 7773190
+            model: dog
+            type: dog
 
-  - tophats:
-    - white: 
-        custom_model_data: 3100
-        type: white_tophat
-    - orange: 
-        custom_model_data: 3101
-        type: orange_tophat
-    - magenta: 
-        custom_model_data: 3102
-        type: magenta_tophat
-    - light_blue: 
-        custom_model_data: 3103
-        type: light_blue_tophat
-    - yellow: 
-        custom_model_data: 3104
-        type: yellow_tophat
-    - lime: 
-        custom_model_data: 3105
-        type: lime_tophat
-    - pink: 
-        custom_model_data: 3106
-        type: pink_tophat
-    - gray: 
-        custom_model_data: 3107
-        type: gray_tophat
-    - light_gray: 
-        custom_model_data: 3108
-        type: light_gray_tophat
-    - cyan: 
-        custom_model_data: 3109
-        type: cyan_tophat
-    - purple: 
-        custom_model_data: 3110
-        type: purple_tophat
-    - blue: 
-        custom_model_data: 3111
-        type: blue_tophat
-    - brown: 
-        custom_model_data: 3112
-        type: brown_tophat
-    - green: 
-        custom_model_data: 3113
-        type: green_tophat
-    - red: 
-        custom_model_data: 3114
-        type: red_tophat
-    - black: 
-        custom_model_data: 3115
-        type: black_tophat
-    - rainbow: 
-        custom_model_data: 3116
-        type: rainbow_tophat
-    - black_monocle: 
-        custom_model_data: 3117
-        type: tophat_with_monocle
+    tophats:
+        white: 
+            cmd: 3100
+            type: white_tophat
+        orange: 
+            cmd: 3101
+            type: orange_tophat
+        magenta: 
+            cmd: 3102
+            type: magenta_tophat
+        light_blue: 
+            cmd: 3103
+            type: light_blue_tophat
+        yellow: 
+            cmd: 3104
+            type: yellow_tophat
+        lime: 
+            cmd: 3105
+            type: lime_tophat
+        pink: 
+            cmd: 3106
+            type: pink_tophat
+        gray: 
+            cmd: 3107
+            type: gray_tophat
+        light_gray: 
+            cmd: 3108
+            type: light_gray_tophat
+        cyan: 
+            cmd: 3109
+            type: cyan_tophat
+        purple: 
+            cmd: 3110
+            type: purple_tophat
+        blue: 
+            cmd: 3111
+            type: blue_tophat
+        brown: 
+            cmd: 3112
+            type: brown_tophat
+        green: 
+            cmd: 3113
+            type: green_tophat
+        red: 
+            cmd: 3114
+            type: red_tophat
+        black: 
+            cmd: 3115
+            type: black_tophat
+        rainbow: 
+            cmd: 3116
+            type: rainbow_tophat
+        tophat_with_monocle: 
+            cmd: 3117
+            type: tophat_with_monocle
 
-  - cats:
-    - ocelot:
-        custom_model_data: 3120
-        type: ocelot
-    - tabby:
-        custom_model_data: 3121
-        type: tabby_cat
-    - tuxedo: 
-        custom_model_data: 3122
-        type: tuxedo_cat
-    - red: 
-        custom_model_data: 3123
-        type: red_cat
-    - siamese: 
-        custom_model_data: 3124
-        type: siamese_cat
-    - british_shorthair: 
-        custom_model_data: 3125
-        type: british_shorthair
-    - calico: 
-        custom_model_data: 3126
-        type: calico_cat
-    - persian: 
-        custom_model_data: 3127
-        type: persian_cat
-    - ragdoll:
-        custom_model_data: 3128
-        type: ragdoll
-    - white: 
-        custom_model_data: 3129
-        type: white_cat
-    - jellie:
-        custom_model_data: 3130
-        type: jellie
-    - black: 
-        custom_model_data: 3131
-        type: black_cat
+    cats:
+        ocelot:
+            cmd: 3120
+            type: ocelot
+        tabby:
+            cmd: 3121
+            type: tabby_cat
+        tuxedo: 
+            cmd: 3122
+            type: tuxedo_cat
+        red: 
+            cmd: 3123
+            type: red_cat
+        siamese: 
+            cmd: 3124
+            type: siamese_cat
+        british_shorthair: 
+            cmd: 3125
+            type: british_shorthair
+        calico: 
+            cmd: 3126
+            type: calico_cat
+        persian: 
+            cmd: 3127
+            type: persian_cat
+        ragdoll:
+            cmd: 3128
+            type: ragdoll
+        white: 
+            cmd: 3129
+            type: white_cat
+        jellie:
+            cmd: 3130
+            type: jellie
+        black: 
+            cmd: 3131
+            type: black_cat
 
-  - glasses:
-    - sunglasses: 
-        custom_model_data: 3140
-        type: sunglasses
-    - harry_potter:
-        custom_model_data: 3141
-        type: harry_potter_glasses
-    - half_rim: 
-        custom_model_data: 3142
-        type: half_rim_glasses
-    - rainbow: 
-        custom_model_data: 3143
-        type: rainbow_glasses
-    - librarian: 
-        custom_model_data: 3144
-        type: librarian_glasses
-    - three_d: 
-        custom_model_data: 3145
-        type: 3D_glasses
+    glasses:
+        sunglasses: 
+            cmd: 3140
+            type: sunglasses
+        harry_potter:
+            cmd: 3141
+            type: harry_potter_glasses
+        half_rim: 
+            cmd: 3142
+            type: half_rim_glasses
+        rainbow: 
+            cmd: 3143
+            type: rainbow_glasses
+        librarian: 
+            cmd: 3144
+            type: librarian_glasses
+        three_d: 
+            cmd: 3145
+            type: 3D_glasses
 
-  - accessories:
-    - ninja_headband:
-        custom_model_data: 3150
-        type: ninja_headband
-    - steve_mask:
-        custom_model_data: 3151
-        num_lore_lines: 1
-        type: steve_mask
-    - alex_mask:
-        custom_model_data: 3152
-        num_lore_lines: 1
-        type: alex_mask
-    - snorkel_mask_blue:
-        custom_model_data: 3153
-        type: snorkel_mask_blue
-    - snorkel_mask_red:
-        custom_model_data: 3154
-        type: snorkel_mask_red
-    - googly_eyes:
-        custom_model_data: 3155
-        type: googly_eyes
-    - earth:
-        custom_model_data: 7773191
-        type: earth_in_orbit
+    accessories:
+        ninja_headband:
+            cmd: 3150
+            type: ninja_headband
+        steve_mask:
+            cmd: 3151
+            num_lore_lines: 1
+            type: steve_mask
+        alex_mask:
+            cmd: 3152
+            num_lore_lines: 1
+            type: alex_mask
+        snorkel_mask_blue:
+            cmd: 3153
+            type: snorkel_mask_blue
+        snorkel_mask_red:
+            cmd: 3154
+            type: snorkel_mask_red
+        googly_eyes:
+            cmd: 3155
+            type: googly_eyes
+        earth_in_orbit:
+            cmd: 7773191
+            type: earth_in_orbit
 
-  - villager:
-    - armorer:
-        custom_model_data: 3160
-        type: armorer_mask
-    - farmer:
-        custom_model_data: 3161
-        type: farmer_strawhat
-    - nose:
-        custom_model_data: 3162
-        num_lore_lines: 1
-        type: villager_nose
+    villager:
+        armorer:
+            cmd: 3160
+            type: armorer_mask
+        farmer:
+            cmd: 3161
+            type: farmer_strawhat
+        nose:
+            cmd: 3162
+            num_lore_lines: 1
+            type: villager_nose
 
-  - mario:
-    - mario_cap:
-        custom_model_data: 3170
-        type: mario_cap
-    - luigi_cap:
-        custom_model_data: 3171
-        type: luigi_cap
-    - cappy:
-        custom_model_data: 3172
-        type: cappy
-    - toad_red:
-        custom_model_data: 3173
-        type: toad_red
-    - toad_blue:
-        custom_model_data: 3174
-        type: toad_blue
-    - toad_yellow:
-        custom_model_data: 3175
-        type: toad_yellow
-    - toad_green:
-        custom_model_data: 3176
-        type: toad_green
-    - mario:
-        custom_model_data: 3177
-        type: mario_mask
-    - luigi:
-        custom_model_data: 3178
-        type: luigi_mask
+    mario:
+        mario_cap:
+            cmd: 3170
+            type: mario_cap
+        luigi_cap:
+            cmd: 3171
+            type: luigi_cap
+        cappy:
+            cmd: 3172
+            type: cappy
+        toad_red:
+            cmd: 3173
+            type: toad_red
+        toad_blue:
+            cmd: 3174
+            type: toad_blue
+        toad_yellow:
+            cmd: 3175
+            type: toad_yellow
+        toad_green:
+            cmd: 3176
+            type: toad_green
+        mario_mask:
+            cmd: 3177
+            type: mario_mask
+        luigi_mask:
+            cmd: 3178
+            type: luigi_mask
 
-  - halloween:
-    - wiggly_ghast: 
-        custom_model_data: 7773180
-        type: wiggly_ghast
-    - native_american_headband: 
-        custom_model_data: 7773181
-        type: native_american_headband
-    - jason_mask: 
-        custom_model_data: 7773182
-        type: jason_mask
+    halloween:
+        wiggly_ghast: 
+            cmd: 7773180
+            type: wiggly_ghast
+        native_american_headband: 
+            cmd: 7773181
+            type: native_american_headband
+        jason_mask: 
+            cmd: 7773182
+            type: jason_mask
 
-overwritten-item-models:
+items:
     normal:
         id: "minecraft:leather_helmet"
         model: {
