@@ -6,7 +6,7 @@
             "conditions": [
                 {
                     "condition": "reference",
-                    "name": "hats:villager/is_type_desert"
+                    "name": "oran9eutan:hats/villager/is_type_desert"
                 }
             ],
             "entries": [
@@ -29,7 +29,7 @@
             "conditions": [
                 {
                     "condition": "reference",
-                    "name": "hats:villager/is_type_jungle"
+                    "name": "oran9eutan:hats/villager/is_type_jungle"
                 }
             ],
             "entries": [
@@ -52,7 +52,7 @@
             "conditions": [
                 {
                     "condition": "reference",
-                    "name": "hats:villager/is_type_plains"
+                    "name": "oran9eutan:hats/villager/is_type_plains"
                 }
             ],
             "entries": [
@@ -79,7 +79,7 @@
             "conditions": [
                 {
                     "condition": "reference",
-                    "name": "hats:villager/is_type_savanna"
+                    "name": "oran9eutan:hats/villager/is_type_savanna"
                 }
             ],
             "entries": [
@@ -106,7 +106,7 @@
             "conditions": [
                 {
                     "condition": "reference",
-                    "name": "hats:villager/is_type_snow"
+                    "name": "oran9eutan:hats/villager/is_type_snow"
                 }
             ],
             "entries": [
@@ -133,7 +133,7 @@
             "conditions": [
                 {
                     "condition": "reference",
-                    "name": "hats:villager/is_type_swamp"
+                    "name": "oran9eutan:hats/villager/is_type_swamp"
                 }
             ],
             "entries": [
@@ -156,7 +156,7 @@
             "conditions": [
                 {
                     "condition": "reference",
-                    "name": "hats:villager/is_type_taiga"
+                    "name": "oran9eutan:hats/villager/is_type_taiga"
                 }
             ],
             "entries": [

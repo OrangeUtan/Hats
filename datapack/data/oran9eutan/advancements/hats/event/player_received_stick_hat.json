@@ -1,5 +1,5 @@
 {
-	"parent" : "hats:root",
+	"parent" : "oran9eutan:hats/root",
 	"criteria" : {
 		"player_received_stick_hat" : {
 			"trigger" : "minecraft:inventory_changed",

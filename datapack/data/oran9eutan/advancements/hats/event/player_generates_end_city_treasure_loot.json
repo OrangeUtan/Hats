@@ -1,5 +1,5 @@
 {
-	"parent" : "hats:root",
+	"parent" : "oran9eutan:hats/root",
 	"criteria" : {
 		"player_generates_end_city_treasure_loot" : {
 			"trigger": "minecraft:player_generates_container_loot",

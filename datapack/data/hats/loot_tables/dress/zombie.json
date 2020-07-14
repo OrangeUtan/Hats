@@ -50,7 +50,7 @@
                     "conditions": [
                         {
                             "condition": "minecraft:reference",
-                            "name": "hats:is_spooky_hours"
+                            "name": "oran9eutan:hats/is_spooky_hours"
                         }
                     ]
                 },

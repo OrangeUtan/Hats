@@ -1,5 +1,5 @@
 {
-	"parent" : "hats:root",
+	"parent" : "oran9eutan:hats/root",
 	"criteria" : {
 		"player_dropped_hat_item" : {
 			"trigger" : "minecraft:inventory_changed",
@@ -10,11 +10,11 @@
 						"terms": [
 							{
 								"condition": "minecraft:reference",
-								"name": "hats:player/dropped_leather_helmet"
+								"name": "oran9eutan:hats/player/dropped_leather_helmet"
 							},
 							{
 								"condition": "minecraft:reference",
-								"name": "hats:player/dropped_stick"
+								"name": "oran9eutan:hats/player/dropped_stick"
 							}
 						]	
 					}
