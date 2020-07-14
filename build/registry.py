@@ -17,17 +17,19 @@ class Registry:
 		json = load_yaml_file("hat_registry.yml")
 
 		self.custom_model_data_id = json["cmd_id"]
-		self.overwritten_item_models = dict(map(lambda i: (i[0], Item.from_json(i[0], i[1])), json["items"].items()))
-		self.categories = self._parse_categories(json, self.custom_model_data_id)
+		self.default_item_inv = json["default_item_inv"]
+		self.default_item_on_head = json["default_item_on_head"]
 
-	def _parse_categories(self, registry, custom_model_data_id):
-		categories = dict()
-
+		# Parse items
+		self.items = dict(map(lambda i: (i[0], Item.from_json(i[0], i[1])), json["items"].items()))
+		
+		# Parse categories
 		self.cmd_to_hat_map = {}
-		for category_name, category_hats in map(lambda c: c , registry["hats"].items()):
+		self.categories = {}
+		for category_name, category_hats in json["hats"].items():
 			hats = []
 			for hat_name, hat_json in category_hats.items():
-				hat = Hat.from_json(hat_name, category_name, custom_model_data_id, hat_json)
+				hat = Hat.from_json(hat_name, category_name, self, hat_json)
 
 				if hat.custom_model_data in self.cmd_to_hat_map:
 					raise Exception(f"Can't add {hat}, Custom Model Data {self.cmd_to_hat_map[hat.custom_model_data]} already has the same Custom Model Data")
@@ -35,14 +37,25 @@ class Registry:
 				self.cmd_to_hat_map[hat.custom_model_data] = hat
 				hats.append(hat)
 
-			categories[category_name] = hats
-		return categories
+			self.categories[category_name] = hats
+
+	def get_item_inv(self, name: str):
+		if not name in self.items:
+			return self.items[self.default_item_inv]
+		else:
+			return self.items[name]
+
+	def get_item_on_head(self, name: str):
+		if not name in self.items:
+			return self.items[self.default_item_on_head]
+		else:
+			return self.items[name]
 
 @dataclass
 class Item:
 	name: str
 	id: str
-	path: str
+	model_path: str
 	model: dict
 
 	@classmethod
@@ -63,11 +76,14 @@ class Hat:
 	translation: str
 	lore: list
 
+	item_inv: str
+	item_on_head: str
+
 	@classmethod
-	def from_json(cls, name:str, category: str, cmd_id: int, json: Dict):
+	def from_json(cls, name:str, category: str, registry: Registry, json: Dict):
 		categorized_name = f"{category}{{0}}{name}"
 
-		cmd = cmd_id * 10000 + json["cmd"]
+		cmd = registry.custom_model_data_id * 10000 + json["cmd"]
 
 		model_path = f"item/hats/{json.get('model', categorized_name.format('/'))}"
 		type = f"hats.hat.type.{json['type']}"
@@ -77,7 +93,7 @@ class Hat:
 		if "num_lore_lines" in json:
 			lore = [f"item.hats.hat.{json['type']}.lore{i+1}" for i in range(json.get("num_lore_lines", 0))]
 
-		return Hat(name, category, cmd, model_path, type, translation, lore)
+		return Hat(name, category, cmd, model_path, type, translation, lore, json.get("item_inv"), json.get("item_on_head"))
 
 def load_yaml_file(path):
 	with open(path) as file:

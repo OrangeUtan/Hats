@@ -213,7 +213,7 @@ hats:
             type: jason_mask
 
 items:
-    normal:
+    leather_helmet:
         id: "minecraft:leather_helmet"
         model: {
             parent: "item/generated",
@@ -222,7 +222,7 @@ items:
                 layer1: "item/leather_helmet_overlay"
             }
         }
-    on_head: 
+    stick:
         id: "minecraft:stick"
         model: {
             parent: "item/handheld",
@@ -230,3 +230,6 @@ items:
                 layer0: "item/stick"
             }
         }
+        
+default_item_inv: leather_helmet
+default_item_on_head: stick

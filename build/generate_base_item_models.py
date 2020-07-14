@@ -9,10 +9,22 @@ def minecraft_item_model_overwrite(custom_model_data, model_path):
 	return { "predicate": { "custom_model_data": custom_model_data }, "model": model_path }
 
 registry = Registry()
-hats = list(registry.all_hats())
-overrides = [minecraft_item_model_overwrite(hat.custom_model_data, hat.model_path) for hat in sorted(hats, key=lambda hat: hat.custom_model_data)]
 
-for key, item_model in registry.overwritten_item_models.items():
-	item_model.model["overrides"] = overrides
-	with open(item_model.path, "w+") as file:
-		json.dump(item_model.model, file, separators=(',', ':'), indent=4)
+item_name_to_overrides_map = dict(map(lambda i: (i, []),registry.items))
+for _, hat in sorted(registry.cmd_to_hat_map.items(), key=lambda x: x[0]):
+	item_inv = registry.get_item_inv(hat.item_inv)
+	item_on_head = registry.get_item_on_head(hat.item_on_head)
+	
+	override = minecraft_item_model_overwrite(hat.custom_model_data, hat.model_path)
+	item_name_to_overrides_map[item_inv.name].append(override)
+	item_name_to_overrides_map[item_on_head.name].append(override)
+
+for item_name, overrides in item_name_to_overrides_map.items():
+	if len(overrides) < 1:
+		continue
+ 
+	item = registry.items[item_name]
+	item.model["overrides"] = overrides
+
+	with open(item.model_path, "w+") as file:
+		json.dump(item.model, file, separators=(',', ':'), indent=4)
