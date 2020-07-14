@@ -6,4 +6,4 @@
 execute if entity @s[nbt={Inventory:[{Slot:103b,id:"minecraft:leather_helmet",tag:{Tags:["hats.hat"]}}]}] run schedule function hats:proxies/equip_player_with_correct_hat 1t
 
 # Reset trigger
-advancement revoke @s only hats:triggers/player_received_helmet_hat
+advancement revoke @s only oran9eutan:hats/event/player_received_helmet_hat

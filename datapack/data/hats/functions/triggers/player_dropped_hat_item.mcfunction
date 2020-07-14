@@ -7,4 +7,4 @@ execute if score #opt_convert_dogs hatsConfig matches 1 as @e[type=item,distance
 # Reset trigger
 scoreboard players set @s hatsDrpdLthrHlmt 0
 scoreboard players set @s hatsDrpdStick 0
-advancement revoke @s only hats:triggers/player_dropped_hat_item
+advancement revoke @s only oran9eutan:hats/event/player_dropped_hat_item

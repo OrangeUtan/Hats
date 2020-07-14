@@ -7,4 +7,4 @@ tag @s add hats.player.received_stick_hat
 schedule function hats:proxies/fix_players_stick_hats_if_necessary 1t
 
 # Reset trigger
-advancement revoke @s only hats:triggers/player_received_stick_hat
+advancement revoke @s only oran9eutan:hats/event/player_received_stick_hat
