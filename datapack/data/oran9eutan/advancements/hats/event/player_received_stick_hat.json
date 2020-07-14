@@ -1,0 +1,20 @@
+{
+	"parent" : "oran9eutan:hats/root",
+	"criteria" : {
+		"player_received_stick_hat" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ 
+						"item": "minecraft:stick",
+						"nbt": "{Tags:[\"hats.hat\"]}" 
+					}
+				]
+			}
+		}
+	},
+	"requirements" : [["player_received_stick_hat"]],
+	"rewards": {
+		"function": "oran9eutan:hats/event/player_received_stick_hat"
+	}
+}

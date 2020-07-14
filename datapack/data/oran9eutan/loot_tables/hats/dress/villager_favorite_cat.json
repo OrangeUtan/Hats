@@ -1,0 +1,182 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "oran9eutan:hats/villager/is_type_desert"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/black"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/persian"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/red"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "oran9eutan:hats/villager/is_type_jungle"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/calico"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/ocelot"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/red"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "oran9eutan:hats/villager/is_type_plains"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/british_shorthair"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/calico"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/red"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/tuxedo"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "oran9eutan:hats/villager/is_type_savanna"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/calico"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/ocelot"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/persian"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/red"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "oran9eutan:hats/villager/is_type_snow"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/jellie"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/ragdoll"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/tabby"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/white"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "oran9eutan:hats/villager/is_type_swamp"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/black"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/jellie"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/tabby"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "reference",
+                    "name": "oran9eutan:hats/villager/is_type_taiga"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/british_shorthair"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/jellie"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/siamese"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/cats/tabby"
+                }
+            ]
+        }
+    ]
+}

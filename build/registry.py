@@ -7,6 +7,13 @@ import argparse, sys
 class Registry:
 	def __init__(self):
 		self.load("hat_registry.yml")
+
+		self.namespace = "oran9eutan"
+		self.datapack_name = "hats"
+		self.advancement_dir = f"datapack/data/{self.namespace}/advancements/{self.datapack_name}"
+		self.functions_dir = f"datapack/data/{self.namespace}/functions/{self.datapack_name}"
+		self.loot_tables_dir = f"datapack/data/{self.namespace}/loot_tables/{self.datapack_name}"
+		self.predicates_dir = f"datapack/data/{self.namespace}/predicates/{self.datapack_name}"
 		
 	def all_hats(self):
 		for category_name, category_hats in self.categories.items():

@@ -1,0 +1,104 @@
+{
+	"parent" : "oran9eutan:hats/mario/root",
+	"display" : {
+		"icon": {
+			"item": "minecraft:red_mushroom",
+			"nbt": "{Enchantments:[{}]}"
+		  },
+		"title" : {
+			"translate": "advancements.hats.mario.collect_all.title"
+		},
+		"description" : {
+			"translate": "advancements.hats.mario.collect_all.description"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria" : {
+		"mario_cap" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.mario_cap\"]}" }
+				]
+			}
+		},
+		"luigi_cap" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.luigi_cap\"]}" }
+				]
+			}
+		},
+		"cappy" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.cappy\"]}" }
+				]
+			}
+		},
+		"red_toad" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.toad_red\"]}" }
+				]
+			}
+		},
+		"blue_toad" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.toad_blue\"]}" }
+				]
+			}
+		},
+		"yellow_toad" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.toad_yellow\"]}" }
+				]
+			}
+		},
+		"green_toad" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.toad_green\"]}" }
+				]
+			}
+		},
+		"mario_mask" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.mario_mask\"]}" }
+				]
+			}
+		},
+		"luigi_mask" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.luigi_mask\"]}" }
+				]
+			}
+		}
+	},
+	"requirements" : [
+		["mario_cap"], 
+		["luigi_cap"], 
+		["cappy"], 
+		["red_toad"], 
+		["blue_toad"],
+		["yellow_toad"],
+		["green_toad"],
+		["mario_mask"],
+		["luigi_mask"]
+	]
+}
