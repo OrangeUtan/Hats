@@ -6,22 +6,22 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/misc/squid"
+                    "name": "oran9eutan:hats/hat_on_head/misc/squid"
                 },
                         
                 {
                     "weight": 2,
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/accessories/snorkel_mask_blue"
+                    "name": "oran9eutan:hats/hat_on_head/accessories/snorkel_mask_blue"
                 },
                 {
                     "weight": 2,
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/accessories/snorkel_mask_red"
+                    "name": "oran9eutan:hats/hat_on_head/accessories/snorkel_mask_red"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/accessories/googly_eyes"
+                    "name": "oran9eutan:hats/hat_on_head/accessories/googly_eyes"
                 }
             ]
         }

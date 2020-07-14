@@ -12,15 +12,15 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/black"
+                    "name": "oran9eutan:hats/hat_on_head/cats/black"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/persian"
+                    "name": "oran9eutan:hats/hat_on_head/cats/persian"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/red"
+                    "name": "oran9eutan:hats/hat_on_head/cats/red"
                 }
             ]
         },
@@ -35,15 +35,15 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/calico"
+                    "name": "oran9eutan:hats/hat_on_head/cats/calico"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/ocelot"
+                    "name": "oran9eutan:hats/hat_on_head/cats/ocelot"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/red"
+                    "name": "oran9eutan:hats/hat_on_head/cats/red"
                 }
             ]
         },
@@ -58,19 +58,19 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/british_shorthair"
+                    "name": "oran9eutan:hats/hat_on_head/cats/british_shorthair"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/calico"
+                    "name": "oran9eutan:hats/hat_on_head/cats/calico"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/red"
+                    "name": "oran9eutan:hats/hat_on_head/cats/red"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/tuxedo"
+                    "name": "oran9eutan:hats/hat_on_head/cats/tuxedo"
                 }
             ]
         },
@@ -85,19 +85,19 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/calico"
+                    "name": "oran9eutan:hats/hat_on_head/cats/calico"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/ocelot"
+                    "name": "oran9eutan:hats/hat_on_head/cats/ocelot"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/persian"
+                    "name": "oran9eutan:hats/hat_on_head/cats/persian"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/red"
+                    "name": "oran9eutan:hats/hat_on_head/cats/red"
                 }
             ]
         },
@@ -112,19 +112,19 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/jellie"
+                    "name": "oran9eutan:hats/hat_on_head/cats/jellie"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/ragdoll"
+                    "name": "oran9eutan:hats/hat_on_head/cats/ragdoll"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/tabby"
+                    "name": "oran9eutan:hats/hat_on_head/cats/tabby"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/white"
+                    "name": "oran9eutan:hats/hat_on_head/cats/white"
                 }
             ]
         },
@@ -139,15 +139,15 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/black"
+                    "name": "oran9eutan:hats/hat_on_head/cats/black"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/jellie"
+                    "name": "oran9eutan:hats/hat_on_head/cats/jellie"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/tabby"
+                    "name": "oran9eutan:hats/hat_on_head/cats/tabby"
                 }
             ]
         },
@@ -162,19 +162,19 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/british_shorthair"
+                    "name": "oran9eutan:hats/hat_on_head/cats/british_shorthair"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/jellie"
+                    "name": "oran9eutan:hats/hat_on_head/cats/jellie"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/siamese"
+                    "name": "oran9eutan:hats/hat_on_head/cats/siamese"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/cats/tabby"
+                    "name": "oran9eutan:hats/hat_on_head/cats/tabby"
                 }
             ]
         }
