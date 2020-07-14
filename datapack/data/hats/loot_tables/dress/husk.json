@@ -27,7 +27,7 @@
                 
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/fez"
+                    "name": "hats:hat_on_head/misc/fez"
                 },
 
                 {

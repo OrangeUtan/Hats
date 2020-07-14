@@ -23,7 +23,7 @@
 
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/arrow"
+                    "name": "hats:hat_on_head/misc/arrow_prop"
                 },
 
                 {

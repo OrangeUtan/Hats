@@ -79,7 +79,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/frying_pan"
+                    "name": "hats:hat_on_head/misc/frying_pan"
                 }
             ]
 		},
@@ -97,7 +97,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/tophats/black_monocle"
+                    "name": "hats:hat_on_head/tophats/tophat_with_monocle"
                 }
             ]
 		}
