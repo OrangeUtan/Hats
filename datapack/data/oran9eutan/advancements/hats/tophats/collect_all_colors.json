@@ -1,17 +1,17 @@
 {
-	"parent" : "hats:root",
+	"parent" : "oran9eutan:hats/tophats/root",
 	"display" : {
 		"icon": {
 			"item": "minecraft:stick",
-			"nbt": "{CustomModelData:3100}"
+			"nbt": "{CustomModelData:7773116}"
 		  },
 		"title" : {
-			"translate": "advancements.hats.tophats.root.title"
+			"translate": "advancements.hats.tophats.collect_all_colors.title"
 		},
 		"description" : {
-			"translate": "advancements.hats.tophats.root.description"
+			"translate": "advancements.hats.tophats.collect_all_colors.description"
 		},
-		"frame": "task",
+		"frame": "challenge",
 		"show_toast": true,
 		"announce_to_chat": false,
 		"hidden": false
@@ -146,5 +146,9 @@
 			}
 		}
 	},
-	"requirements" : [["white_tophat", "orange_tophat", "magenta_tophat", "light_blue_tophat", "yellow_tophat", "lime_tophat", "pink_tophat", "gray_tophat","light_gray_tophat", "cyan_tophat", "purple_tophat", "blue_tophat", "brown_tophat", "green_tophat", "red_tophat", "black_tophat"]]
+	"rewards": {
+		"loot": [
+			"hats:hat/tophats/rainbow"
+		]
+	}
 }

@@ -1,9 +1,9 @@
 {
-	"parent" : "hats:tophats/root",
+	"parent" : "oran9eutan:hats/tophats/root",
 	"display" : {
 		"icon": {
 			"item": "minecraft:stick",
-			"nbt": "{CustomModelData:3117}"
+			"nbt": "{CustomModelData:7773117}"
 		  },
 		"title" : {
 			"translate": "advancements.hats.tophats.get_monocle.title"

@@ -1,17 +1,17 @@
 {
-	"parent" : "hats:root",
+	"parent" : "oran9eutan:hats/glasses/root",
 	"display" : {
 		"icon": {
 			"item": "minecraft:stick",
-			"nbt": "{CustomModelData:3142}"
+			"nbt": "{CustomModelData:7773145}"
 		  },
 		"title" : {
-			"translate": "advancements.hats.glasses.root.title"
+			"translate": "advancements.hats.glasses.collect_all.title"
 		},
 		"description" : {
-			"translate": "advancements.hats.glasses.root.description"
+			"translate": "advancements.hats.glasses.collect_all.description"
 		},
-		"frame": "task",
+		"frame": "challenge",
 		"show_toast": true,
 		"announce_to_chat": false,
 		"hidden": false
@@ -58,11 +58,16 @@
 			}
 		}
 	},
-	"requirements" : [[
-		"sunglasses", 
-		"harry_potter", 
-		"half_rim", 
-		"rainbow", 
-		"librarian"
-	]]
+	"requirements" : [
+		["sunglasses"], 
+		["harry_potter"], 
+		["half_rim"], 
+		["rainbow"], 
+		["librarian"]
+	],
+	"rewards": {
+		"loot": [
+			"hats:hat/glasses/three_d"
+		]
+	}
 }

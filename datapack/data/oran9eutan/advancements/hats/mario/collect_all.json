@@ -1,5 +1,5 @@
 {
-	"parent" : "hats:mario/root",
+	"parent" : "oran9eutan:hats/mario/root",
 	"display" : {
 		"icon": {
 			"item": "minecraft:red_mushroom",

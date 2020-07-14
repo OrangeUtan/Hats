@@ -1,9 +1,9 @@
 {
-	"parent" : "hats:root",
+	"parent" : "oran9eutan:hats/root",
 	"display" : {
 		"icon": {
 			"item": "minecraft:stick",
-			"nbt": "{CustomModelData:3000}"
+			"nbt": "{CustomModelData:7773118}"
 		  },
 		"title" : {
 			"translate": "advancements.hats.fez.title"

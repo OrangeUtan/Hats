@@ -1,17 +1,17 @@
 {
-	"parent" : "hats:cats/root",
+	"parent" : "oran9eutan:hats/root",
 	"display" : {
 		"icon": {
 			"item": "minecraft:stick",
-			"nbt": "{CustomModelData:3121}"
+			"nbt": "{CustomModelData:7773120}"
 		  },
 		"title" : {
-			"translate": "advancements.hats.cats.collect_all.title"
+			"translate": "advancements.hats.cats.root.title"
 		},
 		"description" : {
-			"translate": "advancements.hats.cats.collect_all.description"
+			"translate": "advancements.hats.cats.root.description"
 		},
-		"frame": "challenge",
+		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": false,
 		"hidden": false
@@ -114,7 +114,18 @@
 			}
 		}
 	},
-	"rewards": {
-		"loot": ["minecraft:gameplay/cat_morning_gift"]
-	}
+	"requirements" : [[
+		"ocelot", 
+		"tabby_cat", 
+		"tuxedo_cat", 
+		"red_cat", 
+		"siamese_cat", 
+		"british_shorthair", 
+		"calico_cat", 
+		"persian_cat", 
+		"ragdoll",
+		"white_cat",
+		"jellie", 
+		"black_cat"
+	]]
 }
