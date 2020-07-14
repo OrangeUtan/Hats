@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "hats:hat_on_head/squid"
+                    "name": "hats:hat_on_head/misc/squid"
                 },
                         
                 {

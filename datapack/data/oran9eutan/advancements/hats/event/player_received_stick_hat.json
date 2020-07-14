@@ -15,6 +15,6 @@
 	},
 	"requirements" : [["player_received_stick_hat"]],
 	"rewards": {
-		"function": "hats:triggers/player_received_stick_hat"
+		"function": "oran9eutan:hats/event/player_received_stick_hat"
 	}
 }

@@ -24,6 +24,6 @@
 		}
 	},
 	"rewards": {
-		"function": "hats:triggers/player_dropped_hat_item"
+		"function": "oran9eutan:hats/event/player_dropped_hat_item"
 	}
 }

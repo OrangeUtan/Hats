@@ -9,6 +9,6 @@
 		}
 	},
 	"rewards": {
-		"function": "hats:triggers/player_generates_end_city_treasure_loot"
+		"function": "oran9eutan:hats/event/player_generates_end_city_treasure_loot"
 	}
 }
