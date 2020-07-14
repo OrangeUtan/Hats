@@ -17,9 +17,8 @@
             "rolls":1,
             "entries":[
                 {
-                    "type":"tag",
-                    "name":"hats:hat_on_head",
-                    "expand":true
+                    "type":"minecraft:item",
+                    "name":"stick"
                 }
             ]
         }

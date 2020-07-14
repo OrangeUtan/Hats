@@ -17,9 +17,8 @@
             "rolls":1,
             "entries":[
                 {
-                    "type":"tag",
-                    "name":"hats:hat",
-                    "expand":true
+                    "type":"minecraft:item",
+                    "name":"leather_helmet"
                 }
             ]
         }
