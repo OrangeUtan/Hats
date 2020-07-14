@@ -1,22 +1,23 @@
+cmd_id: 777
 hats:
     misc:
         fez: 
-            cmd: 3000
+            cmd: 3118
             type: fez
         squid:
-            cmd: 3001
+            cmd: 3119
             type: squid
         arrow_prop:
-            cmd: 3002
+            cmd: 3132
             num_lore_lines: 1
             type: arrow_prop
         frying_pan: 
-            cmd: 3003
+            cmd: 3133
             type: frying_pan
 
     animals:
         dog:
-            cmd: 7773190
+            cmd: 3190
             model: dog
             type: dog
 
@@ -156,7 +157,7 @@ hats:
             cmd: 3155
             type: googly_eyes
         earth_in_orbit:
-            cmd: 7773191
+            cmd: 3191
             type: earth_in_orbit
 
     villager:
@@ -202,13 +203,13 @@ hats:
 
     halloween:
         wiggly_ghast: 
-            cmd: 7773180
+            cmd: 3180
             type: wiggly_ghast
         native_american_headband: 
-            cmd: 7773181
+            cmd: 3181
             type: native_american_headband
         jason_mask: 
-            cmd: 7773182
+            cmd: 3182
             type: jason_mask
 
 items:

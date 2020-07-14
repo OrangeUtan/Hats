@@ -2,6 +2,7 @@ from __future__ import annotations
 import yaml
 from dataclasses import dataclass
 from typing import Dict
+import argparse, sys
 
 class Registry:
 	def __init__(self):
@@ -14,14 +15,26 @@ class Registry:
 
 	def load(self, path: str):
 		json = load_yaml_file("hat_registry.yml")
-		self.overwritten_item_models = dict(map(lambda i: (i[0], Item.from_json(i[0], i[1])), json["items"].items()))
-		self.categories = Registry._parse_categories(json)
 
-	@classmethod
-	def _parse_categories(cls, registry):
+		self.custom_model_data_id = json["cmd_id"]
+		self.overwritten_item_models = dict(map(lambda i: (i[0], Item.from_json(i[0], i[1])), json["items"].items()))
+		self.categories = self._parse_categories(json, self.custom_model_data_id)
+
+	def _parse_categories(self, registry, custom_model_data_id):
 		categories = dict()
+
+		self.cmd_to_hat_map = {}
 		for category_name, category_hats in map(lambda c: c , registry["hats"].items()):
-			hats = list(map(lambda h: Hat.from_json(h[0], category_name, h[1]), category_hats.items()))
+			hats = []
+			for hat_name, hat_json in category_hats.items():
+				hat = Hat.from_json(hat_name, category_name, custom_model_data_id, hat_json)
+
+				if hat.custom_model_data in self.cmd_to_hat_map:
+					raise Exception(f"Can't add {hat}, Custom Model Data {self.cmd_to_hat_map[hat.custom_model_data]} already has the same Custom Model Data")
+
+				self.cmd_to_hat_map[hat.custom_model_data] = hat
+				hats.append(hat)
+
 			categories[category_name] = hats
 		return categories
 
@@ -51,8 +64,10 @@ class Hat:
 	lore: list
 
 	@classmethod
-	def from_json(cls, name:str, category: str, json: Dict):
+	def from_json(cls, name:str, category: str, cmd_id: int, json: Dict):
 		categorized_name = f"{category}{{0}}{name}"
+
+		cmd = cmd_id * 10000 + json["cmd"]
 
 		model_path = f"item/hats/{json.get('model', categorized_name.format('/'))}"
 		type = f"hats.hat.type.{json['type']}"
@@ -62,8 +77,72 @@ class Hat:
 		if "num_lore_lines" in json:
 			lore = [f"item.hats.hat.{json['type']}.lore{i+1}" for i in range(json.get("num_lore_lines", 0))]
 
-		return Hat(name, category, json["cmd"], model_path, type, translation, lore)
+		return Hat(name, category, cmd, model_path, type, translation, lore)
 
 def load_yaml_file(path):
 	with open(path) as file:
 		return yaml.load(file, Loader=yaml.Loader)
+
+################
+# CLI Commands #
+################
+
+def cmd_max(argv):
+	registry = Registry()
+	max_cmd, max_hat = max(registry.cmd_to_hat_map.items(), key=lambda x: x[0])
+	print(max_cmd, max_hat)
+
+def cmd_min(argv):
+	registry = Registry()
+	min_cmd, min_hat = min(registry.cmd_to_hat_map.items(), key=lambda x: x[0])
+	print(min_cmd, min_hat)
+
+def cmd_list(argv):
+	registry = Registry()
+	for cmd, hat in sorted(registry.cmd_to_hat_map.items(), key=lambda x: x[0]):
+		print(cmd, hat)
+
+def cmd_free(argv):
+	registry = Registry()
+	custom_model_data = sorted(registry.cmd_to_hat_map.keys())
+	min_cmd, _ = min(registry.cmd_to_hat_map.items(), key=lambda x: x[0])
+	max_cmd, _ = max(registry.cmd_to_hat_map.items(), key=lambda x: x[0])
+
+	for i in range(min_cmd, max_cmd):
+		if i not in custom_model_data:
+			print(i)
+
+def cmd_custom_model_data(argv):
+	CMD_MAX = "max"	
+	CMD_MIN = "min"	
+	CMD_LIST = "list"
+	CMD_FREE = "free"
+	SUB_COMMANDS = [CMD_MAX, CMD_MIN, CMD_LIST, CMD_FREE]
+
+	parser = argparse.ArgumentParser(description='Custom Model Data commands', usage=f"%(prog)s {CMD_CUSTOM_MODEL_DATA} [-h] {{{SUB_COMMANDS}}}")
+	parser.add_argument('command', type=str, choices=SUB_COMMANDS, help='Subcommand to run')
+	args = parser.parse_args(argv[0:1])
+
+	if args.command == CMD_MAX:
+		cmd_max(sys.argv[2:])
+	elif args.command == CMD_MIN:
+		cmd_min(sys.argv[2:])
+	elif args.command == CMD_LIST:
+		cmd_list(sys.argv[2:])
+	elif args.command == CMD_FREE:
+		cmd_free(sys.argv[2:])
+
+########
+# MAIN #
+########
+
+CMD_CUSTOM_MODEL_DATA = 'cmd'
+COMMANDS = [CMD_CUSTOM_MODEL_DATA]
+
+if __name__ == "__main__":
+	parser = argparse.ArgumentParser(description='Registry for hat items')
+	parser.add_argument('command', type=str, choices=COMMANDS, help='Subcommand to run')
+	args = parser.parse_args(sys.argv[1:2])
+
+	if args.command == CMD_CUSTOM_MODEL_DATA:
+		cmd_custom_model_data(sys.argv[2:])

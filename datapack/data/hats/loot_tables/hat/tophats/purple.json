@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3110, Tags:[\"hats.hat\", \"hats.hat.type.purple_tophat\"]}"
+                    "tag":"{CustomModelData:7773110, Tags:[\"hats.hat\", \"hats.hat.type.purple_tophat\"]}"
                 }
             ],
             "rolls":1,

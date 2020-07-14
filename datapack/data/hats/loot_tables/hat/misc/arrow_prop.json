@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3002, Tags:[\"hats.hat\", \"hats.hat.type.arrow_prop\"]}"
+                    "tag":"{CustomModelData:7773132, Tags:[\"hats.hat\", \"hats.hat.type.arrow_prop\"]}"
                 },
                 {
                     "function":"minecraft:set_lore",

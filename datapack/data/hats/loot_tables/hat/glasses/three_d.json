@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3145, Tags:[\"hats.hat\", \"hats.hat.type.3D_glasses\"]}"
+                    "tag":"{CustomModelData:7773145, Tags:[\"hats.hat\", \"hats.hat.type.3D_glasses\"]}"
                 }
             ],
             "rolls":1,

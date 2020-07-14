@@ -6,351 +6,351 @@
     "overrides":[
         {
             "predicate":{
-                "custom_model_data":3000
-            },
-            "model":"item/hats/misc/fez"
-        },
-        {
-            "predicate":{
-                "custom_model_data":3001
-            },
-            "model":"item/hats/misc/squid"
-        },
-        {
-            "predicate":{
-                "custom_model_data":3002
-            },
-            "model":"item/hats/misc/arrow"
-        },
-        {
-            "predicate":{
-                "custom_model_data":3003
-            },
-            "model":"item/hats/misc/frying_pan"
-        },
-        {
-            "predicate":{
-                "custom_model_data":3100
+                "custom_model_data":7773100
             },
             "model":"item/hats/tophats/white"
         },
         {
             "predicate":{
-                "custom_model_data":3101
+                "custom_model_data":7773101
             },
             "model":"item/hats/tophats/orange"
         },
         {
             "predicate":{
-                "custom_model_data":3102
+                "custom_model_data":7773102
             },
             "model":"item/hats/tophats/magenta"
         },
         {
             "predicate":{
-                "custom_model_data":3103
+                "custom_model_data":7773103
             },
             "model":"item/hats/tophats/light_blue"
         },
         {
             "predicate":{
-                "custom_model_data":3104
+                "custom_model_data":7773104
             },
             "model":"item/hats/tophats/yellow"
         },
         {
             "predicate":{
-                "custom_model_data":3105
+                "custom_model_data":7773105
             },
             "model":"item/hats/tophats/lime"
         },
         {
             "predicate":{
-                "custom_model_data":3106
+                "custom_model_data":7773106
             },
             "model":"item/hats/tophats/pink"
         },
         {
             "predicate":{
-                "custom_model_data":3107
+                "custom_model_data":7773107
             },
             "model":"item/hats/tophats/gray"
         },
         {
             "predicate":{
-                "custom_model_data":3108
+                "custom_model_data":7773108
             },
             "model":"item/hats/tophats/light_gray"
         },
         {
             "predicate":{
-                "custom_model_data":3109
+                "custom_model_data":7773109
             },
             "model":"item/hats/tophats/cyan"
         },
         {
             "predicate":{
-                "custom_model_data":3110
+                "custom_model_data":7773110
             },
             "model":"item/hats/tophats/purple"
         },
         {
             "predicate":{
-                "custom_model_data":3111
+                "custom_model_data":7773111
             },
             "model":"item/hats/tophats/blue"
         },
         {
             "predicate":{
-                "custom_model_data":3112
+                "custom_model_data":7773112
             },
             "model":"item/hats/tophats/brown"
         },
         {
             "predicate":{
-                "custom_model_data":3113
+                "custom_model_data":7773113
             },
             "model":"item/hats/tophats/green"
         },
         {
             "predicate":{
-                "custom_model_data":3114
+                "custom_model_data":7773114
             },
             "model":"item/hats/tophats/red"
         },
         {
             "predicate":{
-                "custom_model_data":3115
+                "custom_model_data":7773115
             },
             "model":"item/hats/tophats/black"
         },
         {
             "predicate":{
-                "custom_model_data":3116
+                "custom_model_data":7773116
             },
             "model":"item/hats/tophats/rainbow"
         },
         {
             "predicate":{
-                "custom_model_data":3117
+                "custom_model_data":7773117
             },
-            "model":"item/hats/tophats/black_monocle"
+            "model":"item/hats/tophats/tophat_with_monocle"
         },
         {
             "predicate":{
-                "custom_model_data":3120
+                "custom_model_data":7773118
+            },
+            "model":"item/hats/misc/fez"
+        },
+        {
+            "predicate":{
+                "custom_model_data":7773119
+            },
+            "model":"item/hats/misc/squid"
+        },
+        {
+            "predicate":{
+                "custom_model_data":7773120
             },
             "model":"item/hats/cats/ocelot"
         },
         {
             "predicate":{
-                "custom_model_data":3121
+                "custom_model_data":7773121
             },
             "model":"item/hats/cats/tabby"
         },
         {
             "predicate":{
-                "custom_model_data":3122
+                "custom_model_data":7773122
             },
             "model":"item/hats/cats/tuxedo"
         },
         {
             "predicate":{
-                "custom_model_data":3123
+                "custom_model_data":7773123
             },
             "model":"item/hats/cats/red"
         },
         {
             "predicate":{
-                "custom_model_data":3124
+                "custom_model_data":7773124
             },
             "model":"item/hats/cats/siamese"
         },
         {
             "predicate":{
-                "custom_model_data":3125
+                "custom_model_data":7773125
             },
             "model":"item/hats/cats/british_shorthair"
         },
         {
             "predicate":{
-                "custom_model_data":3126
+                "custom_model_data":7773126
             },
             "model":"item/hats/cats/calico"
         },
         {
             "predicate":{
-                "custom_model_data":3127
+                "custom_model_data":7773127
             },
             "model":"item/hats/cats/persian"
         },
         {
             "predicate":{
-                "custom_model_data":3128
+                "custom_model_data":7773128
             },
             "model":"item/hats/cats/ragdoll"
         },
         {
             "predicate":{
-                "custom_model_data":3129
+                "custom_model_data":7773129
             },
             "model":"item/hats/cats/white"
         },
         {
             "predicate":{
-                "custom_model_data":3130
+                "custom_model_data":7773130
             },
             "model":"item/hats/cats/jellie"
         },
         {
             "predicate":{
-                "custom_model_data":3131
+                "custom_model_data":7773131
             },
             "model":"item/hats/cats/black"
         },
         {
             "predicate":{
-                "custom_model_data":3140
+                "custom_model_data":7773132
+            },
+            "model":"item/hats/misc/arrow_prop"
+        },
+        {
+            "predicate":{
+                "custom_model_data":7773133
+            },
+            "model":"item/hats/misc/frying_pan"
+        },
+        {
+            "predicate":{
+                "custom_model_data":7773140
             },
             "model":"item/hats/glasses/sunglasses"
         },
         {
             "predicate":{
-                "custom_model_data":3141
+                "custom_model_data":7773141
             },
             "model":"item/hats/glasses/harry_potter"
         },
         {
             "predicate":{
-                "custom_model_data":3142
+                "custom_model_data":7773142
             },
             "model":"item/hats/glasses/half_rim"
         },
         {
             "predicate":{
-                "custom_model_data":3143
+                "custom_model_data":7773143
             },
             "model":"item/hats/glasses/rainbow"
         },
         {
             "predicate":{
-                "custom_model_data":3144
+                "custom_model_data":7773144
             },
             "model":"item/hats/glasses/librarian"
         },
         {
             "predicate":{
-                "custom_model_data":3145
+                "custom_model_data":7773145
             },
             "model":"item/hats/glasses/three_d"
         },
         {
             "predicate":{
-                "custom_model_data":3150
+                "custom_model_data":7773150
             },
             "model":"item/hats/accessories/ninja_headband"
         },
         {
             "predicate":{
-                "custom_model_data":3151
+                "custom_model_data":7773151
             },
             "model":"item/hats/accessories/steve_mask"
         },
         {
             "predicate":{
-                "custom_model_data":3152
+                "custom_model_data":7773152
             },
             "model":"item/hats/accessories/alex_mask"
         },
         {
             "predicate":{
-                "custom_model_data":3153
+                "custom_model_data":7773153
             },
             "model":"item/hats/accessories/snorkel_mask_blue"
         },
         {
             "predicate":{
-                "custom_model_data":3154
+                "custom_model_data":7773154
             },
             "model":"item/hats/accessories/snorkel_mask_red"
         },
         {
             "predicate":{
-                "custom_model_data":3155
+                "custom_model_data":7773155
             },
             "model":"item/hats/accessories/googly_eyes"
         },
         {
             "predicate":{
-                "custom_model_data":3160
+                "custom_model_data":7773160
             },
             "model":"item/hats/villager/armorer"
         },
         {
             "predicate":{
-                "custom_model_data":3161
+                "custom_model_data":7773161
             },
             "model":"item/hats/villager/farmer"
         },
         {
             "predicate":{
-                "custom_model_data":3162
+                "custom_model_data":7773162
             },
             "model":"item/hats/villager/nose"
         },
         {
             "predicate":{
-                "custom_model_data":3170
+                "custom_model_data":7773170
             },
             "model":"item/hats/mario/mario_cap"
         },
         {
             "predicate":{
-                "custom_model_data":3171
+                "custom_model_data":7773171
             },
             "model":"item/hats/mario/luigi_cap"
         },
         {
             "predicate":{
-                "custom_model_data":3172
+                "custom_model_data":7773172
             },
             "model":"item/hats/mario/cappy"
         },
         {
             "predicate":{
-                "custom_model_data":3173
+                "custom_model_data":7773173
             },
             "model":"item/hats/mario/toad_red"
         },
         {
             "predicate":{
-                "custom_model_data":3174
+                "custom_model_data":7773174
             },
             "model":"item/hats/mario/toad_blue"
         },
         {
             "predicate":{
-                "custom_model_data":3175
+                "custom_model_data":7773175
             },
             "model":"item/hats/mario/toad_yellow"
         },
         {
             "predicate":{
-                "custom_model_data":3176
+                "custom_model_data":7773176
             },
             "model":"item/hats/mario/toad_green"
         },
         {
             "predicate":{
-                "custom_model_data":3177
+                "custom_model_data":7773177
             },
-            "model":"item/hats/mario/mario"
+            "model":"item/hats/mario/mario_mask"
         },
         {
             "predicate":{
-                "custom_model_data":3178
+                "custom_model_data":7773178
             },
-            "model":"item/hats/mario/luigi"
+            "model":"item/hats/mario/luigi_mask"
         },
         {
             "predicate":{
@@ -380,7 +380,7 @@
             "predicate":{
                 "custom_model_data":7773191
             },
-            "model":"item/hats/accessories/earth"
+            "model":"item/hats/accessories/earth_in_orbit"
         }
     ]
 }

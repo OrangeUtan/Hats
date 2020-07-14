@@ -11,7 +11,7 @@
                 },
                 {
                     "function":"set_nbt",
-                    "tag":"{CustomModelData:3144, Tags:[\"hats.hat\", \"hats.hat.type.librarian_glasses\"]}"
+                    "tag":"{CustomModelData:7773144, Tags:[\"hats.hat\", \"hats.hat.type.librarian_glasses\"]}"
                 }
             ],
             "rolls":1,
