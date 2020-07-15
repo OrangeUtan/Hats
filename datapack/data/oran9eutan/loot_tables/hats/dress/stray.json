@@ -1,0 +1,44 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/tophats/brown"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/tophats/green"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/tophats/red"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/tophats/black"
+                },
+
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/misc/arrow_prop"
+                },
+
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/accessories/steve_mask"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/accessories/alex_mask"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/accessories/googly_eyes"
+                }
+            ]
+        }
+    ]
+}

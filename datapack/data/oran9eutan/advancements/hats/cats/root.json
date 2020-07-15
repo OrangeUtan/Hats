@@ -1,0 +1,131 @@
+{
+	"parent" : "oran9eutan:hats/root",
+	"display" : {
+		"icon": {
+			"item": "minecraft:stick",
+			"nbt": "{CustomModelData:7773120}"
+		  },
+		"title" : {
+			"translate": "advancements.hats.cats.root.title"
+		},
+		"description" : {
+			"translate": "advancements.hats.cats.root.description"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria" : {
+		"ocelot" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.ocelot\"]}" }
+				]
+			}
+		},
+		"tabby_cat" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.tabby_cat\"]}" }
+				]
+			}
+		},
+		"tuxedo_cat" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.tuxedo_cat\"]}" }
+				]
+			}
+		},
+		"red_cat" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.red_cat\"]}" }
+				]
+			}
+		},
+		"siamese_cat" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.siamese_cat\"]}" }
+				]
+			}
+		},
+		"british_shorthair" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.british_shorthair\"]}" }
+				]
+			}
+		},
+		"calico_cat" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.calico_cat\"]}" }
+				]
+			}
+		},
+		"persian_cat" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.persian_cat\"]}" }
+				]
+			}
+		},
+		"ragdoll" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.ragdoll\"]}" }
+				]
+			}
+		},
+		"white_cat" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.white_cat\"]}" }
+				]
+			}
+		},
+		"jellie" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.jellie\"]}" }
+				]
+			}
+		},
+		"black_cat" : {
+			"trigger" : "minecraft:inventory_changed",
+			"conditions" : {
+				"items": [
+					{ "nbt": "{Tags:[\"hats.hat.type.black_cat\"]}" }
+				]
+			}
+		}
+	},
+	"requirements" : [[
+		"ocelot", 
+		"tabby_cat", 
+		"tuxedo_cat", 
+		"red_cat", 
+		"siamese_cat", 
+		"british_shorthair", 
+		"calico_cat", 
+		"persian_cat", 
+		"ragdoll",
+		"white_cat",
+		"jellie", 
+		"black_cat"
+	]]
+}

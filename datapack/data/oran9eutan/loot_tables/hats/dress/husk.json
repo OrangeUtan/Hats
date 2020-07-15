@@ -1,0 +1,57 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/tophats/yellow"
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/tophats/lime"
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/tophats/pink"
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/tophats/gray"
+                },
+                
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/misc/fez"
+                },
+
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/glasses/sunglasses"
+                },
+
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/accessories/steve_mask"
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/accessories/alex_mask"
+                },
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/accessories/googly_eyes"
+                }
+            ]
+        }
+    ]
+}

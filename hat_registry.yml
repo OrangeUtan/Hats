@@ -1,90 +1,219 @@
-categories:
-  - "*":
-    - fez: { custom_model_data: 3000 }
-    - squid: { custom_model_data: 3001 }
-    - arrow: { custom_model_data: 3002, num_lore_lines: 1 }
-    - frying_pan: { custom_model_data: 3003 }
+cmd_id: 777
+hats:
+    misc:
+        fez: 
+            cmd: 3118
+            type: fez
+        squid:
+            cmd: 3119
+            type: squid
+        arrow_prop:
+            cmd: 3132
+            num_lore_lines: 1
+            type: arrow_prop
+        frying_pan: 
+            cmd: 3133
+            type: frying_pan
 
-  - animals:
-    - dog: { 
-        custom_model_data: 7773190,
-        model: dog
-    }
+    animals:
+        dog:
+            cmd: 3190
+            model: dog
+            type: dog
 
-  - tophats:
-    - white: { custom_model_data: 3100 }
-    - orange: { custom_model_data: 3101 }
-    - magenta: { custom_model_data: 3102 }
-    - light_blue: { custom_model_data: 3103 }
-    - yellow: { custom_model_data: 3104 }
-    - lime: { custom_model_data: 3105 }
-    - pink: { custom_model_data: 3106 }
-    - gray: { custom_model_data: 3107 }
-    - light_gray: { custom_model_data: 3108 }
-    - cyan: { custom_model_data: 3109 }
-    - purple: { custom_model_data: 3110 }
-    - blue: { custom_model_data: 3111 }
-    - brown: { custom_model_data: 3112 }
-    - green: { custom_model_data: 3113 }
-    - red: { custom_model_data: 3114 }
-    - black: { custom_model_data: 3115 }
-    - rainbow: { custom_model_data: 3116 }
-    - black_monocle: { custom_model_data: 3117 }
+    tophats:
+        white: 
+            cmd: 3100
+            type: white_tophat
+        orange: 
+            cmd: 3101
+            type: orange_tophat
+        magenta: 
+            cmd: 3102
+            type: magenta_tophat
+        light_blue: 
+            cmd: 3103
+            type: light_blue_tophat
+        yellow: 
+            cmd: 3104
+            type: yellow_tophat
+        lime: 
+            cmd: 3105
+            type: lime_tophat
+        pink: 
+            cmd: 3106
+            type: pink_tophat
+        gray: 
+            cmd: 3107
+            type: gray_tophat
+        light_gray: 
+            cmd: 3108
+            type: light_gray_tophat
+        cyan: 
+            cmd: 3109
+            type: cyan_tophat
+        purple: 
+            cmd: 3110
+            type: purple_tophat
+        blue: 
+            cmd: 3111
+            type: blue_tophat
+        brown: 
+            cmd: 3112
+            type: brown_tophat
+        green: 
+            cmd: 3113
+            type: green_tophat
+        red: 
+            cmd: 3114
+            type: red_tophat
+        black: 
+            cmd: 3115
+            type: black_tophat
+        rainbow: 
+            cmd: 3116
+            type: rainbow_tophat
+        tophat_with_monocle: 
+            cmd: 3117
+            type: tophat_with_monocle
 
-  - cats:
-    - ocelot: { custom_model_data: 3120 }
-    - tabby: { custom_model_data: 3121 }
-    - tuxedo: { custom_model_data: 3122 }
-    - red: { custom_model_data: 3123 }
-    - siamese: { custom_model_data: 3124 }
-    - british_shorthair: { custom_model_data: 3125 }
-    - calico: { custom_model_data: 3126 }
-    - persian: { custom_model_data: 3127 }
-    - ragdoll: { custom_model_data: 3128 }
-    - white: { custom_model_data: 3129 }
-    - jellie: { custom_model_data: 3130 }
-    - black: { custom_model_data: 3131 }
+    cats:
+        ocelot:
+            cmd: 3120
+            type: ocelot
+        tabby:
+            cmd: 3121
+            type: tabby_cat
+        tuxedo: 
+            cmd: 3122
+            type: tuxedo_cat
+        red: 
+            cmd: 3123
+            type: red_cat
+        siamese: 
+            cmd: 3124
+            type: siamese_cat
+        british_shorthair: 
+            cmd: 3125
+            type: british_shorthair
+        calico: 
+            cmd: 3126
+            type: calico_cat
+        persian: 
+            cmd: 3127
+            type: persian_cat
+        ragdoll:
+            cmd: 3128
+            type: ragdoll
+        white: 
+            cmd: 3129
+            type: white_cat
+        jellie:
+            cmd: 3130
+            type: jellie
+        black: 
+            cmd: 3131
+            type: black_cat
 
-  - glasses:
-    - sunglasses: { custom_model_data: 3140 }
-    - harry_potter: { custom_model_data: 3141 }
-    - half_rim: { custom_model_data: 3142 }
-    - rainbow: { custom_model_data: 3143 }
-    - librarian: { custom_model_data: 3144 }
-    - three_d: { custom_model_data: 3145 }
+    glasses:
+        sunglasses: 
+            cmd: 3140
+            type: sunglasses
+        harry_potter:
+            cmd: 3141
+            type: harry_potter_glasses
+        half_rim: 
+            cmd: 3142
+            type: half_rim_glasses
+        rainbow: 
+            cmd: 3143
+            type: rainbow_glasses
+        librarian: 
+            cmd: 3144
+            type: librarian_glasses
+        three_d: 
+            cmd: 3145
+            type: 3D_glasses
 
-  - accessories:
-    - ninja_headband: { custom_model_data: 3150 }
-    - steve_mask: { custom_model_data: 3151, num_lore_lines: 1 }
-    - alex_mask: { custom_model_data: 3152, num_lore_lines: 1 }
-    - snorkel_mask_blue: { custom_model_data: 3153 }
-    - snorkel_mask_red: { custom_model_data: 3154 }
-    - googly_eyes: { custom_model_data: 3155 }
-    - earth: { custom_model_data: 7773191 }
+    accessories:
+        ninja_headband:
+            cmd: 3150
+            type: ninja_headband
+        steve_mask:
+            cmd: 3151
+            num_lore_lines: 1
+            type: steve_mask
+        alex_mask:
+            cmd: 3152
+            num_lore_lines: 1
+            type: alex_mask
+        snorkel_mask_blue:
+            cmd: 3153
+            type: snorkel_mask_blue
+        snorkel_mask_red:
+            cmd: 3154
+            type: snorkel_mask_red
+        googly_eyes:
+            cmd: 3155
+            type: googly_eyes
+        earth_in_orbit:
+            cmd: 3191
+            type: earth_in_orbit
 
-  - villager:
-    - armorer: { custom_model_data: 3160 }
-    - farmer: { custom_model_data: 3161 }
-    - nose: { custom_model_data: 3162, num_lore_lines: 1 }
+    villager:
+        armorer:
+            cmd: 3160
+            type: armorer_mask
+        farmer:
+            cmd: 3161
+            type: farmer_strawhat
+        nose:
+            cmd: 3162
+            num_lore_lines: 1
+            type: villager_nose
 
-  - mario:
-    - mario_cap: { custom_model_data: 3170 }
-    - luigi_cap: { custom_model_data: 3171 }
-    - cappy: { custom_model_data: 3172 }
-    - toad_red: { custom_model_data: 3173 }
-    - toad_blue: { custom_model_data: 3174 }
-    - toad_yellow: { custom_model_data: 3175 }
-    - toad_green: { custom_model_data: 3176 }
-    - mario: { custom_model_data: 3177 }
-    - luigi: { custom_model_data: 3178 }
+    mario:
+        mario_cap:
+            cmd: 3170
+            type: mario_cap
+        luigi_cap:
+            cmd: 3171
+            type: luigi_cap
+        cappy:
+            cmd: 3172
+            type: cappy
+        toad_red:
+            cmd: 3173
+            type: toad_red
+        toad_blue:
+            cmd: 3174
+            type: toad_blue
+        toad_yellow:
+            cmd: 3175
+            type: toad_yellow
+        toad_green:
+            cmd: 3176
+            type: toad_green
+        mario_mask:
+            cmd: 3177
+            type: mario_mask
+        luigi_mask:
+            cmd: 3178
+            type: luigi_mask
 
-  - halloween:
-    - wiggly_ghast: { custom_model_data: 7773180 }
-    - native_american_headband: { custom_model_data: 7773181 }
-    - jason_mask: { custom_model_data: 7773182 }
+    halloween:
+        wiggly_ghast: 
+            cmd: 3180
+            type: wiggly_ghast
+        native_american_headband: 
+            cmd: 3181
+            type: native_american_headband
+        jason_mask: 
+            cmd: 3182
+            type: jason_mask
 
-overwritten-item-models:
-    normal:
+items:
+    leather_helmet:
         id: "minecraft:leather_helmet"
         model: {
             parent: "item/generated",
@@ -93,7 +222,7 @@ overwritten-item-models:
                 layer1: "item/leather_helmet_overlay"
             }
         }
-    on_head: 
+    stick:
         id: "minecraft:stick"
         model: {
             parent: "item/handheld",
@@ -101,3 +230,6 @@ overwritten-item-models:
                 layer0: "item/stick"
             }
         }
+        
+default_item_inv: leather_helmet
+default_item_on_head: stick

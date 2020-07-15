@@ -1,0 +1,13 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "oran9eutan:hats/hat/accessories/earth_in_orbit"
+				}
+			]
+		}
+	]
+}
