@@ -4,7 +4,7 @@
 tellraw @a ["",{"text":"Uninstalling ","color":"gold"},{"text":"Hats ","color":"red"},{"text":"datapack version ","color":"gold"},{"score":{"name":"#installed_version","objective":"hats.cfg"},"color":"red"}]
 
 # Remove scoreboards
-scoreboard objectives remove hatsMath
+scoreboard objectives remove hats.math
 scoreboard objectives remove hats.cfg
 scoreboard objectives remove hatsDrpdLthrHlmt
 scoreboard objectives remove hatsDrpdStick

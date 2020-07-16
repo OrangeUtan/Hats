@@ -34,12 +34,12 @@ def create_tree_file_for(root_dir, hat_old_cmd_pairs):
 			create_tree_file_for(root_dir, hat_old_cmd_pairs[int(len(hat_old_cmd_pairs)/2):])
 
 			split_cmd = hat_old_cmd_pairs[:int(len(hat_old_cmd_pairs)/2)][-1][1]
-			lines += [f"execute if score @s hatsMath matches {min_cmd}..{split_cmd} run function oran9eutan:hats/admin/fix_old_hats/tree/tree-{min_cmd}-{split_cmd}"]
-			lines += [f"execute if score @s hatsMath matches {split_cmd+1}..{max_cmd} run function oran9eutan:hats/admin/fix_old_hats/tree/tree-{split_cmd+1}-{max_cmd}"]
+			lines += [f"execute if score @s hats.math matches {min_cmd}..{split_cmd} run function oran9eutan:hats/admin/fix_old_hats/tree/tree-{min_cmd}-{split_cmd}"]
+			lines += [f"execute if score @s hats.math matches {split_cmd+1}..{max_cmd} run function oran9eutan:hats/admin/fix_old_hats/tree/tree-{split_cmd+1}-{max_cmd}"]
 		else:
 			lines = []
 			for hat, old_cmd in hat_old_cmd_pairs:
-				lines += [f"execute if score @s hatsMath matches {old_cmd} run function oran9eutan:hats/admin/fix_old_hats/tree/{hat.type}"]
+				lines += [f"execute if score @s hats.math matches {old_cmd} run function oran9eutan:hats/admin/fix_old_hats/tree/{hat.type}"]
 
 		write_lines(lines, file)
 

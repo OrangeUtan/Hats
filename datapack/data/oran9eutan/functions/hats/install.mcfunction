@@ -1,7 +1,7 @@
 # Installs the datapack
 
 # Create scoreboards
-scoreboard objectives add hatsMath dummy
+scoreboard objectives add hats.math dummy
 scoreboard objectives add hatsDrpdLthrHlmt minecraft.dropped:minecraft.leather_helmet
 scoreboard objectives add hatsDrpdStick minecraft.dropped:minecraft.stick
 scoreboard objectives add hats.fix_old_hat trigger
