@@ -1,0 +1,2 @@
+data modify storage minecraft:hats hat_to_fix.tag.Tags set value ["hats.hat", "hats.hat.type.earth_in_orbit"]
+data modify storage minecraft:hats hat_to_fix.tag.display.Name set value '{"translate":"item.hats.hat.earth_in_orbit.name"}'
