@@ -1,0 +1,2 @@
+execute if score @s hats.math matches 3129..3160 run function oran9eutan:hats/fix_old_hats/tree/tree-3129-3160
+execute if score @s hats.math matches 3161..7773191 run function oran9eutan:hats/fix_old_hats/tree/tree-3161-7773191
