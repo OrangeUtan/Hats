@@ -1,0 +1,1 @@
+loot give @s loot oran9eutan:hats/cfg
