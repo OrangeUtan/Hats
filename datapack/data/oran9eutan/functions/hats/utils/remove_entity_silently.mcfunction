@@ -7,7 +7,7 @@ execute store result score #gamerule_tmp hats.math run gamerule showDeathMessage
 gamerule showDeathMessages false
 
 # Send to a better place :c
-tp ~ -100 ~
+tp ~ ~1000 ~
 kill @s
 
 # Reset gamerule to its previous state
