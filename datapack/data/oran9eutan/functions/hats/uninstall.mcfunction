@@ -6,8 +6,8 @@ tellraw @a ["",{"text":"Uninstalling ","color":"gold"},{"text":"Hats ","color":"
 # Remove scoreboards
 scoreboard objectives remove hats.math
 scoreboard objectives remove hats.cfg
-scoreboard objectives remove hatsDrpdLthrHlmt
-scoreboard objectives remove hatsDrpdStick
+scoreboard objectives remove hats.dropLthrHlm
+scoreboard objectives remove hats.dropStick
 scoreboard objectives remove hats.fix_old_hat
 
 # Remove storage
@@ -16,4 +16,3 @@ data remove storage minecraft:hats dog_data
 
 # Remove advancements
 advancement revoke @a from hats:root
-
