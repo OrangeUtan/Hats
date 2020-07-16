@@ -22,6 +22,3 @@ execute unless score #opt_enable_fix_old_hats hats.cfg matches -2147483648.. run
 # Flag datapack as installed
 #define score_holder #installed_version Indicating which version is installed
 scoreboard players set #installed_version hats.cfg 20300
-
-# Install message
-tellraw @a ["",{"text":"Installed ","color":"gold"},{"text":"Hats","color":"red"},{"text":" datapack version ","color":"gold"},{"score":{"name":"#installed_version","objective":"hats.cfg"},"color":"red"}]
