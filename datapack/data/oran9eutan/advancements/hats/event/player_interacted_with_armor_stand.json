@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "c1": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:armor_stand"
+                }
+            }
+        }
+	},
+	"rewards": {
+		"function": "oran9eutan:hats/event/player_interacted_with_armor_stand"
+	}
+}
