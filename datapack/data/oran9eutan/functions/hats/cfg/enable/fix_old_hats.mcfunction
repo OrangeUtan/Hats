@@ -1,6 +1,6 @@
 # Enables players to fix their old hats
 
-scoreboard players set #opt_enable_fix_old_hats hatsConfig 1
+scoreboard players set #opt_enable_fix_old_hats hats.cfg 1
 scoreboard players reset @a hats.fix_old_hat
 
 scoreboard players enable @a hats.fix_old_hat

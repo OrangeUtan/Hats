@@ -24,4 +24,4 @@ setblock ~ 0 ~ minecraft:air
 
 # Allow player to fix more hats
 scoreboard players set @s hats.fix_old_hat 0
-execute if score #opt_enable_fix_old_hats hatsConfig matches 1 run scoreboard players enable @s hats.fix_old_hat
+execute if score #opt_enable_fix_old_hats hats.cfg matches 1 run scoreboard players enable @s hats.fix_old_hat
