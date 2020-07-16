@@ -2,6 +2,6 @@
 	"condition": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
-		"nbt": "{SelectedItem:{id:\"minecraft:lead\", tag:{display:{Name:\"{\\\"text\\\":\\\"Dog leash\\\"}\"}}}}"
+		"nbt": "{SelectedItem:{id:\"minecraft:lead\"}}"
 	}
 }

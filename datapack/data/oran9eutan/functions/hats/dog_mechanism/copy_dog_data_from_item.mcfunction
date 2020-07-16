@@ -5,11 +5,8 @@
 data modify storage hats dog_data set from entity @s Item.tag.dog_data
 data modify storage hats dog_data.CustomName set from entity @s Item.tag.display.Name
 
-# Summon dog
-summon minecraft:wolf ~ ~ ~ {Tags:["hats_dog_from_hat"]}
-
-# Merge dog nbt with saved dogs nbt
-execute as @e[type=wolf,distance=..0.001,tag=hats_dog_from_hat,limit=1] run function oran9eutan:hats/dog_mechanism/merge_dog_data
+# Create dog at players position
+execute as @p[tag=!global.ignore] at @s run function oran9eutan:hats/dog_mechanism/create_dog_from_dog_data
 
 # Remove temporary storage
 data remove storage hats dog_data
