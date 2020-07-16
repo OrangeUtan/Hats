@@ -1,0 +1,10 @@
+[
+	{
+		"condition": "minecraft:reference",
+		"name": "oran9eutan:hats/player/is_holding_dog_leash"
+	},
+	{
+		"condition": "minecraft:reference",
+		"name": "oran9eutan:hats/player/is_sneaking"
+	}
+]
