@@ -5,6 +5,7 @@ scoreboard objectives remove hatsMath
 scoreboard objectives remove hatsConfig
 scoreboard objectives remove hatsDrpdLthrHlmt
 scoreboard objectives remove hatsDrpdStick
+scoreboard objectives remove hats.fix_old_hat
 
 # Remove storage
 data remove storage minecraft:hats buffer

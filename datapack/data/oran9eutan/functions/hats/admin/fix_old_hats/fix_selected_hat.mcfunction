@@ -1,4 +1,4 @@
-# executor: Player whose selected hat will be fixed
+# executor: Player who triggered the command and whose selected hat will be fixed
 
 execute store result score @s hatsMath run data get entity @s SelectedItem.tag.CustomModelData
 data modify storage hats hat_to_fix set from entity @s SelectedItem
@@ -21,3 +21,7 @@ loot replace entity @s weapon.mainhand mine ~ 0 ~ minecraft:diamond_pickaxe{drop
 
 # Clean up
 setblock ~ 0 ~ minecraft:air
+
+# Allow player to fix more hats
+scoreboard players set @s hats.fix_old_hat 0
+execute if score #opt_enable_fix_old_hats hatsConfig matches 1 run scoreboard players enable @s hats.fix_old_hat
