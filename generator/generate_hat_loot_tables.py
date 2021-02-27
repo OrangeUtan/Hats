@@ -29,7 +29,7 @@ def hat_loot_table(hat, item):
     }
 
 
-registry = Registry()
+registry = Registry.from_json()
 
 for _, hat in registry.cmd_to_hat_map.items():
     rel_path = f"{hat.category}/{hat.name}"

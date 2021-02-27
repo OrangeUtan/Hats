@@ -61,7 +61,7 @@ def create_tree_file_for(root_dir, hat_old_cmd_pairs):
         write_lines(lines, file)
 
 
-registry = Registry()
+registry = Registry.from_json()
 tree_root_dir = f"{registry.functions_dir}/fix_old_hats/tree"
 
 if not os.path.exists(tree_root_dir):

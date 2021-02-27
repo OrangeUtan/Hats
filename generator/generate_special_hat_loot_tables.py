@@ -61,7 +61,7 @@ def generate_loot_table_rand_for_category(registry, category_name, category_hats
         json.dump(loot_table_rand, file)
 
 
-registry = Registry()
+registry = Registry.from_json()
 
 for category_name, category_hats in registry.categories.items():
     generate_loot_table_all_for_category(registry, category_name, category_hats, "hat")

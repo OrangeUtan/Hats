@@ -10,7 +10,7 @@ def minecraft_item_model_overwrite(custom_model_data, model_path):
     return {"predicate": {"custom_model_data": custom_model_data}, "model": model_path}
 
 
-registry = Registry()
+registry = Registry.from_json()
 
 item_name_to_overrides_map = dict(map(lambda i: (i, []), registry.items))
 for _, hat in sorted(registry.cmd_to_hat_map.items(), key=lambda x: x[0]):
