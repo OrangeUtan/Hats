@@ -29,18 +29,7 @@ def hat_loot_table(hat, item):
     }
 
 
-def delete_folder(path: str):
-    for root, dirs, files in os.walk(path):
-        for f in files:
-            os.unlink(os.path.join(root, f))
-        for d in dirs:
-            shutil.rmtree(os.path.join(root, d))
-
-
 registry = Registry()
-
-delete_folder(f"{registry.loot_tables_dir}/hat")
-delete_folder(f"{registry.loot_tables_dir}/hat_on_head")
 
 for _, hat in registry.cmd_to_hat_map.items():
     rel_path = f"{hat.category}/{hat.name}"
