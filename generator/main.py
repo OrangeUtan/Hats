@@ -1,7 +1,10 @@
+import json
+from pathlib import Path
 import typer
 
 from generator.registry import Registry
-from generator.utils import get_gaps_in_series, series_as_ranges, range_to_str
+from generator import utils
+from generator import generate_hat_loot_tables
 
 app = typer.Typer()
 cmd_app = typer.Typer()
@@ -25,20 +28,28 @@ def stats():
     min_cmd, min_hat = min(registry.cmd_to_hat_map.items(), key=lambda x: x[0])
     max_cmd, max_hat = max(registry.cmd_to_hat_map.items(), key=lambda x: x[0])
 
-    cmd_gaps = list(get_gaps_in_series(min_cmd, max_cmd, registry.cmd_to_hat_map))
+    cmd_gaps = list(utils.get_gaps_in_series(min_cmd, max_cmd, registry.cmd_to_hat_map))
 
     print(f"{len(registry.cmd_to_hat_map)} hats")
     print(f"Min: {min_cmd} {min_hat.category}.{min_hat.name}")
     print(f"Max: {max_cmd} {max_hat.category}.{max_hat.name}")
     print(
         f"Gaps ({len(cmd_gaps)}):",
-        ",".join(map(lambda r: range_to_str(r), (series_as_ranges(cmd_gaps)))),
+        ",".join(map(lambda r: utils.range_to_str(r), (utils.series_as_ranges(cmd_gaps)))),
     )
 
 
 @gen_app.command()
-def gen():
-    pass
+def loot_tables():
+    registry = Registry.from_json()
+    hat_loot_tables = generate_hat_loot_tables.create_hat_loot_tables(registry)
+
+    for loot_table in hat_loot_tables:
+        path = Path(registry.loot_tables_dir, loot_table.rel_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+
+        with path.open("w+") as f:
+            json.dump(loot_table.json, f, separators=(",", ":"), indent=4)
 
 
 app()
