@@ -1,5 +1,7 @@
-import os, json
-from registry import Registry, Hat
+import json
+import os
+
+from registry import Hat, Registry
 
 
 def generate_loot_table_all_for_category(registry, category_name, category_hats, subfolder):

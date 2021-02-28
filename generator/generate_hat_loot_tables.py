@@ -1,6 +1,6 @@
-import json, os
-from registry import Registry, Hat
-import shutil
+import json
+import os
+from registry import Hat, Registry
 
 
 def hat_loot_table(hat, item):

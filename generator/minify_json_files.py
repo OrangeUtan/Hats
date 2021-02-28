@@ -1,4 +1,5 @@
-import os, json
+import json
+import os
 from itertools import chain
 
 

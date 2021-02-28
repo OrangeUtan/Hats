@@ -1,8 +1,9 @@
 # Generates the item models which are used as the base for all hats.
 # Each model is overwritten with custom hat models depending on the items custom model data.
 
-import yaml, json
-from registry import Registry, Hat
+import json
+
+from registry import Hat, Registry
 
 
 def minecraft_item_model_overwrite(custom_model_data, model_path):

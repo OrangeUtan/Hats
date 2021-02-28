@@ -1,7 +1,6 @@
-import json, os
-from registry import Registry, Hat
-import shutil
-import itertools
+import os
+
+from registry import Hat, Registry
 
 
 def fix_tags_command(hat) -> str:

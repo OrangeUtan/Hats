@@ -1,8 +1,9 @@
 from __future__ import annotations
-import yaml
+
 from dataclasses import dataclass
 from typing import Dict
-import argparse, sys
+
+import yaml
 
 
 @dataclass
@@ -139,77 +140,3 @@ class Hat:
 def load_yaml_file(path):
     with open(path) as file:
         return yaml.load(file, Loader=yaml.Loader)
-
-
-################
-# CLI Commands #
-################
-
-
-def cmd_max(argv):
-    registry = Registry.from_json()
-    max_cmd, max_hat = max(registry.cmd_to_hat_map.items(), key=lambda x: x[0])
-    print(max_cmd, max_hat)
-
-
-def cmd_min(argv):
-    registry = Registry.from_json()
-    min_cmd, min_hat = min(registry.cmd_to_hat_map.items(), key=lambda x: x[0])
-    print(min_cmd, min_hat)
-
-
-def cmd_list(argv):
-    registry = Registry.from_json()
-    for cmd, hat in sorted(registry.cmd_to_hat_map.items(), key=lambda x: x[0]):
-        print(cmd, hat)
-
-
-def cmd_free(argv):
-    registry = Registry.from_json()
-    custom_model_data = sorted(registry.cmd_to_hat_map.keys())
-    min_cmd, _ = min(registry.cmd_to_hat_map.items(), key=lambda x: x[0])
-    max_cmd, _ = max(registry.cmd_to_hat_map.items(), key=lambda x: x[0])
-
-    for i in range(min_cmd, max_cmd):
-        if i not in custom_model_data:
-            print(i)
-
-
-def cmd_custom_model_data(argv):
-    CMD_MAX = "max"
-    CMD_MIN = "min"
-    CMD_LIST = "list"
-    CMD_FREE = "free"
-    SUB_COMMANDS = [CMD_MAX, CMD_MIN, CMD_LIST, CMD_FREE]
-
-    parser = argparse.ArgumentParser(
-        description="Custom Model Data commands",
-        usage=f"%(prog)s {CMD_CUSTOM_MODEL_DATA} [-h] {{{SUB_COMMANDS}}}",
-    )
-    parser.add_argument("command", type=str, choices=SUB_COMMANDS, help="Subcommand to run")
-    args = parser.parse_args(argv[0:1])
-
-    if args.command == CMD_MAX:
-        cmd_max(sys.argv[2:])
-    elif args.command == CMD_MIN:
-        cmd_min(sys.argv[2:])
-    elif args.command == CMD_LIST:
-        cmd_list(sys.argv[2:])
-    elif args.command == CMD_FREE:
-        cmd_free(sys.argv[2:])
-
-
-########
-# MAIN #
-########
-
-CMD_CUSTOM_MODEL_DATA = "cmd"
-COMMANDS = [CMD_CUSTOM_MODEL_DATA]
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Registry for hat items")
-    parser.add_argument("command", type=str, choices=COMMANDS, help="Subcommand to run")
-    args = parser.parse_args(sys.argv[1:2])
-
-    if args.command == CMD_CUSTOM_MODEL_DATA:
-        cmd_custom_model_data(sys.argv[2:])
