@@ -1,17 +1,32 @@
 import json
 from pathlib import Path
 import typer
+import itertools
 
 from generator.registry import Registry
 from generator import utils
-from generator import generate_hat_loot_tables, generate_special_hat_loot_tables
+from generator import loot_tables
 
 app = typer.Typer()
 cmd_app = typer.Typer()
-gen_app = typer.Typer()
-
 app.add_typer(cmd_app, name="cmd")
-app.add_typer(gen_app, name="gen")
+
+
+@app.command()
+def gen_loot_tables():
+    registry = Registry.from_json()
+    hat_loot_tables = loot_tables.create_hat_loot_tables(registry)
+    category_loot_tables = loot_tables.create_special_hat_loot_tables(registry)
+
+    for loot_table in itertools.chain(hat_loot_tables, category_loot_tables):
+        path = Path(registry.loot_tables_dir, loot_table.rel_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+
+        with path.open("w+") as f:
+            if loot_table.format_json:
+                json.dump(loot_table.json, f, separators=(",", ":"), indent=4)
+            else:
+                json.dump(loot_table.json, f)
 
 
 @cmd_app.command()
@@ -37,32 +52,6 @@ def stats():
         f"Gaps ({len(cmd_gaps)}):",
         ",".join(map(lambda r: utils.range_to_str(r), (utils.series_as_ranges(cmd_gaps)))),
     )
-
-
-@gen_app.command()
-def loot_tables():
-    registry = Registry.from_json()
-    hat_loot_tables = generate_hat_loot_tables.create_hat_loot_tables(registry)
-
-    for loot_table in hat_loot_tables:
-        path = Path(registry.loot_tables_dir, loot_table.rel_path)
-        path.parent.mkdir(parents=True, exist_ok=True)
-
-        with path.open("w+") as f:
-            json.dump(loot_table.json, f, separators=(",", ":"), indent=4)
-
-
-@gen_app.command()
-def special_loot_tables():
-    registry = Registry.from_json()
-    hat_loot_tables = generate_special_hat_loot_tables.create_special_hat_loot_tables(registry)
-
-    for loot_table in hat_loot_tables:
-        path = Path(registry.loot_tables_dir, loot_table.rel_path)
-        path.parent.mkdir(parents=True, exist_ok=True)
-
-        with path.open("w+") as f:
-            json.dump(loot_table.json, f)
 
 
 app()
