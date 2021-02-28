@@ -8,15 +8,20 @@ from generator import utils
 from generator import loot_tables
 
 app = typer.Typer()
-cmd_app = typer.Typer()
+cmd_app = typer.Typer(short_help="Perform Custom Model Data queries")
+gen_app = typer.Typer(short_help="Generate files")
 app.add_typer(cmd_app, name="cmd")
+app.add_typer(gen_app, name="gen")
 
 
-@app.command()
-def gen_loot_tables():
+@gen_app.command(name="loot-tables", short_help="Generate all hat loot tables")
+def cli_gen_loot_tables():
     registry = Registry.from_json()
     hat_loot_tables = loot_tables.create_hat_loot_tables(registry)
     category_loot_tables = loot_tables.create_special_hat_loot_tables(registry)
+
+    print(f"Generating {len(hat_loot_tables)} hat loot tables")
+    print(f"Generating {len(category_loot_tables)} category loot tables")
 
     for loot_table in itertools.chain(hat_loot_tables, category_loot_tables):
         path = Path(registry.loot_tables_dir, loot_table.rel_path)
@@ -29,15 +34,15 @@ def gen_loot_tables():
                 json.dump(loot_table.json, f)
 
 
-@cmd_app.command()
-def ls():
+@cmd_app.command(name="ls")
+def cli_cmd_ls():
     registry = Registry.from_json()
     for cmd, hat in sorted(registry.cmd_to_hat_map.items(), key=lambda x: x[0]):
         print(cmd, f"{hat.category}.{hat.name}")
 
 
-@cmd_app.command()
-def stats():
+@cmd_app.command(name="stats")
+def cli_cmd_stats():
     registry = Registry.from_json()
 
     min_cmd, min_hat = min(registry.cmd_to_hat_map.items(), key=lambda x: x[0])
