@@ -4,7 +4,7 @@ import typer
 
 from generator.registry import Registry
 from generator import utils
-from generator import generate_hat_loot_tables
+from generator import generate_hat_loot_tables, generate_special_hat_loot_tables
 
 app = typer.Typer()
 cmd_app = typer.Typer()
@@ -50,6 +50,19 @@ def loot_tables():
 
         with path.open("w+") as f:
             json.dump(loot_table.json, f, separators=(",", ":"), indent=4)
+
+
+@gen_app.command()
+def special_loot_tables():
+    registry = Registry.from_json()
+    hat_loot_tables = generate_special_hat_loot_tables.create_special_hat_loot_tables(registry)
+
+    for loot_table in hat_loot_tables:
+        path = Path(registry.loot_tables_dir, loot_table.rel_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+
+        with path.open("w+") as f:
+            json.dump(loot_table.json, f)
 
 
 app()
