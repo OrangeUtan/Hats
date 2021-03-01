@@ -45,13 +45,18 @@ def cli_build_resourcepack(build_dir: str):
 
 
 def generate_lang_files(csvfiles: Iterator[str], dir: Path, out_dir: Path):
-    for locale, strings_json in localization.get_locales_from_csvfiles(*csvfiles).items():
+    locales = localization.get_locales_from_csvfiles(*csvfiles)
+    print(f"Generating locales {list(locales.keys())}")
+
+    for locale, strings_json in locales.items():
         with Path(out_dir, dir, f"{locale}.json").open("w", encoding="utf-8") as f:
             json.dump(strings_json, f, separators=(",", ":"), indent=4, ensure_ascii=False)
 
 
-@gen_app.command(name="loot-tables", short_help="Generate all hat loot tables")
-def cli_gen_loot_tables():
+@build_app.command(name="hat-loot-tables", short_help="Generate all hat loot tables")
+def cli_build_loot_tables(build_dir: str):
+    build_dir = Path(build_dir)
+
     registry = Registry.from_json()
     hat_loot_tables = loot_tables.create_hat_loot_tables(registry)
     category_loot_tables = loot_tables.create_special_hat_loot_tables(registry)
@@ -60,7 +65,7 @@ def cli_gen_loot_tables():
     print(f"Generating {len(category_loot_tables)} category loot tables")
 
     for loot_table in itertools.chain(hat_loot_tables, category_loot_tables):
-        path = Path(registry.loot_tables_dir, loot_table.rel_path)
+        path = Path(build_dir, registry.loot_tables_dir, loot_table.rel_path)
         path.parent.mkdir(parents=True, exist_ok=True)
 
         with path.open("w+", encoding="utf-8") as f:

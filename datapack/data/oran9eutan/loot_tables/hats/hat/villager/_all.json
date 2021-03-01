@@ -1,1 +1,0 @@
-{"type": "minecraft:generic", "pools": [{"rolls": 1, "entries": [{"type": "minecraft:loot_table", "name": "oran9eutan:hats/hat/villager/armorer"}]}, {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "name": "oran9eutan:hats/hat/villager/farmer"}]}, {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "name": "oran9eutan:hats/hat/villager/nose"}]}]}
