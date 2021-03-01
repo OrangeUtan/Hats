@@ -1,49 +1,53 @@
-import json
-from pathlib import Path
-import typer
 import itertools
-import shutil
+import json
 import os
+import shutil
+from pathlib import Path
+from typing import Iterator
 
+import typer
+
+from generator import localization, loot_tables, utils
 from generator.registry import Registry
-from generator import utils
-from generator import loot_tables
 
 app = typer.Typer()
 cmd_app = typer.Typer(short_help="Perform Custom Model Data queries")
 gen_app = typer.Typer(short_help="Generate files")
+build_app = typer.Typer()
 app.add_typer(cmd_app, name="cmd")
 app.add_typer(gen_app, name="gen")
+app.add_typer(build_app, name="build")
 
 
-@app.command(name="build-datapack")
-def cli_build_datapack():
-    build_dir = Path("build")
-    print(build_dir.absolute())
-
-    for dir_name, _, files in os.walk(Path("datapack")):
-        dst_dir = Path(build_dir, dir_name)
-        dst_dir.mkdir(parents=True, exist_ok=True)
-
-        for file in files:
-            src_path = Path(dir_name, file)
-            dst_path = Path(dst_dir, file)
-            shutil.copy(src_path, dst_path)
+@build_app.command(name="datapack")
+def cli_build_datapack(build_dir: str):
+    build_dir = Path(build_dir)
+    dir = Path("datapack")
+    shutil.copytree(dir, Path(build_dir, dir), dirs_exist_ok=True)
 
 
-@app.command(name="build-resourcepack")
-def cli_build_resourcepack():
-    build_dir = Path("build")
-    print(build_dir.absolute())
+@build_app.command(name="resourcepack")
+def cli_build_resourcepack(build_dir: str):
+    build_dir = Path(build_dir)
 
-    for dir_name, _, files in os.walk(Path("resourcepack")):
-        dst_dir = Path(build_dir, dir_name)
-        dst_dir.mkdir(parents=True, exist_ok=True)
+    for dir, files in map(
+        lambda x: (Path(x[0]), map(lambda f: Path(x[0], f), x[2])),
+        os.walk(Path("resourcepack")),
+    ):
+        Path(build_dir, dir).mkdir(parents=True, exist_ok=True)
 
-        for file in files:
-            src_path = Path(dir_name, file)
-            dst_path = Path(dst_dir, file)
-            shutil.copy(src_path, dst_path)
+        if dir == Path("resourcepack/assets/minecraft/lang"):
+            csvfiles = filter(lambda f: f.name.endswith(".csv"), files)
+            generate_lang_files(csvfiles, dir, build_dir)
+        else:
+            for file in files:
+                shutil.copy(file, Path(build_dir, file))
+
+
+def generate_lang_files(csvfiles: Iterator[str], dir: Path, out_dir: Path):
+    for locale, strings_json in localization.get_locales_from_csvfiles(*csvfiles).items():
+        with Path(out_dir, dir, f"{locale}.json").open("w", encoding="utf-8") as f:
+            json.dump(strings_json, f, separators=(",", ":"), indent=4, ensure_ascii=False)
 
 
 @gen_app.command(name="loot-tables", short_help="Generate all hat loot tables")
@@ -59,7 +63,7 @@ def cli_gen_loot_tables():
         path = Path(registry.loot_tables_dir, loot_table.rel_path)
         path.parent.mkdir(parents=True, exist_ok=True)
 
-        with path.open("w+") as f:
+        with path.open("w+", encoding="utf-8") as f:
             if loot_table.format_json:
                 json.dump(loot_table.json, f, separators=(",", ":"), indent=4)
             else:
