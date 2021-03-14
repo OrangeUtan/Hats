@@ -1,0 +1,26 @@
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.hat.british_shorthair.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:7773125, Tags:[\"hats.hat\", \"hats.hat.type.british_shorthair\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"minecraft:item",
+                    "name":"leather_helmet"
+                }
+            ]
+        }
+    ]
+}

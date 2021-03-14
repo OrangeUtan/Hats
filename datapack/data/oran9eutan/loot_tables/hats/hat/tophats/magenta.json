@@ -1,0 +1,26 @@
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.hat.magenta_tophat.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:7773102, Tags:[\"hats.hat\", \"hats.hat.type.magenta_tophat\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"minecraft:item",
+                    "name":"leather_helmet"
+                }
+            ]
+        }
+    ]
+}

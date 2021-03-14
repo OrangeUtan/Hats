@@ -1,0 +1,26 @@
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.hat.rainbow_glasses.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:7773143, Tags:[\"hats.hat\", \"hats.hat.type.rainbow_glasses\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"minecraft:item",
+                    "name":"stick"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "type":"minecraft:generic",
+    "pools":[
+        {
+            "functions":[
+                {
+                    "function":"minecraft:set_name",
+                    "name":{
+                        "translate":"item.hats.hat.3D_glasses.name"
+                    }
+                },
+                {
+                    "function":"set_nbt",
+                    "tag":"{CustomModelData:7773145, Tags:[\"hats.hat\", \"hats.hat.type.3D_glasses\"]}"
+                }
+            ],
+            "rolls":1,
+            "entries":[
+                {
+                    "type":"minecraft:item",
+                    "name":"leather_helmet"
+                }
+            ]
+        }
+    ]
+}

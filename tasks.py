@@ -3,7 +3,9 @@ from pathlib import Path
 
 from invoke import task
 
-BUILD_DIR = Path("build")
+# BUILD_DIR = Path("build")
+RESOURCEPACK_DIR = Path("resourcepack")
+DATAPACK_DIR = Path("datapack")
 
 
 @task
@@ -19,13 +21,22 @@ def format(c):
     c.run("poetry run isort . --settings-path pyproject.toml")
 
 
-@task
-def clean(c):
-    shutil.rmtree(BUILD_DIR)
+# @task
+# def clean(c):
+#     shutil.rmtree(BUILD_DIR)
+
+
+# @task
+# def build(c):
+#     c.run(f"poetry run py generator/cli.py build datapack {str(BUILD_DIR)}")
+#     c.run(f"poetry run py generator/cli.py build resourcepack {str(BUILD_DIR)}")
 
 
 @task
-def build(c):
-    c.run(f"poetry run py generator/cli.py build datapack {str(BUILD_DIR)}")
-    c.run(f"poetry run py generator/cli.py build resourcepack {str(BUILD_DIR)}")
-    c.run(f"poetry run py generator/cli.py build hat-loot-tables {str(BUILD_DIR)}")
+def gen_loot_tables(c):
+    c.run(f"poetry run py generator/cli.py generate hat-loot-tables .")
+
+
+@task
+def gen_localization(c):
+    c.run(f"poetry run py generator/cli.py generate localization .")
