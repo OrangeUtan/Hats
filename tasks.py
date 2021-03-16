@@ -1,4 +1,3 @@
-import shutil
 from pathlib import Path
 
 from invoke import task
@@ -39,4 +38,4 @@ def gen_loot_tables(c):
 
 @task
 def gen_localization(c):
-    c.run(f"poetry run py generator/cli.py generate localization .")
+    c.run('poetry run babelbox resourcepack/assets/minecraft/lang -pn --indent "\t"')

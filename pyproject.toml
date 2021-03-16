@@ -13,6 +13,7 @@ isort = "^5.7.0"
 clevercsv = "^0.6.7"
 cleo = "^0.8.1"
 mcanitexgen = "^1.0.0"
+babelbox = "^1.0.1"
 
 [tool.poetry.dev-dependencies]
 

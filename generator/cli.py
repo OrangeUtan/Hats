@@ -1,13 +1,10 @@
 import itertools
 import json
-import os
-import shutil
 from pathlib import Path
-from typing import Iterator
 
 import typer
 
-from generator import localization, loot_tables, utils
+from generator import loot_tables, utils
 from generator.registry import Registry
 
 app = typer.Typer()
@@ -43,30 +40,6 @@ def cli_generate_loot_tables(out_dir: str):
                 json.dump(loot_table.json, f, separators=(",", ":"), indent=4)
             else:
                 json.dump(loot_table.json, f)
-
-
-def generate_localization(csvfiles: Iterator[str], dir: Path, out_dir: Path):
-    locales = localization.get_locales_from_csvfiles(*csvfiles)
-    print(f"Generating locales {list(locales.keys())}")
-
-    for locale, strings_json in locales.items():
-        with Path(out_dir, dir, f"{locale}.json").open("w", encoding="utf-8") as f:
-            json.dump(strings_json, f, separators=(",", ":"), indent=4, ensure_ascii=False)
-
-
-@generate_app.command(name="localization", short_help="Generate language translations")
-def cli_generate_localization(out_dir: str):
-    out_dir = Path(out_dir)
-
-    for dir, files in map(
-        lambda x: (Path(x[0]), map(lambda f: Path(x[0], f), x[2])),
-        os.walk(Path("resourcepack/assets/minecraft/lang")),
-    ):
-        Path(out_dir, dir).mkdir(parents=True, exist_ok=True)
-
-        if dir == Path("resourcepack/assets/minecraft/lang"):
-            csvfiles = filter(lambda f: f.name.endswith(".csv"), files)
-            generate_localization(csvfiles, dir, out_dir)
 
 
 #########
