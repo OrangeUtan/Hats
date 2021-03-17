@@ -3,7 +3,7 @@
 
 # Install datapack if it is not already
 scoreboard objectives add hats.cfg dummy
-execute unless score #installed_version hats.cfg matches 20300 run function oran9eutan:hats/install
+execute unless data storage minecraft:oran9eutan.hats {"version":{"major": 2, "minor": 3, "patch": 1}} run function oran9eutan:hats/install
 
 #Start looping functions
 execute if score #opt_convert_dogs hats.cfg matches 1 run function oran9eutan:hats/loops/convert_dogs_near_players

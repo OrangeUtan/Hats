@@ -20,5 +20,4 @@ execute unless score #opt_enable_fix_old_hats hats.cfg matches -2147483648.. run
 #endregion
 
 # Flag datapack as installed
-#define score_holder #installed_version Indicating which version is installed
-scoreboard players set #installed_version hats.cfg 20300
+data modify storage oran9eutan.hats version set value {"major": 2, "minor": 3, "patch": 1}

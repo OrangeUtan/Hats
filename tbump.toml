@@ -18,3 +18,11 @@ tag_template = "v{new_version}"
 [[file]]
 src = "pyproject.toml"
 search = 'version = "{current_version}"'
+
+[[file]]
+src = "datapack/data/oran9eutan/functions/hats/install.mcfunction"
+version_template = '{{"major": {major}, "minor": {minor}, "patch": {patch}}}'
+
+[[file]]
+src = "datapack/data/oran9eutan/functions/hats/load.mcfunction"
+version_template = '{{"major": {major}, "minor": {minor}, "patch": {patch}}}'

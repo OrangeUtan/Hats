@@ -1,7 +1,7 @@
 # descr: Remove all Hats related from the world
 
 # Goodbye
-tellraw @a[tag=!global.ignore,tag=!global.ignore.gui] ["",{"text":"Uninstalling ","color":"gold"},{"text":"Hats ","color":"red"},{"text":"datapack version ","color":"gold"},{"score":{"name":"#installed_version","objective":"hats.cfg"},"color":"red"}]
+tellraw @a[tag=!global.ignore,tag=!global.ignore.gui] ["",{"text":"Uninstalling ","color":"gold"},{"text":"Hats ","color":"red"}, {"text": "v", "color": "red"}, {"storage": "oran9eutan.hats", "nbt": "version.major", "color":"red"}, {"text": ".","color":"red"}, {"storage": "oran9eutan.hats", "nbt": "version.minor", "color":"red"}, {"text": ".","color":"red"}, {"storage": "oran9eutan.hats", "nbt": "version.patch", "color":"red"}]
 
 # Remove scoreboards
 scoreboard objectives remove hats.math
@@ -14,6 +14,7 @@ scoreboard objectives remove hats.fix_old_hat
 data remove storage minecraft:hats buffer
 data remove storage minecraft:hats dog_data
 data remove storage minecraft:hats hat_to_fix
+data remove storage minecraft:oran9eutan.hats version
 
 # Remove advancements
 advancement revoke @a from hats:root
