@@ -3,3 +3,4 @@ build/__pycache__
 *.pyc
 *.code-workspace
 build
+.vscode

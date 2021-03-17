@@ -1,8 +1,15 @@
 {
+    "name": "Hats",
+    "author": "Oran9eUtan",
+    "version": "2.3.1",
+    "description": "Stylish Hats for Minecraft",
+
     "data_pack": {
+        "name": "hats_datapack",
         "load": ["datapack"]
     },
     "resource_pack": {
+        "name": "Hats",
         "load": ["resourcepack"]
     },
     "output": "build"
