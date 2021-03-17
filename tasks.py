@@ -2,7 +2,6 @@ from pathlib import Path
 
 from invoke import task
 
-# BUILD_DIR = Path("build")
 RESOURCEPACK_DIR = Path("resourcepack")
 DATAPACK_DIR = Path("datapack")
 
@@ -20,22 +19,19 @@ def format(c):
     c.run("poetry run isort . --settings-path pyproject.toml")
 
 
-# @task
-# def clean(c):
-#     shutil.rmtree(BUILD_DIR)
-
-
-# @task
-# def build(c):
-#     c.run(f"poetry run py generator/cli.py build datapack {str(BUILD_DIR)}")
-#     c.run(f"poetry run py generator/cli.py build resourcepack {str(BUILD_DIR)}")
-
-
 @task
 def gen_loot_tables(c):
     c.run(f"poetry run py generator/cli.py generate hat-loot-tables .")
 
 
 @task
-def gen_localization(c):
-    c.run('poetry run babelbox resourcepack/assets/minecraft/lang -pn --indent "\t"')
+def gen_localization(c, verbose=False):
+    c.run(
+        f'poetry run babelbox resourcepack/assets/minecraft/lang -pn --indent "\t" {"-v" if verbose else ""}'
+    )
+
+
+@task
+def bump(c, version, dry=False):
+    flags = "--dry-run" if dry else ""
+    c.run(f"poetry run tbump {version} {flags}")
