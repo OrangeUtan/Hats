@@ -20,7 +20,7 @@ src = "pyproject.toml"
 search = 'version = "{current_version}"'
 
 [[file]]
-src = "beet.json"
+src = "beet-release.json"
 
 [[file]]
 src = "datapack/data/oran9eutan/functions/hats/install.mcfunction"

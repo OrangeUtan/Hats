@@ -35,3 +35,8 @@ def gen_localization(c, verbose=False):
 def bump(c, version, dry=False):
     flags = "--dry-run" if dry else ""
     c.run(f"poetry run tbump {version} {flags}")
+
+
+@task
+def release(c):
+    c.run(f"poetry run beet --config beet-release.json")
