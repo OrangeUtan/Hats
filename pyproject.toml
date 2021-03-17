@@ -15,6 +15,7 @@ cleo = "^0.8.1"
 mcanitexgen = "^1.0.0"
 babelbox = "^1.0.1"
 tbump = "^6.3.1"
+beet = "^0.13.0"
 
 [tool.poetry.dev-dependencies]
 

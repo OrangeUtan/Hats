@@ -1,0 +1,9 @@
+{
+    "data_pack": {
+        "load": ["datapack"]
+    },
+    "resource_pack": {
+        "load": ["resourcepack"]
+    },
+    "output": "build"
+}
