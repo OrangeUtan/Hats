@@ -22,7 +22,7 @@ tests = ["coverage", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.i
 
 [[package]]
 name = "babelbox"
-version = "2.1.1"
+version = "2.1.2"
 description = "A language localization generator for Minecraft"
 category = "main"
 optional = false
@@ -541,8 +541,8 @@ attrs = [
     {file = "attrs-19.3.0.tar.gz", hash = "sha256:f7b7ce16570fe9965acd6d30101a28f62fb4a7f9e926b3bbc9b61f8b04247e72"},
 ]
 babelbox = [
-    {file = "babelbox-2.1.1-py3-none-any.whl", hash = "sha256:f694ac1242801a199ddd84252d76d15691f418ce6d972bc574c8ddbc862fc57b"},
-    {file = "babelbox-2.1.1.tar.gz", hash = "sha256:d56b9f6b1d88791e19ba64313f38419a93034700d54f204ffae1daf7ee35b0c5"},
+    {file = "babelbox-2.1.2-py3-none-any.whl", hash = "sha256:fc585a50792802360e0d5492176e87142245d17848c6dd0afe2476aa145df654"},
+    {file = "babelbox-2.1.2.tar.gz", hash = "sha256:b9e16b78abe0ae60ccbdef494404fd60efa6c3a67913f3069a9437cc3ac3fb01"},
 ]
 base58 = [
     {file = "base58-2.1.0-py3-none-any.whl", hash = "sha256:8225891d501b68c843ffe30b86371f844a21c6ba00da76f52f9b998ba771fb48"},

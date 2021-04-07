@@ -18,6 +18,11 @@
     "meta": {
         "mcanitexgen": {
             "load": ["resourcepack/assets/minecraft/textures/**/*.animation.py"]
+        },
+        "babelbox": {
+            "load": ["resourcepack/assets/minecraft/lang"],
+            "dialect": "excel",
+            "prefix_identifiers": true
         }
     }
 }
