@@ -12,6 +12,12 @@
         "load": ["resourcepack"]
     },
     "pipeline": [
-        "babelbox.integration.beet"
-    ]
+        "babelbox.integration.beet",
+        "mcanitexgen.integration.beet"
+    ],
+    "meta": {
+        "mcanitexgen": {
+            "load": ["resourcepack/assets/minecraft/textures/**/*.animation.py"]
+        }
+    }
 }

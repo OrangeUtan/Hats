@@ -1,7 +1,7 @@
-from mcanitexgen import Sequence, State, TextureAnimation, animation
+from mcanitexgen.animation import Sequence, State, TextureAnimation, animation
 
 
-@animation("head.png")
+@animation("minecraft:item/hats/dog/head.png")
 class Head(TextureAnimation):
     NEUTRAL = State(0)
     TILTED = State(1)
@@ -52,7 +52,7 @@ class Head(TextureAnimation):
     )
 
 
-@animation("tail_and_hindlegs.png")
+@animation("minecraft:item/hats/dog/tail_and_hindlegs.png")
 class TailAndHindlegs(TextureAnimation):
     TAIL_HIGH = State(0)
     TAIL_NEUTRAL = State(1)
@@ -82,7 +82,7 @@ class TailAndHindlegs(TextureAnimation):
     )
 
 
-@animation("dream.png")
+@animation("minecraft:item/hats/dog/dream.png")
 class Dream(TextureAnimation):
     NONE = State(0)
     APPEAR1 = State(1)

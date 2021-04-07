@@ -281,7 +281,7 @@ python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 
 [[package]]
 name = "mcanitexgen"
-version = "1.2.2"
+version = "1.2.3"
 description = "An animation generator for Minecraft .mcmeta files"
 category = "main"
 optional = false
@@ -707,8 +707,8 @@ markupsafe = [
     {file = "MarkupSafe-1.1.1.tar.gz", hash = "sha256:29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"},
 ]
 mcanitexgen = [
-    {file = "mcanitexgen-1.2.2-py3-none-any.whl", hash = "sha256:e193b4fdeb83d99c183c7037d2a8d113e6fe5fc0fb567a39823092d1be6ddde7"},
-    {file = "mcanitexgen-1.2.2.tar.gz", hash = "sha256:3041ceecd839d18a4bcd0c8556c57f4806c0a70de92e262d10b1382acf64afed"},
+    {file = "mcanitexgen-1.2.3-py3-none-any.whl", hash = "sha256:c05c27d0d373a6d5ea239b7d34ebc02e01ea23c8e3f5fe350deaea7d4ac8d27a"},
+    {file = "mcanitexgen-1.2.3.tar.gz", hash = "sha256:c6fa6282569300f6b7ff48792b2d3abd5cd23b32db3df55d7700d3248ed58cbb"},
 ]
 mypy-extensions = [
     {file = "mypy_extensions-0.4.3-py2.py3-none-any.whl", hash = "sha256:090fedd75945a69ae91ce1303b5824f428daf5a028d2f6ab8a299250a846f15d"},
