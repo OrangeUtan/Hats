@@ -12,10 +12,10 @@ black = "^20.8b1"
 isort = "^5.7.0"
 clevercsv = "^0.6.7"
 cleo = "^0.8.1"
-mcanitexgen = "^1.0.0"
-babelbox = "^1.0.1"
+babelbox = "^2.0.0"
 tbump = "^6.3.1"
 beet = "^0.13.0"
+mcanitexgen = "^1.2.1"
 
 [tool.poetry.dev-dependencies]
 

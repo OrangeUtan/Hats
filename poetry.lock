@@ -22,7 +22,7 @@ tests = ["coverage", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.i
 
 [[package]]
 name = "babelbox"
-version = "1.2.0"
+version = "2.1.0"
 description = "A language localization generator for Minecraft"
 category = "main"
 optional = false
@@ -260,7 +260,7 @@ python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
 
 [[package]]
 name = "mcanitexgen"
-version = "1.0.3"
+version = "1.2.2"
 description = "An animation generator for Minecraft .mcmeta files"
 category = "main"
 optional = false
@@ -508,7 +508,7 @@ testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "a362b06f146741f94b408805f24eb5c924989126002b1fbe65437703089df344"
+content-hash = "5fc4e4030239d970357d7fe6d5b62f3287ef7be37764cad58685070a3a7d8871"
 
 [metadata.files]
 appdirs = [
@@ -520,8 +520,8 @@ attrs = [
     {file = "attrs-19.3.0.tar.gz", hash = "sha256:f7b7ce16570fe9965acd6d30101a28f62fb4a7f9e926b3bbc9b61f8b04247e72"},
 ]
 babelbox = [
-    {file = "babelbox-1.2.0-py3-none-any.whl", hash = "sha256:cb6108c83347b10bdef2ab5983802bda0f54f4b0c9f0fedfdccee53fc24d9c22"},
-    {file = "babelbox-1.2.0.tar.gz", hash = "sha256:8f96736eea15a8ad842366789d8559f4aa75cd54067868cf120f58b34133e564"},
+    {file = "babelbox-2.1.0-py3-none-any.whl", hash = "sha256:384d49740851661d6dd7fd288455dffe72581b54a0b45f697f7702f139029a0d"},
+    {file = "babelbox-2.1.0.tar.gz", hash = "sha256:47f86f24ef055552a21248eed4fa418a8a031b8a4fa7d8a0a83c6ecbc3fe40c8"},
 ]
 beet = [
     {file = "beet-0.13.0-py3-none-any.whl", hash = "sha256:7549462f44dd1a35478c1368f99230cd6f0b7e6f8f52812cfd61df5ace1cfbb0"},
@@ -679,8 +679,8 @@ markupsafe = [
     {file = "MarkupSafe-1.1.1.tar.gz", hash = "sha256:29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"},
 ]
 mcanitexgen = [
-    {file = "mcanitexgen-1.0.3-py3-none-any.whl", hash = "sha256:76a2bc94baa292c9f0df252fb2ac1937c1a103ec26276831e0b2b9a754b6b74c"},
-    {file = "mcanitexgen-1.0.3.tar.gz", hash = "sha256:0beb972a8374ae04aca2fa09f6b9a5998089109b6caec15292b7207f41d555c2"},
+    {file = "mcanitexgen-1.2.2-py3-none-any.whl", hash = "sha256:e193b4fdeb83d99c183c7037d2a8d113e6fe5fc0fb567a39823092d1be6ddde7"},
+    {file = "mcanitexgen-1.2.2.tar.gz", hash = "sha256:3041ceecd839d18a4bcd0c8556c57f4806c0a70de92e262d10b1382acf64afed"},
 ]
 mypy-extensions = [
     {file = "mypy_extensions-0.4.3-py2.py3-none-any.whl", hash = "sha256:090fedd75945a69ae91ce1303b5824f428daf5a028d2f6ab8a299250a846f15d"},
