@@ -2,7 +2,7 @@
     "name": "Hats",
     "author": "Oran9eUtan",
     "description": "Stylish Hats for Minecraft",
-
+    "output": "build",
     "data_pack": {
         "name": "hats_datapack",
         "load": ["datapack"]
@@ -11,5 +11,7 @@
         "name": "Hats",
         "load": ["resourcepack"]
     },
-    "output": "build"
+    "pipeline": [
+        "babelbox.integration.beet"
+    ]
 }
