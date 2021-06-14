@@ -1,7 +1,7 @@
-.datapack
-build/__pycache__
-*.pyc
 *.code-workspace
-build
-releases
 .vscode
+
+# Generated
+build
+dist
+*.pyc

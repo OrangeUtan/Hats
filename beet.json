@@ -13,9 +13,11 @@
     },
     "pipeline": [
         "babelbox.integration.beet",
-        "mcanitexgen.integration.beet"
+        "mcanitexgen.integration.beet",
+        "hats.plugins.hat_loot_tables"
     ],
     "meta": {
+        "namespace": "oran9eutan:hats",
         "mcanitexgen": {
             "load": ["resourcepack/assets/minecraft/textures/**/*.animation.py"]
         },
@@ -23,6 +25,10 @@
             "load": ["resourcepack/assets/minecraft/lang"],
             "dialect": "excel",
             "prefix_identifiers": true
+        },
+        "hats": {
+            "registry": "hats/registry.yml",
+            "cmd_id": 777
         }
     }
 }

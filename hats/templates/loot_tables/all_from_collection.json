@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {% for lt in loot_tables %}
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "{{ lt }}"
+        }
+      ]
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}

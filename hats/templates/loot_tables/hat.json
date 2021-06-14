@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "{{ localized_name }}"
+          }
+        },
+        {
+          "function": "set_nbt",
+          "tag": "{{ nbt_tag }}"
+        }
+        {%- if localized_lore|length > 0 %},
+        {
+          "function": "minecraft:set_lore",
+          "lore": [
+            {% for line in localized_lore %}
+            {
+              "translate": "{{ line }}"
+            }{% if not loop.last %},{% endif %}
+            {% endfor %}
+          ]
+        }
+        {%- endif %}
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "{{ item_model_id }}"
+        }
+      ]
+    }
+  ]
+}
