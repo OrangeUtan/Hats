@@ -1,0 +1,20 @@
+{
+  "parent":"item/generated",
+  "textures":{
+    "layer0":"item/leather_helmet",
+    "layer1":"item/leather_helmet_overlay"
+  }
+  {%- if overrides %}
+  ,
+  "overrides":[
+    {% for override in overrides %}
+    {
+      "predicate":{
+          "custom_model_data": {{ override.cmd }}
+      },
+      "model": "{{ override.model }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+  {%- endif %}
+}

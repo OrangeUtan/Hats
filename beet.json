@@ -14,7 +14,8 @@
     "pipeline": [
         "babelbox.integration.beet",
         "mcanitexgen.integration.beet",
-        "hats.plugins.hat_loot_tables"
+        "hats.plugins.hat_loot_tables",
+        "hats.plugins.item_models"
     ],
     "meta": {
         "namespace": "oran9eutan:hats",

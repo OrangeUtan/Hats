@@ -3,7 +3,7 @@ from logging import getLogger
 from pathlib import Path
 
 import jinja2
-from beet import Cache, Context, LootTable, Plugin
+from beet import Context, LootTable
 from beet.library.data_pack import DataPack
 from ruamel import yaml
 

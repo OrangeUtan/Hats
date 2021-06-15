@@ -24,6 +24,7 @@ class Hat:
         num_lore_lines: int = 0,
         model_head=DEFAULT_MODEL_HEAD,
         model_inventory=DEFAULT_MODEL_INVENTORY,
+        model=None,
     ):
         self.name = name
         self.type = type
@@ -31,6 +32,7 @@ class Hat:
         self.num_lore_lines = num_lore_lines
         self.model_head = model_head
         self.model_inventory = model_inventory
+        self._model = model
 
     @classmethod
     def from_json(cls, name: str, cmd_id: int, json: dict):
@@ -42,6 +44,7 @@ class Hat:
             json.get("num_lore_lines", 0),
             json.get("model_head", Hat.DEFAULT_MODEL_HEAD),
             json.get("model_inventory", Hat.DEFAULT_MODEL_INVENTORY),
+            json.get("model", None),
         )
 
     @property
@@ -55,6 +58,12 @@ class Hat:
     @property
     def type_tag(self):
         return f"hats.hat.type.{self.type}"
+
+    def model_path(self, category: str):
+        if self._model:
+            return f"item/hats/{self._model}"
+        else:
+            return f"item/hats/{category}/{self.name}"
 
 
 class HatRegistry:
@@ -75,6 +84,10 @@ class HatRegistry:
                 registry.add(Hat.from_json(hat_name, cmd_id, hat_json), category)
 
         return registry
+
+    @property
+    def hats(self):
+        return self.name_to_hat_map.values()
 
     def add(self, hat: Hat, category=DEFAULT_CATEGORY):
         self.name_to_hat_map[hat.name] = hat

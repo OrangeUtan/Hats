@@ -1,0 +1,19 @@
+{
+  "parent":"item/handheld",
+  "textures":{
+      "layer0":"item/stick"
+  }
+  {%- if overrides %}
+  ,
+  "overrides":[
+    {% for override in overrides %}
+    {
+      "predicate":{
+          "custom_model_data": {{ override.cmd }}
+      },
+      "model": "{{ override.model }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+  {%- endif %}
+}
