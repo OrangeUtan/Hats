@@ -35,7 +35,7 @@ def beet_default(ctx: Context):
         assets.save(path=cache.get_path(CACHE_KEY), overwrite=True)
     else:
         logger.info("Using cached item models")
-        assets = DataPack(path=cache.get_path(CACHE_KEY))
+        assets = ResourcePack(path=cache.get_path(CACHE_KEY))
 
     ctx.assets.merge(assets)
 
