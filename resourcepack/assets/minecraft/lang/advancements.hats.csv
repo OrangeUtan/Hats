@@ -1,27 +1,27 @@
 String,de_de,en_us
 root.title,Hats,Hats
-root.description,Sammel sie alle!,Gotta find them all!
+root.description,Sammel sie alle!,Collect them all!
 fez.title,Fez,Fez
 fez.description,,
-animals.dog.title,Unzertrennlich,Inseperable
-animals.dog.description,Geh mit deinem Hund Gassi,Go on a walk with your dog
-cats.root.title,Pelzige Freunde,Feline Friends
-cats.root.description,Finde einen pelzigen Freund,Find yourself a furry friend
-cats.collect_all.title,Verrückt nach Katzen,Cat crazy
-cats.collect_all.description,Sammel alle Katzen,Collect all cats
+animals.dog.title,Taschenhund,Pocket dog
+animals.dog.description,Nimm deinen Hund an die Leine,Leash your dog
+cats.root.title,Pelziger Freund,Impawsibly cute
+cats.root.description,Werde von einer Katze adoptiert,Get adopted by a cat
+cats.collect_all.title,Berge von Katzen,Meowntain of cats
+cats.collect_all.description,Werde von allen Katzenarten adoptiert,Get adobted by all cat variants
 tophats.root.title,Gehobene Kreise,High society
-tophats.root.description,Karrierestart mit Zylinder,Start your career with a Tophat
-tophats.collect_all_colors.title,Hochadel,The Elite
+tophats.root.description,Finde einen Zylinder,Get a tophat
+tophats.collect_all_colors.title,Bunte Bänder,Colorful ribbons
 tophats.collect_all_colors.description,Sammel alle Zylinder Farben,Collect all tophat colors
-tophats.get_monocle.title,Besonders ausgefallen,Extra fancy
-tophats.get_monocle.description,Erhalte einen Zylinder mit Monokel,Obtain the monocle Tophat
-glasses.root.title,+20 Sichtweite,+20 Vision
-glasses.root.description,Erweitere deinen Horizont,Expand your horizon
-glasses.collect_all.title,Öffne dein 3. Auge,Open your third eye
-glasses.collect_all.description,Sammel alle Brillen,Collect all glasses
-player_masks.title,Nein. Überhaupt nicht auffällig.,Not suspicious
-player_masks.description,Tarne dich,Wear a disguise
+tophats.get_monocle.title,Fesch,Posh
+tophats.get_monocle.description,Finde einen Zylinder mit Monokel,Get the monocle Tophat
+glasses.root.title,+20 Sicht,+20 Vision
+glasses.root.description,Finde eine Brille,Get some glasses
+glasses.collect_all.title,Adleraugen,Hawk's eyes
+glasses.collect_all.description,Sammle alle Brillen,Get all glasses
+player_masks.title,In geheimer Mission,Undercover
+player_masks.description,Tarne dich als Spieler der sich als Spieler tarnt,Disguise as a player disguising as a player
 mario.root.title,Wahooo!,Wahooo!
-mario.root.description,Erhalte einen Mario Hut,Get a Mario Hat
+mario.root.description,Finde einen Mario Hut,Get a Mario Hat
 mario.collect_all.title,1UP!,1UP!
 mario.collect_all.description,Sammel alle Mario Hüte,Collect all Mario Hats
