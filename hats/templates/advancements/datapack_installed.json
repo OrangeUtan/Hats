@@ -1,0 +1,15 @@
+{
+  "display": {
+    "title": [{ "text": "{{ name }}" }, { "text": " {{ version }}", "color": "yellow" }],
+    "description": "{{ description }}",
+    "icon": {{ icon|tojson }},
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "parent": "{{ parent }}",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

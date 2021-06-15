@@ -2,6 +2,7 @@
     "name": "Hats",
     "author": "Oran9eUtan",
     "description": "Stylish Hats for Minecraft",
+    "version": "2.3.1",
     "output": "build",
     "data_pack": {
         "name": "hats_datapack",
@@ -15,7 +16,8 @@
         "babelbox.integration.beet",
         "mcanitexgen.integration.beet",
         "hats.plugins.hat_loot_tables",
-        "hats.plugins.item_models"
+        "hats.plugins.item_models",
+        "hats.plugins.datapack_advancement"
     ],
     "meta": {
         "namespace": "oran9eutan:hats",
@@ -30,6 +32,13 @@
         "hats": {
             "registry": "hats/registry.yml",
             "cmd_id": 777
+        },
+        "datapack_advancement": {
+            "author_head": "Oran9eUtan",
+            "icon": {
+                "item": "minecraft:stick",
+                "nbt": "{CustomModelData:7773119}"
+            }
         }
     }
 }

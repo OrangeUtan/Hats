@@ -1,10 +1,10 @@
 {
     "display": {
-        "title": "Oran9eUtan",
+        "title": "{{ author }}",
         "description": "",
         "icon": {
             "item": "minecraft:player_head",
-            "nbt": "{SkullOwner: 'Oran9eUtan'}"
+            "nbt": "{SkullOwner: '{{ author_head }}'}"
         },
         "show_toast": false,
         "announce_to_chat": false
