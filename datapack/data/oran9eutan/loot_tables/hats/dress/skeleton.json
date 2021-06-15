@@ -6,41 +6,41 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/tophats/light_gray"
+                    "name": "oran9eutan:hats/hat_on_head/light_gray_tophat"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/tophats/cyan"
+                    "name": "oran9eutan:hats/hat_on_head/cyan_tophat"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/tophats/purple"
+                    "name": "oran9eutan:hats/hat_on_head/purple_tophat"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/tophats/blue"
-                },
-                
-                {
-                    "weight": 2,
-                    "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/glasses/harry_potter"
+                    "name": "oran9eutan:hats/hat_on_head/blue_tophat"
                 },
 
                 {
                     "weight": 2,
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/accessories/steve_mask"
+                    "name": "oran9eutan:hats/hat_on_head/harry_potter_glasses"
+                },
+
+                {
+                    "weight": 2,
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/hat_on_head/steve_mask"
                 },
                 {
                     "weight": 2,
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/accessories/alex_mask"
+                    "name": "oran9eutan:hats/hat_on_head/alex_mask"
                 },
                 {
                     "weight": 2,
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/accessories/googly_eyes"
+                    "name": "oran9eutan:hats/hat_on_head/googly_eyes"
                 }
             ]
         }

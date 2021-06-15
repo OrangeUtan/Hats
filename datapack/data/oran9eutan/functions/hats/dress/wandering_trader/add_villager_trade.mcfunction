@@ -5,7 +5,7 @@
 data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:emerald", Count:1b}, sell:{id:"minecraft:leather_helmet",Count:1b}}
 
 # Give trade sell item
-loot replace entity @s weapon.offhand loot oran9eutan:hats/hat_on_head/villager/_rand
+loot replace entity @s weapon.offhand loot oran9eutan:hats/hat_on_head/villager/random
 data modify entity @s Offers.Recipes[-1].sell.tag set from entity @s HandItems[1].tag
 
 # Set offer price

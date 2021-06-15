@@ -15,7 +15,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/villager/armorer"
+                    "name": "oran9eutan:hats/hat_on_head/armorer_mask"
                 }
             ]
 		},
@@ -33,14 +33,14 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/villager/farmer"
+                    "name": "oran9eutan:hats/hat_on_head/farmer_strawhat"
                 }
             ]
-			
+
 		},
 		{
 			"conditions": [
-				
+
 				{
 					"condition": "minecraft:entity_properties",
 					"entity": "this",
@@ -53,15 +53,15 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"name": "oran9eutan:hats/hat_on_head/glasses/half_rim"
+					"name": "oran9eutan:hats/hat_on_head/half_rim_glasses"
 				},
 				{
 					"type": "minecraft:loot_table",
-					"name": "oran9eutan:hats/hat_on_head/glasses/rainbow"
+					"name": "oran9eutan:hats/hat_on_head/rainbow_glasses"
 				},
 				{
 					"type": "minecraft:loot_table",
-					"name": "oran9eutan:hats/hat_on_head/glasses/librarian"
+					"name": "oran9eutan:hats/hat_on_head/librarian_glasses"
 				}
 			]
 		},
@@ -79,7 +79,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/misc/frying_pan"
+                    "name": "oran9eutan:hats/hat_on_head/frying_pan"
                 }
             ]
 		},
@@ -97,7 +97,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/tophats/tophat_with_monocle"
+                    "name": "oran9eutan:hats/hat_on_head/tophat_with_monocle"
                 }
             ]
 		}

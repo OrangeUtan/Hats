@@ -39,17 +39,21 @@ def _create_loot_tables(namespace: str, registry_path: Path, cmd_id: int):
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("hats/templates"))
 
     for category, hats in registry.categories.items():
-        data.loot_tables[
-            f"{namespace}/hat/{category}/_all"
-        ] = _create_all_hats_from_collection_loot_table(env, hats, registry, namespace)
-        data.loot_tables[
-            f"{namespace}/hat/{category}/_rand"
-        ] = _create_random_hat_from_collection_loot_table(env, hats, registry, namespace)
-        for hat in hats:
+        # Create category loot tables
+        for model_type in ["hat", "hat_on_head"]:
             data.loot_tables[
-                f"{namespace}/hat_on_head/{category}/{hat.name}"
-            ] = _create_hat_loot_table(env, hat, hat.model_head)
-            data.loot_tables[f"{namespace}/hat/{category}/{hat.name}"] = _create_hat_loot_table(
+                f"{namespace}/{model_type}/{category}/all"
+            ] = _create_all_hats_from_collection_loot_table(env, hats, namespace, model_type)
+            data.loot_tables[
+                f"{namespace}/{model_type}/{category}/random"
+            ] = _create_random_hat_from_collection_loot_table(env, hats, namespace, model_type)
+
+        # Create hat loot tables
+        for hat in hats:
+            data.loot_tables[f"{namespace}/hat_on_head/{hat.type}"] = _create_hat_loot_table(
+                env, hat, hat.model_head
+            )
+            data.loot_tables[f"{namespace}/hat/{hat.type}"] = _create_hat_loot_table(
                 env, hat, hat.model_inventory
             )
 
@@ -68,20 +72,16 @@ def _create_hat_loot_table(env: jinja2.Environment, hat: Hat, item_model_id: str
 
 
 def _create_all_hats_from_collection_loot_table(
-    env: jinja2.Environment, hats: list[Hat], registry: HatRegistry, namespace: str
+    env: jinja2.Environment, hats: list[Hat], namespace: str, model_type: str
 ):
     template = env.get_template("loot_tables/all_from_collection.json")
-    rendered = template.render(
-        loot_tables=[f"{namespace}/hat/{registry.category_of(hat.name)}/{hat.name}" for hat in hats]
-    )
+    rendered = template.render(loot_tables=[f"{namespace}/{model_type}/{hat.type}" for hat in hats])
     return LootTable(json.loads(rendered))
 
 
 def _create_random_hat_from_collection_loot_table(
-    env: jinja2.Environment, hats: list[Hat], registry: HatRegistry, namespace: str
+    env: jinja2.Environment, hats: list[Hat], namespace: str, model_type: str
 ):
     template = env.get_template("loot_tables/random_from_collection.json")
-    rendered = template.render(
-        loot_tables=[f"{namespace}/hat/{registry.category_of(hat.name)}/{hat.name}" for hat in hats]
-    )
+    rendered = template.render(loot_tables=[f"{namespace}/{model_type}/{hat.type}" for hat in hats])
     return LootTable(json.loads(rendered))

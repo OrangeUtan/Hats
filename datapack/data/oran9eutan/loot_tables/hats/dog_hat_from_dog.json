@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"name": "oran9eutan:hats/hat/animals/dog",
+					"name": "oran9eutan:hats/hat/dog",
 					"functions": [
 						{
 							"function": "minecraft:copy_nbt",
