@@ -131,7 +131,7 @@ glasses:
     type: librarian_glasses
   three_d:
     cmd: 3145
-    type: 3D_glasses
+    type: three_d_glasses
 
 accessories:
   ninja_headband:
