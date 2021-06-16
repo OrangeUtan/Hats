@@ -5,6 +5,7 @@ squid.name,Tintenfisch,Squid
 arrow_prop.name,Pfeil Attrape,Fake Arrow
 arrow_prop.lore1,>>-o.o->,>>-o.o->
 frying_pan.name,Bratpfanne,Frying Pan
+frying_pan.lore1,*bonk*,*bonk*
 # Dog
 dog.name,Hund,Dog
 # Cats
@@ -73,5 +74,5 @@ mario_mask.name,Mario Cosplay,Mario Cosplay
 luigi_mask.name,Luigi Cosplay,Luigi Cosplay
 # Halloween
 wiggly_ghast.name,Wackelnder Geist,Wiggly Ghast
-native_american_headband.name,Indianer Kopfband,Native American Headband
+feather_headband.name,Federn Kopfschmuck,Feather Headband
 jason_mask.name,Jason Mask,Jason Mask

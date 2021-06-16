@@ -12,6 +12,7 @@ misc:
   frying_pan:
     cmd: 3133
     type: frying_pan
+    num_lore_lines: 1
 
 animals:
   dog:
@@ -203,9 +204,9 @@ halloween:
   wiggly_ghast:
     cmd: 3180
     type: wiggly_ghast
-  native_american_headband:
+  feather_headband:
     cmd: 3181
-    type: native_american_headband
+    type: feather_headband
   jason_mask:
     cmd: 3182
     type: jason_mask
