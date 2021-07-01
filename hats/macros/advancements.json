@@ -1,18 +1,18 @@
-{%- macro category_root(category, cmd, hats) -%}
+{%- macro category_root(id, frame, cmd, hats) -%}
 {
 	"parent" : "oran9eutan:hats/root",
 	"display" : {
 		"title" : {
-			"translate": "advancements.hats.{{ category }}.root.title"
+			"translate": "advancements.hats.{{ id }}.title"
 		},
 		"description" : {
-			"translate": "advancements.hats.{{ category }}.root.description"
+			"translate": "advancements.hats.{{ id }}.description"
 		},
 		"icon": {
 			"item": "minecraft:stick",
 			"nbt": "{CustomModelData: {{ cmd }}}"
 		},
-		"frame": "task",
+		"frame": "{{ frame }}",
 		"show_toast": true,
 		"announce_to_chat": false,
 		"hidden": false

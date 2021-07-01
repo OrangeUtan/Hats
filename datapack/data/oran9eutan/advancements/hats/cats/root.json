@@ -1,2 +1,2 @@
 {%- import 'advancements.json' as advancements -%}
-{{ advancements.category_root("cats", hats.hat.ocelot.cmd, hats.category.cats) }}
+{{ advancements.category_root("cats.root", "task", hats.hat.ocelot.cmd, hats.category.cats) }}

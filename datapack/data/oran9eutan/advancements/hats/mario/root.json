@@ -1,2 +1,2 @@
 {%- import 'advancements.json' as advancements -%}
-{{ advancements.category_root("mario", hats.hat.mario_cap.cmd, hats.category.mario) }}
+{{ advancements.category_root("mario.root", "task", hats.hat.mario_cap.cmd, hats.category.mario) }}

@@ -8,7 +8,7 @@ from hats.registry.hats import HatRegistry
 
 logger = getLogger(__name__)
 
-TAGS_PATH = Path("hats/")
+TAGS_PATH = Path("hats/registry/tags.yml")
 
 
 def beet_default(ctx: Context):
@@ -19,14 +19,20 @@ def beet_default(ctx: Context):
 
     type_to_hat_meta_map = {}
     categories = {}
-    for category, hats in registry.categories.items():
+    for category, hat_types in registry.categories.items():
         category_hat_metas = []
-        for hat in hats:
+        for hat in hat_types:
             hat_meta = {"cmd": hat.cmd, "type_tag": hat.type_tag, "type": hat.type}
             type_to_hat_meta_map[hat.type] = hat_meta
             category_hat_metas.append(hat_meta)
         categories[category] = category_hat_metas
 
+    tags = {}
+    with TAGS_PATH.open("r") as f:
+        for tag, hat_types in yaml.safe_load(f).items():
+            tags[tag] = [type_to_hat_meta_map[type] for type in hat_types]
+
     config["all"] = list(type_to_hat_meta_map.values())
     config["hat"] = type_to_hat_meta_map
     config["category"] = categories
+    config["tag"] = tags
