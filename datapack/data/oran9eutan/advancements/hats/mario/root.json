@@ -3,7 +3,7 @@
 	"display" : {
 		"icon": {
 			"item": "minecraft:stick",
-			"nbt": "{CustomModelData:7773170}"
+			"nbt": "{CustomModelData: {{ hats.hat.mario_cap.cmd }}}"
 		  },
 		"title" : {
 			"translate": "advancements.hats.mario.root.title"
@@ -17,88 +17,20 @@
 		"hidden": false
 	},
 	"criteria" : {
-		"mario_cap" : {
+		{%- for hat in hats.category.mario %}
+		"{{ hat.type }}": {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.mario_cap\"]}" }
+					{ "nbt": "{Tags:[\"{{ hat.type_tag }}\"]}" }
 				]
 			}
-		},
-		"luigi_cap" : {
-			"trigger" : "minecraft:inventory_changed",
-			"conditions" : {
-				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.luigi_cap\"]}" }
-				]
-			}
-		},
-		"cappy" : {
-			"trigger" : "minecraft:inventory_changed",
-			"conditions" : {
-				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.cappy\"]}" }
-				]
-			}
-		},
-		"red_toad" : {
-			"trigger" : "minecraft:inventory_changed",
-			"conditions" : {
-				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.toad_red\"]}" }
-				]
-			}
-		},
-		"blue_toad" : {
-			"trigger" : "minecraft:inventory_changed",
-			"conditions" : {
-				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.toad_blue\"]}" }
-				]
-			}
-		},
-		"yellow_toad" : {
-			"trigger" : "minecraft:inventory_changed",
-			"conditions" : {
-				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.toad_yellow\"]}" }
-				]
-			}
-		},
-		"green_toad" : {
-			"trigger" : "minecraft:inventory_changed",
-			"conditions" : {
-				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.toad_green\"]}" }
-				]
-			}
-		},
-		"mario_mask" : {
-			"trigger" : "minecraft:inventory_changed",
-			"conditions" : {
-				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.mario_mask\"]}" }
-				]
-			}
-		},
-		"luigi_mask" : {
-			"trigger" : "minecraft:inventory_changed",
-			"conditions" : {
-				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.luigi_mask\"]}" }
-				]
-			}
-		}
+		}{% if not loop.last %},{% endif %}
+		{%- endfor %}
 	},
 	"requirements" : [[
-		"mario_cap", 
-		"luigi_cap", 
-		"cappy", 
-		"red_toad", 
-		"blue_toad",
-		"yellow_toad",
-		"green_toad",
-		"mario_mask",
-		"luigi_mask"
+		{%- for hat in hats.category.mario %}
+		"{{ hat.type }}"{% if not loop.last %},{% endif %}
+		{%- endfor %}
 	]]
 }

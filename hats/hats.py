@@ -73,6 +73,7 @@ class HatRegistry:
         self.name_to_hat_map: dict[str, Hat] = {}
         self.cmd_to_hat_map: dict[int, Hat] = {}
         self.name_to_category_map: dict[str, str] = {}
+        self.type_to_hat_map: dict[str, Hat] = {}
         self.categories: defaultdict[str, list[Hat]] = defaultdict(list)
 
     @classmethod
@@ -87,12 +88,13 @@ class HatRegistry:
 
     @property
     def hats(self):
-        return self.name_to_hat_map.values()
+        return self.type_to_hat_map.values()
 
     def add(self, hat: Hat, category=DEFAULT_CATEGORY):
         self.name_to_hat_map[hat.name] = hat
         self.cmd_to_hat_map[hat.cmd] = hat
         self.name_to_category_map[hat.name] = category
+        self.type_to_hat_map[hat.type] = hat
         self.categories[category].append(hat)
 
     def by_name(self, name: str):

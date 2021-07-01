@@ -16,6 +16,8 @@ pipeline:
     - hats.plugins.hat_loot_tables
     - hats.plugins.item_models
     - hats.plugins.datapack_advancement
+    - hats.plugins.jinja
+    - beet.contrib.render
 meta:
     namespace: "oran9eutan:hats"
     mcanitexgen:
@@ -32,3 +34,6 @@ meta:
         icon:
             item: "minecraft:stick"
             nbt: "{CustomModelData:7773119}"
+    render:
+      data_pack:
+        advancements: ["oran9eutan:*"]
