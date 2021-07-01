@@ -1,15 +1,12 @@
 import json
 from dataclasses import dataclass
 from logging import getLogger
-from pathlib import Path
 
 import jinja2
-from beet import Context, LootTable
-from beet.library.data_pack import DataPack
+from beet import Context
 from beet.library.resource_pack import Model, ResourcePack
-from ruamel import yaml
 
-from hats.hats import HatRegistry
+from hats.registry.hats import HatRegistry
 
 logger = getLogger(__name__)
 
@@ -23,15 +20,13 @@ class ModelOverride:
 
 
 def beet_default(ctx: Context):
-    namespace = ctx.meta["namespace"]
     config = ctx.meta["hats"]
-    registry_path = Path(config["registry"])
     cmd_id = int(config["cmd_id"])
 
     cache = ctx.cache["hats"]
-    if cache.has_changed(registry_path, "hats/plugins/item_models.py"):
+    if cache.has_changed(HatRegistry.PATH, "hats/plugins/item_models.py"):
         logger.info(f"Generating item models")
-        assets = _create_item_models(namespace, registry_path, cmd_id)
+        assets = _create_item_models(cmd_id)
         assets.save(path=cache.get_path(CACHE_KEY), overwrite=True)
     else:
         logger.info("Using cached item models")
@@ -40,11 +35,10 @@ def beet_default(ctx: Context):
     ctx.assets.merge(assets)
 
 
-def _create_item_models(namespace: str, registry_path: Path, cmd_id: int):
+def _create_item_models(cmd_id: int):
     assets = ResourcePack()
 
-    with registry_path.open("r") as f:
-        registry = HatRegistry.from_json(cmd_id, yaml.safe_load(f))
+    registry = HatRegistry.get(cmd_id)
 
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("hats/templates"))
 

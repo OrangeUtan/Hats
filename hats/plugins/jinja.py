@@ -4,19 +4,18 @@ from pathlib import Path
 import yaml
 from beet import Context
 
-from hats.hats import HatRegistry
+from hats.registry.hats import HatRegistry
 
 logger = getLogger(__name__)
 
+TAGS_PATH = Path("hats/")
+
 
 def beet_default(ctx: Context):
-    namespace = ctx.meta["namespace"]
     config = ctx.meta["hats"]
-    registry_path = Path(config["registry"])
     cmd_id = int(config["cmd_id"])
 
-    with registry_path.open("r") as f:
-        registry = HatRegistry.from_json(cmd_id, yaml.safe_load(f))
+    registry = HatRegistry.get(cmd_id)
 
     type_to_hat_meta_map = {}
     categories = {}

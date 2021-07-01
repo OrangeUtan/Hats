@@ -1,13 +1,11 @@
 import json
 from logging import getLogger
-from pathlib import Path
 
 import jinja2
 from beet import Context, LootTable
 from beet.library.data_pack import DataPack
-from ruamel import yaml
 
-from hats.hats import Hat, HatRegistry
+from hats.registry.hats import Hat, HatRegistry
 
 logger = getLogger(__name__)
 
@@ -15,13 +13,12 @@ logger = getLogger(__name__)
 def beet_default(ctx: Context):
     namespace = ctx.meta["namespace"]
     config = ctx.meta["hats"]
-    registry_path = Path(config["registry"])
     cmd_id = int(config["cmd_id"])
 
     cache = ctx.cache["hats"]
-    if cache.has_changed(registry_path, "hats/plugins/hat_loot_tables.py"):
+    if cache.has_changed(HatRegistry.PATH, "hats/plugins/hat_loot_tables.py"):
         logger.info(f"Generating hat loot tables")
-        data = _create_loot_tables(namespace, registry_path, cmd_id)
+        data = _create_loot_tables(namespace, cmd_id)
         data.save(path=cache.get_path("loot_tables"), overwrite=True)
     else:
         logger.info("Using cached hat loot tables")
@@ -30,11 +27,10 @@ def beet_default(ctx: Context):
     ctx.data.merge(data)
 
 
-def _create_loot_tables(namespace: str, registry_path: Path, cmd_id: int):
+def _create_loot_tables(namespace: str, cmd_id: int):
     data = DataPack()
 
-    with registry_path.open("r") as f:
-        registry = HatRegistry.from_json(cmd_id, yaml.safe_load(f))
+    registry = HatRegistry.get(cmd_id)
 
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("hats/templates"))
 

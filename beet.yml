@@ -29,7 +29,6 @@ meta:
         dialect: "excel"
         prefix_identifiers: true
     hats:
-        registry: "hats/registry.yml"
         cmd_id: 777
     datapack_advancement:
         author_head: "Oran9eUtan"

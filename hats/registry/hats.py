@@ -1,5 +1,8 @@
 from collections import defaultdict
 from dataclasses import dataclass
+from pathlib import Path
+
+import yaml
 
 
 @dataclass(init=False, unsafe_hash=True)
@@ -68,6 +71,7 @@ class Hat:
 
 class HatRegistry:
     DEFAULT_CATEGORY = "misc"
+    PATH = Path("hats/registry/hats.yml")
 
     def __init__(self):
         self.name_to_hat_map: dict[str, Hat] = {}
@@ -85,6 +89,11 @@ class HatRegistry:
                 registry.add(Hat.from_json(hat_name, cmd_id, hat_json), category)
 
         return registry
+
+    @classmethod
+    def get(cls, cmd_id: int):
+        with cls.PATH.open("r") as f:
+            return cls.from_json(cmd_id, yaml.safe_load(f))
 
     @property
     def hats(self):
