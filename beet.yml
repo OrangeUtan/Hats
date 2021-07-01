@@ -18,6 +18,8 @@ pipeline:
     - hats.plugins.datapack_advancement
     - hats.plugins.jinja
     - beet.contrib.render
+templates:
+  - hats/macros
 meta:
     namespace: "oran9eutan:hats"
     mcanitexgen:
