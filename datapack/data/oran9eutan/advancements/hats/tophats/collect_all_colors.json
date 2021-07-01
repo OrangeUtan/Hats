@@ -3,7 +3,7 @@
 	"display" : {
 		"icon": {
 			"item": "minecraft:stick",
-			"nbt": "{CustomModelData:7773116}"
+			"nbt": "{CustomModelData: {{ hats.hat.rainbow_tophat.cmd }}}"
 		  },
 		"title" : {
 			"translate": "advancements.hats.tophats.collect_all_colors.title"

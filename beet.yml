@@ -33,7 +33,7 @@ meta:
         author_head: "Oran9eUtan"
         icon:
             item: "minecraft:stick"
-            nbt: "{CustomModelData:7773119}"
+            nbt: "{CustomModelData: {{ hats.hat.squid.cmd }}}"
     render:
       data_pack:
         advancements: ["oran9eutan:*"]

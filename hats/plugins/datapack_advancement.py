@@ -16,7 +16,7 @@ def beet_default(ctx: Context):
     icon = config["icon"]
 
     cache = ctx.cache["hats"]
-    if cache.has_changed("hats/plugins/datapack_advancement.py"):
+    if cache.has_changed("beet.yml", "hats/plugins/datapack_advancement.py"):
         logger.info(f"Generating datapack advancement")
         data = _create_datapack_advancement(ctx, namespace, author_head, icon)
         data.save(path=cache.get_path(CACHE_KEY), overwrite=True)

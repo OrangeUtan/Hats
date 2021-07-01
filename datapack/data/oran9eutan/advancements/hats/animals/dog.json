@@ -3,7 +3,7 @@
 	"display" : {
 		"icon": {
 			"item": "minecraft:stick",
-			"nbt": "{CustomModelData:7773190}"
+			"nbt": "{CustomModelData: {{ hats.hat.dog.cmd }}}"
 		  },
 		"title" : {
 			"translate": "advancements.hats.animals.dog.title"
