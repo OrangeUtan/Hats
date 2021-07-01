@@ -1,6 +1,5 @@
-{%- macro category_root(id, frame, cmd, hats) -%}
-{
-	"parent" : "oran9eutan:hats/root",
+{%- macro display_options(parent, id, frame, cmd) -%}
+	"parent" : "{{ parent }}",
 	"display" : {
 		"title" : {
 			"translate": "advancements.hats.{{ id }}.title"
@@ -16,7 +15,10 @@
 		"show_toast": true,
 		"announce_to_chat": false,
 		"hidden": false
-	},
+	}
+{%- endmacro %}
+
+{%- macro criteria_received_hats(hats) -%}
 	"criteria" : {
 		{%- for hat in hats %}
 		"{{ hat.type }}": {
@@ -28,11 +30,21 @@
 			}
 		}{% if not loop.last %},{% endif %}
 		{%- endfor %}
-	},
+	}
+{%- endmacro %}
+
+{%- macro require_any_hat(hats) -%}
 	"requirements" : [[
 		{%- for hat in hats %}
 		"{{ hat.type }}"{% if not loop.last %},{% endif %}
 		{%- endfor %}
 	]]
+{%- endmacro %}
+
+{%- macro category_root(id, frame, cmd, hats) -%}
+{
+	{{ display_options("oran9eutan:hats/root", id, frame, cmd) }},
+	{{ criteria_received_hats(hats) }},
+	{{ require_any_hat(hats) }}
 }
 {%- endmacro %}
