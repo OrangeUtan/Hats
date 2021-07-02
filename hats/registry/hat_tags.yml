@@ -1,0 +1,109 @@
+animals:
+  - dog
+
+tophats:
+  - white_tophat
+  - orange_tophat
+  - magenta_tophat
+  - light_blue_tophat
+  - yellow_tophat
+  - lime_tophat
+  - pink_tophat
+  - gray_tophat
+  - light_gray_tophat
+  - cyan_tophat
+  - purple_tophat
+  - blue_tophat
+  - brown_tophat
+  - green_tophat
+  - red_tophat
+  - black_tophat
+  - rainbow_tophat
+  - tophat_with_monocle
+
+colored_ribbon_tophats:
+  - white_tophat
+  - orange_tophat
+  - magenta_tophat
+  - light_blue_tophat
+  - yellow_tophat
+  - lime_tophat
+  - pink_tophat
+  - gray_tophat
+  - light_gray_tophat
+  - cyan_tophat
+  - purple_tophat
+  - blue_tophat
+  - brown_tophat
+  - green_tophat
+  - red_tophat
+  - black_tophat
+
+cats:
+  - ocelot
+  - tabby_cat
+  - tuxedo_cat
+  - red_cat
+  - siamese_cat
+  - british_shorthair
+  - calico_cat
+  - persian_cat
+  - ragdoll
+  - white_cat
+  - jellie
+  - black_cat
+
+glasses:
+  - sunglasses
+  - harry_potter_glasses
+  - half_rim_glasses
+  - rainbow_glasses
+  - librarian_glasses
+  - three_d_glasses
+
+glasses_to_collect:
+  - sunglasses
+  - harry_potter_glasses
+  - half_rim_glasses
+  - rainbow_glasses
+  - librarian_glasses
+
+accessories:
+  - ninja_headband
+  - steve_mask
+  - alex_mask
+  - snorkel_mask_blue
+  - snorkel_mask_red
+  - googly_eyes
+  - earth_in_orbit
+
+player_masks:
+  - alex_mask
+  - steve_mask
+
+villager:
+  - armorer_mask
+  - farmer_strawhat
+  - villager_nose
+
+mario:
+  - mario_cap
+  - luigi_cap
+  - cappy
+  - toad_red
+  - toad_blue
+  - toad_yellow
+  - toad_green
+  - mario_mask
+  - luigi_mask
+
+halloween:
+  - wiggly_ghast
+  - feather_headband
+  - jason_mask
+
+misc:
+  - fez
+  - squid
+  - arrow_prop
+  - frying_pan

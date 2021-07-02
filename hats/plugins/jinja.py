@@ -4,6 +4,7 @@ from pathlib import Path
 import yaml
 from beet import Context
 
+from hats.registry.hat_tags import HatTagRegistry
 from hats.registry.hats import HatRegistry
 
 logger = getLogger(__name__)
@@ -27,10 +28,10 @@ def beet_default(ctx: Context):
             category_hat_metas.append(hat_meta)
         categories[category] = category_hat_metas
 
-    tags = {}
-    with TAGS_PATH.open("r") as f:
-        for tag, hat_types in yaml.safe_load(f).items():
-            tags[tag] = [type_to_hat_meta_map[type] for type in hat_types]
+    tags = {
+        tag: [type_to_hat_meta_map[type] for type in hat_types]
+        for tag, hat_types in HatTagRegistry.get().items()
+    }
 
     config["all"] = list(type_to_hat_meta_map.values())
     config["hat"] = type_to_hat_meta_map
