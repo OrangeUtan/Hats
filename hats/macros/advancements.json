@@ -1,4 +1,22 @@
-{%- macro display_options(parent, id, frame, cmd) -%}
+{# --------------- #}
+{# Display options #}
+{# --------------- #}
+
+{%- macro icon_hat(cmd) -%}
+		{
+			"item": "minecraft:stick",
+			"nbt": "{CustomModelData: {{ cmd }}}"
+		}
+{%- endmacro %}
+
+{%- macro icon_item(item_id, nbt) -%}
+		{
+			"item": "{{ item_id }}",
+			"nbt": "{{ nbt }}"
+		}
+{%- endmacro %}
+
+{%- macro display(parent, id, icon, frame) -%}
 	"parent" : "{{ parent }}",
 	"display" : {
 		"title" : {
@@ -7,16 +25,17 @@
 		"description" : {
 			"translate": "advancements.hats.{{ id }}.description"
 		},
-		"icon": {
-			"item": "minecraft:stick",
-			"nbt": "{CustomModelData: {{ cmd }}}"
-		},
+		"icon": {{ icon }},
 		"frame": "{{ frame }}",
 		"show_toast": true,
 		"announce_to_chat": false,
 		"hidden": false
 	}
 {%- endmacro %}
+
+{# -------- #}
+{# Criteria #}
+{# -------- #}
 
 {%- macro criteria_received_hats(hats) -%}
 	"criteria" : {
@@ -33,6 +52,10 @@
 	}
 {%- endmacro %}
 
+{# -------- #}
+{# Required #}
+{# -------- #}
+
 {%- macro require_any_hat(hats) -%}
 	"requirements" : [[
 		{%- for hat in hats %}
@@ -41,9 +64,13 @@
 	]]
 {%- endmacro %}
 
+{# --------------- #}
+{# Composed macros #}
+{# --------------- #}
+
 {%- macro category_root(id, frame, cmd, hats) -%}
 {
-	{{ display_options("oran9eutan:hats/root", id, frame, cmd) }},
+	{{ display("oran9eutan:hats/root", id, icon_hat(cmd), frame) }},
 	{{ criteria_received_hats(hats) }},
 	{{ require_any_hat(hats) }}
 }

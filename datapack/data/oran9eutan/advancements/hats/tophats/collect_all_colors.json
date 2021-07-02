@@ -1,7 +1,7 @@
-{%- import 'advancements.json' as advancements -%}
+{%- import 'advancements.json' as adv -%}
 {
-	{{ advancements.display_options("oran9eutan:hats/tophats/root", "tophats.collect_all_colors", "challenge", hats.hat.rainbow_tophat.cmd)  }},
-	{{ advancements.criteria_received_hats(hats.tag.colored_ribbon_tophats) }},
+	{{ adv.display("oran9eutan:hats/tophats/root", "tophats.collect_all_colors", adv.icon_hat(hats.hat.rainbow_tophat.cmd), "challenge")  }},
+	{{ adv.criteria_received_hats(hats.tag.colored_ribbon_tophats) }},
 	"rewards": {
 		"loot": [
 			"oran9eutan:hats/hat/rainbow_tophat"

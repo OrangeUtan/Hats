@@ -1,7 +1,7 @@
-{%- import 'advancements.json' as advancements -%}
+{%- import 'advancements.json' as adv -%}
 {
-	{{ advancements.display_options("oran9eutan:hats/cats/root", "cats.collect_all", "challenge", hats.hat.tabby_cat.cmd)  }},
-	{{ advancements.criteria_received_hats(hats.category.cats) }},
+	{{ adv.display("oran9eutan:hats/cats/root", "cats.collect_all", adv.icon_hat(hats.hat.tabby_cat.cmd), "challenge")  }},
+	{{ adv.criteria_received_hats(hats.category.cats) }},
 	"rewards": {
 		"loot": ["minecraft:gameplay/cat_morning_gift"]
 	}

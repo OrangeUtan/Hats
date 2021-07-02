@@ -1,30 +1,5 @@
+{%- import 'advancements.json' as adv -%}
 {
-	"parent" : "oran9eutan:hats/tophats/root",
-	"display" : {
-		"icon": {
-			"item": "minecraft:stick",
-			"nbt": "{CustomModelData: {{ hats.hat.tophat_with_monocle.cmd }}}"
-		  },
-		"title" : {
-			"translate": "advancements.hats.tophats.get_monocle.title"
-		},
-		"description" : {
-			"translate": "advancements.hats.tophats.get_monocle.description"
-		},
-		"frame": "challenge",
-		"show_toast": true,
-		"announce_to_chat": false,
-		"hidden": false
-	},
-	"criteria" : {
-		"tophat_with_monocle" : {
-			"trigger" : "minecraft:inventory_changed",
-			"conditions" : {
-				"items": [
-					{ "nbt": "{Tags:[\"hats.hat.type.tophat_with_monocle\"]}" }
-				]
-			}
-		}
-	},
-	"requirements" : [["tophat_with_monocle"]]
+	{{ adv.display("oran9eutan:hats/tophats/root", "tophats.get_monocle", adv.icon_hat(hats.hat.tophat_with_monocle.cmd), "challenge")  }},
+	{{ adv.criteria_received_hats([hats.hat.tophat_with_monocle]) }}
 }

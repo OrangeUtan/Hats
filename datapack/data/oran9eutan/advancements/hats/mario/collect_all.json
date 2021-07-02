@@ -1,23 +1,7 @@
-{%- import 'advancements.json' as advancements -%}
+{%- import 'advancements.json' as adv -%}
 {
-	"parent" : "oran9eutan:hats/mario/root",
-	"display" : {
-		"icon": {
-			"item": "minecraft:red_mushroom",
-			"nbt": "{Enchantments:[{}]}"
-		},
-		"title" : {
-			"translate": "advancements.hats.mario.collect_all.title"
-		},
-		"description" : {
-			"translate": "advancements.hats.mario.collect_all.description"
-		},
-		"frame": "challenge",
-		"show_toast": true,
-		"announce_to_chat": false,
-		"hidden": false
-	},
-	{{ advancements.criteria_received_hats(hats.category.mario) }},
+	{{ adv.display("oran9eutan:hats/mario/root", "mario.collect_all", adv.icon_item("minecraft:red_mushroom", "{Enchantments:[{}]}"), "challenge")  }},
+	{{ adv.criteria_received_hats(hats.category.mario) }},
 	"rewards": {
 		"loot": ["minecraft:gameplay/cat_morning_gift"]
 	}
