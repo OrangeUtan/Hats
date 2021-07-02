@@ -1,0 +1,64 @@
+{
+	"__comment": "Created by Oran9eUtan",
+	"textures": {
+		"texture": "entity/villager/profession/farmer"
+	},
+	"elements": [
+		{
+			"__comment": "plane",
+			"from": [ 0.5, 8.25, 0.5 ],
+			"to": [ 15.5, 8.275, 15.5 ],
+			"faces": {
+				"down": { "uv": [ 11.75, 12, 7.75, 16 ], "texture": "#texture", "rotation": 180 },
+				"up": { "uv": [ 7.75, 12, 11.75, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "hat",
+			"from": [ 4, 4.25, 4 ],
+			"to": [ 12, 12.25, 12 ],
+			"faces": {
+				"up": { "uv": [ 10, 0, 12, 2 ], "texture": "#texture" },
+				"north": { "uv": [ 10, 2, 12, 4 ], "texture": "#texture" },
+				"south": { "uv": [ 14, 2, 16, 4 ], "texture": "#texture" },
+				"west": { "uv": [ 12, 2, 14, 4 ], "texture": "#texture" },
+				"east": { "uv": [ 8, 2, 10, 4 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ -65, 0, -50 ],
+			"translation":  [ 0, -2, 2 ],
+			"scale":  [ 0.8, 0.8, 0.8 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ -65, 0, -50 ],
+			"translation":  [ 0, -2, 2 ],
+			"scale":  [ 0.8, 0.8, 0.8 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ 80, 25, -90 ],
+			"translation":  [ -3, -1, 2 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ 80, 25, -90 ],
+			"translation":  [ -3, -1, 2 ]
+		},
+		"gui": {
+			"rotation":  [ 45, 45, 0 ],
+			"scale":  [ 0.7, 0.8, 0.7 ]
+		},
+		"head": {
+			"rotation":  [ 7, 0, 0 ],
+			"translation":  [ 0, 1, -0.5 ],
+			"scale":  [ 1.88, 1.88, 1.88 ]
+		},
+		"ground": {
+			"scale":  [ 0.8, 0.8, 0.8 ]
+		},
+		"fixed": {
+			"rotation":  [ -90, 0, 0 ]
+		}
+	}
+}

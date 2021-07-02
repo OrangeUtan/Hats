@@ -1,212 +1,148 @@
-misc:
-  fez:
-    cmd: 3118
-    type: fez
-  squid:
-    cmd: 3119
-    type: squid
-  arrow_prop:
-    cmd: 3132
+accessories:
+  ninja_headband:
+    cmd: 3150
+  steve_mask:
+    cmd: 3151
     num_lore_lines: 1
-    type: arrow_prop
-  frying_pan:
-    cmd: 3133
-    type: frying_pan
+  alex_mask:
+    cmd: 3152
     num_lore_lines: 1
+  snorkel_mask_blue:
+    cmd: 3153
+  snorkel_mask_red:
+    cmd: 3154
+  googly_eyes:
+    cmd: 3155
+  earth_in_orbit:
+    cmd: 3191
 
 animals:
   dog:
     cmd: 3190
-    model: dog
-    type: dog
-
-tophats:
-  white:
-    cmd: 3100
-    type: white_tophat
-  orange:
-    cmd: 3101
-    type: orange_tophat
-  magenta:
-    cmd: 3102
-    type: magenta_tophat
-  light_blue:
-    cmd: 3103
-    type: light_blue_tophat
-  yellow:
-    cmd: 3104
-    type: yellow_tophat
-  lime:
-    cmd: 3105
-    type: lime_tophat
-  pink:
-    cmd: 3106
-    type: pink_tophat
-  gray:
-    cmd: 3107
-    type: gray_tophat
-  light_gray:
-    cmd: 3108
-    type: light_gray_tophat
-  cyan:
-    cmd: 3109
-    type: cyan_tophat
-  purple:
-    cmd: 3110
-    type: purple_tophat
-  blue:
-    cmd: 3111
-    type: blue_tophat
-  brown:
-    cmd: 3112
-    type: brown_tophat
-  green:
-    cmd: 3113
-    type: green_tophat
-  red:
-    cmd: 3114
-    type: red_tophat
-  black:
-    cmd: 3115
-    type: black_tophat
-  rainbow:
-    cmd: 3116
-    type: rainbow_tophat
-  tophat_with_monocle:
-    cmd: 3117
-    type: tophat_with_monocle
 
 cats:
   ocelot:
     cmd: 3120
-    type: ocelot
-  tabby:
+  tabby_cat:
     cmd: 3121
-    type: tabby_cat
-  tuxedo:
+  tuxedo_cat:
     cmd: 3122
-    type: tuxedo_cat
-  red:
+  red_cat:
     cmd: 3123
-    type: red_cat
-  siamese:
+  siamese_cat:
     cmd: 3124
-    type: siamese_cat
   british_shorthair:
     cmd: 3125
-    type: british_shorthair
-  calico:
+  calico_cat:
     cmd: 3126
-    type: calico_cat
-  persian:
+  persian_cat:
     cmd: 3127
-    type: persian_cat
   ragdoll:
     cmd: 3128
-    type: ragdoll
-  white:
+  white_cat:
     cmd: 3129
-    type: white_cat
   jellie:
     cmd: 3130
-    type: jellie
-  black:
+  black_cat:
     cmd: 3131
-    type: black_cat
 
 glasses:
   sunglasses:
     cmd: 3140
-    type: sunglasses
-  harry_potter:
+  harry_potter_glasses:
     cmd: 3141
-    type: harry_potter_glasses
-  half_rim:
+  half_rim_glasses:
     cmd: 3142
-    type: half_rim_glasses
-  rainbow:
+  rainbow_glasses:
     cmd: 3143
-    type: rainbow_glasses
-  librarian:
+  librarian_glasses:
     cmd: 3144
-    type: librarian_glasses
-  three_d:
+  three_d_glasses:
     cmd: 3145
-    type: three_d_glasses
-
-accessories:
-  ninja_headband:
-    cmd: 3150
-    type: ninja_headband
-  steve_mask:
-    cmd: 3151
-    num_lore_lines: 1
-    type: steve_mask
-  alex_mask:
-    cmd: 3152
-    num_lore_lines: 1
-    type: alex_mask
-  snorkel_mask_blue:
-    cmd: 3153
-    type: snorkel_mask_blue
-  snorkel_mask_red:
-    cmd: 3154
-    type: snorkel_mask_red
-  googly_eyes:
-    cmd: 3155
-    type: googly_eyes
-  earth_in_orbit:
-    cmd: 3191
-    type: earth_in_orbit
-
-villager:
-  armorer:
-    cmd: 3160
-    type: armorer_mask
-  farmer:
-    cmd: 3161
-    type: farmer_strawhat
-  nose:
-    cmd: 3162
-    num_lore_lines: 1
-    type: villager_nose
-
-mario:
-  mario_cap:
-    cmd: 3170
-    type: mario_cap
-  luigi_cap:
-    cmd: 3171
-    type: luigi_cap
-  cappy:
-    cmd: 3172
-    type: cappy
-  toad_red:
-    cmd: 3173
-    type: toad_red
-  toad_blue:
-    cmd: 3174
-    type: toad_blue
-  toad_yellow:
-    cmd: 3175
-    type: toad_yellow
-  toad_green:
-    cmd: 3176
-    type: toad_green
-  mario_mask:
-    cmd: 3177
-    type: mario_mask
-  luigi_mask:
-    cmd: 3178
-    type: luigi_mask
 
 halloween:
   wiggly_ghast:
     cmd: 3180
-    type: wiggly_ghast
   feather_headband:
     cmd: 3181
-    type: feather_headband
   jason_mask:
     cmd: 3182
-    type: jason_mask
+
+mario:
+  mario_cap:
+    cmd: 3170
+  luigi_cap:
+    cmd: 3171
+  cappy:
+    cmd: 3172
+  toad_red:
+    cmd: 3173
+  toad_blue:
+    cmd: 3174
+  toad_yellow:
+    cmd: 3175
+  toad_green:
+    cmd: 3176
+  mario_mask:
+    cmd: 3177
+  luigi_mask:
+    cmd: 3178
+
+misc:
+  fez:
+    cmd: 3118
+  squid:
+    cmd: 3119
+  arrow_prop:
+    cmd: 3132
+    num_lore_lines: 1
+  frying_pan:
+    cmd: 3133
+    num_lore_lines: 1
+
+tophats:
+  white_tophat:
+    cmd: 3100
+  orange_tophat:
+    cmd: 3101
+  magenta_tophat:
+    cmd: 3102
+  light_blue_tophat:
+    cmd: 3103
+  yellow_tophat:
+    cmd: 3104
+  lime_tophat:
+    cmd: 3105
+  pink_tophat:
+    cmd: 3106
+  gray_tophat:
+    cmd: 3107
+  light_gray_tophat:
+    cmd: 3108
+  cyan_tophat:
+    cmd: 3109
+  purple_tophat:
+    cmd: 3110
+  blue_tophat:
+    cmd: 3111
+  brown_tophat:
+    cmd: 3112
+  green_tophat:
+    cmd: 3113
+  red_tophat:
+    cmd: 3114
+  black_tophat:
+    cmd: 3115
+  rainbow_tophat:
+    cmd: 3116
+  tophat_with_monocle:
+    cmd: 3117
+
+villager:
+  armorer_mask:
+    cmd: 3160
+  farmer_strawhat:
+    cmd: 3161
+  villager_nose:
+    cmd: 3162
+    num_lore_lines: 1

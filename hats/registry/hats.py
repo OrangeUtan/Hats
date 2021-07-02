@@ -7,7 +7,6 @@ import yaml
 
 @dataclass(init=False, unsafe_hash=True)
 class Hat:
-    name: str
     type: str
     cmd: int
     num_lore_lines: int
@@ -20,7 +19,6 @@ class Hat:
 
     def __init__(
         self,
-        name: str,
         type: str,
         cmd: int,
         cmd_id: int,
@@ -29,7 +27,6 @@ class Hat:
         model_inventory=DEFAULT_MODEL_INVENTORY,
         model=None,
     ):
-        self.name = name
         self.type = type
         self.cmd = cmd_id * 10000 + cmd
         self.num_lore_lines = num_lore_lines
@@ -38,10 +35,9 @@ class Hat:
         self._model = model
 
     @classmethod
-    def from_json(cls, name: str, cmd_id: int, json: dict):
+    def from_json(cls, type: str, cmd_id: int, json: dict):
         return Hat(
-            name,
-            json["type"],
+            type,
             json["cmd"],
             cmd_id,
             json.get("num_lore_lines", 0),
@@ -63,20 +59,15 @@ class Hat:
         return f"hats.hat.type.{self.type}"
 
     def model_path(self, category: str):
-        if self._model:
-            return f"item/hats/{self._model}"
-        else:
-            return f"item/hats/{category}/{self.name}"
+        return f"item/hats/{category}/{self.type}"
 
 
 class HatRegistry:
-    DEFAULT_CATEGORY = "misc"
     PATH = Path("hats/registry/hats.yml")
 
     def __init__(self):
-        self.name_to_hat_map: dict[str, Hat] = {}
         self.cmd_to_hat_map: dict[int, Hat] = {}
-        self.name_to_category_map: dict[str, str] = {}
+        self.type_to_category_map: dict[str, str] = {}
         self.type_to_hat_map: dict[str, Hat] = {}
         self.categories: defaultdict[str, list[Hat]] = defaultdict(list)
 
@@ -85,8 +76,8 @@ class HatRegistry:
         registry = HatRegistry()
 
         for category, hats_json in json.items():
-            for hat_name, hat_json in hats_json.items():
-                registry.add(Hat.from_json(hat_name, cmd_id, hat_json), category)
+            for hat_type, hat_json in hats_json.items():
+                registry.add(Hat.from_json(hat_type, cmd_id, hat_json), category)
 
         return registry
 
@@ -99,18 +90,18 @@ class HatRegistry:
     def hats(self):
         return self.type_to_hat_map.values()
 
-    def add(self, hat: Hat, category=DEFAULT_CATEGORY):
-        self.name_to_hat_map[hat.name] = hat
+    def add(self, hat: Hat, category: str):
+        self.type_to_hat_map[hat.type] = hat
         self.cmd_to_hat_map[hat.cmd] = hat
-        self.name_to_category_map[hat.name] = category
+        self.type_to_category_map[hat.type] = category
         self.type_to_hat_map[hat.type] = hat
         self.categories[category].append(hat)
 
-    def by_name(self, name: str):
-        return self.name_to_hat_map[name]
+    def by_type(self, type: str):
+        return self.type_to_hat_map[type]
 
     def by_cmd(self, cmd: int):
         return self.cmd_to_hat_map[cmd]
 
-    def category_of(self, hat_name: str):
-        return self.name_to_category_map[hat_name]
+    def category_of(self, type: str):
+        return self.type_to_category_map[type]
