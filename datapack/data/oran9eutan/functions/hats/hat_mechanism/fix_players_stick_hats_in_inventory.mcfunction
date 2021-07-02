@@ -1,6 +1,6 @@
 # executor: Player whos inventory is getting fixed
 # descr: Fixes all stick hats in the Players inventory slots
-# requirements: 
+# requirements:
 # 	- storage buffer.inv has to be populated
 #   - at least one stick hat has to exist in buffer.inv
 
@@ -39,7 +39,7 @@ data modify storage minecraft:hats buffer.inv[{id:"minecraft:stick", tag:{Tags:[
 # Replaced Players inventory with modified inventory
 setblock ~ 0 ~ minecraft:yellow_shulker_box
 data modify block ~ 0 ~ Items set from storage minecraft:hats buffer.inv
-loot replace entity @s inventory.0 27 mine ~ 0 ~ minecraft:diamond_pickaxe{drop_contents:1b}
+loot replace entity @s inventory.0 27 mine ~ 0 ~ minecraft:air{drop_contents:1b}
 
 # Clean up
 setblock ~ 0 ~ minecraft:air

@@ -1,6 +1,6 @@
 # executor: Player whos inventory is getting fixed
 # descr: Fixes all stick hats in the Players hotbar slots
-# requirements: 
+# requirements:
 # 	- storage buffer.hotbar has to be populated
 #   - at least one stick hat has to exist in buffer.hotbar
 
@@ -10,7 +10,7 @@ data modify storage minecraft:hats buffer.hotbar[{id:"minecraft:stick", tag:{Tag
 # Replaced Players hotbar with modified hotbar
 setblock ~ 0 ~ minecraft:yellow_shulker_box
 data modify block ~ 0 ~ Items set from storage minecraft:hats buffer.hotbar
-loot replace entity @s hotbar.0 9 mine ~ 0 ~ minecraft:diamond_pickaxe{drop_contents:1b}
+loot replace entity @s hotbar.0 9 mine ~ 0 ~ minecraft:air{drop_contents:1b}
 
 # Clean up
 setblock ~ 0 ~ minecraft:air
