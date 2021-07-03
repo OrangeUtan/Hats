@@ -2,6 +2,24 @@
 
 <!--next-version-placeholder-->
 
+## v3.0.0 (2021-07-03)
+### Feature
+* Recipes for all glasses ([`483fc20`](https://github.com/OrangeUtan/Hats/commit/483fc20f562716a3a571c70b0aba23c515836bf4))
+* Recipe for Feather Headband ([`ce72523`](https://github.com/OrangeUtan/Hats/commit/ce725232c401262589dadfabcd5e15bddc8562e9))
+* Crafting recipes for toad hats ([`985b33c`](https://github.com/OrangeUtan/Hats/commit/985b33cbcafd033d705a22a6025f5bbda3fcd93e))
+* Hat loot tables no longer grouped by category ([`bd2831f`](https://github.com/OrangeUtan/Hats/commit/bd2831fa68a5ff96957e9ed6f3d3f7b7660a9c74))
+
+### Fix
+* Load function not executed ([`dc2fc3a`](https://github.com/OrangeUtan/Hats/commit/dc2fc3a11dbb2db702844901c03941ec886f7938))
+* Yellow shulker box method not working ([`0b07bfd`](https://github.com/OrangeUtan/Hats/commit/0b07bfd244539148496eaf3a44c92e09aac99fc3))
+* Renamed "native_american_headband" to "feather headband" ([`3d06f2e`](https://github.com/OrangeUtan/Hats/commit/3d06f2e3ddab081734be432f1bd4918d03374ab9))
+* Resourcepack didn't display hats if built from cache ([`1e74309`](https://github.com/OrangeUtan/Hats/commit/1e74309d15f6fa290b3c3903c924c1e93d893007))
+* Changed 3D glasses type to "three_d_glass" ([`bedf278`](https://github.com/OrangeUtan/Hats/commit/bedf278d59cfde30acb40b8dc04722bd01fbfedf))
+* Rainbow glasses was not displayed ([`47c8ffa`](https://github.com/OrangeUtan/Hats/commit/47c8ffa1d0c44577f9d1da7573b73fc6fd2b4644))
+
+### Breaking
+* Renemad type of squid to posh_squid  ([`1bcf7c9`](https://github.com/OrangeUtan/Hats/commit/1bcf7c960953f45434b8d94c7459d84d2dcdb448))
+
 ## [2.3.1] - 2020-06-17
 ### Added
 - Configuration book

@@ -1,7 +1,7 @@
 name: Hats
 author: Oran9eUtan
 description: Collectable stylish hats
-version: "2.3.1"
+version: "3.0.0"
 output: build
 data_pack:
     name: hats_datapack
