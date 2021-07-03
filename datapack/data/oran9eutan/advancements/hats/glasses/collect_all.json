@@ -1,10 +1,5 @@
 {%- import 'advancements.json' as adv -%}
 {
 	{{ adv.display("oran9eutan:hats/glasses/root", "glasses.collect_all", adv.icon_hat(hats.hat.three_d_glasses.cmd), "challenge")  }},
-	{{ adv.criteria_received_hats(hats.tag.glasses_to_collect) }},
-	"rewards": {
-		"loot": [
-			"oran9eutan:hats/hat/three_d_glasses"
-		]
-	}
+	{{ adv.criteria_received_hats(hats.tag.glasses) }}
 }

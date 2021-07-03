@@ -61,13 +61,6 @@ glasses:
   - librarian_glasses
   - three_d_glasses
 
-glasses_to_collect:
-  - sunglasses
-  - harry_potter_glasses
-  - half_rim_glasses
-  - rainbow_glasses
-  - librarian_glasses
-
 accessories:
   - ninja_headband
   - steve_mask
