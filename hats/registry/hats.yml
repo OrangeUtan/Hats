@@ -138,7 +138,7 @@ villager:
 misc:
   fez:
     cmd: 3100
-  squid:
+  posh_squid:
     cmd: 3101
   arrow_prop:
     cmd: 3102
