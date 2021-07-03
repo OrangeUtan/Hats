@@ -75,3 +75,19 @@
 	{{ require_any_hat(hats) }}
 }
 {%- endmacro %}
+
+{%- macro on_crafts_recipe(recipe, callback) -%}
+{
+	"criteria": {
+		"recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "{{ recipe }}"
+			}
+		}
+	},
+	"rewards": {
+		"function": "{{ callback }}"
+	}
+}
+{%- endmacro %}

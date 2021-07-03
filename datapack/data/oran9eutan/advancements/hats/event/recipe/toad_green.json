@@ -1,0 +1,2 @@
+{%- import 'advancements.json' as adv -%}
+{{ adv.on_crafts_recipe("oran9eutan:hats/toad_green", "oran9eutan:hats/event/recipe/toad_green") }}
