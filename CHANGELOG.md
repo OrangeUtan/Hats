@@ -1,26 +1,6 @@
 # Changelog
 
-## [Unreleased]
-### Added
-- Datapack advancement
-- Added **fix_selected_hat.mcfunction** to fix v2.3.1 hats
-- Checking for **global.ignore** tag
-
-### Changed
-- Changed namespace to **oran9eutan:hats**
-- Changed Custom Model Data of almost all hats
-- Flattened NBT type tags of all hats
-- Renamed scoreboards
-- Changed dog leash to a normal leash item
-
-### Internal
-#### Added
-- Poetry project
-- Using babelbox for language localization
-- Added CLI to generator
-- Updated mcanitexgen
-- Automatic version bumping
-- Changelog
+<!--next-version-placeholder-->
 
 ## [2.3.1] - 2020-06-17
 ### Added
