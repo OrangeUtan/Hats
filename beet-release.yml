@@ -1,9 +1,11 @@
-extend: ["beet.json"]
+extend: ["beet.yml"]
 output: dist
 data_pack:
     zipped: true
+    name: "{{ project_name }}-{{ project_version }}-datapack"
 resource_pack:
     zipped: true
+    name: "{{ project_name }}-{{ project_version }}-resourcepack"
 pipeline:
     - beet.contrib.minify_json
     - beet.contrib.minify_function

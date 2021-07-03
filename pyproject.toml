@@ -30,3 +30,13 @@ line-length = 100
 
 [tool.isort]
 line_length = 100
+
+[tool.semantic_release]
+branch="release"
+version_toml = "pyproject.toml:tool.poetry.version"
+version_pattern = "beet.yml:(\\d+\\.\\d+\\.\\d+)"
+major_on_zero = false
+build_command = "beet -c beet-release.yml"
+dist_path = "dist"
+upload_to_pypi = false
+upload_to_release = true
