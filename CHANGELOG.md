@@ -8,6 +8,7 @@
 * Recipe for Feather Headband ([`ce72523`](https://github.com/OrangeUtan/Hats/commit/ce725232c401262589dadfabcd5e15bddc8562e9))
 * Crafting recipes for toad hats ([`985b33c`](https://github.com/OrangeUtan/Hats/commit/985b33cbcafd033d705a22a6025f5bbda3fcd93e))
 * Hat loot tables no longer grouped by category ([`bd2831f`](https://github.com/OrangeUtan/Hats/commit/bd2831fa68a5ff96957e9ed6f3d3f7b7660a9c74))
+* Datapack advancement ([`c4ef51d`](https://github.com/OrangeUtan/Hats/commit/c4ef51d4c4324856bbefab60109871e47d2056e5))
 
 ### Fix
 * Load function not executed ([`dc2fc3a`](https://github.com/OrangeUtan/Hats/commit/dc2fc3a11dbb2db702844901c03941ec886f7938))
@@ -18,7 +19,11 @@
 * Rainbow glasses was not displayed ([`47c8ffa`](https://github.com/OrangeUtan/Hats/commit/47c8ffa1d0c44577f9d1da7573b73fc6fd2b4644))
 
 ### Breaking
-* Renemad type of squid to posh_squid  ([`1bcf7c9`](https://github.com/OrangeUtan/Hats/commit/1bcf7c960953f45434b8d94c7459d84d2dcdb448))
+* Changed datapack namespace ([`e86e110`](https://github.com/OrangeUtan/Hats/commit/e86e1108d50b0c871119a0076e85aefb60612327))
+* Changed all hat CustomModelData ([` 5e899ae`](https://github.com/OrangeUtan/Hats/commit/5e899aedc9ab2dee830fccacf580934b96fb0c8a))
+* Changed types of hats:
+  * Squid to posh_squid  ([`1bcf7c9`](https://github.com/OrangeUtan/Hats/commit/1bcf7c960953f45434b8d94c7459d84d2dcdb448))
+  * Flattened hat types ([`2ba0bba`](https://github.com/OrangeUtan/Hats/commit/2ba0bba255d6f4e9ad0e3914c4b3a984e24b84c3))
 
 ## [2.3.1] - 2020-06-17
 ### Added
