@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:leather"
+        },
+        {
+            "item": "minecraft:feather"
+        },
+        {
+            "item": "minecraft:feather"
+        }
+	],
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}
