@@ -1,0 +1,30 @@
+toad_blue:
+  - type: shapeless
+    ingredients:
+      - item: minecraft:mushroom_stem
+      - item: minecraft:blue_dye
+
+toad_green:
+  - type: shapeless
+    ingredients:
+      - item: minecraft:mushroom_stem
+      - item: minecraft:green_dye
+
+toad_red:
+  - type: shapeless
+    ingredients:
+      - item: minecraft:mushroom_stem
+      - item: minecraft:red_dye
+
+toad_yellow:
+  - type: shapeless
+    ingredients:
+      - item: minecraft:mushroom_stem
+      - item: minecraft:yellow_dye
+
+feather_headband:
+  - type: shapeless
+    ingredients:
+      - item: minecraft:leather
+      - item: minecraft:feather
+      - item: minecraft:feather

@@ -16,6 +16,7 @@ pipeline:
     - hats.plugins.hat_loot_tables
     - hats.plugins.item_models
     - hats.plugins.datapack_advancement
+    - hats.plugins.hat_recipes
     - hats.plugins.jinja
     - beet.contrib.render
 templates:
