@@ -3,7 +3,7 @@ from logging import getLogger
 from beet import Context
 from beet.library.data_pack import DataPack, Function
 
-from hats.registry.hats import Hat, HatRegistry
+from hats.registry.hats import HatRegistry
 
 logger = getLogger(__name__)
 
@@ -22,12 +22,15 @@ def _generate_category_fashion_show_functions(namespace: str, registry: HatRegis
     data = DataPack()
 
     for category, hats in registry.categories.items():
-        lines = [
-            f"execute if score #show_progress hats.math matches {i} run loot replace entity @e[tag=fashion_model] armor.head loot {namespace}/hat_on_head/{hat.type}"
-            for i, hat in enumerate(hats)
-        ]
+        lines = []
+        for i, hat in enumerate(hats):
+            lines += [
+                f"execute if score #show_progress hats.math matches {i} run loot replace entity @e[tag=fashion_model] armor.head loot {namespace}/hat_on_head/{hat.type}",
+                f'execute if score #show_progress hats.math matches {i} run title @a subtitle {{"translate": "item.hats.hat.{hat.type}.name"}}',
+            ]
 
         lines += [
+            f'title @a title {{"text": ""}}',
             "scoreboard players add #show_progress hats.math 1",
             f"execute if score #show_progress hats.math matches {len(hats)}.. run scoreboard players set #show_progress hats.math 0",
         ]
