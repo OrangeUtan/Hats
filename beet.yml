@@ -11,11 +11,11 @@ resource_pack:
     load: ["resourcepack"]
 pipeline:
     - beet.contrib.yellow_shulker_box
+    - beet.contrib.installation_advancement
     - babelbox.integration.beet
     - mcanitexgen.integration.beet
     - hats.plugins.hat_loot_tables
     - hats.plugins.item_models
-    - hats.plugins.datapack_advancement
     - hats.plugins.hat_recipes
     - hats.plugins.jinja
     - beet.contrib.render
@@ -31,11 +31,11 @@ meta:
         prefix_identifiers: true
     hats:
         cmd_id: 777
-    datapack_advancement:
-        author_head: "Oran9eUtan"
-        icon:
-            item: "minecraft:stick"
-            nbt: "{CustomModelData: {{ hats.hat.posh_squid.cmd }}}"
     render:
       data_pack:
         advancements: ["oran9eutan:*"]
+    installation_advancement:
+        author_skull_owner: Oran9eUtan
+        icon:
+            item: "minecraft:stick"
+            nbt: "{CustomModelData: {{ hats.hat.fez.cmd }}}"
