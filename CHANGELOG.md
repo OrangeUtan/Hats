@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v3.1.0 (2021-07-06)
+### Feature
+* Chat configuration ([`2612506`](https://github.com/OrangeUtan/Hats/commit/2612506b9688817a0701976f8d2c7788a9a894c8))
+
 ## v3.0.0 (2021-07-03)
 ### Feature
 * Recipes for all glasses ([`483fc20`](https://github.com/OrangeUtan/Hats/commit/483fc20f562716a3a571c70b0aba23c515836bf4))
