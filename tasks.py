@@ -1,13 +1,11 @@
+import glob
 from pathlib import Path
 
 from invoke import task
 
-MEDIA_DIR = Path("./media")
-
 
 @task
-def optimize_media(c):
-    showcase_gifs = filter(lambda p: p.name.startswith("showcase"), MEDIA_DIR.iterdir())
-    for path in showcase_gifs:
+def optimize_gif(c, files):
+    for path in map(lambda f: Path(f), glob.glob(files)):
         print(f"Optimizing {path}")
         c.run(f"gifsicle -i {path} -O3 --resize 162x288 --lossy=50 -o {path}")
