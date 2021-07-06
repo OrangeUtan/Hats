@@ -21,6 +21,7 @@ pipeline:
     - beet.contrib.render
 templates:
   - hats/macros
+  - hats/templates
 meta:
     namespace: "oran9eutan:hats"
     mcanitexgen:
