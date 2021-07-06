@@ -1,7 +1,7 @@
 {
 	"parent" : "oran9eutan:hats/root",
 	"criteria" : {
-		"player_received_helmet_hat" : {
+		"received_inventory_hat" : {
 			"trigger" : "minecraft:inventory_changed",
 			"conditions" : {
 				"items": [
@@ -13,8 +13,7 @@
 			}
 		}
 	},
-	"requirements" : [["player_received_helmet_hat"]],
 	"rewards": {
-		"function": "oran9eutan:hats/event/player_received_helmet_hat"
+		"function": "oran9eutan:hats/event/player_received_inventory_hat"
 	}
 }
