@@ -4,7 +4,7 @@
 	"predicate": {
 	  "equipment": {
 		"head": {
-		  "item": "leather_helmet",
+		  "tag": "oran9eutan:hat_inventory",
 		  "nbt": "{Tags:[\"hats.hat\"]}"
 		}
 	  }
