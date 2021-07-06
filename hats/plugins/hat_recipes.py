@@ -1,8 +1,7 @@
 import textwrap
 from logging import getLogger
 
-from beet import Context
-from beet.library.data_pack import Advancement, DataPack, Function, Recipe
+from beet import Advancement, Context, DataPack, Function, Recipe
 
 from hats.registry.hat_recipes import HatRecipeRegistry, ShapelessHatRecipe
 

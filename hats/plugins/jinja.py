@@ -1,7 +1,6 @@
 from logging import getLogger
 from pathlib import Path
 
-import yaml
 from beet import Context
 
 from hats.registry.hat_tags import HatTagRegistry

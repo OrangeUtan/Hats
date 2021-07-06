@@ -1,7 +1,6 @@
 from logging import getLogger
 
-from beet import Context
-from beet.library.data_pack import DataPack, Function
+from beet import Context, DataPack, Function
 
 from hats.registry.hats import HatRegistry
 
