@@ -3,6 +3,7 @@ from logging import getLogger
 
 from beet import Context, Model, ResourcePack
 
+from hats.options import HatsOptions
 from hats.registry.hats import HatRegistry
 
 logger = getLogger(__name__)
@@ -15,10 +16,8 @@ class ModelOverride:
 
 
 def beet_default(ctx: Context):
-    config = ctx.meta["hats"]
-    cmd_id = int(config["cmd_id"])
-
-    ctx.assets.merge(item_models(ctx, cmd_id))
+    opts = HatsOptions.from_json(ctx.meta["hats"])
+    ctx.assets.merge(item_models(ctx, opts.cmd_id))
 
 
 def item_models(ctx: Context, cmd_id: int):

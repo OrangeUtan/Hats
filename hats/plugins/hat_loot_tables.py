@@ -2,6 +2,7 @@ from logging import getLogger
 
 from beet import Context, DataPack, LootTable
 
+from hats.options import HatsOptions
 from hats.registry.hats import Hat, HatRegistry
 
 logger = getLogger(__name__)
@@ -9,16 +10,15 @@ logger = getLogger(__name__)
 
 def beet_default(ctx: Context):
     namespace = ctx.meta["namespace"]
-    config = ctx.meta["hats"]
-    cmd_id = int(config["cmd_id"])
+    opts = HatsOptions.from_json(ctx.meta["hats"])
 
-    ctx.data.merge(_create_loot_tables(ctx, namespace, cmd_id))
+    ctx.data.merge(_create_loot_tables(ctx, namespace, opts))
 
 
-def _create_loot_tables(ctx: Context, namespace: str, cmd_id: int):
+def _create_loot_tables(ctx: Context, namespace: str, opts: HatsOptions):
     data = DataPack()
 
-    registry = HatRegistry.get(cmd_id)
+    registry = HatRegistry.get(opts.cmd_id)
 
     for category, hats in registry.categories.items():
         # Create category loot tables

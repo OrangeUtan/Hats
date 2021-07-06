@@ -3,6 +3,7 @@ from pathlib import Path
 
 from beet import Context
 
+from hats.options import HatsOptions
 from hats.registry.hat_tags import HatTagRegistry
 from hats.registry.hats import HatRegistry
 
@@ -13,9 +14,9 @@ TAGS_PATH = Path("hats/registry/tags.yml")
 
 def beet_default(ctx: Context):
     config = ctx.meta["hats"]
-    cmd_id = int(config["cmd_id"])
+    opts = HatsOptions.from_json(ctx.meta["hats"])
 
-    registry = HatRegistry.get(cmd_id)
+    registry = HatRegistry.get(opts.cmd_id)
 
     type_to_hat_meta_map = {}
     categories = {}

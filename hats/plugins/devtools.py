@@ -2,6 +2,7 @@ from logging import getLogger
 
 from beet import Context, DataPack, Function
 
+from hats.options import HatsOptions
 from hats.registry.hats import HatRegistry
 
 logger = getLogger(__name__)
@@ -9,10 +10,9 @@ logger = getLogger(__name__)
 
 def beet_default(ctx: Context):
     namespace = ctx.meta["namespace"]
-    config = ctx.meta["hats"]
-    cmd_id = int(config["cmd_id"])
+    opts = HatsOptions.from_json(ctx.meta["hats"])
 
-    registry = HatRegistry.get(cmd_id)
+    registry = HatRegistry.get(opts.cmd_id)
 
     ctx.data.merge(_generate_category_fashion_show_functions(namespace, registry))
 
