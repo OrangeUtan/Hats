@@ -2,7 +2,7 @@
     "display": {
       "icon": {
         "item": "minecraft:stick",
-        "nbt": "{CustomModelData: {{ hats.hat.posh_squid.cmd }}}"
+        "nbt": "{CustomModelData: {{ hats.hat.fez.cmd }}}"
       },
       "title": {
         "translate": "advancements.hats.root.title"
