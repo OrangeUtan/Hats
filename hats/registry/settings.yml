@@ -1,0 +1,20 @@
+main: general
+scoreboard: hats.cfg
+sections:
+  general:
+    title: "General"
+    settings:
+      dress_mobs:
+        title: Dress mobs
+        description: Randomly equip mobs with hats
+        type: bool
+        default: True
+        on_enable: function oran9eutan:hats/loops/dress_mobs
+        on_disable: schedule clear oran9eutan:hats/loops/dress_mobs
+      dog_conversion:
+        title: Dog conversion
+        description: Dogs can be converted to hats and back
+        type: bool
+        default: True
+        on_enable: function oran9eutan:hats/loops/convert_dogs_near_players
+        on_disable: schedule clear oran9eutan:hats/loops/convert_dogs_near_players

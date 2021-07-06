@@ -14,6 +14,7 @@ pipeline:
     - beet.contrib.installation_advancement
     - babelbox.integration.beet
     - mcanitexgen.integration.beet
+    - hats.plugins.configuration
     - hats.plugins.hat_loot_tables
     - hats.plugins.item_models
     - hats.plugins.hat_recipes
@@ -35,6 +36,7 @@ meta:
     render:
       data_pack:
         advancements: ["oran9eutan:*"]
+        functions: ["oran9eutan:*"]
     installation_advancement:
         author_skull_owner: Oran9eUtan
         icon:
