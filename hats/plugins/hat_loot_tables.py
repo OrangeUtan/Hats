@@ -33,10 +33,10 @@ def _create_loot_tables(ctx: Context, namespace: str, opts: HatsOptions):
         # Create hat loot tables
         for hat in hats:
             data.loot_tables[f"{namespace}/hat_on_head/{hat.type}"] = _create_hat_loot_table(
-                ctx, hat, hat.model_head
+                ctx, hat, hat.item_head or opts.default_item_head
             )
             data.loot_tables[f"{namespace}/hat/{hat.type}"] = _create_hat_loot_table(
-                ctx, hat, hat.model_inventory
+                ctx, hat, hat.item_inventory or opts.default_item_inventory
             )
 
     return data

@@ -1,6 +1,7 @@
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Optional
 
 import yaml
 
@@ -11,39 +12,36 @@ class Hat:
     cmd: int
     num_lore_lines: int
 
-    model_head: str
-    model_inventory: str
-
-    DEFAULT_MODEL_HEAD = "stick"
-    DEFAULT_MODEL_INVENTORY = "leather_helmet"
+    item_head: Optional[str]
+    item_inventory: Optional[str]
 
     def __init__(
         self,
         type: str,
         cmd: int,
         cmd_id: int,
+        item_head,
+        item_inventory,
         num_lore_lines: int = 0,
-        model_head=DEFAULT_MODEL_HEAD,
-        model_inventory=DEFAULT_MODEL_INVENTORY,
         model=None,
     ):
         self.type = type
         self.cmd = cmd_id * 10000 + cmd
         self.num_lore_lines = num_lore_lines
-        self.model_head = model_head
-        self.model_inventory = model_inventory
+        self.item_head = item_head
+        self.item_inventory = item_inventory
         self._model = model
 
     @classmethod
     def from_json(cls, type: str, cmd_id: int, json: dict):
         return Hat(
-            type,
-            json["cmd"],
-            cmd_id,
-            json.get("num_lore_lines", 0),
-            json.get("model_head", Hat.DEFAULT_MODEL_HEAD),
-            json.get("model_inventory", Hat.DEFAULT_MODEL_INVENTORY),
-            json.get("model", None),
+            type=type,
+            cmd=json["cmd"],
+            cmd_id=cmd_id,
+            num_lore_lines=json.get("num_lore_lines", 0),
+            model=json.get("model"),
+            item_head=json.get("item_head"),
+            item_inventory=json.get("item_inventory"),
         )
 
     @property

@@ -33,6 +33,8 @@ meta:
         prefix_identifiers: true
     hats:
         cmd_id: 777
+        default_item_head: minecraft:stick
+        default_item_inventory: minecraft:leather_helmet
     render:
       data_pack:
         advancements: ["oran9eutan:*"]
