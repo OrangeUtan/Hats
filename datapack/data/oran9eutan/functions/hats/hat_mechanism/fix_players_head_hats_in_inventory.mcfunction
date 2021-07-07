@@ -1,8 +1,8 @@
-# executor: Player whos inventory is getting fixed
-# descr: Fixes all stick hats in the Players inventory slots
+# Fixes all #hat_head hats in a players inventory slots
+# @s: Player whos inventory is getting fixed
 # requirements:
 # 	- storage buffer.inv has to be populated
-#   - at least one stick hat has to exist in buffer.inv
+#   - at least one #hat_head hat has to exist in buffer.inv
 
 # Correct slot data
 data modify storage minecraft:hats buffer.inv[{Slot:9b}].Slot set value 0b
@@ -33,10 +33,10 @@ data modify storage minecraft:hats buffer.inv[{Slot:33b}].Slot set value 24b
 data modify storage minecraft:hats buffer.inv[{Slot:34b}].Slot set value 25b
 data modify storage minecraft:hats buffer.inv[{Slot:35b}].Slot set value 26b
 
-# Replace all stick Hats with helmet hats
-data modify storage minecraft:hats buffer.inv[{id:"minecraft:stick", tag:{Tags:["hats.hat"]}}].id set value "minecraft:leather_helmet"
+# Replace all #hat_head hats with #hat_inventory hats
+data modify storage minecraft:hats buffer.inv[{id:"{{ hats.default_item_head }}", tag:{Tags:["hats.hat"]}}].id set value "{{ hats.default_item_inventory }}"
 
-# Replaced Players inventory with modified inventory
+# Replaced players inventory with modified inventory
 setblock ~ 0 ~ minecraft:yellow_shulker_box
 data modify block ~ 0 ~ Items set from storage minecraft:hats buffer.inv
 loot replace entity @s inventory.0 27 mine ~ 0 ~ minecraft:air{drop_contents:1b}

@@ -4,7 +4,7 @@
 
 {%- macro icon_hat(cmd) -%}
 		{
-			"item": "minecraft:stick",
+			"item": "{{ hats.default_item_head }}",
 			"nbt": "{CustomModelData: {{ cmd }}}"
 		}
 {%- endmacro %}

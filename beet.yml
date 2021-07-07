@@ -35,12 +35,13 @@ meta:
         cmd_id: 777
         default_item_head: minecraft:stick
         default_item_inventory: minecraft:leather_helmet
-    render:
-      data_pack:
-        advancements: ["oran9eutan:*"]
-        functions: ["oran9eutan:*"]
     installation_advancement:
         author_skull_owner: Oran9eUtan
         icon:
             item: "minecraft:stick"
             nbt: "{CustomModelData: {{ hats.hat.fez.cmd }}}"
+    render:
+      data_pack:
+        advancements: ["oran9eutan:*"]
+        functions: ["oran9eutan:*"]
+        item_tags: ["oran9eutan:*"]

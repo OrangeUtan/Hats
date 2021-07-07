@@ -17,26 +17,29 @@ class ModelOverride:
 
 def beet_default(ctx: Context):
     opts = HatsOptions.from_json(ctx.meta["hats"])
-    ctx.assets.merge(item_models(ctx, opts.cmd_id))
+    ctx.assets.merge(item_models(ctx, opts))
 
 
-def item_models(ctx: Context, cmd_id: int):
+def item_models(ctx: Context, opts: HatsOptions):
     """Create item models used for custom model data"""
 
     assets = ResourcePack()
 
-    registry = HatRegistry.get(cmd_id)
+    registry = HatRegistry.get(opts.cmd_id)
 
     overrides = []
     for category, hats in registry.categories.items():
         overrides += [ModelOverride(hat.cmd, hat.model_path(category)) for hat in hats]
     overrides = sorted(overrides, key=lambda o: o.cmd)
 
-    assets.models["minecraft:item/stick"] = Model(
-        ctx.template.render("models/stick.json", overrides=overrides)
+    item_head_name = opts.default_item_head.split(":")[1]
+    item_inventory_name = opts.default_item_inventory.split(":")[1]
+
+    assets.models[f"minecraft:item/{item_head_name}"] = Model(
+        ctx.template.render(f"models/{item_head_name}.json", overrides=overrides)
     )
-    assets.models["minecraft:item/leather_helmet"] = Model(
-        ctx.template.render("models/leather_helmet.json", overrides=overrides)
+    assets.models[f"minecraft:item/{item_inventory_name}"] = Model(
+        ctx.template.render(f"models/{item_inventory_name}.json", overrides=overrides)
     )
 
     return assets

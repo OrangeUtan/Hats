@@ -9,7 +9,7 @@ data modify storage minecraft:hats buffer.armor set value []
 data modify storage minecraft:hats buffer.armor append from storage minecraft:hats buffer.all[{Slot:103b}]
 
 # Modify hat
-data modify storage minecraft:hats buffer.armor[0].id set value "minecraft:stick"
+data modify storage minecraft:hats buffer.armor[0].id set value "{{ hats.default_item_head }}"
 data modify storage minecraft:hats buffer.armor[0].Slot set value 0b
 
 # Replace Player helmet with modified hat
