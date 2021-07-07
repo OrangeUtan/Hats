@@ -1,5 +1,5 @@
 # Creates a dog from stored dog_data
-# executor: Nearest player from recently droped dog hat item
+# @s: Nearest player from recently droped dog hat item
 
 # Summon dog
 summon minecraft:wolf ~ ~ ~ {Tags:["hats_dog_from_hat"]}

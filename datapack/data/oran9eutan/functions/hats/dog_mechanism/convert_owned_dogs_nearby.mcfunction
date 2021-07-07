@@ -1,5 +1,5 @@
 # Converts all nearby dogs owned by a Player into dog hats
-# executor: Player whos dogs are going to be converted
+# @s: Player whos dogs are going to be converted
 
 # Store UUID of the Player
 data modify storage hats uuid set from entity @s UUID

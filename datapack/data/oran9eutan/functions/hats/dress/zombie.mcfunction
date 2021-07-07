@@ -1,5 +1,5 @@
-# executor: The Zombie beeing dressed
-# descr: Dress a Zombie with a hat 
+# Dress a Zombie with a hat
+# @s: The Zombie beeing dressed
 
 # Try to make the Zombie a ghost
 execute if predicate oran9eutan:hats/is_in_mansion if predicate oran9eutan:hats/is_dark_night if predicate oran9eutan:hats/chance_mob_is_ghost run function oran9eutan:hats/dress/mob_as_ghost

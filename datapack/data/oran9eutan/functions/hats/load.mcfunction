@@ -1,5 +1,5 @@
 # Initialises the datapack
-# executor: World
+# @: World
 
 # Install datapack if it is not already
 scoreboard objectives add hats.cfg dummy

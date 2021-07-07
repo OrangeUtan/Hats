@@ -1,5 +1,5 @@
-# executor: Villager beeing dressed
-# Descr: Adds offer of the favorite cat the Villager Trader is wearing
+# Adds offer of the favorite cat the Villager Trader is wearing
+# @s: Villager beeing dressed
 
 # Add template offer
 data modify entity @s Offers.Recipes append value {sell:{id:"{{ hats.default_item_inventory }}",Count:1b}}

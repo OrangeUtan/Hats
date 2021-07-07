@@ -1,5 +1,5 @@
-# executor: Player
-# descr: Tries to dress all undressed mobs near the player
+# Tries to dress all undressed mobs near a player
+# @s: Player
 
 execute as @e[type=zombie,tag=!global.ignore,distance=0..64,tag=!hats.mob.dont_dress,predicate=!oran9eutan:hats/entity/wears_helmet] at @s run function oran9eutan:hats/dress/zombie
 execute as @e[type=husk,tag=!global.ignore,distance=0..64,tag=!hats.mob.dont_dress,predicate=!oran9eutan:hats/entity/wears_helmet] at @s run function oran9eutan:hats/dress/husk

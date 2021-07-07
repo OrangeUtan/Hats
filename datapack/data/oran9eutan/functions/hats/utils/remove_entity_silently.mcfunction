@@ -1,5 +1,5 @@
 # Kills an entity without showing its death animation or a death message
-# executor: Entity to be removed
+# @s: Entity to be removed
 
 # Save state of gamerule
 execute store result score #gamerule_tmp hats.math run gamerule showDeathMessages

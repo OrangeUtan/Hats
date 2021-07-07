@@ -1,5 +1,5 @@
-# executor: Villager beeing dressed
-# descr: Adds profession dependent special offer to the Villager
+# Adds profession dependent special offer to the Villager
+# @s: Villager beeing dressed
 
 # Add template offer
 data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:emerald", Count:1b}, sell:{id:"{{ hats.default_item_inventory }}",Count:1b}}

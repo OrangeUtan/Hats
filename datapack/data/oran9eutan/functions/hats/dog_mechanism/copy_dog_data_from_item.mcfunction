@@ -1,5 +1,5 @@
 # Converts a dog hat into a dog
-# executor: Dog hat item beeing converted to a dog
+# @s: Dog hat item beeing converted to a dog
 
 # Move the saved dogs nbt into storage
 data modify storage hats dog_data set from entity @s Item.tag.dog_data

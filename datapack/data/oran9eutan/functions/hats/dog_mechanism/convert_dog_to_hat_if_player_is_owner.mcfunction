@@ -1,5 +1,5 @@
 # Converts dog to a hat if it is owned by the Player executing this function
-# executor: Dog beeing checked for conversion
+# @s: Dog beeing checked for conversion
 
 # Check if the Owner matches the stored UUID of the player. 0 if matches, 1 otherwise
 execute store result score @s hats.math run data modify storage hats uuid set from entity @s Owner

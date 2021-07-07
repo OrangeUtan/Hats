@@ -1,6 +1,6 @@
-# executor: Mob that is going to be dressed as a ghost
-# requires: Executor must have ArmorItems nbt and a hat slot
-# descr: Dresses a mob with a ghost hat and gives it invisibility
+# Dresses a mob with a ghost hat and gives it invisibility
+# @s: Mob that is going to be dressed as a ghost
+# requires: @s must have ArmorItems nbt and a hat slot
 
 loot replace entity @s armor.head loot oran9eutan:hats/hat_on_head/halloween/wiggly_ghast
 data modify entity @s ArmorDropChances[3] set value 1.0f

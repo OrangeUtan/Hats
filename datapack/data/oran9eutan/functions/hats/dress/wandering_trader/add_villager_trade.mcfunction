@@ -1,5 +1,5 @@
-# executor: Wandering Trader beeing dressed
-# descr: Adds a hat trade related to Villagers
+# Adds a hat trade related to Villagers
+# @sr: Wandering Trader beeing dressed
 
 # Add template offer that is modified later
 data modify entity @s Offers.Recipes append value {buy:{id:"minecraft:emerald", Count:1b}, sell:{id:"{{ hats.default_item_inventory }}",Count:1b}}

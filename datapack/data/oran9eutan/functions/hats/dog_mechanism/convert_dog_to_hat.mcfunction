@@ -1,5 +1,5 @@
 # Converts a dog into a dog hat and stores its data in the hat
-# executor: Dog beeing converted to a hat
+# @s: Dog beeing converted to a hat
 
 # Remove 1 lead from the players inventory
 clear @p[tag=!global.ignore,distance=..0.001] lead 1
