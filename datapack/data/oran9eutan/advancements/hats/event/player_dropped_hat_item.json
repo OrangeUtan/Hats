@@ -14,11 +14,11 @@
 							},
 							{
 								"condition": "minecraft:reference",
-								"name": "oran9eutan:hats/player/dropped_stick"
+								"name": "oran9eutan:hats/player/dropped_warped_fungus_on_a_stick"
 							}
-						]	
+						]
 					}
-					
+
 				]
 			}
 		}

@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "minecraft:item/warped_fungus_on_a_stick"
+  }
+  {%- if overrides %}
+  ,
+  "overrides":[
+    {% for override in overrides %}
+    {
+      "predicate":{
+          "custom_model_data": {{ override.cmd }}
+      },
+      "model": "{{ override.model }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+  {%- endif %}
+}

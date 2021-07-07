@@ -6,5 +6,5 @@ execute if {{ hats.setting["dog_conversion"].is_true }} as @e[type=item,distance
 
 # Reset trigger
 scoreboard players set @s hats.dropLthrHlm 0
-scoreboard players set @s hats.dropStick 0
+scoreboard players set @s hats.drpWFOAS 0
 advancement revoke @s only oran9eutan:hats/event/player_dropped_hat_item

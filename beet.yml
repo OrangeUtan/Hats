@@ -33,12 +33,12 @@ meta:
         prefix_identifiers: true
     hats:
         cmd_id: 777
-        default_item_head: minecraft:stick
+        default_item_head: minecraft:warped_fungus_on_a_stick
         default_item_inventory: minecraft:leather_helmet
     installation_advancement:
         author_skull_owner: Oran9eUtan
         icon:
-            item: "minecraft:stick"
+            item: "minecraft:warped_fungus_on_a_stick"
             nbt: "{CustomModelData: {{ hats.hat.fez.cmd }}}"
     render:
       data_pack:
