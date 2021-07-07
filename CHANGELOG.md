@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v3.2.0 (2021-07-07)
+### Feature
+* Head hats no longer stackable ([`6da3341`](https://github.com/OrangeUtan/Hats/commit/6da3341b43c10d55c0ed2dec1a7a1262e763d801))
+
+### Documentation
+* Update function docs ([`ffbc76a`](https://github.com/OrangeUtan/Hats/commit/ffbc76a4010532d082c23d39a55c1277e310fbea))
+
 ## v3.1.0 (2021-07-06)
 ### Feature
 * Chat configuration ([`2612506`](https://github.com/OrangeUtan/Hats/commit/2612506b9688817a0701976f8d2c7788a9a894c8))
