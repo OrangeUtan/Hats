@@ -16,5 +16,5 @@ sections:
         description: Pets can be converted to hats and back
         type: bool
         default: True
-        on_enable: function oran9eutan:hats/loops/convert_pets_near_players
-        on_disable: schedule clear oran9eutan:hats/loops/convert_pets_near_players
+        on_enable: function oran9eutan:hats/loops/can_player_convert_pets
+        on_disable: schedule clear oran9eutan:hats/loops/can_player_convert_pets
