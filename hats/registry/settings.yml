@@ -11,9 +11,9 @@ sections:
         default: True
         on_enable: function oran9eutan:hats/loops/dress_mobs
         on_disable: schedule clear oran9eutan:hats/loops/dress_mobs
-      dog_conversion:
-        title: Dog conversion
-        description: Dogs can be converted to hats and back
+      pet_conversion:
+        title: Pet conversion
+        description: Pets can be converted to hats and back
         type: bool
         default: True
         on_enable: function oran9eutan:hats/loops/convert_pets_near_players
