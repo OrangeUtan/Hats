@@ -21,10 +21,3 @@ toad_yellow:
     ingredients:
       - item: minecraft:mushroom_stem
       - item: minecraft:yellow_dye
-
-feather_headband:
-  - type: shapeless
-    ingredients:
-      - item: minecraft:leather
-      - item: minecraft:feather
-      - item: minecraft:feather
