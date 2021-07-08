@@ -15,7 +15,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/armorer_mask"
+                    "name": "oran9eutan:hats/trades/villager/profession/armorer"
                 }
             ]
 		},
@@ -33,7 +33,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/farmer_strawhat"
+                    "name": "oran9eutan:hats/trades/villager/profession/farmer"
                 }
             ]
 
@@ -52,17 +52,9 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "minecraft:loot_table",
-					"name": "oran9eutan:hats/hat_on_head/half_rim_glasses"
-				},
-				{
-					"type": "minecraft:loot_table",
-					"name": "oran9eutan:hats/hat_on_head/rainbow_glasses"
-				},
-				{
-					"type": "minecraft:loot_table",
-					"name": "oran9eutan:hats/hat_on_head/librarian_glasses"
-				}
+                    "type": "minecraft:loot_table",
+                    "name": "oran9eutan:hats/trades/villager/profession/librarian"
+                }
 			]
 		},
 		{
@@ -79,7 +71,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/frying_pan"
+                    "name": "oran9eutan:hats/trades/villager/profession/toolsmith"
                 }
             ]
 		},
@@ -97,7 +89,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "name": "oran9eutan:hats/hat_on_head/tophat_with_monocle"
+                    "name": "oran9eutan:hats/trades/villager/profession/cartographer"
                 }
             ]
 		}
