@@ -5,4 +5,4 @@
 execute store result score @s hats.math run data modify storage hats uuid set from entity @s Owner
 
 # Convert dog to hat if the Player is the Owner
-execute if score @s hats.math matches 0 run function oran9eutan:hats/dog_mechanism/convert_dog_to_hat
+execute if score @s hats.math matches 0 run function oran9eutan:hats/pet_mechanism/convert_dog_to_hat
