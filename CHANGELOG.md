@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v3.2.1 (2021-07-08)
+### Balancing
+* Remove feather_headband_recipe ([`ec2fcec`](https://github.com/OrangeUtan/Hats/commit/ec2fcec361dbd6e595e666f6a624142e660a3d85))
+* Remove recipes for glasses ([`b3eace8`](https://github.com/OrangeUtan/Hats/commit/b3eace830caab5913a8500f9309da91245683037))
+
 ## v3.2.0 (2021-07-07)
 ### Feature
 * Head hats no longer stackable ([`6da3341`](https://github.com/OrangeUtan/Hats/commit/6da3341b43c10d55c0ed2dec1a7a1262e763d801))
