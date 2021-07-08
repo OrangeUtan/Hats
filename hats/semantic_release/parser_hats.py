@@ -1,5 +1,6 @@
 import logging
 import re
+from enum import Enum
 from typing import Optional
 
 from semantic_release.errors import UnknownCommitMessageStyleError
@@ -9,8 +10,15 @@ from semantic_release.history.parser_helpers import ParsedCommit, parse_paragrap
 logger = logging.getLogger(__name__)
 
 
+class LevelBump(Enum):
+    NO_BUMP = 0
+    PATCH = 1
+    MINOR = 2
+    MAJOR = 3
+
+
 class ReleaseType:
-    def __init__(self, commit_prefix: str, level_bump: int, type: Optional[str] = None):
+    def __init__(self, commit_prefix: str, level_bump: LevelBump, type: Optional[str] = None):
         self.commit_prefix = commit_prefix
         self.level_bump = level_bump
         self.type = type or self.commit_prefix
@@ -20,13 +28,14 @@ class ReleaseType:
 TYPES_BY_PREFIX = {
     r.commit_prefix: r
     for r in [
-        ReleaseType("ci", 0),
-        ReleaseType("chore", 0),
-        ReleaseType("refactor", 0),
-        ReleaseType("fix", 1),
-        ReleaseType("perf", 1, "performance"),
-        ReleaseType("feat", 2, "feature"),
-        ReleaseType("hat", 2),
+        ReleaseType("ci", LevelBump.NO_BUMP),
+        ReleaseType("chore", LevelBump.NO_BUMP),
+        ReleaseType("refactor", LevelBump.NO_BUMP),
+        ReleaseType("fix", LevelBump.PATCH),
+        ReleaseType("perf", LevelBump.PATCH, "performance"),
+        ReleaseType("bal", LevelBump.PATCH, "balancing"),
+        ReleaseType("feat", LevelBump.MINOR, "feature"),
+        ReleaseType("hat", LevelBump.MINOR),
     ]
 }
 
@@ -57,12 +66,12 @@ def parse_commit_message(message: str) -> ParsedCommit:
     ]
 
     if parsed.group("break") or breaking_descriptions:
-        level_bump = 3  # Major
+        level_bump = LevelBump.MAJOR
     else:
         level_bump = TYPES_BY_PREFIX[parsed.group("prefix")].level_bump
 
     return ParsedCommit(
-        level_bump,
+        level_bump.value,
         TYPES_BY_PREFIX[parsed.group("prefix")].type,
         parsed.group("scope"),
         descriptions,
