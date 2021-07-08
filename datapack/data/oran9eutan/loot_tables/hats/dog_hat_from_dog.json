@@ -14,27 +14,27 @@
 							"ops": [
 								{
 									"source": "CollarColor",
-									"target": "dog_data.CollarColor",
+									"target": "pet_data.CollarColor",
 									"op": "replace"
 								},
 								{
 									"source": "Age",
-									"target": "dog_data.Age",
+									"target": "pet_data.Age",
 									"op": "replace"
 								},
 								{
 									"source": "ForcedAge",
-									"target": "dog_data.ForcedAge",
+									"target": "pet_data.ForcedAge",
 									"op": "replace"
 								},
 								{
 									"source": "Attributes",
-									"target": "dog_data.Attributes",
+									"target": "pet_data.Attributes",
 									"op": "replace"
 								},
 								{
 									"source": "Invulnerable",
-									"target": "dog_data.Invulnerable",
+									"target": "pet_data.Invulnerable",
 									"op": "replace"
 								},
 								{
@@ -44,17 +44,17 @@
 								},
 								{
 									"source": "CustomNameVisible",
-									"target": "dog_data.CustomNameVisible",
+									"target": "pet_data.CustomNameVisible",
 									"op": "replace"
 								},
 								{
 									"source": "Tags",
-									"target": "dog_data.Tags",
+									"target": "pet_data.Tags",
 									"op": "replace"
 								},
 								{
 									"source": "Owner",
-									"target": "dog_data.Owner",
+									"target": "pet_data.Owner",
 									"op": "replace"
 								}
 							]

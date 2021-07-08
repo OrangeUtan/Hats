@@ -3,7 +3,7 @@
 
 # Save state of gamerule
 execute store result score #gamerule_tmp hats.math run gamerule showDeathMessages
-# Hide death msg of dog
+# Hide death msg of the pet
 gamerule showDeathMessages false
 
 # Send to a better place :c

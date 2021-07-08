@@ -12,7 +12,7 @@ scoreboard objectives remove hats.fix_old_hat
 
 # Remove storage
 data remove storage minecraft:hats buffer
-data remove storage minecraft:hats dog_data
+data remove storage minecraft:hats pet_data
 data remove storage minecraft:hats hat_to_fix
 data remove storage minecraft:oran9eutan.hats version
 

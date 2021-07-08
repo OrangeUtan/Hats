@@ -1,7 +1,7 @@
 [
 	{
 		"condition": "minecraft:reference",
-		"name": "oran9eutan:hats/player/is_holding_dog_leash"
+		"name": "oran9eutan:hats/player/is_holding_pet_leash"
 	},
 	{
 		"condition": "minecraft:reference",
