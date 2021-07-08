@@ -42,3 +42,5 @@ build_command = "python -m beet -c beet-release.yml"
 dist_path = "dist"
 upload_to_pypi = false
 upload_to_release = true
+commit_parser="hats.semantic_release.parser_hats.parse_commit_message"
+changelog_sections=["hat", "feature", "fix", "breaking", "documentation", "performance"]
