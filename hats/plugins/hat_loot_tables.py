@@ -49,7 +49,7 @@ def _create_hat_loot_table(ctx: Context, hat: Hat, item_model_id: str):
             nbt_tag={"CustomModelData": hat.cmd, "Tags": ["hats.hat", hat.type_tag]},
             localized_name=hat.localized_name,
             item_model_id=item_model_id,
-            localized_lore=hat.localized_lore,
+            localized_lore=hat.lore,
         )
     )
 

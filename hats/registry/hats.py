@@ -10,7 +10,7 @@ import yaml
 class Hat:
     type: str
     cmd: int
-    num_lore_lines: int
+    lore: list[str]
 
     item_head: Optional[str]
     item_inventory: Optional[str]
@@ -22,12 +22,12 @@ class Hat:
         cmd_id: int,
         item_head,
         item_inventory,
-        num_lore_lines: int = 0,
+        lore: list[str] = [],
         model=None,
     ):
         self.type = type
         self.cmd = cmd_id * 10000 + cmd
-        self.num_lore_lines = num_lore_lines
+        self.lore = lore
         self.item_head = item_head
         self.item_inventory = item_inventory
         self._model = model
@@ -38,7 +38,7 @@ class Hat:
             type=type,
             cmd=json["cmd"],
             cmd_id=cmd_id,
-            num_lore_lines=json.get("num_lore_lines", 0),
+            lore=json.get("lore", []),
             model=json.get("model"),
             item_head=json.get("item_head"),
             item_inventory=json.get("item_inventory"),
@@ -47,10 +47,6 @@ class Hat:
     @property
     def localized_name(self):
         return f"item.hats.hat.{self.type}.name"
-
-    @property
-    def localized_lore(self):
-        return [f"item.hats.hat.{self.type}.lore{i+1}" for i in range(self.num_lore_lines)]
 
     @property
     def type_tag(self):

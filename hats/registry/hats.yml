@@ -3,10 +3,12 @@ accessories:
     cmd: 3000
   steve_mask:
     cmd: 3001
-    num_lore_lines: 1
+    lore:
+      - item.hats.hat.steve_mask.lore1
   alex_mask:
     cmd: 3002
-    num_lore_lines: 1
+    lore:
+      - item.hats.hat.alex_mask.lore1
   snorkel_mask_blue:
     cmd: 3003
   snorkel_mask_red:
@@ -19,32 +21,56 @@ accessories:
 animals:
   dog:
     cmd: 3010
+    lore:
+      - hats.string.pet.feral
 
 cats:
   ocelot:
     cmd: 3020
   tabby_cat:
     cmd: 3021
+    lore:
+      - hats.string.pet.feral
   tuxedo_cat:
     cmd: 3022
+    lore:
+      - hats.string.pet.feral
   red_cat:
     cmd: 3023
+    lore:
+      - hats.string.pet.feral
   siamese_cat:
     cmd: 3024
+    lore:
+      - hats.string.pet.feral
   british_shorthair:
     cmd: 3025
+    lore:
+      - hats.string.pet.feral
   calico_cat:
     cmd: 3026
+    lore:
+      - hats.string.pet.feral
   persian_cat:
     cmd: 3027
+    lore:
+      - hats.string.pet.feral
   ragdoll:
     cmd: 3028
+    lore:
+      - hats.string.pet.feral
   white_cat:
     cmd: 3029
+    lore:
+      - hats.string.pet.feral
   jellie:
     cmd: 3030
+    lore:
+      - hats.string.pet.feral
   black_cat:
     cmd: 3031
+    lore:
+      - hats.string.pet.feral
 
 glasses:
   sunglasses:
@@ -133,7 +159,8 @@ villager:
     cmd: 3091
   villager_nose:
     cmd: 3092
-    num_lore_lines: 1
+    lore:
+      - item.hats.hat.villager_nose.feral
 
 misc:
   fez:
@@ -142,7 +169,9 @@ misc:
     cmd: 3101
   arrow_prop:
     cmd: 3102
-    num_lore_lines: 1
+    lore:
+      - item.hats.hat.arrow_prop.feral
   frying_pan:
     cmd: 3103
-    num_lore_lines: 1
+    lore:
+      - item.hats.hat.frying_pan.feral

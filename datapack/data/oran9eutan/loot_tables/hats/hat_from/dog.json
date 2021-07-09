@@ -59,8 +59,8 @@
 								},
 								{
 									"source": "Tags[1]",
-									"target": "display.Lore",
-									"op": "append"
+									"target": "display.Lore[0]",
+									"op": "replace"
 								}
 							]
 						}
