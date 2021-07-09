@@ -12,6 +12,7 @@ class Hat:
     cmd: int
     lore: list[str]
 
+    additional_nbt: Optional[dict]
     item_head: Optional[str]
     item_inventory: Optional[str]
 
@@ -23,6 +24,7 @@ class Hat:
         item_head,
         item_inventory,
         lore: list[str] = [],
+        additional_nbt: Optional[dict] = None,
         model=None,
     ):
         self.type = type
@@ -31,6 +33,7 @@ class Hat:
         self.item_head = item_head
         self.item_inventory = item_inventory
         self._model = model
+        self.additional_nbt = additional_nbt
 
     @classmethod
     def from_json(cls, type: str, cmd_id: int, json: dict):
@@ -42,6 +45,7 @@ class Hat:
             model=json.get("model"),
             item_head=json.get("item_head"),
             item_inventory=json.get("item_inventory"),
+            additional_nbt=json.get("nbt"),
         )
 
     @property

@@ -43,10 +43,14 @@ def _create_loot_tables(ctx: Context, namespace: str, opts: HatsOptions):
 
 
 def _create_hat_loot_table(ctx: Context, hat: Hat, item_model_id: str):
+    nbt = {"CustomModelData": hat.cmd, "Tags": ["hats.hat", hat.type_tag]}
+    if hat.additional_nbt:
+        nbt.update(hat.additional_nbt)
+
     return LootTable(
         ctx.template.render(
             "loot_tables/hat.json",
-            nbt_tag={"CustomModelData": hat.cmd, "Tags": ["hats.hat", hat.type_tag]},
+            nbt_tag=nbt,
             localized_name=hat.localized_name,
             item_model_id=item_model_id,
             localized_lore=hat.lore,

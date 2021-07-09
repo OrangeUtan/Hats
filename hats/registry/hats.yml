@@ -23,6 +23,7 @@ animals:
     cmd: 3010
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{}}
 
 cats:
   ocelot:
@@ -31,46 +32,57 @@ cats:
     cmd: 3021
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{"CatType": 0}}
   tuxedo_cat:
     cmd: 3022
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{"CatType": 1}}
   red_cat:
     cmd: 3023
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{"CatType": 2}}
   siamese_cat:
     cmd: 3024
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{"CatType": 3}}
   british_shorthair:
     cmd: 3025
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{"CatType": 4}}
   calico_cat:
     cmd: 3026
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{"CatType": 5}}
   persian_cat:
     cmd: 3027
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{"CatType": 6}}
   ragdoll:
     cmd: 3028
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{"CatType": 7}}
   white_cat:
     cmd: 3029
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{"CatType": 8}}
   jellie:
     cmd: 3030
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{"CatType": 9}}
   black_cat:
     cmd: 3031
     lore:
       - hats.string.pet.feral
+    nbt: {"pet_data":{"CatType": 10}}
 
 glasses:
   sunglasses:
