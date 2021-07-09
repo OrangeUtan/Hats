@@ -76,6 +76,11 @@
 					"source": "CatType",
 					"target": "pet_data.CatType",
 					"op": "replace"
+				},
+				{
+					"source": "Tags[1]",
+					"target": "display.Lore",
+					"op": "append"
 				}
 			]
 		}

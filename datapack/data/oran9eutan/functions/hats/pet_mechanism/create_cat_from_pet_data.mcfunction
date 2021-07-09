@@ -8,5 +8,5 @@ summon minecraft:cat ~ ~ ~ {Tags:["hats.entity.pet_from_hat"]}
 execute as @e[type=cat,distance=..0.001,tag=hats.entity.pet_from_hat,limit=1] run function oran9eutan:hats/pet_mechanism/merge_pet_with_stored_data
 
 # Effects
-playsound minecraft:entity.cat.purr neutral @a[tag=!global.ignore] ~ ~ ~
+playsound minecraft:entity.cat.purreow neutral @a[tag=!global.ignore] ~ ~ ~
 execute positioned ~ ~.3 ~ run particle minecraft:poof ~ ~ ~ 0.1 0.1 0.1 .001 5
