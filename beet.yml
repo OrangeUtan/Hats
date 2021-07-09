@@ -45,3 +45,4 @@ meta:
         advancements: ["oran9eutan:*"]
         functions: ["oran9eutan:*"]
         item_tags: ["oran9eutan:*"]
+        loot_tables: ["oran9eutan:*"]

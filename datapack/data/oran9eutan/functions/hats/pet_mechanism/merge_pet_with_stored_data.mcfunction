@@ -10,5 +10,6 @@ data modify entity @s CustomName set from storage minecraft:hats pet_data.Custom
 data modify entity @s CustomNameVisible set from storage minecraft:hats pet_data.CustomNameVisible
 data modify entity @s Tags set from storage minecraft:hats pet_data.Tags
 data modify entity @s Owner set from storage minecraft:hats pet_data.Owner
+data modify entity @s CatType set from storage minecraft:hats pet_data.CatType
 
 tag @s remove hats.entity.pet_from_hat
