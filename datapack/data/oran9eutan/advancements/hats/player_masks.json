@@ -1,2 +1,2 @@
 {%- import 'advancements.json' as advancements -%}
-{{ advancements.category_root("player_masks", "goal", hats.hat.alex_mask.cmd, hats.tag.player_masks) }}
+{{ advancements.category_root("player_masks", "goal", hats.hat.alex_mask.cmd, hats.tag.player_mask) }}

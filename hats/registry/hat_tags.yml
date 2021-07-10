@@ -1,7 +1,7 @@
-animals:
+animal:
   - dog
 
-tophats:
+colored_ribbon_tophat:
   - white_tophat
   - orange_tophat
   - magenta_tophat
@@ -18,29 +18,13 @@ tophats:
   - green_tophat
   - red_tophat
   - black_tophat
+
+tophat:
+  - "#colored_ribbon_tophat"
   - rainbow_tophat
   - tophat_with_monocle
 
-colored_ribbon_tophats:
-  - white_tophat
-  - orange_tophat
-  - magenta_tophat
-  - light_blue_tophat
-  - yellow_tophat
-  - lime_tophat
-  - pink_tophat
-  - gray_tophat
-  - light_gray_tophat
-  - cyan_tophat
-  - purple_tophat
-  - blue_tophat
-  - brown_tophat
-  - green_tophat
-  - red_tophat
-  - black_tophat
-
-cats:
-  - ocelot
+domesticated_cat:
   - tabby_cat
   - tuxedo_cat
   - red_cat
@@ -52,6 +36,10 @@ cats:
   - white_cat
   - jellie
   - black_cat
+
+cat:
+  - ocelot
+  - "#domesticated_cat"
 
 glasses:
   - sunglasses
@@ -70,7 +58,7 @@ accessories:
   - googly_eyes
   - earth_in_orbit
 
-player_masks:
+player_mask:
   - alex_mask
   - steve_mask
 
@@ -101,29 +89,6 @@ misc:
   - arrow_prop
   - frying_pan
 
-pet_cat:
-  - tabby_cat
-  - tuxedo_cat
-  - red_cat
-  - siamese_cat
-  - british_shorthair
-  - calico_cat
-  - persian_cat
-  - ragdoll
-  - white_cat
-  - jellie
-  - black_cat
-
 pet:
   - dog
-  - tabby_cat
-  - tuxedo_cat
-  - red_cat
-  - siamese_cat
-  - british_shorthair
-  - calico_cat
-  - persian_cat
-  - ragdoll
-  - white_cat
-  - jellie
-  - black_cat
+  - "#domesticated_cat"

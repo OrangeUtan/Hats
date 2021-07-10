@@ -1,7 +1,7 @@
 {
 	"type": "minecraft:generic",
 	"pools": [
-		{% for hat in hats.tag["pet_cat"] -%}
+		{% for hat in hats.tag.domesticated_cat -%}
 		{
 			"rolls": 1,
 			"entries": [
