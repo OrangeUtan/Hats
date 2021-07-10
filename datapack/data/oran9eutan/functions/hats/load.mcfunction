@@ -1,10 +1,8 @@
 # Initialises the datapack
 # @: World
 
-function oran9eutan:hats/init_scoreboards
-function oran9eutan:hats/cfg/init
-
 # Install datapack if it is not already
+scoreboard objectives add hats.cfg dummy
 execute unless data storage minecraft:oran9eutan.hats {"version":{"major": 2, "minor": 3, "patch": 1}} run function oran9eutan:hats/install
 
 #Start looping functions
