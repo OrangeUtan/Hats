@@ -2,7 +2,7 @@
 	"condition": "minecraft:entity_scores",
 	"entity": "this",
 	"scores": {
-	  "hats.drpWFOAS": {
+	  "hats.dropWFOAS": {
 		"min": 1,
 		"max": 2147483647
 	  }
