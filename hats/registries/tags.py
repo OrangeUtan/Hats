@@ -3,10 +3,10 @@ from pathlib import Path
 
 import yaml
 
-from hats.registry.hats import HatRegistry
+from hats.registries.hats import HatRegistry
 
 
-class HatTagRegistry(dict):
+class TagRegistry(dict):
     PATH = Path("src/tags.yml")
 
     @classmethod

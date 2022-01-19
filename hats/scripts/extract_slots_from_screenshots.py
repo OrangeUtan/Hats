@@ -4,7 +4,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 
-from hats.registry.hat_tags import HatTagRegistry
+from hats.registries.tags import TagRegistry
 
 SCREENSHOTS_DIR = Path("docs/test")
 
@@ -62,7 +62,7 @@ def increase_hsv(img, hue, satturation, value):
 
 
 def main():
-    registry = HatTagRegistry.get()
+    registry = TagRegistry.get()
     bg_color = np.array([250, 250, 250, 255])
 
     for path in SCREENSHOTS_DIR.iterdir():

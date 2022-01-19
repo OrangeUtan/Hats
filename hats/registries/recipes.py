@@ -11,7 +11,7 @@ class ShapelessHatRecipe:
     ingredients: dict
 
 
-class HatRecipeRegistry:
+class RecipeRegistry:
     PATH = Path("src/recipes.yml")
 
     def __init__(self, recipes: dict[str, list[ShapelessHatRecipe]]):
@@ -27,7 +27,7 @@ class HatRecipeRegistry:
                         ShapelessHatRecipe(hat_type, recipe["ingredients"])
                     )
 
-        return HatRecipeRegistry(hat_recipes)
+        return RecipeRegistry(hat_recipes)
 
     @classmethod
     def get(cls):

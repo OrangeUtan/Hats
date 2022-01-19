@@ -1,11 +1,10 @@
 from logging import getLogger
-from pathlib import Path
 
 from beet import Context
 
 from hats.options import HatsOptions
-from hats.registry.hat_tags import HatTagRegistry
-from hats.registry.hats import HatRegistry
+from hats.registries.hats import HatRegistry
+from hats.registries.tags import TagRegistry
 
 logger = getLogger(__name__)
 
@@ -28,7 +27,7 @@ def beet_default(ctx: Context):
 
     tags = {
         tag: [type_to_hat_meta_map[type] for type in hat_types]
-        for tag, hat_types in HatTagRegistry.get().items()
+        for tag, hat_types in TagRegistry.get().items()
     }
 
     config["all"] = list(type_to_hat_meta_map.values())
