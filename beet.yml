@@ -21,8 +21,8 @@ pipeline:
     - hats.plugins.jinja
     - beet.contrib.render
 templates:
-  - hats/macros
-  - hats/templates
+  - jinja/macros
+  - jinja/templates
 meta:
     namespace: "oran9eutan:hats"
     mcanitexgen:
