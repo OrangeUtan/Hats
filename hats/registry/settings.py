@@ -66,7 +66,7 @@ class Section:
 
 
 class SettingsRegistry:
-    PATH = Path("hats/registry/settings.yml")
+    PATH = Path("src/settings.yml")
 
     def __init__(
         self,
