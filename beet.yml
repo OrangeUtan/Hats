@@ -19,7 +19,6 @@ pipeline:
     - hats.plugins.item_models
     - hats.plugins.hat_recipes
     - hats.plugins.jinja
-    - hats.plugins.api
     - beet.contrib.render
 templates:
   - jinja/macros

@@ -9,7 +9,7 @@ from hats.registries.hats import HatRegistry
 
 logger = getLogger(__name__)
 
-HATS_PATH = Path("build/public/api/hats.json")
+HATS_PATH = Path("public/api/hats.json")
 
 
 def remove_empty_fields(obj):
