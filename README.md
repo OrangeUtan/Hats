@@ -11,9 +11,9 @@ Minecraft datapack that adds Hats
 	</tr>
 <table>
 <div align="center">
-	<img src="media/showcase_accessories.gif" width="19%"/>
-	<img src="media/showcase_animals.gif" width="19%"/>
-	<img src="media/showcase_cats.gif" width="19%"/>
+	<img src="docs/img/showcase_accessories.gif" width="19%"/>
+	<img src="docs/img/showcase_animals.gif" width="19%"/>
+	<img src="docs/img/showcase_cats.gif" width="19%"/>
 </div>
 <table align="center">
 	<tr>
@@ -23,9 +23,9 @@ Minecraft datapack that adds Hats
 	</tr>
 <table>
 <div align="center">
-	<img src="media/showcase_glasses.gif" width="19%"/>
-	<img src="media/showcase_halloween.gif" width="19%"/>
-	<img src="media/showcase_mario.gif" width="19%"/>
+	<img src="docs/img/showcase_glasses.gif" width="19%"/>
+	<img src="docs/img/showcase_halloween.gif" width="19%"/>
+	<img src="docs/img/showcase_mario.gif" width="19%"/>
 </div>
 <table align="center">
 	<tr>
@@ -35,7 +35,7 @@ Minecraft datapack that adds Hats
 	</tr>
 <table>
 <div align="center">
-	<img src="media/showcase_misc.gif" width="19%"/>
-	<img src="media/showcase_tophats.gif" width="19%"/>
-	<img src="media/showcase_villager.gif" width="19%"/>
+	<img src="docs/img/showcase_misc.gif" width="19%"/>
+	<img src="docs/img/showcase_tophats.gif" width="19%"/>
+	<img src="docs/img/showcase_villager.gif" width="19%"/>
 </div>

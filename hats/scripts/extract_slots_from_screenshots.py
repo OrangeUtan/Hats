@@ -6,7 +6,7 @@ import numpy as np
 
 from hats.registry.hat_tags import HatTagRegistry
 
-SCREENSHOTS_DIR = Path("media/test")
+SCREENSHOTS_DIR = Path("docs/test")
 
 
 def extract_slots_from_screenshot(
