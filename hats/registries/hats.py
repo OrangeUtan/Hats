@@ -1,11 +1,14 @@
+import dataclasses
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
 
 import yaml
+from dataclasses_json import dataclass_json
 
 
+@dataclass_json
 @dataclass(init=False, unsafe_hash=True)
 class Hat:
     type: str
@@ -34,19 +37,6 @@ class Hat:
         self.item_inventory = item_inventory
         self._model = model
         self.additional_nbt = additional_nbt
-
-    @classmethod
-    def from_json(cls, type: str, cmd_id: int, cmd: int, json: dict):
-        return Hat(
-            type=type,
-            cmd=cmd,
-            cmd_id=cmd_id,
-            lore=json.get("lore", []),
-            model=json.get("model"),
-            item_head=json.get("item_head"),
-            item_inventory=json.get("item_inventory"),
-            additional_nbt=json.get("nbt"),
-        )
 
     @property
     def localized_name(self):
@@ -85,9 +75,21 @@ class HatRegistry:
 
         for category, hat_types in category_to_types_map.items():
             for hat_type in hat_types:
-                cmd = type_to_cmd[hat_type]
                 hat_json = hats_json[hat_type] or {}
-                registry.add(Hat.from_json(hat_type, cmd_id, cmd, hat_json), category)
+
+                registry.add(
+                    Hat(
+                        type=hat_type,
+                        cmd=type_to_cmd[hat_type],
+                        cmd_id=cmd_id,
+                        lore=hat_json.get("lore", []),
+                        model=hat_json.get("model"),
+                        item_head=hat_json.get("item_head"),
+                        item_inventory=hat_json.get("item_inventory"),
+                        additional_nbt=hat_json.get("nbt"),
+                    ),
+                    category,
+                )
 
         return registry
 
