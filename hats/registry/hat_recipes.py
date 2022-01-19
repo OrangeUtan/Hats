@@ -12,7 +12,7 @@ class ShapelessHatRecipe:
 
 
 class HatRecipeRegistry:
-    PATH = Path("hats/registry/hat_recipes.yml")
+    PATH = Path("src/recipes.yml")
 
     def __init__(self, recipes: dict[str, list[ShapelessHatRecipe]]):
         self.recipes = recipes
