@@ -65,8 +65,6 @@ class HatRegistry:
     HATS_PATH = Path("src/hats.yml")
     CATEGORIES_PATH = Path("src/categories.yml")
 
-    PATH = Path("hats/registry/hats.yml")
-
     def __init__(self):
         self.cmd_to_hat_map: dict[int, Hat] = {}
         self.type_to_category_map: dict[str, str] = {}

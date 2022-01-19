@@ -9,8 +9,6 @@ from hats.registry.hats import HatRegistry
 
 logger = getLogger(__name__)
 
-TAGS_PATH = Path("hats/registry/tags.yml")
-
 
 def beet_default(ctx: Context):
     config = ctx.meta["hats"]
