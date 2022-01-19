@@ -50,6 +50,8 @@ Minecraft datapack that adds Hats
 🖿 docs						# Documentation resources
 🖿 hats
    🖿 plugins				# Custom beet plugins
+   🖿 registries			# Data managers used in all parts of the project
+   🗎 options.py				# Wrapper for project options configured in beet.yml
 🖿 jinja					# Jinja templating files
    🖿 macros
    🖿 templates
@@ -64,4 +66,5 @@ Minecraft datapack that adds Hats
 🗎 beet-release.yml			# Beet configuration for release mode
 🗎 .pre-commit-config.yaml 	# Configuration for git commit hooks
 🗎 pyproject.toml			# Python project configuration using 'Poetry'
+🗎 commit-parser.py			# Custom commit parser. Used for custom CHANGELOG generation
 ```
