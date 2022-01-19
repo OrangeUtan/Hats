@@ -1,7 +1,12 @@
+![](https://img.shields.io/github/license/orangeutan/babelbox)
+![](https://img.shields.io/badge/pre--commit-enabled-green)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 # Hats
 Minecraft datapack that adds Hats
 
-## Showcase
+- [Project structure](#Project?structure)
+- [Changelog](https://github.com/OrangeUtan/hats/blob/main/CHANGELOG.md)
 
 <table align="center">
 	<tr>
@@ -39,3 +44,24 @@ Minecraft datapack that adds Hats
 	<img src="docs/img/showcase_tophats.gif" width="19%"/>
 	<img src="docs/img/showcase_villager.gif" width="19%"/>
 </div>
+
+# Project structure
+```python
+🖿 docs						# Documentation resources
+🖿 hats
+   🖿 plugins				# Custom beet plugins
+🖿 jinja					# Jinja templating files
+   🖿 macros
+   🖿 templates
+🖿 src
+   🗎 hats.yml				# Defines hats and their properties
+   🗎 cmds.yml				# Assigns custom model data to hats
+   🗎 categories.yml			# Split hats into categories. Used in loot tables
+   🗎 tags.yml				# Assings tags to hats. Used in loot tables
+   🗎 recipes.yml			# Used to generate custom crafting recipes
+   🗎 settings.yml			# Used to generate in-game datapack configuration
+🗎 beet.yml					# Beet configuration
+🗎 beet-release.yml			# Beet configuration for release mode
+🗎 .pre-commit-config.yaml 	# Configuration for git commit hooks
+🗎 pyproject.toml			# Python project configuration using 'Poetry'
+```
