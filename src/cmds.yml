@@ -1,0 +1,80 @@
+# accessories
+3000: ninja_headband
+3001: steve_mask
+3002: alex_mask
+3003: snorkel_mask_blue
+3004: snorkel_mask_red
+3005: googly_eyes
+3006: earth_in_orbit
+
+# animals
+3010: dog
+
+# cats
+3020: ocelot
+3021: tabby_cat
+3022: tuxedo_cat
+3023: red_cat
+3024: siamese_cat
+3025: british_shorthair
+3026: calico_cat
+3027: persian_cat
+3028: ragdoll
+3029: white_cat
+3030: jellie
+3031: black_cat
+
+# glasses
+3040: sunglasses
+3041: harry_potter_glasses
+3042: half_rim_glasses
+3043: rainbow_glasses
+3044: librarian_glasses
+3045: three_d_glasses
+
+# halloween
+3050: wiggly_ghast
+3051: feather_headband
+3052: jason_mask
+
+# mario
+3060: mario_cap
+3061: luigi_cap
+3062: cappy
+3063: toad_red
+3064: toad_blue
+3065: toad_yellow
+3066: toad_green
+3067: mario_mask
+3068: luigi_mask
+
+# tophats
+3070: white_tophat
+3071: orange_tophat
+3072: magenta_tophat
+3073: light_blue_tophat
+3074: yellow_tophat
+3075: lime_tophat
+3076: pink_tophat
+3077: gray_tophat
+3078: light_gray_tophat
+3079: cyan_tophat
+3080: purple_tophat
+3081: blue_tophat
+3082: brown_tophat
+3083: green_tophat
+3084: red_tophat
+3085: black_tophat
+3086: rainbow_tophat
+3087: tophat_with_monocle
+
+# villager
+3090: armorer_mask
+3091: farmer_strawhat
+3092: villager_nose
+
+# misc
+3100: fez
+3101: posh_squid
+3102: arrow_prop
+3103: frying_pan

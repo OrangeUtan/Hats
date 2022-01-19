@@ -3,7 +3,7 @@ from logging import getLogger
 from beet import Context, DataPack, Function
 
 from hats.options import HatsOptions
-from hats.registry.hats import HatRegistry
+from hats.registries.hats import HatRegistry
 
 logger = getLogger(__name__)
 

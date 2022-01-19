@@ -3,14 +3,14 @@ from logging import getLogger
 
 from beet import Advancement, Context, DataPack, Function, Recipe
 
-from hats.registry.hat_recipes import HatRecipeRegistry, ShapelessHatRecipe
+from hats.registries.recipes import RecipeRegistry, ShapelessHatRecipe
 
 logger = getLogger(__name__)
 
 
 def beet_default(ctx: Context):
     namespace = ctx.meta["namespace"]
-    hat_recipe_registry = HatRecipeRegistry.get()
+    hat_recipe_registry = RecipeRegistry.get()
 
     for hat_type, recipes in hat_recipe_registry.recipes.items():
         ctx.data.merge(_generate_recipes_for_hat(namespace, hat_type, recipes))

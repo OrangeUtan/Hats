@@ -5,7 +5,7 @@ from typing import Any, Optional
 from beet import Context
 from beet.library.data_pack import DataPack, Function, LootTable
 
-from hats.registry.settings import Section, Setting, SettingsRegistry, SettingType
+from hats.registries.settings import Section, Setting, SettingsRegistry, SettingType
 
 logger = getLogger(__name__)
 

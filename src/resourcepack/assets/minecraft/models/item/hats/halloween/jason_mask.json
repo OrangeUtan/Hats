@@ -1,0 +1,6 @@
+{
+	"parent": "item/hats/_mask",
+	"textures": {
+		"mask": "item/hats/halloween/jason_mask"
+	}
+}

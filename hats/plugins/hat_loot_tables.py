@@ -3,7 +3,7 @@ from logging import getLogger
 from beet import Context, DataPack, LootTable
 
 from hats.options import HatsOptions
-from hats.registry.hats import Hat, HatRegistry
+from hats.registries.hats import Hat, HatRegistry
 
 logger = getLogger(__name__)
 
