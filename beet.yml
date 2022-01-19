@@ -5,10 +5,10 @@ version: "3.3.0"
 output: build
 data_pack:
     name: hats_datapack
-    load: ["datapack"]
+    load: ["src/datapack"]
 resource_pack:
     name: Hats
-    load: ["resourcepack"]
+    load: ["src/resourcepack"]
 pipeline:
     - beet.contrib.yellow_shulker_box
     - beet.contrib.installation_advancement
@@ -26,9 +26,9 @@ templates:
 meta:
     namespace: "oran9eutan:hats"
     mcanitexgen:
-        load: ["resourcepack/assets/minecraft/textures/**/*.animation.py"]
+        load: ["src/resourcepack/assets/minecraft/textures/**/*.animation.py"]
     babelbox:
-        load: ["resourcepack/assets/minecraft/lang"]
+        load: ["src/resourcepack/assets/minecraft/lang"]
         dialect: "excel"
         prefix_identifiers: true
     hats:

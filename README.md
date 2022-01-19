@@ -56,6 +56,8 @@ Minecraft datapack that adds Hats
    🖿 macros
    🖿 templates
 🖿 src
+   🖿 datapack
+   🖿 resourcepack
    🗎 hats.yml				# Defines hats and their properties
    🗎 cmds.yml				# Assigns custom model data to hats
    🗎 categories.yml			# Split hats into categories. Used in loot tables
