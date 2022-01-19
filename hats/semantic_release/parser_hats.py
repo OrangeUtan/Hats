@@ -29,7 +29,8 @@ TYPES_BY_PREFIX = {
     r.commit_prefix: r
     for r in [
         ReleaseType("ci", LevelBump.NO_BUMP),
-        ReleaseType("chore", LevelBump.NO_BUMP),
+        ReleaseType("build", LevelBump.NO_BUMP),
+        ReleaseType("chore", LevelBump.NO_BUMP),  # Deprecated
         ReleaseType("refactor", LevelBump.NO_BUMP),
         ReleaseType("fix", LevelBump.PATCH),
         ReleaseType("perf", LevelBump.PATCH, "performance"),
