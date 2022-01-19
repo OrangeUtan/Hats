@@ -7,7 +7,6 @@ authors = ["Oran9eUtan <oran9eutan@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 typer = "^0.3.2"
-pre-commit = "^2.10.1"
 black = "^20.8b1"
 isort = "^5.7.0"
 clevercsv = "^0.6.7"
@@ -20,6 +19,7 @@ babelbox = "^2.1.2"
 python-semantic-release = "^7.16.2"
 opencv-contrib-python = "^4.5.2"
 Pillow = "^8.3.0"
+pre-commit = "^2.17.0"
 
 [tool.poetry.dev-dependencies]
 
@@ -34,7 +34,7 @@ line-length = 100
 line_length = 100
 
 [tool.semantic_release]
-branch="release"
+branch = "release"
 version_toml = "pyproject.toml:tool.poetry.version"
 version_pattern = "beet.yml:(\\d+\\.\\d+\\.\\d+)"
 major_on_zero = false
@@ -42,5 +42,5 @@ build_command = "python -m beet -c beet-release.yml"
 dist_path = "dist"
 upload_to_pypi = false
 upload_to_release = true
-commit_parser="hats.semantic_release.parser_hats.parse_commit_message"
-changelog_sections="hat,feature,fix,balancing,breaking,documentation,performance"
+commit_parser = "hats.semantic_release.parser_hats.parse_commit_message"
+changelog_sections = "hat,feature,fix,balancing,breaking,documentation,performance"
