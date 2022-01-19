@@ -2,6 +2,24 @@
 
 <!--next-version-placeholder-->
 
+## v3.3.0 (2021-07-09)
+### Feature
+* "feral" lore for non-taimed pet hats ([`d163307`](https://github.com/OrangeUtan/Hats/commit/d163307e5f5cac74833115948114b7b509d952dd))
+* Owners name as lore on pet hats ([`e2b0bd9`](https://github.com/OrangeUtan/Hats/commit/e2b0bd9354ff44311d98e34fa23e58b1a1a6b6e1))
+* Tamed cats can be converted to hats ([`87afca6`](https://github.com/OrangeUtan/Hats/commit/87afca64946f1b3b48e6f0f96b3e4375dcf7c674))
+
+### Fix
+* Feral pet hats summon named mobs ([`32b94dd`](https://github.com/OrangeUtan/Hats/commit/32b94dd21ea848911ab093946fc602b5aea4c57a))
+* Feral pet hats now spawn feral mobs ([`5aa82b0`](https://github.com/OrangeUtan/Hats/commit/5aa82b0d7d5209654fe80a3884d06ee027dc6829))
+* Rename setting dog_conversion to pet_conversion ([`8639037`](https://github.com/OrangeUtan/Hats/commit/8639037e6d7cfac1649c7b9f6e171f3b045fb07b))
+* Settings not working when updating datapack ([`1aab603`](https://github.com/OrangeUtan/Hats/commit/1aab603b21997b043f46820afa7191d5c9efeff4))
+
+### Balancing
+* Librarian trades 3D glasses ([`aa53cec`](https://github.com/OrangeUtan/Hats/commit/aa53cec74a4be3bc440919fb4e07642ce7e01356))
+
+### Performance
+* Remove duplicate check for pets ([`eecdd51`](https://github.com/OrangeUtan/Hats/commit/eecdd51982bd3cdd8f07e355f19b32a6258f90e6))
+
 ## v3.2.1 (2021-07-08)
 ### Balancing
 * Remove feather_headband_recipe ([`ec2fcec`](https://github.com/OrangeUtan/Hats/commit/ec2fcec361dbd6e595e666f6a624142e660a3d85))
