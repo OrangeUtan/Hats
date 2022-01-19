@@ -1,0 +1,126 @@
+# accessories
+ninja_headband:
+steve_mask:
+  lore:
+    - item.hats.hat.steve_mask.lore1
+alex_mask:
+  lore:
+    - item.hats.hat.alex_mask.lore1
+snorkel_mask_blue:
+snorkel_mask_red:
+googly_eyes:
+earth_in_orbit:
+
+# animals
+dog:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{}}
+
+# cats
+ocelot:
+tabby_cat:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{"CatType": 0}}
+tuxedo_cat:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{"CatType": 1}}
+red_cat:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{"CatType": 2}}
+siamese_cat:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{"CatType": 3}}
+british_shorthair:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{"CatType": 4}}
+calico_cat:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{"CatType": 5}}
+persian_cat:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{"CatType": 6}}
+ragdoll:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{"CatType": 7}}
+white_cat:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{"CatType": 8}}
+jellie:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{"CatType": 9}}
+black_cat:
+  lore:
+    - hats.string.pet.feral
+  nbt: {"pet_data":{"CatType": 10}}
+
+# glasses
+sunglasses:
+harry_potter_glasses:
+half_rim_glasses:
+rainbow_glasses:
+librarian_glasses:
+three_d_glasses:
+
+# halloween
+wiggly_ghast:
+feather_headband:
+jason_mask:
+
+# mario
+mario_cap:
+luigi_cap:
+cappy:
+toad_red:
+toad_blue:
+toad_yellow:
+toad_green:
+mario_mask:
+luigi_mask:
+
+# tophats
+white_tophat:
+orange_tophat:
+magenta_tophat:
+light_blue_tophat:
+yellow_tophat:
+lime_tophat:
+pink_tophat:
+gray_tophat:
+light_gray_tophat:
+cyan_tophat:
+purple_tophat:
+blue_tophat:
+brown_tophat:
+green_tophat:
+red_tophat:
+black_tophat:
+rainbow_tophat:
+tophat_with_monocle:
+
+# villager
+armorer_mask:
+farmer_strawhat:
+villager_nose:
+  lore:
+    - item.hats.hat.villager_nose.feral
+
+# misc
+fez:
+posh_squid:
+arrow_prop:
+  lore:
+    - item.hats.hat.arrow_prop.feral
+frying_pan:
+  lore:
+    - item.hats.hat.frying_pan.feral

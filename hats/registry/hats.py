@@ -36,10 +36,10 @@ class Hat:
         self.additional_nbt = additional_nbt
 
     @classmethod
-    def from_json(cls, type: str, cmd_id: int, json: dict):
+    def from_json(cls, type: str, cmd_id: int, cmd: int, json: dict):
         return Hat(
             type=type,
-            cmd=json["cmd"],
+            cmd=cmd,
             cmd_id=cmd_id,
             lore=json.get("lore", []),
             model=json.get("model"),
@@ -61,6 +61,10 @@ class Hat:
 
 
 class HatRegistry:
+    CMDS_PATH = Path("src/cmds.yml")
+    HATS_PATH = Path("src/hats.yml")
+    CATEGORIES_PATH = Path("src/categories.yml")
+
     PATH = Path("hats/registry/hats.yml")
 
     def __init__(self):
@@ -70,19 +74,33 @@ class HatRegistry:
         self.categories: defaultdict[str, list[Hat]] = defaultdict(list)
 
     @classmethod
-    def from_json(cls, cmd_id: int, json: dict):
+    def from_json(
+        cls,
+        cmd_id: int,
+        hats_json: dict[str, dict],
+        cmd_to_type_map: dict[int, str],
+        category_to_types_map: dict[str, list[str]],
+    ):
         registry = HatRegistry()
 
-        for category, hats_json in json.items():
-            for hat_type, hat_json in hats_json.items():
-                registry.add(Hat.from_json(hat_type, cmd_id, hat_json), category)
+        type_to_cmd = {cmd_to_type_map[cmd]: cmd for cmd in cmd_to_type_map}
+
+        for category, hat_types in category_to_types_map.items():
+            for hat_type in hat_types:
+                cmd = type_to_cmd[hat_type]
+                hat_json = hats_json[hat_type] or {}
+                registry.add(Hat.from_json(hat_type, cmd_id, cmd, hat_json), category)
 
         return registry
 
     @classmethod
     def get(cls, cmd_id: int):
-        with cls.PATH.open("r") as f:
-            return cls.from_json(cmd_id, yaml.safe_load(f))
+        with cls.HATS_PATH.open("r") as hats, cls.CMDS_PATH.open(
+            "r"
+        ) as cmds, cls.CATEGORIES_PATH.open("r") as categories:
+            return cls.from_json(
+                cmd_id, yaml.safe_load(hats), yaml.safe_load(cmds), yaml.safe_load(categories)
+            )
 
     @property
     def hats(self):
