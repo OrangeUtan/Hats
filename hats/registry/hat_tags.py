@@ -7,7 +7,7 @@ from hats.registry.hats import HatRegistry
 
 
 class HatTagRegistry(dict):
-    PATH = Path("hats/registry/hat_tags.yml")
+    PATH = Path("src/tags.yml")
 
     @classmethod
     def from_json(cls, json: dict):
