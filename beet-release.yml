@@ -7,6 +7,5 @@ resource_pack:
     zipped: true
     name: "{{ project_name }}-{{ project_version }}-resourcepack"
 pipeline:
-    - hats.plugins.api
     - beet.contrib.minify_json
     - beet.contrib.minify_function

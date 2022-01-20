@@ -36,19 +36,3 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "action@github.com"
           poetry run semantic-release publish -v DEBUG -D commit_author="github-actions <action@github.com>"
-
-      - name: Build
-        run: poetry run beet -c beet-web.yml
-      - name: Check GitHub Pages status
-        if: success()
-        uses: crazy-max/ghaction-github-status@v2
-        with:
-          pages_threshold: major_outage
-      - name: Deploy
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          target_branch: gh-pages
-          build_dir: public
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

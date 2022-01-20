@@ -1,5 +1,0 @@
-extend: ["beet.yml"]
-pipeline:
-    - hats.plugins.api
-    - beet.contrib.minify_json
-    - beet.contrib.minify_function
