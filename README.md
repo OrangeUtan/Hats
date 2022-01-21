@@ -5,7 +5,7 @@
 # Hats
 Minecraft datapack that adds Hats
 
-- [Project structure](#project_structure)
+- [Project structure](#project-structure)
 - [Changelog](https://github.com/OrangeUtan/hats/blob/main/CHANGELOG.md)
 
 <table align="center">
