@@ -1,3 +1,6 @@
+# Custom crafting recipes
+# -----------------------
+
 toad_blue:
   - type: shapeless
     ingredients:

@@ -1,3 +1,8 @@
+# Assign 1 custom model data to each hat
+# --------------------------------------
+# Only 4 of 7 digits are specified here. The first 3 are my
+# custom model data id (to avoid conflict with other datapacks).
+
 # accessories
 3000: ninja_headband
 3001: steve_mask

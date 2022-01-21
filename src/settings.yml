@@ -1,3 +1,7 @@
+# Configuration for datapack settings
+# -----------------------------------
+# Used to generate a chat and book menu from which settings can be changed in-game
+
 main: general
 scoreboard: hats.cfg
 sections:

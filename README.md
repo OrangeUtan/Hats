@@ -46,24 +46,23 @@ Minecraft datapack that adds Hats
 </div>
 
 # Project structure
+
+Overview of important parts:
 ```python
-🖿 docs					# Documentation resources
-🖿 hats
-   🖿 plugins				# Custom beet plugins
-   🖿 registries			# Data managers used in all parts of the project
-   🗎 options.py				# Wrapper for project options configured in beet.yml
-🖿 jinja				# Jinja templating files
-   🖿 macros
-   🖿 templates
 🖿 src
    🖿 datapack
    🖿 resourcepack
    🗎 hats.yml				# Defines hats and their properties
    🗎 cmds.yml				# Assigns custom model data to hats
-   🗎 categories.yml			# Split hats into categories. Used in loot tables
-   🗎 tags.yml				# Assings tags to hats. Used in loot tables
+   🗎 categories.yml			# Split hats into categories. Used by jinja and loot tables
+   🗎 tags.yml				# Assing tags to hats. Used by jinja and loot tables
    🗎 recipes.yml			# Used to generate custom crafting recipes
    🗎 settings.yml			# Used to generate in-game datapack configuration
+🖿 hats
+   🖿 plugins				# Custom beet plugins
+   🖿 registries			# Data managers used in all parts of the project
+   🗎 options.py				# Wrapper for project options configured in beet.yml
+🖿 jinja				# Jinja templating files
 🗎 beet.yml				# Beet configuration
 🗎 beet-release.yml			# Beet configuration for release mode
 🗎 .pre-commit-config.yaml 		# Configuration for git commit hooks

@@ -1,3 +1,9 @@
+# Assign tags to hats
+# -------------------
+# Jinja uses these tags to generate e.g. loot tables. In contrast to categories,
+# hats can have multiple tags. This is very usefull for grouping hats for
+# specific cases, e.g. which cat hats are feral and which are domesitcated.
+
 animal:
   - dog
 
