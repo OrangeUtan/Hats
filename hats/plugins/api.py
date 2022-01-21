@@ -64,9 +64,19 @@ def generate_hats_by_category(registry: HatRegistry, out: Path):
         dump_minimized_json(registry.categories, f)
 
 
+API_DIR = Path("docs/api")
+
+
 def beet_default(ctx: Context):
     opts = HatsOptions.from_json(ctx.meta["hats"])
     hats = HatRegistry.get(opts.cmd_id)
 
-    generate_hats_registry(hats, Path("docs/api/hats.json"))
-    generate_hats_by_category(hats, Path("docs/api/hats_by_category.json"))
+    generate_hats_registry(hats, API_DIR / "hats.json")
+    generate_hats_by_category(hats, API_DIR / "hats_by_category.json")
+
+    LANG_DIR = API_DIR / "lang"
+    LANG_DIR.mkdir(exist_ok=True, parents=True)
+    for lang, translations in ctx.assets.languages.items():
+        lang_key = lang.removeprefix("minecraft:")
+        with (LANG_DIR / f"{lang_key}.json").open("w") as f:
+            dump_minimized_json(translations.data, f)
