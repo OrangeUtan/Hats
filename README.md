@@ -5,7 +5,7 @@
 # Hats
 Minecraft datapack that adds Hats
 
-- [Project structure](#Project?structure)
+- [Project structure](#Project_structure)
 - [Changelog](https://github.com/OrangeUtan/hats/blob/main/CHANGELOG.md)
 
 <table align="center">
@@ -47,12 +47,12 @@ Minecraft datapack that adds Hats
 
 # Project structure
 ```python
-🖿 docs						# Documentation resources
+🖿 docs					# Documentation resources
 🖿 hats
    🖿 plugins				# Custom beet plugins
    🖿 registries			# Data managers used in all parts of the project
    🗎 options.py				# Wrapper for project options configured in beet.yml
-🖿 jinja					# Jinja templating files
+🖿 jinja				# Jinja templating files
    🖿 macros
    🖿 templates
 🖿 src
@@ -64,9 +64,9 @@ Minecraft datapack that adds Hats
    🗎 tags.yml				# Assings tags to hats. Used in loot tables
    🗎 recipes.yml			# Used to generate custom crafting recipes
    🗎 settings.yml			# Used to generate in-game datapack configuration
-🗎 beet.yml					# Beet configuration
+🗎 beet.yml				# Beet configuration
 🗎 beet-release.yml			# Beet configuration for release mode
-🗎 .pre-commit-config.yaml 	# Configuration for git commit hooks
+🗎 .pre-commit-config.yaml 		# Configuration for git commit hooks
 🗎 pyproject.toml			# Python project configuration using 'Poetry'
 🗎 commit-parser.py			# Custom commit parser. Used for custom CHANGELOG generation
 ```
