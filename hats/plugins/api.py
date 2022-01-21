@@ -1,4 +1,5 @@
 import json
+from io import TextIOWrapper
 from logging import getLogger
 from pathlib import Path
 
@@ -9,10 +10,29 @@ from hats.registries.hats import HatRegistry
 
 logger = getLogger(__name__)
 
-HATS_PATH = Path("docs/api/hats.json")
+
+def dataclasses_to_dicts(obj):
+    """ Converts all nested dataclasses to dicts, if they implement a 'to_dict' mehtod """
+
+    if isinstance(obj, (list, tuple, set)):
+        return list(
+            map(lambda e: e.to_dict() if hasattr(e, "to_dict") else dataclasses_to_dicts(e), obj)
+        )
+    elif isinstance(obj, dict):
+        return dict(
+            map(
+                lambda i: (i[0], i[1].to_dict())
+                if hasattr(i[1], "to_dict")
+                else (i[0], dataclasses_to_dicts(i[1])),
+                obj.items(),
+            )
+        )
+    return obj
 
 
 def remove_empty_fields(obj):
+    """ Recursivley minimize object by removing empty lists and dict keys with value None """
+
     if isinstance(obj, (list, tuple, set)):
         return type(obj)(remove_empty_fields(x) for x in obj if x is not None)
     elif isinstance(obj, dict):
@@ -26,11 +46,27 @@ def remove_empty_fields(obj):
         return obj
 
 
+def dump_minimized_json(obj, file: TextIOWrapper):
+    json.dump(
+        remove_empty_fields(dataclasses_to_dicts(obj)), file, indent=None, separators=(",", ":")
+    )
+
+
+def generate_hats_registry(registry: HatRegistry, out: Path):
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with out.open("w") as f:
+        dump_minimized_json(registry.type_to_hat_map, f)
+
+
+def generate_hats_by_category(registry: HatRegistry, out: Path):
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with out.open("w") as f:
+        dump_minimized_json(registry.categories, f)
+
+
 def beet_default(ctx: Context):
     opts = HatsOptions.from_json(ctx.meta["hats"])
     hats = HatRegistry.get(opts.cmd_id)
 
-    HATS_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with HATS_PATH.open("w") as f:
-        j = {_type: hat.to_dict() for _type, hat in hats.type_to_hat_map.items()}
-        json.dump(remove_empty_fields(j), f, indent=None, separators=(",", ":"))
+    generate_hats_registry(hats, Path("docs/api/hats.json"))
+    generate_hats_by_category(hats, Path("docs/api/hats_by_category.json"))
