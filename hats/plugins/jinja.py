@@ -27,7 +27,7 @@ def beet_default(ctx: Context):
 
     tags = {
         tag: [type_to_hat_meta_map[type] for type in hat_types]
-        for tag, hat_types in TagRegistry.get().items()
+        for tag, hat_types in TagRegistry.get().tag_to_types.items()
     }
 
     config["all"] = list(type_to_hat_meta_map.values())

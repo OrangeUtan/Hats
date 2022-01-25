@@ -66,7 +66,7 @@ def main():
     bg_color = np.array([250, 250, 250, 255])
 
     for path in SCREENSHOTS_DIR.iterdir():
-        hat_types = registry[path.stem]
+        hat_types = registry.tag_to_types[path.stem]
 
         screenshot = cv2.imread(str(path))
         if screenshot is None:
