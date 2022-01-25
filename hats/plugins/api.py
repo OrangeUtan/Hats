@@ -7,6 +7,7 @@ from beet import Context
 
 from hats.options import HatsOptions
 from hats.registries.hats import HatRegistry
+from hats.registries.tags import TagRegistry
 
 logger = getLogger(__name__)
 
@@ -52,13 +53,30 @@ def dump_minimized_json(obj, file: TextIOWrapper):
     )
 
 
-def generate_hats_registry(registry: HatRegistry, out: Path):
+def create_hats_endpoint(registry: HatRegistry, tagRegistry: TagRegistry, out: Path):
+    hats = dict(
+        map(
+            lambda hat: [
+                hat.type,
+                {
+                    "type": hat.type,
+                    "cmd": hat.cmd,
+                    "lore": hat.lore,
+                    "nbt": hat.additional_nbt,
+                    "category": registry.type_to_category_map[hat.type],
+                    "tags": tagRegistry.type_to_tags[hat.type],
+                },
+            ],
+            registry.type_to_hat_map.values(),
+        )
+    )
+
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w") as f:
-        dump_minimized_json(registry.type_to_hat_map, f)
+        dump_minimized_json(hats, f)
 
 
-def generate_hats_by_category(registry: HatRegistry, out: Path):
+def create_hats_by_category_endpoint(registry: HatRegistry, out: Path):
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w") as f:
         dump_minimized_json(registry.categories, f)
@@ -70,9 +88,10 @@ API_DIR = Path("docs/api")
 def beet_default(ctx: Context):
     opts = HatsOptions.from_json(ctx.meta["hats"])
     hats = HatRegistry.get(opts.cmd_id)
+    tags = TagRegistry.get()
 
-    generate_hats_registry(hats, API_DIR / "hats.json")
-    generate_hats_by_category(hats, API_DIR / "hats_by_category.json")
+    create_hats_endpoint(hats, tags, API_DIR / "hats.json")
+    create_hats_by_category_endpoint(hats, API_DIR / "hats_by_category.json")
 
     LANG_DIR = API_DIR / "lang"
     LANG_DIR.mkdir(exist_ok=True, parents=True)
